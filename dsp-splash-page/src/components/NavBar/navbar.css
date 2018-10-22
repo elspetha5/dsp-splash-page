@@ -1,0 +1,40 @@
+#navbar {
+    box-shadow: 2px 3px 5px #ced0d3;
+    padding-bottom: 1px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+#banner {
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+}
+
+#logobox {
+    border: 3px solid black;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+}
+
+.logo {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#navLine {
+    border-top: 2px solid #dddfe2;
+    margin: auto;
+    width: 97%;
+}
+
+#questions {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.question {
+    margin: 10px;
+}
