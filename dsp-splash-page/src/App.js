@@ -9,21 +9,24 @@ import Who from "./pages/Who";
 // Components
 import NavBar from "./components/NavBar";
 import NoMatch from "./components/NoMatch";
+import Background from "./components/Background";
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
+
+          <Background>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/what" component={What} />
+              <Route exact path="/who" component={Who} />
+              <Route component={NoMatch} />
+            </Switch>
+          </Background>
+
           <NavBar />
-
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/what" component={What} />
-            <Route exact path="/who" component={Who} />
-            <Route component={NoMatch} />
-          </Switch>
-
 
         </div>
       </Router>

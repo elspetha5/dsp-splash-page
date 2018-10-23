@@ -1,6 +1,11 @@
 #navbar {
-    box-shadow: 2px 3px 5px #ced0d3;
+    box-shadow: 2px 3px 5px #9a9b9c;
     padding-bottom: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
 }
 
 .link {
@@ -14,14 +19,10 @@
 }
 
 #logobox {
-    border: 3px solid black;
+    border: 3px solid #757579;
     padding: 10px;
     width: 200px;
     margin: auto;
-}
-
-.logo {
-    font-family: 'Quicksand', sans-serif;
 }
 
 #navLine {
@@ -37,4 +38,9 @@
 
 .question {
     margin: 10px;
+    color: #757579;
+}
+
+.question:hover {
+    color: #333132;
 }

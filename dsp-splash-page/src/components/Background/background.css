@@ -1,0 +1,9 @@
+body {
+    font-family: 'Cantarell', sans-serif;
+}
+
+#background {
+    width: 100%;
+    min-height: 1000px;
+    background-image: url(./noisy_grid.png);
+}
