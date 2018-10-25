@@ -13,7 +13,9 @@ import NavBar from "./components/NavBar";
 import NoMatch from "./components/NoMatch";
 import Background from "./components/Background";
 
+
 class App extends Component {
+
   render() {
     return (
       <Router>

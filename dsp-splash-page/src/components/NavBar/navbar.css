@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #faf7ee;
     width: 100%;
 }
 
@@ -21,7 +21,7 @@
 #logobox {
     padding: 10px;
     margin: auto;
-    font-size: 165%;
+    font-size: 175%;
     color: #333132;
     font-weight: bold;
 }
