@@ -19,16 +19,17 @@
 }
 
 #logobox {
-    border: 3px solid #757579;
     padding: 10px;
-    width: 200px;
     margin: auto;
+    font-size: 165%;
+    color: #333132;
+    font-weight: bold;
 }
 
 #navLine {
-    border-top: 2px solid #dddfe2;
+    border-top: 1px solid #dddfe2;
     margin: auto;
-    width: 97%;
+    width: 95%;
 }
 
 #questions {
@@ -37,7 +38,7 @@
 }
 
 .question {
-    margin: 10px;
+    margin: 10px 20px;
     color: #757579;
 }
 
