@@ -1,12 +1,14 @@
 .contentBackground {
-    padding-left: 17.5%;
+    padding: 10% 0 15% 15%;
+    float: left;
+    background-image: url(https://s3.amazonaws.com/fjwp/blog/wp-content/uploads/2017/06/28043329/Inspirational-Home-Office-Workspace-Tips-to-Get-Organized.jpg);
 }
 
 .half {
     width: 35%;
     text-align: center;
     float: left;
-    margin-left: 5%
+    margin-left: 5%;
 }
 
 .bigQ {
@@ -14,7 +16,6 @@
     font-size: 200%;
     padding: 7% 0;
     color: #404051;
-    /* text-shadow: 1px 2px 5px grey; */
     border-right: 1px solid #757579;
 }
 
