@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import "./home.css";
 
 import QPage from "../../components/QPage";
@@ -20,4 +20,4 @@ class Home extends Component {
     };
 };
 
-export default Home;
+export default Home; */

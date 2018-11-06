@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 
 import contents from "../../content.json"
+import logo from "./dsp-logo.png";
 
 class NavBar extends Component {
     state = {
@@ -12,9 +13,10 @@ class NavBar extends Component {
     render() {
         return (
             <div id="navbar">
-                <Link to="/" className="link" id="banner">
+                <Link to="/WHAT" className="link" id="banner">
                     <div id="logobox">
-                        <div className="logo" id="logo">dsp... under construction</div>
+                        <img src={logo} alt="logo" id="logo"/>
+                        <div id="construction">under construction</div>
                     </div>
                 </Link>
 

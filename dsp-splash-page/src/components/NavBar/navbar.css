@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #faf7ee;
+    background-color: #f9f1ee;
     width: 100%;
 }
 
@@ -15,15 +15,23 @@
 #banner {
     text-align: center;
     width: 100%;
-    margin: 30px;
+    margin: 20px;
 }
 
 #logobox {
-    padding: 10px;
+    padding: 5px;
     margin: auto;
     font-size: 175%;
     color: #333132;
     font-weight: bold;
+}
+
+#logo {
+    height: 80px;
+}
+
+#construction {
+
 }
 
 #navLine {
