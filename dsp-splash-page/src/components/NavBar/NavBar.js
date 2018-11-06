@@ -10,6 +10,10 @@ class NavBar extends Component {
         contents
     };
 
+    
+
+
+
     render() {
         return (
             <div id="navbar">
