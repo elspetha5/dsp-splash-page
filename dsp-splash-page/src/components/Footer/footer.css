@@ -6,4 +6,7 @@
     padding: 3% 0;
     box-shadow: -1px -2px 5px #9a9b9c;
     color: #f4f7fc;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }

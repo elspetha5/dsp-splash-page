@@ -18,3 +18,9 @@
     text-align: center;
     line-height: 1.5;
 }
+
+.wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -12,51 +12,29 @@
     text-decoration: none;
 }
 
-#banner {
-    text-align: center;
-    width: 100%;
-    margin: 30px;
-}
-
-#logobox {
-    padding: 5px;
-    margin: auto;
-    color: #333132;
-    font-weight: bold;
-}
-
 #logo {
-    height: 80px;
-    margin: -15px 5px 10px 30%;
+    width: 80px;
+    margin: -5px 15px 0 0;
     float: left;
     overflow: hidden;
 }
 
-#construction {
-    color: #757579;
-    font-size: 110%;
-}
-
-#navLine {
-    border-top: 1px solid #dddfe2;
-    margin: auto;
-    width: 95%;
-}
-
 #questions {
-    margin: 30px 0 20px;
-}
-
-#questionBox {
-    margin-top: 20px;
-    float: left;
+    margin: 7px 28% 12px;
 }
 
 .question {
-    margin: 0 20px 10px;
+    margin: 0 20px 3px;
     color: #757579;
 }
 
 .question:hover {
     color: #333132;
+}
+
+#constStamp {
+    width: 80px;
+    float: left;
+    margin: -5px 0 0 10%;
+    transform: rotate(25deg)
 }
