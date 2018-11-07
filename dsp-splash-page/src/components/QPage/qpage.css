@@ -4,12 +4,11 @@
     background-image: url(https://s3.amazonaws.com/fjwp/blog/wp-content/uploads/2017/06/28043329/Inspirational-Home-Office-Workspace-Tips-to-Get-Organized.jpg);
 }
 
-.half {
+/* .half {
     width: 35%;
-    text-align: center;
     float: left;
     margin-left: 5%;
-}
+} */
 
 .bigQ {
     font-weight: bold;

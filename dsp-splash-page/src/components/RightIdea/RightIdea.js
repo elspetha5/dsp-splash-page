@@ -3,8 +3,8 @@ import "./rightidea.css";
 
 const RightIdea = props => (
     <div className="ideaBackground">
-        <div className="leftVerbiage">{props.verbiage}</div>
-        <div className="rightIdea">{props.idea}</div>
+        <div className="leftVerbiage half">{props.verbiage}</div>
+        <div className="rightIdea half">{props.idea}</div>
     </div>
 );
 

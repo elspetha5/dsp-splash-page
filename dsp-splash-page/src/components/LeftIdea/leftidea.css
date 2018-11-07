@@ -1,0 +1,30 @@
+.ideaBackground {
+    padding: 7% 0 7% 1%;
+}
+
+.half {
+    width: 30%;
+    margin-left: 5%;
+    float: left;
+}
+
+.leftIdea {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 0% .3%;
+    color: #404051;
+    text-align: right;
+    width: 30%;
+    margin-left: 7%;
+    float: left;
+}
+
+.rightVerbiage {
+    font-size: 120%;
+    color: #757579;
+    width: 40%;
+    margin-left: 3%;
+    float: left;
+    padding: 0% 3.5%;
+    border-left: 1px solid #92d3c7;
+}

@@ -26,7 +26,10 @@
 }
 
 #logo {
-    height: 50px;
+    height: 80px;
+    margin: -15px 5px 10px 30%;
+    float: left;
+    overflow: hidden;
 }
 
 #construction {
@@ -41,12 +44,16 @@
 }
 
 #questions {
-    margin: 20px 0;
-    text-align: center;
+    margin: 30px 0 20px;
+}
+
+#questionBox {
+    margin-top: 20px;
+    float: left;
 }
 
 .question {
-    margin: 10px 20px;
+    margin: 0 20px 10px;
     color: #757579;
 }
 

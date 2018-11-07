@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 
 // Components
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import NoMatch from "./components/NoMatch";
 import Background from "./components/Background";
 
@@ -34,6 +35,8 @@ class App extends Component {
           </Background>
 
           <NavBar />
+
+          <Footer />
 
         </div>
       </Router>

@@ -3,7 +3,8 @@ body {
 }
 
 #background {
-    padding-top: 160px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     width: 100%;
     min-height: 2000px;
     background-image: url(./greyzz.png);
