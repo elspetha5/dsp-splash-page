@@ -3,6 +3,7 @@ import "./how.css";
 
 // Components
 import LeftIdea from "../../components/LeftIdea";
+import PageTop from "../../components/PageTop";
 
 // Files
 import ideas from "../../JSON/what.json"
@@ -16,11 +17,11 @@ class How extends Component {
         return (
             <div>
 
-                <div className="topPic">
-                    <div className="wordsBox">
-                        <div className="topQ">How are we doing it?</div>
-                        <div className="thesis"></div>
-                    </div>
+                <div id="howPic">
+                    <PageTop
+                        topQ="How are we doing it??"
+                        thesis=""
+                    />
                 </div>
 
                 <div className="wrapper">

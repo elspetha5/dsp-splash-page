@@ -3,6 +3,7 @@ import "./where.css";
 
 // Components
 import LeftIdea from "../../components/LeftIdea";
+import PageTop from "../../components/PageTop";
 
 // Files
 import ideas from "../../JSON/what.json"
@@ -16,11 +17,11 @@ class Where extends Component {
         return (
             <div>
 
-                <div className="topPic">
-                    <div className="wordsBox">
-                        <div className="topQ">Where do we create?</div>
-                        <div className="thesis"></div>
-                    </div>
+                <div id="wherePic">
+                    <PageTop
+                        topQ="Where do we create?"
+                        thesis=""
+                    />
                 </div>
 
                 <div className="wrapper">

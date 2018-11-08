@@ -3,6 +3,7 @@ import "./why.css";
 
 // Components
 import LeftIdea from "../../components/LeftIdea";
+import PageTop from "../../components/PageTop";
 
 // Files
 import ideas from "../../JSON/what.json"
@@ -16,11 +17,11 @@ class Why extends Component {
         return (
             <div>
 
-                <div className="topPic">
-                    <div className="wordsBox">
-                        <div className="topQ">Why are we building it?</div>
-                        <div className="thesis"></div>
-                    </div>
+                <div id="whyPic">
+                    <PageTop
+                        topQ="Why are we building it?"
+                        thesis=""
+                    />
                 </div>
 
                 <div className="wrapper">

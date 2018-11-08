@@ -3,6 +3,7 @@ import "./who.css";
 
 // Components
 import LeftIdea from "../../components/LeftIdea";
+import PageTop from "../../components/PageTop";
 
 // Files
 import ideas from "../../JSON/what.json"
@@ -16,11 +17,11 @@ class Who extends Component {
         return (
             <div>
 
-                <div className="topPic">
-                    <div className="wordsBox">
-                        <div className="topQ">Who are we?</div>
-                        <div className="thesis"></div>
-                    </div>
+                <div id="whoPic">
+                    <PageTop
+                        topQ="Who are we?"
+                        thesis=""
+                    />
                 </div>
 
                 <div className="wrapper">

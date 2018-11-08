@@ -1,0 +1,25 @@
+.topPic {
+    padding: 15% 20% 17%;
+}
+
+.wordsBox {
+    background-color: rgba(255, 255, 255, 0.596);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.topQ {
+    font-weight: bold;
+    font-size: 200%;
+    color: #404051;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.thesis {
+    font-weight: bold;
+    font-size: 125%;
+    color: #757579;
+    text-align: center;
+    line-height: 1.5;
+}
