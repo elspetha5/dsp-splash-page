@@ -1,5 +1,6 @@
 .ideaBackground {
     padding: 7% 0 7% 1%;
+    float: left;
 }
 
 .leftIdea {
@@ -32,8 +33,18 @@
 }
 
 @media (max-width: 768px) { 
-      
+    .leftIdea, .rightVerbiage {
+        width: 80%;
+        text-align: left;
+        margin: 2% 0;
+    }
+
+    .leftIdea {
+        font-size: 175%;
+    }
+
+    .ideaBackground {
+        padding: 0 0 7% 7%;
+    }      
 }
 
-@media (max-width: 576px) { 
- }

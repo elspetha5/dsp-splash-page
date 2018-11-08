@@ -1,3 +1,7 @@
+.wrapper {
+    padding-top: 7%;
+}
+
 .wrapper::after {
     content: "";
     display: block;
