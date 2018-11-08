@@ -1,5 +1,5 @@
 .topPic {
-    padding: 15% 20% 17%;
+    padding: 15% 20%;
 }
 
 .wordsBox {
@@ -9,17 +9,48 @@
 }
 
 .topQ {
-    font-weight: bold;
     font-size: 200%;
     color: #404051;
-    text-align: center;
-    margin-bottom: 5%;
+    text-align: left;
+    margin-bottom: 3%;
 }
 
 .thesis {
-    font-weight: bold;
     font-size: 125%;
     color: #757579;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
+}
+
+@media (max-width: 1200px) { 
+    
+}
+
+@media (max-width: 992px) { 
+       
+}
+
+@media (max-width: 768px) { 
+    .topPic {
+        padding: 15% 2%;
+    }
+
+    .wordsBox {
+        background-color: rgba(255, 255, 255, 0.596);
+        padding: 15px 15px;
+        border-radius: 10px;
+    }
+
+    .topQ {
+        font-size: 175%;
+    }
+
+    .thesis {
+        font-size: 120%;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    
 }
