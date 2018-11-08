@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-import contents from "../../content.json"
+import contents from "../../JSON/content.json"
 import logo from "./dsp-logo-blue-circle-white-no-elipsis.png";
 import stamp from "./blackStamp.png";
 
@@ -19,17 +19,19 @@ class NavBar extends Component {
         return (
             <div id="navbar">
 
+            <img id="constStamp" src={stamp} alt="underConst" />
+
                 <div id="questions">
 
                     <nav className="navbar navbar-expand-lg navbar-light ">
 
-                        <Link to="/WHAT" className="link">
-                            <img src={logo} alt="logo" id="logo" />
-                        </Link>
-
                         <button id="hamburger" className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
+
+                        <Link to="/WHAT" className="link">
+                            <img src={logo} alt="logo" id="logo" />
+                        </Link>
 
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
@@ -39,11 +41,7 @@ class NavBar extends Component {
                             </div>
                         </div>
 
-                        <img id="constStamp" src={stamp} alt="underConst" />
-
                     </nav>
-
-
 
 
                 </div>

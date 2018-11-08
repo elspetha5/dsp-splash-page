@@ -1,21 +1,38 @@
 import React, { Component } from "react";
 import "./why.css";
 
-import QPage from "../../components/QPage";
+// Components
+import LeftIdea from "../../components/LeftIdea";
 
-import contents from "../../content.json";
+// Files
+import ideas from "../../JSON/what.json"
 
 class Why extends Component {
     state = {
-        contents
+        ideas
     };
 
     render() {
         return (
-            <QPage
-            question={this.state.contents[2].question}
-            answer={this.state.contents[2].answer}
-            />
+            <div>
+
+                <div className="topPic">
+                    <div className="wordsBox">
+                        <div className="topQ">Why are we building it?</div>
+                        <div className="thesis"></div>
+                    </div>
+                </div>
+
+                <div className="wrapper">
+                    {this.state.ideas.map(idea1 => (
+                        <LeftIdea
+                            idea={idea1.idea}
+                            verbiage={idea1.verbiage}
+                        />
+                    ))}
+                </div>
+
+            </div>
         )
     };
 };

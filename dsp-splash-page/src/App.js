@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Pages
-import How from "./pages/How";
 import What from "./pages/What";
 import Who from "./pages/Who";
 import Why from "./pages/Why";
+import Where from "./pages/Where";
+import How from "./pages/How";
 import Contact from "./pages/Contact";
 
 // Components
@@ -27,8 +28,9 @@ class App extends Component {
               <Route exact path="/" component={What} />
               <Route exact path="/WHAT" component={What} />
               <Route exact path="/WHO" component={Who} />
-              <Route exact path="/HOW" component={How} />
               <Route exact path="/WHY" component={Why} />
+              <Route exact path="/WHERE" component={Where} />
+              <Route exact path="/HOW" component={How} />
               <Route exact path="/CONTACT" component={Contact} />
               <Route component={NoMatch} />
             </Switch>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./who.css";
+import "./where.css";
 
 // Components
 import LeftIdea from "../../components/LeftIdea";
@@ -7,7 +7,7 @@ import LeftIdea from "../../components/LeftIdea";
 // Files
 import ideas from "../../JSON/what.json"
 
-class Who extends Component {
+class Where extends Component {
     state = {
         ideas
     };
@@ -18,7 +18,7 @@ class Who extends Component {
 
                 <div className="topPic">
                     <div className="wordsBox">
-                        <div className="topQ">Who are we?</div>
+                        <div className="topQ">Where do we create?</div>
                         <div className="thesis"></div>
                     </div>
                 </div>
@@ -37,4 +37,4 @@ class Who extends Component {
     };
 };
 
-export default Who;
+export default Where;
