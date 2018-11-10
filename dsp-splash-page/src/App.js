@@ -9,6 +9,7 @@ import Why from "./pages/Why";
 import Where from "./pages/Where";
 import How from "./pages/How";
 import Contact from "./pages/Contact";
+import JoinUs from "./pages/JoinUs";
 
 // Components
 import NavBar from "./components/NavBar";
@@ -33,6 +34,7 @@ class App extends Component {
               <Route exact path="/WHERE" component={Where} />
               <Route exact path="/HOW" component={How} />
               <Route exact path="/CONTACT" component={Contact} />
+              <Route exact path="/JOINUS" component={JoinUs} />
               <Route component={NoMatch} />
             </Switch>
           </Background>
