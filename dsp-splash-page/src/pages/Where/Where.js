@@ -6,7 +6,7 @@ import LeftIdea from "../../components/LeftIdea";
 import PageTop from "../../components/PageTop";
 
 // Files
-import ideas from "../../JSON/what.json"
+import ideas from "../../JSON/where.json"
 
 class Where extends Component {
     state = {
@@ -19,7 +19,7 @@ class Where extends Component {
 
                 <div id="wherePic">
                     <PageTop
-                        topQ="Where do we create?"
+                        topQ="Where"
                         thesis=""
                     />
                 </div>

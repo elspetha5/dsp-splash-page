@@ -1,3 +1,7 @@
 #wherePic {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYdoeZT5s4ORgun_Eao66lPUFYtPH_sUYbhYVm2GJPTgyP2ITw)
+    background-image: url(./rural-barn.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

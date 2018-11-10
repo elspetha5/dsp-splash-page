@@ -9,5 +9,9 @@
 }
 
 #whatPic {
-    background-image: url(https://s3.amazonaws.com/fjwp/blog/wp-content/uploads/2017/06/28043329/Inspirational-Home-Office-Workspace-Tips-to-Get-Organized.jpg);
+    background-image: url(./pacific-nor-cal.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

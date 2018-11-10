@@ -4,7 +4,7 @@ import "./navbar.css";
 
 import contents from "../../JSON/content.json"
 import logo from "./dsp-logo-blue-circle-white-no-elipsis.png";
-import stamp from "./blackStamp.png";
+import stamp from "./under-construction-circle.png";
 
 class NavBar extends Component {
     state = {
@@ -29,7 +29,7 @@ class NavBar extends Component {
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        <Link to="/WHAT" className="link">
+                        <Link to="/" className="link">
                             <img src={logo} alt="logo" id="logo" />
                         </Link>
 

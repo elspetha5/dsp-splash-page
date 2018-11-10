@@ -12,6 +12,10 @@
     text-decoration: none;
 }
 
+.link:hover {
+    text-decoration: none;
+}
+
 #logo {
     width: 80px;
     margin: -5px 15px 0 0;
@@ -37,8 +41,8 @@
     float: left;
     position: fixed;
     top: 0;
-    right: 20px;
-    transform: rotate(25deg)
+    right: 30px;
+    transform: rotate(25deg);
 }
 
 @media (max-width: 1200px) { 
@@ -83,7 +87,7 @@
     }
  
     #constStamp {
-        width: 180px;
+        width: 100px;
     }
       
  }
@@ -102,7 +106,8 @@
      }
  
     #constStamp {
-        width: 170px;
-        right: 5px;
+        width: 140px;
+        top: -30px;
+        right: px;
     }
  }

@@ -6,7 +6,7 @@ import LeftIdea from "../../components/LeftIdea";
 import PageTop from "../../components/PageTop";
 
 // Files
-import ideas from "../../JSON/what.json"
+import ideas from "../../JSON/who.json"
 
 class Who extends Component {
     state = {
@@ -19,7 +19,7 @@ class Who extends Component {
 
                 <div id="whoPic">
                     <PageTop
-                        topQ="Who are we?"
+                        topQ="Who"
                         thesis=""
                     />
                 </div>

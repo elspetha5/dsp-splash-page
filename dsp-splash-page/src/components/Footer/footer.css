@@ -2,12 +2,17 @@
     width: 100%;
     background-color: #757579;
     text-align: left;
-    padding: 1.75% 20% 2%;
-    /* box-shadow: -1px -2px 5px #9a9b9c; */
+    padding: 1.75% 20% 5%;
     position: relative;
     bottom: 0;
     left: 0;
     font-size: 90%;
+}
+
+.halfFooter {
+    width: 50%;
+    float: left;
+    color: #f4f7fc;
 }
 
 .footerLink {
@@ -23,4 +28,8 @@
 #copyright {
     margin-top: 11px;
     color: #f4f7fc8e;
+}
+
+#email {
+    margin-top: 11px;
 }

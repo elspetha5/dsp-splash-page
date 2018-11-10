@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Pages
+import Home from "./pages/Home";
 import What from "./pages/What";
 import Who from "./pages/Who";
 import Why from "./pages/Why";
@@ -25,7 +26,7 @@ class App extends Component {
 
           <Background>
             <Switch>
-              <Route exact path="/" component={What} />
+              <Route exact path="/" component={Home} />
               <Route exact path="/WHAT" component={What} />
               <Route exact path="/WHO" component={Who} />
               <Route exact path="/WHY" component={Why} />

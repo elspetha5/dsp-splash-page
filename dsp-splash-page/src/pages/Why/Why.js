@@ -6,7 +6,7 @@ import LeftIdea from "../../components/LeftIdea";
 import PageTop from "../../components/PageTop";
 
 // Files
-import ideas from "../../JSON/what.json"
+import ideas from "../../JSON/why.json"
 
 class Why extends Component {
     state = {
@@ -19,7 +19,7 @@ class Why extends Component {
 
                 <div id="whyPic">
                     <PageTop
-                        topQ="Why are we building it?"
+                        topQ="Why"
                         thesis=""
                     />
                 </div>

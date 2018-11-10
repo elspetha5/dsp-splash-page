@@ -6,7 +6,7 @@ import LeftIdea from "../../components/LeftIdea";
 import PageTop from "../../components/PageTop";
 
 // Files
-import ideas from "../../JSON/what.json"
+import ideas from "../../JSON/how.json"
 
 class How extends Component {
     state = {
@@ -19,7 +19,7 @@ class How extends Component {
 
                 <div id="howPic">
                     <PageTop
-                        topQ="How are we doing it??"
+                        topQ="How"
                         thesis=""
                     />
                 </div>
