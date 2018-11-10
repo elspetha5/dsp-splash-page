@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/painted-desert.8b67ce9e.jpg"
   },
   {
-    "revision": "cbe6af7ef9e5ee2b446a",
+    "revision": "bcc2dd246249aad62295",
     "url": "/static/css/main.ea01aee2.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/under-construction-circle.fc450275.png"
   },
   {
-    "revision": "cbe6af7ef9e5ee2b446a",
-    "url": "/static/js/main.cbe6af7e.chunk.js"
+    "revision": "bcc2dd246249aad62295",
+    "url": "/static/js/main.bcc2dd24.chunk.js"
   },
   {
     "revision": "31ae6c5c04b886823fcc826b747e24ae",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/static/media/rolling-hills.91651046.jpg"
   },
   {
-    "revision": "d472650ef7945d51b37318e2e2deedb4",
+    "revision": "7418a7fc6372a51b8ae5ae6b41ba98fe",
     "url": "/index.html"
   }
 ];
