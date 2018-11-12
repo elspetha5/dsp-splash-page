@@ -23,7 +23,7 @@ class Footer extends Component {
 
                     <div className="halfFooter">
                         <div id="needContact">Need to reach us?</div>
-                        <div id="email">email: hello@dsp.design</div>
+                        <div id="email"><i class="far fa-envelope"></i> hello@dsp.design</div>
                     </div>
                 </div>
 
