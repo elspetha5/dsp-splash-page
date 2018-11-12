@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 
 import contents from "../../JSON/content.json"
-import logo from "./dsp-logo-blue-circle-white-no-elipsis.png";
-import stamp from "./under-construction-circle.png";
+import logo from "./thumbprint-logo.png";
 
 class NavBar extends Component {
     state = {
@@ -13,13 +12,13 @@ class NavBar extends Component {
 
 
 
-
-
     render() {
         return (
             <div id="navbar">
 
-            <img id="constStamp" src={stamp} alt="underConst" />
+                <Link to="/" className="link">
+                    <img src={logo} alt="logo" id="logo" />
+                </Link>
 
                 <div id="questions">
 
@@ -29,14 +28,10 @@ class NavBar extends Component {
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        <Link to="/" className="link">
-                            <img src={logo} alt="logo" id="logo" />
-                        </Link>
-
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div className="navbar-nav">
+                            <div id="navbarQs" className="navbar-nav">
                                 {this.state.contents.map(content => (
-                                    <Link to={"/" + content.question} className="nav-item link question">{content.question}</Link>
+                                    <Link to={"/" + content.question} onClick={this.navclick} className="nav-item link question">{content.question}</Link>
                                 ))}
                             </div>
                         </div>

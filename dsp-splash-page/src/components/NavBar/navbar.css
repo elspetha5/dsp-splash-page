@@ -6,6 +6,7 @@
     left: 0;
     background-color: #faf7ee;
     width: 100%;
+    min-height: 100px;
 }
 
 .link {
@@ -17,14 +18,16 @@
 }
 
 #logo {
-    width: 80px;
-    margin: -5px 15px 0 0;
+    width: 100px;
     float: left;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 23%;
 }
 
 #questions {
-    padding: 0 0 0 25%;
+    padding: 3.5% 0 0 30%;
 }
 
 .question {
@@ -43,6 +46,11 @@
     top: 0;
     right: 30px;
     transform: rotate(25deg);
+    z-index: 100;
+}
+
+#hamburger {
+    margin-left: 80%;
 }
 
 @media (max-width: 1200px) { 
@@ -83,7 +91,7 @@
     }
  
     #logo {
-        margin-left: 30%;
+        left: 5%;
     }
  
     #constStamp {
@@ -100,14 +108,26 @@
     .navbar {
         justify-content: flex-start;
     }
+
+    #navbar {
+        background-color: #f4d5bb;
+        box-shadow: 2px 3px 5px #4e4e4e;
+        min-height: 80px;
+    }
  
     #logo {
-        margin-left: 30%;
+        left: -28%;
+        width: 90px;
      }
  
     #constStamp {
-        width: 140px;
-        top: -30px;
-        right: px;
+        width: 70px;
+        top: 89%;
+        right: 1px;
+    }
+
+    #navbarQs {
+        margin-top: 3%;
+        margin-left: 75%;
     }
  }

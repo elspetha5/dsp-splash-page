@@ -10,8 +10,34 @@
 
 #whatPic {
     background-image: url(./pacific-nor-cal.jpg);
-    height: 100%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.topIdeaQ {
+    font-size: 200%;
+    color: #333132;
+    text-align: right;
+    width: 37%;
+    float: left;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.rightWe {
+    width: 60%;
+    float: left;
+    font-size: 120%;
+    color: #404051;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 35px;
+    border-left: 1px solid #404051;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 125%;
 }
