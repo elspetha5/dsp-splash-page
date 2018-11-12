@@ -4,28 +4,28 @@ self.__precacheManifest = [
     "url": "/static/media/painted-desert.8b67ce9e.jpg"
   },
   {
-    "revision": "bcc2dd246249aad62295",
-    "url": "/static/css/main.ea01aee2.chunk.css"
+    "revision": "a316f70922218b99c267",
+    "url": "/static/css/main.f598ecb4.chunk.css"
   },
   {
-    "revision": "332e9e235be23e3035cc",
-    "url": "/static/js/1.332e9e23.chunk.js"
+    "revision": "0cf5eff2130c70e04085",
+    "url": "/static/js/1.0cf5eff2.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "880619180dbadfdcc80ab56c571805b7",
-    "url": "/static/media/dsp-logo-blue-circle-white-no-elipsis.88061918.png"
+    "revision": "4ac5f212cd2784fb5b1270eba5420542",
+    "url": "/static/media/thumbprint-logo.4ac5f212.png"
   },
   {
     "revision": "fc450275ce13c788b010858f38e70f1c",
     "url": "/static/media/under-construction-circle.fc450275.png"
   },
   {
-    "revision": "bcc2dd246249aad62295",
-    "url": "/static/js/main.bcc2dd24.chunk.js"
+    "revision": "a316f70922218b99c267",
+    "url": "/static/js/main.a316f709.chunk.js"
   },
   {
     "revision": "31ae6c5c04b886823fcc826b747e24ae",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/static/media/rolling-hills.91651046.jpg"
   },
   {
-    "revision": "7418a7fc6372a51b8ae5ae6b41ba98fe",
+    "revision": "31a4d4f52f4fb55876dda231e14fefd0",
     "url": "/index.html"
   }
 ];
