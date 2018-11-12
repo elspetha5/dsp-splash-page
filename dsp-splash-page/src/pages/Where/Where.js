@@ -19,12 +19,14 @@ class Where extends Component {
 
                 <div id="wherePic">
                     <PageTop
-                        topQ="Where"
-                        thesis=""
+                        topQ="out-of-office... "
+                        thesis="where?"
                     />
                 </div>
 
                 <div className="wrapper">
+                    <div id="whereThesis">We're designers well trained in the art and science of 'work'. So where are we?</div>
+
                     {this.state.ideas.map(idea1 => (
                         <LeftIdea
                             idea={idea1.idea}

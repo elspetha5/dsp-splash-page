@@ -1,5 +1,5 @@
 .topPic {
-    padding: 10% 20%;
+    padding: 15% 25% 25%;
 }
 
 /* .wordsBox {
@@ -13,13 +13,6 @@
     margin-bottom: 3%;
 }
 
-.thesis {
-    font-size: 125%;
-    color: #404051;
-    text-align: left;
-    line-height: 1.5;
-}
-
 @media (max-width: 1200px) { 
     
 }
@@ -30,7 +23,7 @@
 
 @media (max-width: 768px) { 
     .topPic {
-        padding: 15% 2%;
+        padding: 15% 10%;
     }
 
     .wordsBox {
@@ -41,12 +34,12 @@
     }
 
     .topQ {
-        font-size: 110%;
+        font-size: 170%;
     }
 
-    .thesis {
-        font-size: 90%;
-        line-height: 1;
+    .thesis::before {
+        content: "\A";
+        white-space: pre;
     }
 }
 

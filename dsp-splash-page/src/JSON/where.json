@@ -1,6 +1,21 @@
 [
     {
-        "idea": "all-virtual collaborative",
-        "verbiage": "We are a collection of design professionals with no front door. We leverage co-working facilities to provide settings for individual work, small meetings and team conferences as needed. Keeping overhead costs low allows us to provide top quality design at a cost-conscious rate."
+        "idea": "WHERE DO WE WORK?",
+        "verbiage": "Out of the office for starters… cause there are no tethers we don't choose for ourselves… except maybe to our laptops"
+    },{
+        "idea": "WHERE DO WE CREATE?",
+        "verbiage": "Wherever we find the most inspiration… and a decent wifi connection"
+    },{
+        "idea": "WHERE DO WE COLLABORATE?",
+        "verbiage": "In the cloud just about every day but Sunday… and in person just as much as we need to"
+    },{
+        "idea": "WHERE DO WE INCUBATE?",
+        "verbiage": "Our ideas percolate day and night… and we have the tools to capture them when and where they bubble up"
+    },{
+        "idea": "WHERE DO WE PLAY?",
+        "verbiage": "Exactly where we love to play most"
+    },{
+        "idea": "WHERE DO WE LIVE?",
+        "verbiage": "In the places that matter most"
     }
 ]

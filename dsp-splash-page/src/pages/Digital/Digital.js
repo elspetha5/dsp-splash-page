@@ -33,41 +33,9 @@ class Digital extends Component {
         }]
     };
 
-    render() {
-        /* const data = [{
-            name: "Studio Director",
-            description: "Studio Operations"
-        }, {
-            name: "Digital Design Director",
-            description: "BIM, Visual Design, Computational Design"
-        }, {
-            name: "Computational Design Leader",
-            description: "BIM, Computational Design"
-        }, {
-            name: "Visual Design Leader",
-            description: "BIM, Visual Design"
-        }, {
-            name: "BIM Design Leader",
-            description: "BIM, Computational Design"
-        }, {
-            name: "BIM Support Specialist",
-            description: "BIM, Revit"
-        }, {
-            name: "Digital Design Specialist",
-            description: "BIM, Visual Design"
-        }, {
-            name: "Digital Design Manager",
-            description: "BIM Specialist"
-        }]
+    
 
-        const columns = [{
-            Header: "Role",
-            accessor: "name"
-        }, {
-            Header: "Emphasis",
-            accessor: "description",
-            Cell: props => <span className='number'>{props.value}</span>
-        }] */
+    render() {
 
         return (
             <div id="digitalWrapper">
@@ -80,16 +48,6 @@ class Digital extends Component {
                 <div className="digitalWords">A<span className="bold"> key research, development, and training team for advanced software applications</span>. This team is intended to be non-billable up to 50% of the time, with key initiatives facilitating advanced project work with a direct project impact.</div>
                 <div className="digitalWords">A team of <span className="bold">Revit Specialists, Computational Design Specialists,</span> and <span className="bold">Visualization Specialists</span> with a knack for developing simulation quality, interactive and adaptive environments.</div>
                 <div className="digitalWords">Doubling as project<span className="bold"> Digital Design Managers</span>, this team also provides ongoing BIM oversight, facilitates effective visualization processes and develops challenging computational design solutions for an array of architectural projects.</div>
-
-                {/* <div id="reactTable">
-                    <ReactTable
-                        data={data}
-                        columns={columns}
-                        showPagination={false}
-                        defaultPageSize={8}
-                        sortable={false}
-                    />
-                </div> */}
 
                 <div id="BIMroles">
                     <div className="row">

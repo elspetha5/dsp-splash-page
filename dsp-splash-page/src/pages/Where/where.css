@@ -5,3 +5,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#whereThesis {
+    font-size: 200%;
+    color: #333132;
+    width: 100%;
+    float: left;
+    padding-left: 16%;
+    font-weight: bold;
+}

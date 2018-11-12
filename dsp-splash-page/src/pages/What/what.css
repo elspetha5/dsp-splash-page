@@ -1,5 +1,5 @@
 .wrapper {
-    padding-top: 7%;
+    padding: 7% 0 4%;
 }
 
 .wrapper::after {
@@ -10,7 +10,6 @@
 
 #whatPic {
     background-image: url(./pacific-nor-cal.jpg);
-    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,4 +39,42 @@
 .bold {
     font-weight: bold;
     font-size: 115%;
+}
+
+@media (max-width: 1200px) { 
+    
+}
+
+@media (max-width: 992px) { 
+       
+}
+
+@media (max-width: 768px) { 
+    .topIdeaQ, .rightWe {
+        width: 80%;
+        text-align: left;
+        margin: 2% 0;
+    }
+
+    .topIdeaQ {
+        font-size: 170%;
+    }
+
+    .rightWe {
+        padding-left: 4%;
+        font-size: 110%;
+    }
+
+    .oneRightWe {
+        margin-bottom: 30px;
+    }
+
+    .wrapper {
+        padding: 4% 0 7% 7%;
+    }
+      
+}
+
+@media (max-width: 576px) { 
+
 }
