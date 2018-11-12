@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/painted-desert.8b67ce9e.jpg"
   },
   {
-    "revision": "790d8ca4f924e91efdb4",
-    "url": "/static/css/main.e5502795.chunk.css"
+    "revision": "b4beb892cf977eb8fc91",
+    "url": "/static/css/main.ccbbe0c1.chunk.css"
   },
   {
     "revision": "3afc806f31771a7c217addf01c57f1f8",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/under-construction-circle.fc450275.png"
   },
   {
-    "revision": "790d8ca4f924e91efdb4",
-    "url": "/static/js/main.790d8ca4.chunk.js"
+    "revision": "b4beb892cf977eb8fc91",
+    "url": "/static/js/main.b4beb892.chunk.js"
   },
   {
     "revision": "31ae6c5c04b886823fcc826b747e24ae",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.271fa07a.chunk.css"
   },
   {
-    "revision": "bddfb54ca1fb979c88d0e8d31de237f9",
+    "revision": "12bfe5a51dd8200a8ab0168cf5caefe4",
     "url": "/index.html"
   }
 ];
