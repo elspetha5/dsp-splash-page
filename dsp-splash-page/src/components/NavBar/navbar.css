@@ -23,7 +23,17 @@
     overflow: hidden;
     position: fixed;
     top: 0;
-    left: 23%;
+    left: 15%;
+}
+
+#global {
+    float: left;
+    position: fixed;
+    top: 37px;
+    left: 23.25%;
+    font-family: 'Caveat', cursive;
+    color: #404051;
+    font-size: 130%;
 }
 
 #questions {
@@ -119,6 +129,14 @@
         left: -28%;
         width: 90px;
      }
+     
+     #global {
+        width: 120px;
+        float: left;
+        position: fixed;
+        top: 25px;
+        left: 35%;
+    }
  
     #constStamp {
         width: 70px;

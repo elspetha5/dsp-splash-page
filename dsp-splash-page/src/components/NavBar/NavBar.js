@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-import contents from "../../JSON/content.json"
 import logo from "./thumbprint-logo.png";
+import global from "./global-design-locals-wanted.png";
 
 class NavBar extends Component {
     state = {
-        contents
+        contents: ["WHAT", "WHERE", "WHY", "WHO", "HOW", "dsp.digital", "CONTACT"]
     };
 
 
@@ -20,6 +20,12 @@ class NavBar extends Component {
                     <img src={logo} alt="logo" id="logo" />
                 </Link>
 
+                {/* <img src={global} alt="global" id="global" /> */}
+                <div id="global">
+                    <div className="funText">Global design.</div>
+                    <div className="funText">Locals wanted.</div>
+                </div>
+
                 <div id="questions">
 
                     <nav className="navbar navbar-expand-lg navbar-light ">
@@ -31,7 +37,7 @@ class NavBar extends Component {
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div id="navbarQs" className="navbar-nav">
                                 {this.state.contents.map(content => (
-                                    <Link to={"/" + content.question} onClick={this.navclick} className="nav-item link question">{content.question}</Link>
+                                    <Link to={"/" + content} onClick={this.navclick} className="nav-item link question">{content}</Link>
                                 ))}
                             </div>
                         </div>

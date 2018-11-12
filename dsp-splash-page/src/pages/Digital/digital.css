@@ -1,0 +1,16 @@
+#digitalWrapper {
+    padding: 8% 15%;
+}
+
+.digitalTitle {
+    font-size: 250%;
+    color: #333132;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.digitalWords {
+    margin: 5% 0;
+    font-size: 115%;
+    line-height: 1.5;
+}
