@@ -5,3 +5,25 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#homeThesis {
+    font-size: 120%;
+}
+
+@media (max-width: 1200px) { 
+    
+}
+
+@media (max-width: 992px) { 
+       
+}
+
+@media (max-width: 768px) {
+    #homeThesis {
+        margin-bottom: 50%;
+    }      
+}
+
+@media (max-width: 576px) { 
+
+}

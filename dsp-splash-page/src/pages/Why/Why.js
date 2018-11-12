@@ -19,18 +19,20 @@ class Why extends Component {
 
                 <div id="whyPic">
                     <PageTop
-                        topQ="Why"
-                        thesis=""
+                        topQ="out-of-office... "
+                        thesis="why do we care?"
                     />
                 </div>
 
-                <div className="wrapper">
-                    {this.state.ideas.map(idea1 => (
-                        <LeftIdea
-                            idea={idea1.idea}
-                            verbiage={idea1.verbiage}
-                        />
-                    ))}
+                <div className="topIdea wrapper wordsBox">
+                    <div className="topIdeaQ">WHY</div>
+                    <div className="rightWe">
+                        <div className="oneRightWe">Because <span className="bold">we FINALLY can</span></div>
+                        <div className="oneRightWe">Because we've got the <span className="bold">right tech</span>, the <span className="bold">best talent</span>, and a <span className="bold">game changing</span> approach to design & delivery</div>
+                        <div className="oneRightWe">Because there's all kinds of <span className="bold">amazing talent outside</span> the typical design office</div>
+                        <div className="oneRightWe">Because design services for AEC partners means <span className="bold">we all thrive</span></div>
+                        <div className="oneRightWe">Because we can be <span className="bold">even better 'out of office'</span></div>
+                    </div>
                 </div>
 
             </div>
