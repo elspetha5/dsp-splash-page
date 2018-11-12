@@ -1,12 +1,74 @@
 import React, { Component } from "react";
 import "./digital.css"
 
+import ReactTable from "react-table";
+import "react-table/react-table.css";
+
 class Digital extends Component {
     state = {
-
+        BIMroles: [{
+            name: "Studio Director",
+            description: "Studio Operations"
+        }, {
+            name: "Digital Design Director",
+            description: "BIM, Visual Design, Computational Design"
+        }, {
+            name: "Computational Design Leader",
+            description: "BIM, Computational Design"
+        }, {
+            name: "Visual Design Leader",
+            description: "BIM, Visual Design"
+        }, {
+            name: "BIM Design Leader",
+            description: "BIM, Computational Design"
+        }, {
+            name: "BIM Support Specialist",
+            description: "BIM, Revit"
+        }, {
+            name: "Digital Design Specialist",
+            description: "BIM, Visual Design"
+        }, {
+            name: "Digital Design Manager",
+            description: "BIM Specialist"
+        }]
     };
 
     render() {
+        /* const data = [{
+            name: "Studio Director",
+            description: "Studio Operations"
+        }, {
+            name: "Digital Design Director",
+            description: "BIM, Visual Design, Computational Design"
+        }, {
+            name: "Computational Design Leader",
+            description: "BIM, Computational Design"
+        }, {
+            name: "Visual Design Leader",
+            description: "BIM, Visual Design"
+        }, {
+            name: "BIM Design Leader",
+            description: "BIM, Computational Design"
+        }, {
+            name: "BIM Support Specialist",
+            description: "BIM, Revit"
+        }, {
+            name: "Digital Design Specialist",
+            description: "BIM, Visual Design"
+        }, {
+            name: "Digital Design Manager",
+            description: "BIM Specialist"
+        }]
+
+        const columns = [{
+            Header: "Role",
+            accessor: "name"
+        }, {
+            Header: "Emphasis",
+            accessor: "description",
+            Cell: props => <span className='number'>{props.value}</span>
+        }] */
+
         return (
             <div id="digitalWrapper">
                 <div className="digitalTitle">dsp.digital</div>
@@ -19,7 +81,30 @@ class Digital extends Component {
                 <div className="digitalWords">A team of <span className="bold">Revit Specialists, Computational Design Specialists,</span> and <span className="bold">Visualization Specialists</span> with a knack for developing simulation quality, interactive and adaptive environments.</div>
                 <div className="digitalWords">Doubling as project<span className="bold"> Digital Design Managers</span>, this team also provides ongoing BIM oversight, facilitates effective visualization processes and develops challenging computational design solutions for an array of architectural projects.</div>
 
-                
+                {/* <div id="reactTable">
+                    <ReactTable
+                        data={data}
+                        columns={columns}
+                        showPagination={false}
+                        defaultPageSize={8}
+                        sortable={false}
+                    />
+                </div> */}
+
+                <div id="BIMroles">
+                    <div className="row">
+                        <div className="BIMHead column one">Role:</div>
+                        <div className="BIMHead column two">Emphasis:</div>
+                    </div>
+
+                    <div>{this.state.BIMroles.map(role => (
+                        <div className="row">
+                            <div className="column BIMword one">{role.name}</div>
+                            <div className="column BIMword two">{role.description}</div>
+                        </div>
+                    ))}</div>
+                </div>
+
             </div>
         )
     }

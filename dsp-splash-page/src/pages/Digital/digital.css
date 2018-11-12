@@ -14,3 +14,61 @@
     font-size: 115%;
     line-height: 1.5;
 }
+
+.row {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.column {
+    width: 28%;
+}
+
+.BIMHead {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.BIMword {
+    font-size: 105%;
+}
+
+.two {
+    margin-left: -25px;
+}
+
+@media (max-width: 1200px) { 
+    
+}
+
+@media (max-width: 992px) { 
+       
+}
+
+@media (max-width: 768px) {
+    #digitalWrapper {
+        padding: 14% 5% 0;
+    }
+
+    .digitalWords {
+        margin: 10% 0;
+    }
+
+    .row {
+        border-bottom: 0.5px solid #757579;
+    }
+    
+    .column {
+        width: 45%;
+        margin-bottom: 3%;
+    }
+
+    .two {
+        margin-left: 7%;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    
+}
