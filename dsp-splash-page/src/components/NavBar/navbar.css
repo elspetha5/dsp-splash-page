@@ -95,6 +95,10 @@
     #questions {
         padding: 7px 0 12px;
     }
+
+    .question {
+        color: #333132;
+    }
  
     .navbar {
         justify-content: flex-start;
