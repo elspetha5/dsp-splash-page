@@ -42,6 +42,10 @@
     color: #333132;
 }
 
+#question:focus {
+    text-decoration: none;
+}
+
 #constStamp {
     width: 200px;
     float: left;

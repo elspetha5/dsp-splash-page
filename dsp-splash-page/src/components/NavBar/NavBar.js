@@ -26,7 +26,7 @@ class NavBar extends Component {
                 <Navbar.Collapse >
                     <Nav id="questions">
                         {this.state.contents.map((content, i) => (
-                            <NavItem id="question" eventKey={i} href={"/" + content}>{content}</NavItem>
+                            <NavItem eventKey={i} href={"/" + content}><Link id="question" to={"/" + content} className="link">{content}</Link></NavItem>
                         ))}
                     </Nav>
                 </Navbar.Collapse>
