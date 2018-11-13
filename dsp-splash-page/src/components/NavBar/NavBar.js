@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 
 import logo from "./thumbprint-logo.png";
-import global from "./global-design-locals-wanted.png";
 
 class NavBar extends Component {
     state = {

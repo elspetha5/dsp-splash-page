@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./why.css";
 
 // Components
-import LeftIdea from "../../components/LeftIdea";
 import PageTop from "../../components/PageTop";
 
 // Files

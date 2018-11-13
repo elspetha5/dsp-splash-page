@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./home.css";
 
 // Components
-import PageTop from "../../components/PageTop";
 import LeftIdea from "../../components/LeftIdea";
 
 // Files

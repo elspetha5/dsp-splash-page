@@ -107,6 +107,10 @@
     #constStamp {
         width: 100px;
     }
+
+    #global {
+        color: #333132;
+    }
       
  }
 
@@ -120,7 +124,7 @@
     }
 
     #navbar {
-        background-color: #f4d5bb;
+        background-color: #757579;
         box-shadow: 2px 3px 5px #4e4e4e;
         min-height: 80px;
     }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./digital.css"
 
-import ReactTable from "react-table";
 import "react-table/react-table.css";
 
 class Digital extends Component {
