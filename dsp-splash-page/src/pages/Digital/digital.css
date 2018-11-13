@@ -22,6 +22,7 @@
 
 .column {
     width: 28%;
+    float: left;
 }
 
 .BIMHead {

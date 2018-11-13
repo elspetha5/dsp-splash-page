@@ -1,12 +1,9 @@
 #navbar {
-    box-shadow: 2px 3px 5px #9a9b9c;
-    padding-bottom: 1px;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: #faf7ee;
     width: 100%;
+    border: none;
     min-height: 100px;
+    box-shadow: 2px 3px 5px #757579;
 }
 
 .link {
@@ -19,11 +16,7 @@
 
 #logo {
     width: 100px;
-    float: left;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 15%;
+    margin: -10px 0 0 160px;
 }
 
 #global {
@@ -37,15 +30,15 @@
 }
 
 #questions {
-    padding: 3.5% 0 0 30%;
+    padding-top: 5%;
 }
 
-.question {
-    margin: 0 20px 3px;
+#question {
     color: #757579;
+    margin: 0 10px;
 }
 
-.question:hover {
+#question:hover {
     color: #333132;
 }
 
@@ -56,11 +49,11 @@
     top: 0;
     right: 30px;
     transform: rotate(25deg);
-    z-index: 100;
+    z-index: 2000;
 }
 
 #hamburger {
-    margin-left: 80%;
+    background-color: #f4f7fc;
 }
 
 @media (max-width: 1200px) { 
@@ -93,38 +86,12 @@
 
  @media (max-width: 768px) { 
     #questions {
-        padding: 7px 0 12px;
+        padding: 0;
+        float: right;
     }
 
-    .question {
-        color: #333132;
-    }
- 
-    .navbar {
-        justify-content: flex-start;
-    }
- 
-    #logo {
-        left: 5%;
-    }
- 
-    #constStamp {
-        width: 100px;
-    }
-
-    #global {
-        color: #333132;
-    }
-      
- }
-
- @media (max-width: 576px) { 
-    #questions {
-        padding: 7px 0 12px;
-    }
- 
-    .navbar {
-        justify-content: flex-start;
+    #question {
+        color: #f4f7fc;
     }
 
     #navbar {
@@ -134,26 +101,33 @@
     }
  
     #logo {
-        left: -28%;
-        width: 90px;
-     }
+        width: 80px;
+        float: none;
+        position: inherit;
+        margin: -10px 175px 0 0;
+    }
      
-     #global {
-        width: 120px;
-        float: left;
-        position: fixed;
-        top: 25px;
-        left: 35%;
-    }
- 
-    #constStamp {
-        width: 70px;
-        top: 89%;
-        right: 1px;
-    }
+    #global {
+       width: 120px;
+       float: left;
+       position: fixed;
+       top: 25px;
+       left: 35%;
+   }
 
-    #navbarQs {
-        margin-top: 3%;
-        margin-left: 75%;
-    }
+   #constStamp {
+       width: 70px;
+       top: 89%;
+       right: 1px;
+   }
+
+   #navbarQs {
+       margin-top: 3%;
+       margin-left: 75%;
+   }
+      
+ }
+
+ @media (max-width: 576px) { 
+ 
  }
