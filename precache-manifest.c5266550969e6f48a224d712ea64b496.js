@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/painted-desert.8b67ce9e.jpg"
   },
   {
-    "revision": "096ca703a41408a90e7d",
+    "revision": "6623216776370445fc1c",
     "url": "/static/css/main.5b2ac2c9.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "4ac5f212cd2784fb5b1270eba5420542",
-    "url": "/static/media/thumbprint-logo.4ac5f212.png"
+    "revision": "e9f8824d3fc6a4800ebd25927fff3631",
+    "url": "/static/media/dsp-in-thumbprint.e9f8824d.png"
   },
   {
     "revision": "fc450275ce13c788b010858f38e70f1c",
     "url": "/static/media/under-construction-circle.fc450275.png"
   },
   {
-    "revision": "096ca703a41408a90e7d",
-    "url": "/static/js/main.096ca703.chunk.js"
+    "revision": "6623216776370445fc1c",
+    "url": "/static/js/main.66232167.chunk.js"
   },
   {
     "revision": "31ae6c5c04b886823fcc826b747e24ae",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.3b6ae81c.chunk.css"
   },
   {
-    "revision": "fb45bd3f2576e9b6fdc0f15fbb5032aa",
+    "revision": "434f7cd02c26b399eb33beb012522272",
     "url": "/index.html"
   }
 ];
