@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
 import "./navbar.css";
 
-import logo from "./thumbprint-logo.png";
+import logo from "./dsp-in-thumbprint.png";
 
 class NavBar extends Component {
     state = {
