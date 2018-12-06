@@ -2,14 +2,11 @@ import React, { Component } from "react";
 import "./what.css";
 
 // Components
-import PageTop from "../../components/PageTop";
+import PageTop from "../../../components/PageTop";
 
-// Files
-import ideas from "../../JSON/what.json";
 
 class What extends Component {
     state = {
-        ideas
     };
 
     render() {

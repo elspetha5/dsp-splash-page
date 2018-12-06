@@ -2,14 +2,11 @@ import React, { Component } from "react";
 import "./why.css";
 
 // Components
-import PageTop from "../../components/PageTop";
+import PageTop from "../../../components/PageTop";
 
-// Files
-import ideas from "../../JSON/why.json"
 
 class Why extends Component {
     state = {
-        ideas
     };
 
     render() {

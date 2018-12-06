@@ -15,11 +15,12 @@ class Home extends Component {
     render() {
         return (
             <div>
+               {/*  bolded goes to scroll point (middle of the page/where high quality design hits) */}
 
                 <div id="homePic">
                     <div className="topPic">
-                        <div className="topQ">DESIGN SERVICE PROFESSIONALS, PLLC</div>
-                        <div id="homeThesis">Design Service Professionals, PLLC is an all-virtual design collaborative specializing in design services for the AEC Industry. Leveraging a diverse reservoir of design professionals, our staff augmentation program, coupled with an eclectic mix of industry experts, allows us to assemble the right team at the right time for our clients & AEC partners. By tapping into the dsp ecosystem, our clients, design-build partners, large project teams, and boutique firms alike will benefit from our unparalleled delivery of high quality design.</div>
+                        <div id="homeTitle" className="topQ">DESIGN SERVICE PROFESSIONALS, PLLC</div>
+                        <div id="homeThesis"><span id="mobileHide">Design Service Professionals, PLLC is </span>an <span className="bold thesisColor">all-virtual design collaborative</span> specializing in design services for the AEC Industry. Leveraging a <span className="bold thesisColor">diverse reservoir</span> of design professionals, our staff augmentation program, coupled with an <span className="bold thesisColor">eclectic mix of industry experts</span>, allows us to assemble the right team at the right time for our clients & AEC partners. By tapping into the <span id="dspEco" className="bold thesisColor">dsp ecosystem</span>, our clients, design-build partners, large project teams, and boutique firms alike will benefit from our <span id="unDelivery" className="bold thesisColor">unparalleled delivery</span> of <span id="highQuality" className="bold thesisColor">high quality design</span>.</div>
                     </div>
                 </div>
 

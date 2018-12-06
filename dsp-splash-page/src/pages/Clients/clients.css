@@ -1,0 +1,26 @@
+.yourThree {
+    float: left;
+    width: 33.33%;
+}
+
+#largeCompany {
+    background-image: url(https://www.onespot.com/wp-content/uploads/7_people.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#design-buildCompany {
+    background-image: url(
+        https://d2ciprw05cjhos.cloudfront.net/files/v3/styles/gs_large/public/2013/11/shutterstock_139468967.jpg?itok=xGPh3t9a);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boutiqueCompany {
+    background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2017/08/p-1-these-are-the-7-most-important-people-in-your-office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,6 +1,18 @@
-#joinUs {
-    width: 100%;
-    min-height: 2750px;
-    padding-top: 0;
-    padding-left: 0;
+.yourTwo {
+    float: left;
+    width: 50%;
+}
+
+#brand {
+    background-image: url(https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full/public/field_blog_entry_teaser_image/people%20laughing_0.jpg?itok=ZZYdQ3_u);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#career {
+    background-image: url(https://www.interregemr.eu/IManager/Media/65321/1599724/EN/add_tablet/people-to-people.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

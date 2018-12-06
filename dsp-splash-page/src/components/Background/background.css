@@ -8,3 +8,9 @@ body {
     width: 100%;
     background-image: url(./greyzz.png);
 }
+
+#background::after {
+    content: "";
+    display: block;
+    clear: both;
+}

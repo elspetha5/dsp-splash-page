@@ -2,15 +2,42 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Pages
+// Home
 import Home from "./pages/Home";
-import What from "./pages/What";
-import Where from "./pages/Where";
-import Why from "./pages/Why";
-import Who from "./pages/Who";
-import How from "./pages/How";
+
+// Approach
+import What from "./pages/Approach/What";
+import Where from "./pages/Approach/Where";
+import Why from "./pages/Approach/Why";
+import Who from "./pages/Approach/Who";
+import How from "./pages/Approach/How";
+
+
 import Digital from "./pages/Digital";
-import Contact from "./pages/Contact";
+
+// Projects
+import Commercial from "./pages/Projects/Commercial";
+import Residential from "./pages/Projects/Residential";
+import Workplace from "./pages/Projects/Workplace";
+
+
+// Clients
+import Clients from "./pages/Clients";
+import Contact from "./pages/Clients/Contact";
+
+
+// Design Services
+import DesignServices from "./pages/DesignServices";
+
+
+// Join Us
 import JoinUs from "./pages/JoinUs";
+import RecruitForm from "./pages/JoinUs/RecruitForm";
+import PartnerForm from "./pages/JoinUs/PartnerForm";
+
+
+// Log in
+
 
 // Components
 import NavBar from "./components/NavBar";
@@ -28,15 +55,38 @@ class App extends Component {
 
           <Background>
             <Switch>
+              {/* Home */}
               <Route exact path="/" component={Home} />
-              <Route exact path="/WHAT" component={What} />
-              <Route exact path="/WHERE" component={Where} />
-              <Route exact path="/WHY" component={Why} />
-              <Route exact path="/WHO" component={Who} />
-              <Route exact path="/HOW" component={How} />
+
+              {/* Approach */}
+              <Route exact path="/approach/What" component={What} />
+              <Route exact path="/approach/Where" component={Where} />
+              <Route exact path="/approach/Why" component={Why} />
+              <Route exact path="/approach/Who" component={Who} />
+              <Route exact path="/approach/How" component={How} />
+
               <Route exact path="/dsp.digital" component={Digital} />
-              <Route exact path="/CONTACT" component={Contact} />
-              <Route exact path="/JOINUS" component={JoinUs} />
+
+              {/* Projects */}
+              <Route exact path="/projects/Commercial" component={Commercial} />
+              <Route exact path="/projects/Residential" component={Residential} />
+              <Route exact path="/projects/Workplace" component={Workplace} />
+
+              {/* Clients */}
+              <Route exact path="/clients" component={Clients} />
+              <Route exact path="/Contact" component={Contact} />
+
+              {/* Design Services */}
+              <Route exact path="/designservices" component={DesignServices} />
+
+              {/* Join Us */}
+              <Route exact path="/joinus" component={JoinUs} />
+              <Route exact path="/joinus/partner" component={PartnerForm} />
+              <Route exact path="/joinus/recruit" component={RecruitForm} />
+
+              {/* Log In */}
+
+
               <Route component={NoMatch} />
             </Switch>
           </Background>

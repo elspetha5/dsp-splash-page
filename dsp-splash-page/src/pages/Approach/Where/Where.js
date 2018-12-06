@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import "./where.css";
 
 // Components
-import LeftIdea from "../../components/LeftIdea";
-import PageTop from "../../components/PageTop";
+import LeftIdea from "../../../components/LeftIdea";
+import PageTop from "../../../components/PageTop";
 
 // Files
-import ideas from "../../JSON/where.json"
+import ideas from "../../../JSON/where.json";
 
 class Where extends Component {
     state = {

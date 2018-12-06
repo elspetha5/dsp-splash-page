@@ -6,8 +6,18 @@
     background-size: cover;
 }
 
+#homeTitle {
+    color: #f4f7fc;
+}
+
 #homeThesis {
-    font-size: 120%;
+    font-size: 110%;
+    color: #f4f7fc;
+    line-height: 1.25;
+}
+
+.thesisColor {
+    color: #f4d5bb;
 }
 
 @media (max-width: 1200px) { 
@@ -19,9 +29,31 @@
 }
 
 @media (max-width: 768px) {
+    #homeTitle {
+        margin-bottom: 20px;
+    }
     #homeThesis {
         margin-bottom: 50%;
-    }      
+    }
+    
+    #mobileHide {
+        display: none;
+    }
+
+    #dspEco {
+        color: #f3dfcf;
+
+    }
+
+    #unDelivery {
+        color: #f0e4da;
+
+    }
+
+    #highQuality {
+        color: #f0e4da;
+
+    }
 }
 
 @media (max-width: 576px) { 

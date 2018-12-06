@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import "./how.css";
 
 // Components
-import PageTop from "../../components/PageTop";
+import PageTop from "../../../components/PageTop";
 
 // Files
-import ideas from "../../JSON/how.json"
+import ideas from "../../../JSON/how.json";
 
 class How extends Component {
     state = {

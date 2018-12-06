@@ -1,0 +1,37 @@
+.yourThingBackground {
+    padding: 20% 15% 0;
+    height: 500px;
+}
+
+.yourTitleWrapper {
+    margin-bottom: 50px;
+}
+
+.yourThingWords {
+    color: #f4f7fc;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.yourButton {
+    color: #404051;
+    text-decoration: none;
+    background-color: #f4f7fc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.yourButton:hover {
+    text-decoration: none;
+    background-color: #404051;
+    color: #f4f7fc;
+}
+
+.button {
+    margin-bottom: 50px;
+}
+
+.yourDescription {
+    color: #f4f7fc;
+    font-size: 125%;
+}

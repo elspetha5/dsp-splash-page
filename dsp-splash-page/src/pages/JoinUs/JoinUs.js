@@ -1,10 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
+import YourThing from "../../components/YourThing";
 import "./joinus.css";
 
-const JoinUs = () => (
-    <div className="center">
-        <iframe title="contact" id="joinUs" src="https://forms.office.com/Pages/ResponsePage.aspx?id=kT5uKQ4avk6gVCpvt8uiGLZqyI8LCp9Dr0yR1zpUk9pUM1FJV1BNVzlZU1g2UTBWQjZOQUVKUjZZRiQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-    </div>
-);
+class JoinUs extends Component {
+    state = {
+
+    };
+
+    render() {
+        return (
+            <div>
+                <div id="brand" class="yourTwo">
+                    <YourThing
+                    topWords="Your brand."
+                    bottomWords="Amplified."
+                    link="/JOINUS/PARTNER"
+                    buttonWords="Join our ecosystem"
+                    topDescription="Join our ecosystem of..."
+                    bottomDescription="independently recognized design professionals"
+                    />
+                </div>
+                
+                <div id="career" class="yourTwo">
+                    <YourThing
+                    topWords="Your career."
+                    bottomWords="Amplified."
+                    link="/JOINUS/RECRUIT"
+                    buttonWords="Join our staff"
+                    topDescription="Join our staff of..."
+                    bottomDescription="integrated design professionals"
+                    />
+                </div>
+            </div>
+        )
+    }
+};
 
 export default JoinUs;
