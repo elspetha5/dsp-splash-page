@@ -24,3 +24,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 1200px) { 
+    
+}
+
+@media (max-width: 992px) { 
+       
+}
+
+@media (max-width: 768px) {
+    .yourThree {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) { 
+
+}

@@ -37,6 +37,7 @@ import PartnerForm from "./pages/JoinUs/PartnerForm";
 
 
 // Log in
+import Login from "./pages/LogIn";
 
 
 // Components
@@ -85,7 +86,7 @@ class App extends Component {
               <Route exact path="/joinus/recruit" component={RecruitForm} />
 
               {/* Log In */}
-
+              <Route exact path="/login" component={Login} />
 
               <Route component={NoMatch} />
             </Switch>

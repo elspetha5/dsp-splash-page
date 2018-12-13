@@ -40,11 +40,26 @@
     margin-top: 11px;
 }
 
+#constStamp {
+    width: 200px;
+    float: left;
+    position: fixed;
+    top: 0;
+    right: 30px;
+    transform: rotate(25deg);
+    z-index: 2000;
+}
+
 @media (max-width: 1200px) { 
     
 }
 
 @media (max-width: 992px) { 
+
+    #constStamp {
+        width: 150px;
+        right: 10px;
+    }
        
 }
 
@@ -56,6 +71,12 @@
 
     #copyright #email {
         margin-top: 2px;
+    }
+
+    #constStamp {
+        width: 70px;
+        top: 89%;
+        right: 1px;
     }    
 }
 

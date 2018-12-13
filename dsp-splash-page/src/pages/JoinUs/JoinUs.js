@@ -14,7 +14,7 @@ class JoinUs extends Component {
                     <YourThing
                     topWords="Your brand."
                     bottomWords="Amplified."
-                    link="/JOINUS/PARTNER"
+                    link="/joinus/partner"
                     buttonWords="Join our ecosystem"
                     topDescription="Join our ecosystem of..."
                     bottomDescription="independently recognized design professionals"
@@ -25,7 +25,7 @@ class JoinUs extends Component {
                     <YourThing
                     topWords="Your career."
                     bottomWords="Amplified."
-                    link="/JOINUS/RECRUIT"
+                    link="/joinus/recruit"
                     buttonWords="Join our staff"
                     topDescription="Join our staff of..."
                     bottomDescription="integrated design professionals"

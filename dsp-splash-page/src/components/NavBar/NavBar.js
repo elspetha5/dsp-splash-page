@@ -28,21 +28,21 @@ class NavBar extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse >
                     <Nav id="questions">
-                        <NavDropdown eventKey="1" title="APPROACH" className="link question" noCaret id="dropdown-no-caret dropdownLink">
+                        <NavDropdown eventKey="1" title="APPROACH" className="link question" noCaret id="dropdown-no-caret">
                             {this.state.approach.map((question, i) => (
-                                <MenuItem eventKey={"1." + i} href={"/approach/" + question}><Link className="question" to={"/approach/" + question}>{question}</Link></MenuItem>
+                                <MenuItem eventKey={"1." + i} href={"/approach/" + question}><Link id="white" className="question" to={"/approach/" + question}>{question}</Link></MenuItem>
                             ))}
                         </NavDropdown>
 
                         <NavDropdown eventKey="2" title="PROJECTS" className="link question" noCaret id="dropdown-no-caret">
                             {this.state.projects.map((project, i) => (
-                                <MenuItem eventKey={"2." + i} href={"/" + project}><Link className="question" to={"/" + project}>{project}</Link></MenuItem>
+                                <MenuItem eventKey={"2." + i} href={"/" + project}><Link id="white" className="question" to={"/" + project}>{project}</Link></MenuItem>
                             ))}
                         </NavDropdown>
 
-                        <NavItem eventKey={"3"} href={"/clients"}><Link to={"/clients"} className="link question">CLIENTS</Link></NavItem>
+                        <NavItem eventKey={"3"} href={"/clients"} ><Link to={"/clients"} id="white" className="link question">CLIENTS</Link></NavItem>
 
-                        <NavItem eventKey={"4"} href={"/designservices"}><Link to={"/designservices"} className="link question">DESIGN SERVICES</Link></NavItem>
+                        <NavItem eventKey={"4"} href={"/designservices"}><Link to={"/designservices"} id="white" className="link question">DESIGN SERVICES</Link></NavItem>
 
                         {/* <NavDropdown eventKey="4" title="DESIGN SERVICES" className="link question" noCaret id="dropdown-no-caret">
                             {this.state.designServices.map((service, i) => (
@@ -50,9 +50,9 @@ class NavBar extends Component {
                             ))}
                         </NavDropdown> */}
 
-                        <NavItem eventKey={"4"} href={"/joinus"}><Link to={"/joinus"} className="link question">JOIN US</Link></NavItem>
+                        <NavItem eventKey={"4"} href={"/joinus"}><Link to={"/joinus"} id="white" className="link question">JOIN US</Link></NavItem>
 
-                        <NavItem eventKey={"4"} href={"/login"}><Link to={"/login"} className="link question">LOG IN</Link></NavItem>
+                        <NavItem eventKey={"4"} href={"/login"}><Link to={"/login"} id="white" className="link question">LOG IN</Link></NavItem>
 
 
                     </Nav>

@@ -15,21 +15,24 @@ class Home extends Component {
     render() {
         return (
             <div>
-               {/*  bolded goes to scroll point (middle of the page/where high quality design hits) */}
+                {/*  bolded goes to scroll point (middle of the page/where high quality design hits) */}
 
                 <div id="homePic">
                     <div className="topPic">
                         <div id="homeTitle" className="topQ">DESIGN SERVICE PROFESSIONALS, PLLC</div>
-                        <div id="homeThesis"><span id="mobileHide">Design Service Professionals, PLLC is </span>an <span className="bold thesisColor">all-virtual design collaborative</span> specializing in design services for the AEC Industry. Leveraging a <span className="bold thesisColor">diverse reservoir</span> of design professionals, our staff augmentation program, coupled with an <span className="bold thesisColor">eclectic mix of industry experts</span>, allows us to assemble the right team at the right time for our clients & AEC partners. By tapping into the <span id="dspEco" className="bold thesisColor">dsp ecosystem</span>, our clients, design-build partners, large project teams, and boutique firms alike will benefit from our <span id="unDelivery" className="bold thesisColor">unparalleled delivery</span> of <span id="highQuality" className="bold thesisColor">high quality design</span>.</div>
+                        <div id="homeThesis"><span id="mobileHide">Design Service Professionals, PLLC is </span>an <a href="#collaborative" className="bold thesisColor">all-virtual design collaborative</a> specializing in design services for the AEC Industry. Leveraging a <a href="#reservoir" className="bold thesisColor">diverse reservoir</a> of design professionals, our staff augmentation program, coupled with an <a href="#experts" className="bold thesisColor">eclectic mix of industry experts</a>, allows us to assemble the right team at the right time for our clients & AEC partners. By tapping into the <a href="#ecosystem" id="dspEco" className="bold thesisColor">dsp ecosystem</a>, our clients, design-build partners, large project teams, and boutique firms alike will benefit from our <a href="#delivery" id="unDelivery" className="bold thesisColor">unparalleled delivery</a> of <a href="#design" id="highQuality" className="bold thesisColor">high quality design</a>.</div>
                     </div>
                 </div>
 
                 <div className="wrapper">
                     {this.state.ideas.map(idea1 => (
-                        <LeftIdea
-                            idea={idea1.idea}
-                            verbiage={idea1.verbiage}
-                        />
+                        <div>
+                            <div id={idea1.link}></div>
+                            <LeftIdea
+                                idea={idea1.idea}
+                                verbiage={idea1.verbiage}
+                            />
+                        </div>
                     ))}
                 </div>
 
