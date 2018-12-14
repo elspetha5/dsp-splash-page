@@ -3,7 +3,7 @@
     width: 100%;
     border: none;
     min-height: 100px;
-    box-shadow: 2px 3px 5px #757579;
+    box-shadow: -2px -3px 5px #757579;
 }
 
 .link,
@@ -37,6 +37,7 @@
 
 .question:hover {
     color: #333132;
+    text-decoration: none;
 }
 
 #hamburger {
@@ -82,27 +83,32 @@
     }
 
     #white, #dropdown-no-caret {
-        color: #f4f7fc;
+        color: #757579;
         background-color: rgba(255, 255, 255, 0);
     }
 
     #navbar {
-        background-color: #757579;
+        background-color: #faf7ee;
         box-shadow: 2px 3px 5px #4e4e4e;
-        min-height: 80px;
+        min-height: 120px;
         color: #f4f7fc;
+        box-shadow: -2px -3px 5px #757579;
     }
  
     #logo {
         width: 80px;
         float: none;
         position: inherit;
-        margin: -10px 175px 0 0;
+        margin: -20px 0 0 0;
     }
 
    #navbarQs {
        margin-top: 3%;
        margin-left: 75%;
+   }
+
+   #hamburger {
+       margin-top: 10%;
    }
       
  }

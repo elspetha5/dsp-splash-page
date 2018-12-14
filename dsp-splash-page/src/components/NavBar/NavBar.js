@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from "react-bootstrap";
 import "./navbar.css";
 
-import logo from "./dsp-in-thumbprint.png";
+import logo from "./Thumbprint-Logo-Left.png";
 
 class NavBar extends Component {
     state = {
         approach: ["What", "Where", "Why", "Who", "How"/* , "dsp.digital", "CONTACT" */],
         projects: ["Residential", "Commercial/Office", "Workplace"],
         clients: ["Connect with us", "Log in"],
-        designServices: ["All", "Interior", "Architectural", "Graphic", "VR/AR", "Brand", "Service", "Industrial", "Product", "Game"]
+        designServices: ["Interior", "Architectural", "Communication", "Digital", "Brand", "Service", "Industrial"]
     };
 
 
 
     render() {
         return (
-            <Navbar id="navbar" fixedTop collapseOnSelect>
+            <Navbar id="navbar" fixedBottom collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <Link to="/" className="link">
@@ -42,13 +42,16 @@ class NavBar extends Component {
 
                         <NavItem eventKey={"3"} href={"/clients"} ><Link to={"/clients"} id="white" className="link question">CLIENTS</Link></NavItem>
 
-                        <NavItem eventKey={"4"} href={"/designservices"}><Link to={"/designservices"} id="white" className="link question">DESIGN SERVICES</Link></NavItem>
+                        {/* <NavItem eventKey={"4"} href={"/designservices"}><Link to={"/designservices"} id="white" className="link question">DESIGN SERVICES</Link></NavItem> */}
 
-                        {/* <NavDropdown eventKey="4" title="DESIGN SERVICES" className="link question" noCaret id="dropdown-no-caret">
+                        <NavDropdown eventKey="4" title="DESIGN SERVICES" className="link question" noCaret id="dropdown-no-caret">
+                            <MenuItem eventKey={"4.8"} href={"/designservices"}><Link to={"/designservices"} id="white" className="question">All</Link></MenuItem>
+                            <MenuItem divider />
+
                             {this.state.designServices.map((service, i) => (
-                                <MenuItem eventKey={"4." + i} href={"/designservices/" + service}><Link className="question" to={"/designservices/" + service}>{service}</Link></MenuItem>
+                                <MenuItem eventKey={"4." + i} href={"/designservices/" + service}><Link id="white" className="question" to={"/designservices/" + service}>{service}</Link></MenuItem>
                             ))}
-                        </NavDropdown> */}
+                        </NavDropdown>
 
                         <NavItem eventKey={"4"} href={"/joinus"}><Link to={"/joinus"} id="white" className="link question">JOIN US</Link></NavItem>
 

@@ -3,7 +3,7 @@ body {
 }
 
 #background {
-    padding-top: 80px;
+    padding-top: 0;
     padding-bottom: 50px;
     width: 100%;
     background-image: url(./greyzz.png);
@@ -13,4 +13,10 @@ body {
     content: "";
     display: block;
     clear: both;
+}
+
+@media (max-width: 768px) {
+    #background {
+        padding-top: 0px;
+    }
 }
