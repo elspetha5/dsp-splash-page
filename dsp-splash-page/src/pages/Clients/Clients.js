@@ -24,7 +24,7 @@ class Clients extends Component {
                 <div id="design-buildCompany" class="yourThree">
                     <YourThing
                     topWords="Your project."
-                    bottomWords="Augmented."
+                    bottomWords="Crafted."
                     link="/"
                     buttonWords="Learn more"
                     topDescripton=""
@@ -35,7 +35,7 @@ class Clients extends Component {
                 <div id="boutiqueCompany" class="yourThree">
                     <YourThing
                     topWords="Your brand."
-                    bottomWords="Augmented."
+                    bottomWords="Lifted."
                     link="/"
                     buttonWords="Learn more"
                     topDescripton=""

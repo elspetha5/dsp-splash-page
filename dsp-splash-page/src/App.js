@@ -36,6 +36,7 @@ import Service from "./pages/DesignServices/ServiceDesign";
 
 // Join Us
 import JoinUs from "./pages/JoinUs";
+import JobList from "./pages/JoinUs/JobList";
 import RecruitForm from "./pages/JoinUs/RecruitForm";
 import PartnerForm from "./pages/JoinUs/PartnerForm";
 
@@ -64,16 +65,16 @@ class App extends Component {
               <Route exact path="/" component={Home} />
 
               {/* Approach */}
-              <Route exact path="/approach/What" component={What} />
-              <Route exact path="/approach/Where" component={Where} />
-              <Route exact path="/approach/Why" component={Why} />
-              <Route exact path="/approach/Who" component={Who} />
-              <Route exact path="/approach/How" component={How} />
+              <Route exact path="/approach/what" component={What} />
+              <Route exact path="/approach/where" component={Where} />
+              <Route exact path="/approach/why" component={Why} />
+              <Route exact path="/approach/who" component={Who} />
+              <Route exact path="/approach/how" component={How} />
 
               {/* Projects */}
-              <Route exact path="/projects/Commercial" component={Commercial} />
-              <Route exact path="/projects/Residential" component={Residential} />
-              <Route exact path="/projects/Workplace" component={Workplace} />
+              <Route exact path="/projects/commercial" component={Commercial} />
+              <Route exact path="/projects/residential" component={Residential} />
+              <Route exact path="/projects/workplace" component={Workplace} />
 
               {/* Clients */}
               <Route exact path="/clients" component={Clients} />
@@ -81,17 +82,18 @@ class App extends Component {
 
               {/* Design Services */}
               <Route exact path="/designservices" component={DesignServices} />
-              <Route exact path="/designservices/Architectural" component={Architectural} />
-              <Route exact path="/designservices/Brand" component={Brand} />
-              <Route exact path="/designservices/Communication" component={Communication} />
-              <Route exact path="/designservices/Digital" component={DigitalDesign} />
-              <Route exact path="/designservices/Industrial" component={Industrial} />
-              <Route exact path="/designservices/Interior" component={Interior} />
-              <Route exact path="/designservices/Service" component={Service} />
+              <Route exact path="/designservices/architectural" component={Architectural} />
+              <Route exact path="/designservices/brand" component={Brand} />
+              <Route exact path="/designservices/communication" component={Communication} />
+              <Route exact path="/designservices/digital" component={DigitalDesign} />
+              <Route exact path="/designservices/industrial" component={Industrial} />
+              <Route exact path="/designservices/interior" component={Interior} />
+              <Route exact path="/designservices/service" component={Service} />
 
 
               {/* Join Us */}
               <Route exact path="/joinus" component={JoinUs} />
+              <Route exact path="/joinus/joblist" component={JobList} />
               <Route exact path="/joinus/partner" component={PartnerForm} />
               <Route exact path="/joinus/recruit" component={RecruitForm} />
 

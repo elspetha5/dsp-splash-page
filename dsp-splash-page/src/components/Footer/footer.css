@@ -1,8 +1,8 @@
 #footer {
     width: 100%;
-    background-color: #757579;
+    /* background-color: #757579; */
     text-align: left;
-    padding: 1.75% 20% 3%;
+    padding: 1% 8% 2% 24.5%;
     position: relative;
     bottom: 0;
     left: 0;
@@ -18,11 +18,11 @@
 .halfFooter {
     width: 50%;
     float: left;
-    color: #f4f7fc;
+    color: #a9a9af;
 }
 
 .footerLink {
-    color: #f4f7fc;
+    color: #757579;
     margin-right: 15px;
 }
 
@@ -32,8 +32,8 @@
 }
 
 #copyright {
-    margin-top: 11px;
-    color: #f4f7fc8e;
+    /* margin-top: 11px; */
+    /* color: #757579; */
 }
 
 #email {
@@ -65,12 +65,21 @@
 
 @media (max-width: 768px) {  
     #footer {
-        padding: 5%;
+        /* padding: 5% 5% 5% 10%; */
         font-size: 70%;
+        margin-top: -1000px;
     }
 
     #copyright #email {
-        margin-top: 2px;
+    }
+
+    .halfFooter {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #emailIcon {
+        display: block;
     }
 
     #constStamp {

@@ -7,10 +7,10 @@ import logo from "./Thumbprint-Logo-Left.png";
 
 class NavBar extends Component {
     state = {
-        approach: ["What", "Where", "Why", "Who", "How"/* , "dsp.digital", "CONTACT" */],
-        projects: ["Residential", "Commercial/Office", "Workplace"],
+        approach: ["what", "where", "why", "who", "how"/* , "dsp.digital", "CONTACT" */],
+        projects: ["residential", "commercial/Office", "workplace"],
         clients: ["Connect with us", "Log in"],
-        designServices: ["Interior", "Architectural", "Communication", "Digital", "Brand", "Service", "Industrial"]
+        designServices: ["interior", "architectural", "communication", "digital", "brand", "service", "industrial"]
     };
 
 
@@ -45,7 +45,7 @@ class NavBar extends Component {
                         {/* <NavItem eventKey={"4"} href={"/designservices"}><Link to={"/designservices"} id="white" className="link question">DESIGN SERVICES</Link></NavItem> */}
 
                         <NavDropdown eventKey="4" title="DESIGN SERVICES" className="link question" noCaret id="dropdown-no-caret">
-                            <MenuItem eventKey={"4.8"} href={"/designservices"}><Link to={"/designservices"} id="white" className="question">All</Link></MenuItem>
+                            <MenuItem eventKey={"4.8"} href={"/designservices"}><Link to={"/designservices"} id="white" className="question">all services</Link></MenuItem>
                             <MenuItem divider />
 
                             {this.state.designServices.map((service, i) => (
@@ -60,6 +60,25 @@ class NavBar extends Component {
 
                     </Nav>
                 </Navbar.Collapse>
+
+                <div>
+                    <div id="footer">
+                        <div className="halfFooter">
+                            <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> hello@dsp.design</span></div>
+                            {/* <div id="email"><i class="far fa-envelope"></i> hello@dsp.design</div> */}
+                        </div>
+
+                        <div className="halfFooter">
+                            {/* <Link to="/" className="footerLink">HOME</Link>
+                            <Link to="/WHO" className="footerLink">ABOUT</Link>
+                            <Link to="/JOINUS" className="footerLink">JOIN US</Link> */}
+                            <div id="copyright"><i class="far fa-copyright"></i> Design Service Professionals, PLLC 2018 <span id="emailIcon">All rights reserved</span></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
 
 
             </Navbar>

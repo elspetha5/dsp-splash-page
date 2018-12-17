@@ -4,12 +4,9 @@ import "./how.css";
 // Components
 import PageTop from "../../../components/PageTop";
 
-// Files
-import ideas from "../../../JSON/how.json";
 
 class How extends Component {
     state = {
-        ideas
     };
 
     render() {
@@ -22,15 +19,6 @@ class How extends Component {
                         thesis="how's it possible?"
                     />
                 </div>
-
-                {/* <div className="wrapper">
-                    {this.state.ideas.map(idea1 => (
-                        <LeftIdea
-                            idea={idea1.idea}
-                            verbiage={idea1.verbiage}
-                        />
-                    ))}
-                </div> */}
 
                 <div className="topIdea wrapper wordsBox">
                     <div className="topIdeaQ">HOW</div>

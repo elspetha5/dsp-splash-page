@@ -1,4 +1,4 @@
-#servicesPic {
+#joblistPic {
     background-image: url(./mountain-scape.jpg);
     height: 100%;
     background-position: center;
@@ -6,6 +6,10 @@
     background-size: cover;
 }
 
-.services:hover {
+.listTitle:hover {
     color: #757579;
+}
+
+.listDescription:hover {
+    color: #333132;
 }

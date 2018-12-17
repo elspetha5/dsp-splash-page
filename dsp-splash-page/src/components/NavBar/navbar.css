@@ -2,28 +2,25 @@
     background-color: #faf7ee;
     width: 100%;
     border: none;
-    min-height: 100px;
+    min-height: 140px;
     box-shadow: -2px -3px 5px #757579;
 }
 
 .link,
 .link:active,
 .link:visited,
-.link:focus {
-    text-decoration: none;
-}
-
+.link:focus,
 .link:hover {
     text-decoration: none;
 }
 
 #logo {
     width: 100px;
-    margin: -10px 0 0 160px;
+    margin: -23px 0 0 140px;
 }
 
 #questions {
-    padding-top: 5%;
+    padding-top: 4.7%;
 }
 
 .question,

@@ -10,10 +10,15 @@
     color: #f4f7fc;
 }
 
-#homeThesis {
+.homeThesis {
     font-size: 110%;
     color: #f4f7fc;
     line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+#homeThesisWrapper {
+    width: 80%;
 }
 
 .thesisColor,
@@ -71,8 +76,13 @@
     #homeTitle {
         margin-bottom: 20px;
     }
-    #homeThesis {
-        margin-bottom: 50%;
+
+    #homeThesisWrapper {
+        margin-bottom: 80%;
+    }
+
+    .homeThesis {
+        margin-bottom: 15px;
     }
     
     #mobileHide {

@@ -25,7 +25,7 @@ class JoinUs extends Component {
                     <YourThing
                     topWords="Your career."
                     bottomWords="Amplified."
-                    link="/joinus/recruit"
+                    link="/joinus/joblist"
                     buttonWords="Join our staff"
                     topDescription="Join our staff of..."
                     bottomDescription="integrated design professionals"
