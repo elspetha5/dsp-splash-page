@@ -13,3 +13,15 @@
 .listDescription:hover {
     color: #333132;
 }
+
+.descriptionText {
+    float: left;
+}
+
+.applyButton {
+    float: left;
+}
+
+.remindButton {
+    float: left;
+}
