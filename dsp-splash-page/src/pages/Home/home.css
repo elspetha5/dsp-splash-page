@@ -34,7 +34,7 @@
     color: #757579;
 }
 
-#collaborative {
+/* #collaborative {
     position: absolute;
     top: 725px;
 }
@@ -62,7 +62,7 @@
 #design {
     position: absolute;
     top: 1550px;
-}
+} */
 
 @media (max-width: 1200px) { 
     
@@ -104,7 +104,7 @@
 
     }
 
-    #collaborative {
+    /* #collaborative {
         position: absolute;
         top: 500px;
     }
@@ -132,7 +132,7 @@
     #design {
         position: absolute;
         top: 1950px;
-    }
+    } */
 }
 
 @media (max-width: 576px) { 

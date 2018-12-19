@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./home.css";
 
 // Components
@@ -22,11 +23,11 @@ class Home extends Component {
                         <div id="homeTitle" className="topQ">DESIGN SERVICE PROFESSIONALS, PLLC</div>
 
                         <div id="homeThesisWrapper">
-                            <div className="homeThesis"><span id="mobileHide">Design Service Professionals, PLLC is </span>an <a href="#collaborative" className="bold thesisColor">all-virtual design collaborative</a> specializing in design services for the AEC Industry.</div>
+                            <div className="homeThesis"><span id="mobileHide">Design Service Professionals, PLLC is </span>an <AnchorLink offset="70" href="#collaborative" className="bold thesisColor">all-virtual design collaborative</AnchorLink> specializing in design services for the AEC Industry.</div>
 
-                            <div className="homeThesis">Leveraging a <a href="#reservoir" className="bold thesisColor">diverse reservoir</a> of design professionals, our staff augmentation program, coupled with an <a href="#experts" className="bold thesisColor">eclectic mix of industry experts</a>, allows us to assemble the right team at the right time for our clients & AEC partners.</div>
+                            <div className="homeThesis">Leveraging a <AnchorLink offset="70" href="#reservoir" className="bold thesisColor">diverse reservoir</AnchorLink> of design professionals, our staff augmentation program, coupled with an <AnchorLink offset="70" href="#experts" className="bold thesisColor">eclectic mix of industry experts</AnchorLink>, allows us to assemble the right team at the right time for our clients & AEC partners.</div>
 
-                            <div className="homeThesis">By tapping into the <a href="#ecosystem" id="dspEco" className="bold thesisColor">dsp ecosystem</a>, our clients, design-build partners, large project teams, and boutique firms alike will benefit from our <a href="#delivery" id="unDelivery" className="bold thesisColor">unparalleled delivery</a> of <a href="#design" id="highQuality" className="bold thesisColor">high quality design</a>.</div>
+                            <div className="homeThesis">By tapping into the <AnchorLink offset="70" href="#ecosystem" id="dspEco" className="bold thesisColor">dsp ecosystem</AnchorLink>, our clients, design-build partners, large project teams, and boutique firms alike will benefit from our <AnchorLink offset="70" href="#delivery" id="unDelivery" className="bold thesisColor">unparalleled delivery</AnchorLink> of <AnchorLink offset="70" href="#design" id="highQuality" className="bold thesisColor">high quality design</AnchorLink>.</div>
                         </div>
 
                     </div>
@@ -35,10 +36,11 @@ class Home extends Component {
                 <div className="wrapper">
                     {this.state.ideas.map(idea1 => (
                         <div>
-                            <div id={idea1.link}></div>
+                            {/* <div id={idea1.link}></div> */}
                             <LeftIdea
                                 idea={idea1.idea}
                                 verbiage={idea1.verbiage}
+                                link={idea1.link}
                             />
                         </div>
                     ))}
