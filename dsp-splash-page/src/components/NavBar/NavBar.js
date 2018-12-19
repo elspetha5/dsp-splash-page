@@ -4,6 +4,7 @@ import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from "react-bootstrap";
 import "./navbar.css";
 
 import logo from "./Thumbprint-Logo-Left.png";
+import stamp from "./under-construction-circle.png";
 
 class NavBar extends Component {
     state = {
@@ -61,24 +62,17 @@ class NavBar extends Component {
                     </Nav>
                 </Navbar.Collapse>
 
-                <div>
-                    <div id="footer">
-                        <div className="halfFooter">
-                            <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> hello@dsp.design</span></div>
-                            {/* <div id="email"><i class="far fa-envelope"></i> hello@dsp.design</div> */}
-                        </div>
-
-                        <div className="halfFooter">
-                            {/* <Link to="/" className="footerLink">HOME</Link>
-                            <Link to="/WHO" className="footerLink">ABOUT</Link>
-                            <Link to="/JOINUS" className="footerLink">JOIN US</Link> */}
-                            <div id="copyright"><i class="far fa-copyright"></i> Design Service Professionals, PLLC 2018 <span id="emailIcon">All rights reserved</span></div>
-                        </div>
-
-
+                <div id="navFooter">
+                    <div className="halfNavFooter">
+                        <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> hello@dsp.design</span></div>
                     </div>
 
+                    <div className="halfNavFooter">
+                        <div id="navCopyright"><i class="far fa-copyright"></i> Design Service Professionals, PLLC 2018 <span id="rights">All rights reserved</span></div>
+                    </div>
                 </div>
+
+                <img id="constStamp" src={stamp} alt="underConst" />
 
 
             </Navbar>

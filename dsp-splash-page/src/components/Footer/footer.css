@@ -31,10 +31,6 @@
     color: #92d3c7;
 }
 
-#copyright {
-    /* margin-top: 11px; */
-    /* color: #757579; */
-}
 
 #email {
     margin-top: 11px;
@@ -68,9 +64,6 @@
         /* padding: 5% 5% 5% 10%; */
         font-size: 70%;
         margin-top: -1000px;
-    }
-
-    #copyright #email {
     }
 
     .halfFooter {

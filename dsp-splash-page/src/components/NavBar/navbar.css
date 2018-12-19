@@ -37,8 +37,34 @@
     text-decoration: none;
 }
 
+#navFooter {
+    padding: 1% 8% 2% 24.5%;
+    font-size: 90%;
+    margin-bottom: 10px;
+}
+
+.halfNavFooter {
+    width: 50%;
+    float: left;
+    color: #a9a9af;
+}
+
+#navCopyright {
+    margin-left: -40px;
+}
+
 #hamburger {
     background-color: #f4f7fc;
+}
+
+#constStamp {
+    width: 200px;
+    float: left;
+    position: fixed;
+    top: 0;
+    right: 30px;
+    transform: rotate(25deg);
+    z-index: 2000;
 }
 
 @media (max-width: 1200px) { 
@@ -50,12 +76,17 @@
     #logo {
         margin-left: 0;
     }
+
+    #rights {
+        display: block;
+    }
     
 }
 
 @media (max-width: 992px) { 
     #questions {
         padding: 7px 0 12px;
+        margin-left: 10%;
     }
 
     .question, #dropdownLink {
@@ -67,7 +98,24 @@
     }
  
     #logo {
-        margin-left: -85%;
+        margin-left: -25%;
+    }
+
+    #constStamp {
+        width: 150px;
+        right: 10px;
+    }
+
+    #navFooter {
+        margin-left: -10vw;
+    }
+
+    #rights {
+        display: block;
+    }
+
+    #navCopyright {
+        margin-left: 0px;
     }
        
 }
@@ -99,14 +147,42 @@
         margin: -20px 0 0 0;
     }
 
-   #navbarQs {
-       margin-top: 3%;
-       margin-left: 75%;
-   }
+    #navbarQs {
+        margin-top: 3%;
+        margin-left: 75%;
+    }
 
-   #hamburger {
-       margin-top: 10%;
-   }
+    #hamburger {
+        margin-top: 10%;
+    }
+
+    #navFooter {
+        margin-left: 3px;
+        font-size: 70%;
+    }
+
+    #needContact {
+        margin-top: -65px;
+    }
+
+    #navCopyright {
+        margin-top: -50px;
+    }
+
+    .halfNavFooter {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #emailIcon, #rights {
+        display: block;
+    }
+
+    #constStamp {
+        width: 70px;
+        top: 1%;
+        right: 0px;
+    }   
       
  }
 
