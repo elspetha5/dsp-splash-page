@@ -89,7 +89,6 @@ class App extends Component {
               <Route exact path="/designservices/interior" component={Interior} />
               <Route exact path="/designservices/service" component={Service} />
 
-
               {/* Join Us */}
               <Route exact path="/joinus" component={JoinUs} />
               <Route exact path="/joinus/joblist" component={JobList} />

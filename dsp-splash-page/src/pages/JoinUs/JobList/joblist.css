@@ -6,6 +6,46 @@
     background-size: cover;
 }
 
+.panel, 
+.panel-body, 
+.panel-heading,
+.panel-title, 
+.panel-default>.panel-heading {
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: #757579;
+    text-decoration: none;
+}
+
+.panel-title,
+.panel-title:active,
+.panel-title:visited,
+.panel-title:focus,
+.panel-title:hover {
+    text-decoration: none;
+}
+
+#oneLineTitle {
+    font-size: 100%;
+}
+
+.jobButton {
+    color: #f4f7fc;
+    text-decoration: none;
+    background-color: #404051;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 70%;
+    margin: 25px 15px 0 0;
+}
+
+.jobButton:hover {
+    text-decoration: none;
+    background-color: #f4d5bb;
+    color: #404051;
+}
+
 .listTitle:hover {
     color: #757579;
 }
