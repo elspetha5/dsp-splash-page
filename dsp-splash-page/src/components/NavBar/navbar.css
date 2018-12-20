@@ -53,6 +53,14 @@
     margin-left: -40px;
 }
 
+#emailIcon {
+    color: #a9a9af;
+}
+
+#emailIcon:hover {
+    color: #757579;
+}
+
 #hamburger {
     background-color: #f4f7fc;
 }

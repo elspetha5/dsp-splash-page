@@ -64,7 +64,7 @@ class NavBar extends Component {
 
                 <div id="navFooter">
                     <div className="halfNavFooter">
-                        <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> hello@dsp.design</span></div>
+                        <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> <a className="link" id="emailIcon" href="mailto:hello@dsp.design">hello@dsp.design</a></span></div>
                     </div>
 
                     <div className="halfNavFooter">
