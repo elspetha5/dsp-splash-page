@@ -12,6 +12,10 @@ class DesignServices extends Component {
         services
     };
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      };
+
     render() {
         return (
             <div>

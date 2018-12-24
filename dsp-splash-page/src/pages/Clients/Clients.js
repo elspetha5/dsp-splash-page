@@ -7,6 +7,10 @@ class Clients extends Component {
 
     };
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      };
+
     render() {
         return (
             <div>
@@ -14,7 +18,7 @@ class Clients extends Component {
                     <YourThing
                     topWords="Your staff."
                     bottomWords="Augmented."
-                    link="/"
+                    link="/clients/contact"
                     buttonWords="Learn more"
                     topDescripton=""
                     bottomDescription="Learn more about our staff augmentation program"
@@ -25,7 +29,7 @@ class Clients extends Component {
                     <YourThing
                     topWords="Your project."
                     bottomWords="Crafted."
-                    link="/"
+                    link="/clients/contact"
                     buttonWords="Learn more"
                     topDescripton=""
                     bottomDescription="Learn more about our design process"
@@ -35,8 +39,8 @@ class Clients extends Component {
                 <div id="boutiqueCompany" class="yourThree">
                     <YourThing
                     topWords="Your brand."
-                    bottomWords="Lifted."
-                    link="/"
+                    bottomWords="Elevated."
+                    link="/clients/contact"
                     buttonWords="Learn more"
                     topDescripton=""
                     bottomDescription="Learn more about our ecosystem"

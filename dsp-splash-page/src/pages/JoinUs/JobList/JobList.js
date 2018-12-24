@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Panel, Collapse } from "react-bootstrap";
-import ExpandText from "react-expand-text";
+import { Panel } from "react-bootstrap";
 import "./joblist.css";
 
 import PageTop from "../../../components/PageTop";
@@ -13,6 +12,10 @@ class JobList extends Component {
         jobs,
         open: false
     };
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      };
 
     render() {
 
@@ -27,21 +30,13 @@ class JobList extends Component {
                 <div className="wrapper">
                     {this.state.jobs.map((job, i) => (
                         <div className="ideaBackground">
-                            <a href="#" id={i} className="leftIdea link listTitle">{job.title}</a>
+                            <div id={i} className="leftIdea link listTitle">{job.title}</div>
 
                             <div className="rightVerbiage">
-                                {/* <div onClick={() => this.key.Collapse.in=true} key={i} className="link listDescription">{job.oneLine}</div>
-                                <Collapse in={false} key={i}>
-                                    <div>
-                                        <div>{job.description}</div>
-                                        <Link to="/" className="applyButton button yourButton">Apply Now</Link >
-                                        <Link to="/" className="remindButton button yourButton">Remind me to apply later</Link >
-                                    </div>
-                                </Collapse>  */}
+
                                 <Panel eventKey={i}>
-                                    {/* <Panel.Heading className="link"> */}
-                                        <Panel.Title id="oneLineTitle" className="link" toggle>{job.oneLine}</Panel.Title>
-                                    {/* </Panel.Heading> */}
+                                    <Panel.Title id="oneLineTitle" className="link" toggle>{job.oneLine}</Panel.Title>
+
 
                                     <Panel.Body collapsible>
                                         <div>{job.description}</div>

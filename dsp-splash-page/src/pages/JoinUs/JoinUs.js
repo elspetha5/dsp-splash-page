@@ -7,13 +7,17 @@ class JoinUs extends Component {
 
     };
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    };
+
     render() {
         return (
             <div>
                 <div id="brand" class="yourTwo">
                     <YourThing
                     topWords="Your brand."
-                    bottomWords="Amplified."
+                    bottomWords="Connected."
                     link="/joinus/partner"
                     buttonWords="Join our ecosystem"
                     topDescription="Join our ecosystem of..."

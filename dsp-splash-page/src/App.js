@@ -20,7 +20,7 @@ import Workplace from "./pages/Projects/Workplace";
 
 // Clients
 import Clients from "./pages/Clients";
-import Contact from "./pages/Clients/Contact";
+import LearnMore from "./pages/Clients/Contact";
 
 
 // Design Services
@@ -77,7 +77,7 @@ class App extends Component {
 
               {/* Clients */}
               <Route exact path="/clients" component={Clients} />
-              <Route exact path="/Contact" component={Contact} />
+              <Route exact path="/clients/contact" component={LearnMore} />
 
               {/* Design Services */}
               <Route exact path="/designservices" component={DesignServices} />
