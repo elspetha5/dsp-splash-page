@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./partnerform.css";
+import "./adminform.css";
 
-class PartnerForm extends Component {
+class AdminForm extends Component {
     state = {};
 
     componentDidMount() {
@@ -18,4 +18,4 @@ class PartnerForm extends Component {
 
 };
 
-export default PartnerForm;
+export default AdminForm;

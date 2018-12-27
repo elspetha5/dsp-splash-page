@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./partnerform.css";
+import "./interiorsform.css";
 
-class PartnerForm extends Component {
+class InteriorsForm extends Component {
     state = {};
 
     componentDidMount() {
@@ -18,4 +18,4 @@ class PartnerForm extends Component {
 
 };
 
-export default PartnerForm;
+export default InteriorsForm;
