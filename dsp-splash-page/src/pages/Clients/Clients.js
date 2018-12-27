@@ -24,6 +24,17 @@ class Clients extends Component {
                     bottomDescription="Learn more about our staff augmentation program"
                     />
                 </div>
+
+                <div id="boutiqueCompany" class="yourThree">
+                    <YourThing
+                    topWords="Your brand."
+                    bottomWords="Elevated."
+                    link="/clients/contact"
+                    buttonWords="Learn more"
+                    topDescripton=""
+                    bottomDescription="Learn more about our ecosystem"
+                    />
+                </div>
                 
                 <div id="design-buildCompany" class="yourThree">
                     <YourThing
@@ -36,16 +47,7 @@ class Clients extends Component {
                     />
                 </div>
 
-                <div id="boutiqueCompany" class="yourThree">
-                    <YourThing
-                    topWords="Your brand."
-                    bottomWords="Elevated."
-                    link="/clients/contact"
-                    buttonWords="Learn more"
-                    topDescripton=""
-                    bottomDescription="Learn more about our ecosystem"
-                    />
-                </div>
+                
             </div>
         )
     }

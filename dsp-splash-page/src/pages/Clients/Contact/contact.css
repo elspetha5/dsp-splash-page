@@ -9,6 +9,12 @@
     padding-left: 0;
 }
 
+#newForm {
+    border: none;
+    max-width: 100%;
+    max-height: 100vh;
+}
+
 @media (max-width: 1200px) { 
     
 }

@@ -40,8 +40,8 @@ class JobList extends Component {
 
                                     <Panel.Body collapsible>
                                         <div>{job.description}</div>
-                                        <Link to="/joinus/recruit" className="applyButton jobButton">Apply Now</Link >
-                                        <Link to="/joinus/recruit" className="remindButton jobButton">Remind me to apply later</Link >
+                                        <Link to="/joinus/recruit" className="applyButton jobButton">see available {job.button} positions</Link >
+                                        {/* <Link to="/joinus/recruit" className="remindButton jobButton">Remind me to apply later</Link > */}
                                     </Panel.Body>
                                 </Panel>
                             </div>
