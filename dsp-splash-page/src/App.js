@@ -82,7 +82,7 @@ class App extends Component {
               <Route exact path="/approach/how" component={How} />
 
               {/* Projects */}
-              <Route exact path="/projects/commercial" component={Commercial} />
+              <Route exact path="/projects/commercial/office" component={Commercial} />
               <Route exact path="/projects/residential" component={Residential} />
               <Route exact path="/projects/workplace" component={Workplace} />
 

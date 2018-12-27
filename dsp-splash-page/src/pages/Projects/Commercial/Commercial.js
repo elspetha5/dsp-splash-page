@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import YourThing from "../../../components/YourThing";
 import "./commercial.css";
 
 class Commercial extends Component {
@@ -12,7 +13,15 @@ class Commercial extends Component {
 
     render() {
         return (
-            <div></div>
+            <div id="yourCommStory" class="yourOne">
+                <YourThing
+                topWords="Your story."
+                bottomWords="Told."
+                link="#"
+                buttonWords="Learn more"
+                bottomDescription="A space for connections" 
+                /> 
+            </div>
         )
     }
 };

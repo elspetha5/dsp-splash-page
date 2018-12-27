@@ -9,7 +9,7 @@ import stamp from "./under-construction-circle.png";
 class NavBar extends Component {
     state = {
         approach: ["what", "where", "why", "who", "how"/* , "dsp.digital", "CONTACT" */],
-        projects: ["residential", "commercial/Office", "workplace"],
+        projects: ["residential", "commercial/office", "workplace"],
         clients: ["Connect with us", "Log in"],
         designServices: ["interior", "architectural", "communication", "digital", "brand", "service", "industrial"]
     };
@@ -37,7 +37,7 @@ class NavBar extends Component {
 
                         <NavDropdown eventKey="2" title="PROJECTS" className="link question" noCaret id="dropdown-no-caret">
                             {this.state.projects.map((project, i) => (
-                                <MenuItem eventKey={"2." + i} href={"/" + project}><Link id="white" className="question" to={"/" + project}>{project}</Link></MenuItem>
+                                <MenuItem eventKey={"2." + i} href={"/projects/" + project}><Link id="white" className="question" to={"/projects/" + project}>{project}</Link></MenuItem>
                             ))}
                         </NavDropdown>
 
