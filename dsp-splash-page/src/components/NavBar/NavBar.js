@@ -9,7 +9,7 @@ import stamp from "./under-construction-circle.png";
 class NavBar extends Component {
     state = {
         approach: ["what", "where", "why", "who", "how"/* , "dsp.digital", "CONTACT" */],
-        projects: ["residential", "commercial/office", "workplace"],
+        projects: ["residential", "commercial-office", "hospitality"],
         clients: ["Connect with us", "Log in"],
         designServices: ["interior", "architectural", "communication", "digital", "brand", "service", "industrial"]
     };

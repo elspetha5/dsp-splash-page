@@ -1,36 +1,36 @@
 [
     {
-        "link": "Interior",
+        "link": "interior",
         "umbrella": "interior design",
         "specific": "space planning · tenant improvement · test fits · experiential design · design strategy · sustainable design · art curation · textile design"
     },
     {
-        "link": "Architectural",
+        "link": "architectural",
         "umbrella": "architectural design",
         "specific": "site design · buildings · campuses · master planning · sustainability · landscape design"
     },
     {
-        "link": "Communication",
+        "link": "communication",
         "umbrella": "communication design",
         "specific": "product design · web design · UI/UX · app design · graphic design"
     },
     {
-        "link": "Digital",
+        "link": "digital",
         "umbrella": "digital design",
         "specific": "VR/AR design · architectural renderings · 3D CAD renderings · generative design · paramentric modeling · game design · animation design · motion graphics"
     },
     {
-        "link": "Brand",
+        "link": "brand",
         "umbrella": "brand and experience design",
         "specific": "signage and wayfinding · digital experience · event environments · pop-ups"
     },
     {
-        "link": "Service",
+        "link": "service",
         "umbrella": "service design",
         "specific": "service blueprinting · journey mapping · system mapping · sustainability · business systems design"
     },
     {
-        "link": "Industrial",
+        "link": "industrial",
         "umbrella": "industrial design",
         "specific": "automotive design · furniture design · mass market · consumer electronics · sustainability"
     }

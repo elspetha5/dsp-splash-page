@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import YourThing from "../../../components/YourThing";
-import "./workplace.css";
+import "./hospitality.css";
 
-class Workplace extends Component {
+class Hospitality extends Component {
     state = {
 
     };
@@ -26,4 +26,4 @@ class Workplace extends Component {
     }
 };
 
-export default Workplace;
+export default Hospitality;

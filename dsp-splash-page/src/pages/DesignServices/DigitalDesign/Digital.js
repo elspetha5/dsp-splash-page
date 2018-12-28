@@ -1,11 +1,16 @@
 import React, { Component } from "react";
+import LeftIdea from "../../../components/LeftIdea";
 import "./digital.css"
 
 import "react-table/react-table.css";
 
+import digits from "../../../JSON/DesignServices/digital.json";
+
 class Digital extends Component {
     state = {
-        BIMroles: [{
+        digits
+
+        /* BIMroles: [{
             name: "Studio Director",
             description: "Studio Operations"
         }, {
@@ -29,17 +34,27 @@ class Digital extends Component {
         }, {
             name: "Digital Design Manager",
             description: "BIM Specialist"
-        }]
+        }] */
     };
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
     render() {
 
         return (
-            <div id="digitalWrapper">
+            <div className="wrapper">
+                {this.state.digits.map(digit => (
+                    <div>
+                        <LeftIdea
+                            idea={digit.leftIdea}
+                            verbiage={digit.rightVerbiage}
+                        />
+                    </div>
+                ))}
+
+                {/* <div id="digitalWrapper">
                 <div className="digitalTitle">dsp.digital</div>
 
                 <div className="digitalWords">An<span className="bold"> all-virtual architectural design studio</span> that operates as a research and design team, cross-pollinating design thinking through all projects and design disciplines. Through rigorous explorations into emerging technologies, methodologies, and architectural typologies, dsp.digital seeks to elevate and implement the most effective modes of architectural design and delivery.</div>
@@ -64,7 +79,11 @@ class Digital extends Component {
                     ))}</div>
                 </div>
 
+            </div> */}
+
             </div>
+
+
         )
     }
 };

@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import LeftIdea from "../../../components/LeftIdea";
 import "./architectural.css";
+
+import archs from "../../../JSON/DesignServices/arch.json";
 
 class Architectural extends Component {
     state = {
-
+        archs
     };
 
     componentDidMount() {
@@ -12,8 +15,15 @@ class Architectural extends Component {
 
     render () {
         return (
-            <div>
-
+            <div className="wrapper">
+                {this.state.archs.map(arch => (
+                    <div>
+                        <LeftIdea 
+                        idea={arch.leftIdea}
+                        verbiage={arch.rightVerbiage}
+                        />
+                    </div>
+                ))}
             </div>
         )
     };

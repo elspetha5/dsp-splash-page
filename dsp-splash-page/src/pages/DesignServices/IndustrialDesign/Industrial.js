@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import LeftIdea from "../../../components/LeftIdea";
 import "./industrial.css";
+
+import industs from "../../../JSON/DesignServices/industrial.json";
 
 class Industrial extends Component {
     state = {
-
+        industs
     };
 
     componentDidMount() {
@@ -12,8 +15,15 @@ class Industrial extends Component {
 
     render () {
         return (
-            <div>
-
+            <div className="wrapper">
+                {this.state.industs.map(indust => (
+                    <div>
+                        <LeftIdea 
+                        idea={indust.leftIdea}
+                        verbiage={indust.rightVerbiage}
+                        />
+                    </div>
+                ))}
             </div>
         )
     };

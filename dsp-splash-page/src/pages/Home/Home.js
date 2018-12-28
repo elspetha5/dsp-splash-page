@@ -20,7 +20,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                {/*  bolded goes to scroll point (middle of the page/where high quality design hits) */}
+                
 
                 <div id="homePic">
                     <div className="topPic">
@@ -40,7 +40,6 @@ class Home extends Component {
                 <div className="wrapper">
                     {this.state.ideas.map(idea1 => (
                         <div>
-                            {/* <div id={idea1.link}></div> */}
                             <LeftIdea
                                 idea={idea1.idea}
                                 verbiage={idea1.verbiage}

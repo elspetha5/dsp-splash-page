@@ -15,7 +15,7 @@ import How from "./pages/Approach/How";
 // Projects
 import Commercial from "./pages/Projects/Commercial";
 import Residential from "./pages/Projects/Residential";
-import Workplace from "./pages/Projects/Workplace";
+import Hospitality from "./pages/Projects/Hospitality";
 
 
 // Clients
@@ -82,9 +82,9 @@ class App extends Component {
               <Route exact path="/approach/how" component={How} />
 
               {/* Projects */}
-              <Route exact path="/projects/commercial/office" component={Commercial} />
+              <Route exact path="/projects/commercial-office" component={Commercial} />
               <Route exact path="/projects/residential" component={Residential} />
-              <Route exact path="/projects/workplace" component={Workplace} />
+              <Route exact path="/projects/hospitality" component={Hospitality} />
 
               {/* Clients */}
               <Route exact path="/clients" component={Clients} />

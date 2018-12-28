@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import LeftIdea from "../../../components/LeftIdea";
 import "./communication.css";
+
+import comms from "../../../JSON/DesignServices/communication.json";
 
 class Communication extends Component {
     state = {
-
+        comms
     };
 
     componentDidMount() {
@@ -12,8 +15,15 @@ class Communication extends Component {
 
     render () {
         return (
-            <div>
-
+            <div className="wrapper">
+                {this.state.comms.map(comm => (
+                    <div>
+                        <LeftIdea 
+                        idea={comm.leftIdea}
+                        verbiage={comm.rightVerbiage}
+                        />
+                    </div>
+                ))}
             </div>
         )
     };

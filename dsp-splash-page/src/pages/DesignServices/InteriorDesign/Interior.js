@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import LeftIdea from "../../../components/LeftIdea";
 import "./interior.css";
+
+import interiors from "../../../JSON/DesignServices/interior.json";
 
 class Interior extends Component {
     state = {
-
+        interiors
     };
 
     componentDidMount() {
@@ -12,8 +15,15 @@ class Interior extends Component {
 
     render () {
         return (
-            <div>
-
+            <div className="wrapper">
+                {this.state.interiors.map(interior => (
+                    <div>
+                        <LeftIdea 
+                        idea={interior.leftIdea}
+                        verbiage={interior.rightVerbiage}
+                        />
+                    </div>
+                ))}
             </div>
         )
     };

@@ -21,7 +21,7 @@ class Clients extends Component {
                     link="/clients/contact"
                     buttonWords="Learn more"
                     topDescripton=""
-                    bottomDescription="Learn more about our staff augmentation program"
+                    bottomDescription="Leverage our staff augmentation program"
                     />
                 </div>
 
@@ -32,7 +32,7 @@ class Clients extends Component {
                     link="/clients/contact"
                     buttonWords="Learn more"
                     topDescripton=""
-                    bottomDescription="Learn more about our ecosystem"
+                    bottomDescription="Engage our ecosystem"
                     />
                 </div>
                 
@@ -43,7 +43,7 @@ class Clients extends Component {
                     link="/clients/contact"
                     buttonWords="Learn more"
                     topDescripton=""
-                    bottomDescription="Learn more about our design process"
+                    bottomDescription="Discover our design process"
                     />
                 </div>
 
