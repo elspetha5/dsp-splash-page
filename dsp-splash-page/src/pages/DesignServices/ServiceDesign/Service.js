@@ -11,16 +11,20 @@ class Service extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
-    render () {
+    render() {
         return (
             <div className="wrapper">
+                <div className="ideaBackground">
+                    <div className="leftIdea"><span id="designThesis">dsp.service</span></div>
+                </div>
+
                 {this.state.services.map(service => (
                     <div>
-                        <LeftIdea 
-                        idea={service.leftIdea}
-                        verbiage={service.rightVerbiage}
+                        <LeftIdea
+                            idea={service.leftIdea}
+                            verbiage={service.rightVerbiage}
                         />
                     </div>
                 ))}

@@ -9,3 +9,30 @@
 .services:hover {
     color: #757579;
 }
+
+#designThesis {
+    font-size: 125%;
+    background-color: #757579;
+    color: #f4f7fc;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) { 
+    
+}
+
+@media (max-width: 992px) { 
+       
+}
+
+@media (max-width: 768px) { 
+    #designThesis {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) { 
+
+}

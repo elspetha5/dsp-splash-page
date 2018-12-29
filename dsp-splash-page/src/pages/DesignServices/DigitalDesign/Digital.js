@@ -45,6 +45,10 @@ class Digital extends Component {
 
         return (
             <div className="wrapper">
+                <div className="ideaBackground">
+                    <div className="leftIdea"><span id="designThesis">dsp.digital</span></div>
+                </div>
+
                 {this.state.digits.map(digit => (
                     <div>
                         <LeftIdea

@@ -1,0 +1,10 @@
+.yourOne {
+    width: 100%;
+}
+
+#yourProjectsStory {
+    background-image: url(./projects.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

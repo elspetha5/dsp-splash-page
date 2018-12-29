@@ -11,16 +11,20 @@ class Brand extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
-    render () {
+    render() {
         return (
             <div className="wrapper">
+                <div className="ideaBackground">
+                    <div className="leftIdea"><span id="designThesis">dsp.brand</span></div>
+                </div>
+
                 {this.state.brands.map(brand => (
                     <div>
-                        <LeftIdea 
-                        idea={brand.leftIdea}
-                        verbiage={brand.rightVerbiage}
+                        <LeftIdea
+                            idea={brand.leftIdea}
+                            verbiage={brand.rightVerbiage}
                         />
                     </div>
                 ))}

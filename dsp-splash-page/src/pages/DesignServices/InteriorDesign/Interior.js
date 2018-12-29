@@ -11,20 +11,25 @@ class Interior extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
-    render () {
+    render() {
         return (
             <div className="wrapper">
+                <div className="ideaBackground">
+                    <div className="leftIdea"><span id="designThesis">dsp.interiors</span></div>
+                </div>
+
                 {this.state.interiors.map(interior => (
                     <div>
-                        <LeftIdea 
-                        idea={interior.leftIdea}
-                        verbiage={interior.rightVerbiage}
+                        <LeftIdea
+                            idea={interior.leftIdea}
+                            verbiage={interior.rightVerbiage}
                         />
                     </div>
                 ))}
             </div>
+
         )
     };
 };

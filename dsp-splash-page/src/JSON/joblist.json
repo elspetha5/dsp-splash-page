@@ -1,56 +1,56 @@
-[
+[ 
+    {
+        "title": "dsp.admin",
+        "button": "admin",
+        "oneLine": "Work with us to cultivate the heart and soul of our infant ecosystem",
+        "description": "Design Service Professionals, PLLC is an all-virtual design practice, fostering an ecosystem and methodology for design collaboration that is unprecedented in the design industry. A thriving administrative staff is at the very core of what we’re attempting to achieve. We are a people first company, which means our people put people first. As such, dsp.admin constitutes the most competent people you’ve ever met, with off the chart self-motivation, a quick smile and an eagerness to make people feel loved."
+    },
     {
         "title": "dsp.management",
         "button": "management",
-        "oneLine": "design sector management",
-        "description": "job description 1. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "Work with us to assemble the right team for every project",
+        "description": "Design Service Professionals, PLLC prides itself on creating efficient, effective teams for a variety of clients and across a wide range of projects. The key to our success is largely dependent on the stellar ability of our design management team. Guiding the design process, leading talented teams, and influencing a range of projects both inside and around the dsp ecosystem, dsp.management sets the pace for our teams and clients to thrive."
     }, 
     {
         "title": "dsp.architecture",
         "button": "architecture",
-        "oneLine": "job description 2: one line",
-        "description": "job description 2. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "We are a full-service architecture practice",
+        "description": "Design Service Professionals, PLLC is driven by innovation and progressive design processes. We’re assembling a talented team of architects, designers, and technical staff dedicated to offering the highest quality design and delivery processes in the industry. By engaging dsp.architecture, our clients will have access to the best talent and most effective process the industry has to offer."
     }, 
     {
         "title": "dsp.interiors",
         "button": "interiors",
-        "oneLine": "job description 3: one line",
-        "description": "job description 3. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "We are a full-service interior design practice",
+        "description": "Design Service Professionals, PLLC is driven to create high functioning, immersive experiences. From the processes we engage to the spaces we envision our team of interior design professionals has the expertise and acumen to achieve excellence for each of our clients and partners, from coast to coast."
     }, 
     {
         "title": "dsp.brand",
         "button": "brand",
-        "oneLine": "branded environments",
-        "description": "job description 3. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "Branded environments are the beating heart of our experiential design process",
+        "description": "Design Service Professionals, PLLC thrives on bringing creative identity to each of our clients’ projects. Our team of brand and experience designers will lead the industry as thinkers and makers, bringing a mix of design expertise and business understanding to the market, while promoting the brand and reputation of our valued clients. With dsp.brand you can count on a show-stopping experience each and every time."
     }, 
     {
         "title": "dsp.service",
         "button": "service",
-        "oneLine": "service design and strategy",
-        "description": "job description 3. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "The expertise to design your processes and curate your services with precision and ease",
+        "description": "Design Service Professionals, PLLC is driven to identify, develop and deploy your vision for a thriving company culture and highly sought-after employee experience. As a preeminent team of thinkers and doers, dsp.service brings a mix of marketing expertise, business understanding, and design strategy to the forefront of every design opportunity."
     }, 
     {
         "title": "dsp.graphics",
         "button": "graphics",
-        "oneLine": "job description 3: one line",
-        "description": "job description 3. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "Graphic communication is just the beginning",
+        "description": "At Design Service Professionals, PLLC, we see graphic design as visual storytelling that engages, informs, and inspires. Our team of highly creative graphic designers, UX designers, videographers and web developers can take conceptual ideas and deploy them across a wide range of visual media, from hand-held print and screen, to the digital billboard, and beyond."
     }, 
     {
         "title": "dsp.digital",
         "button": "digital",
-        "oneLine": "job description 3: one line",
-        "description": "job description 3. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
-    }, 
-    {
-        "title": "dsp.admin",
-        "button": "admin",
-        "oneLine": "job description 3: one line",
-        "description": "job description 3. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "Our digital design practice is second to none",
+        "description": "Design Service Professionals, PLLC is driven to be at the forefront of the digital design wave. Leading the industry, this team of Revit specialists, Computational Design experts, and Visualization masters, is the pulse that brings life to our teams and projects, across the country. Providing rigorous BIM oversight, facilitating effective visualization processes and developing coordinated computational design solutions, dsp.digital leads the charge for a progressive design practice. "
     }, 
     {
         "title": "dsp.marketing",
         "button": "marketing",
-        "oneLine": "job description 3: one line",
-        "description": "job description 3. Bacon ipsum dolor amet corned beef swine fatback biltong bacon ribeye pancetta brisket chicken frankfurter burgdoggen ball tip jerky alcatra cupim. Ground round t-bone picanha, brisket swine corned beef fatback jowl kevin hamburger. Corned beef buffalo salami pork brisket fatback hamburger picanha jowl tail meatball sirloin short ribs. Alcatra hamburger kevin capicola strip steak."
+        "oneLine": "Our key to leading the virtual-design marketplace into the next design revolution",
+        "description": "Design Service Professionals, PLLC is driven to discover and engage the next big thing. Bringing a mix of local and global marketing expertise and business intelligence to the forefront of every pursuit, dsp.marketing provides a powerful conduit for promoting our design impact in the marketplace."
     }
 ]

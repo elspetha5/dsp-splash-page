@@ -11,16 +11,20 @@ class Architectural extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
-    render () {
+    render() {
         return (
             <div className="wrapper">
+                <div className="ideaBackground">
+                    <div className="leftIdea"><span id="designThesis">dsp.architecture</span></div>
+                </div>
+
                 {this.state.archs.map(arch => (
                     <div>
-                        <LeftIdea 
-                        idea={arch.leftIdea}
-                        verbiage={arch.rightVerbiage}
+                        <LeftIdea
+                            idea={arch.leftIdea}
+                            verbiage={arch.rightVerbiage}
                         />
                     </div>
                 ))}

@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { Panel } from "react-bootstrap";
 import "./joblist.css";
 
-import PageTop from "../../../components/PageTop";
-
 import jobs from "../../../JSON/joblist.json";
 
 class JobList extends Component {
@@ -15,19 +13,17 @@ class JobList extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
     render() {
 
         return (
             <div>
-                <div id="joblistPic">
-                    <PageTop
-                        topQ="Job List"
-                    />
-                </div>
-
                 <div className="wrapper">
+                    <div className="ideaBackground">
+                        <div className="leftIdea"><span id="designThesis">dsp.careers</span></div>
+                    </div>
+
                     {this.state.jobs.map((job, i) => (
                         <div className="ideaBackground">
                             <div id={i} className="leftIdea link listTitle">{job.title}</div>
@@ -41,6 +37,7 @@ class JobList extends Component {
                                     <Panel.Body collapsible>
                                         <div>{job.description}</div>
                                         <Link to={"/joinus/" + job.button} className="applyButton jobButton">see available {job.button} positions</Link >
+                                        <Link to={"/joinus/remind"} className="applyButton jobButton">remind me to apply later</Link >
                                     </Panel.Body>
                                 </Panel>
                             </div>

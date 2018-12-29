@@ -8,10 +8,10 @@ import stamp from "./under-construction-circle.png";
 
 class NavBar extends Component {
     state = {
-        approach: ["what", "where", "why", "who", "how"/* , "dsp.digital", "CONTACT" */],
+        approach: ["what", "where", "why", "who", "how"],
         projects: ["residential", "commercial-office", "hospitality"],
         clients: ["Connect with us", "Log in"],
-        designServices: ["interior", "architectural", "communication", "digital", "brand", "service", "industrial"]
+        designServices: ["interior", "architectural", /* "communication", */ "digital", /* "brand", */ "service"/* , "industrial" */]
     };
 
 
@@ -35,11 +35,13 @@ class NavBar extends Component {
                             ))}
                         </NavDropdown>
 
-                        <NavDropdown eventKey="2" title="PROJECTS" className="link question" noCaret id="dropdown-no-caret">
+                        <NavItem eventKey={"2"} href={"/projects"} ><Link to={"/projects"} id="white" className="link question">PROJECTS</Link></NavItem>
+
+                        {/* <NavDropdown eventKey="2" title="PROJECTS" className="link question" noCaret id="dropdown-no-caret">
                             {this.state.projects.map((project, i) => (
                                 <MenuItem eventKey={"2." + i} href={"/projects/" + project}><Link id="white" className="question" to={"/projects/" + project}>{project}</Link></MenuItem>
                             ))}
-                        </NavDropdown>
+                        </NavDropdown> */}
 
                         <NavItem eventKey={"3"} href={"/clients"} ><Link to={"/clients"} id="white" className="link question">CLIENTS</Link></NavItem>
 
@@ -54,9 +56,9 @@ class NavBar extends Component {
                             ))}
                         </NavDropdown>
 
-                        <NavItem eventKey={"4"} href={"/joinus"}><Link to={"/joinus"} id="white" className="link question">JOIN US</Link></NavItem>
+                        <NavItem eventKey={"5"} href={"/joinus"}><Link to={"/joinus"} id="white" className="link question">JOIN US</Link></NavItem>
 
-                        <NavItem eventKey={"4"} href={"/login"}><Link to={"/login"} id="white" className="link question">LOG IN</Link></NavItem>
+                        <NavItem eventKey={"6"} href={"/login"}><Link to={"/login"} id="white" className="link question">LOG IN</Link></NavItem>
 
 
                     </Nav>

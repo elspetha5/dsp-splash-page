@@ -1,37 +1,37 @@
 [
     {
         "link": "interior",
-        "umbrella": "interior design",
+        "umbrella": "dsp.interiors",
         "specific": "space planning · tenant improvement · test fits · experiential design · design strategy · sustainable design · art curation · textile design"
     },
     {
         "link": "architectural",
-        "umbrella": "architectural design",
-        "specific": "site design · buildings · campuses · master planning · sustainability · landscape design"
+        "umbrella": "dsp.architecture",
+        "specific": "site design · buildings · campuses · master planning · sustainable design · landscape design"
     },
     {
-        "link": "communication",
-        "umbrella": "communication design",
+        "link": "",
+        "umbrella": "dsp.graphics",
         "specific": "product design · web design · UI/UX · app design · graphic design"
     },
     {
         "link": "digital",
-        "umbrella": "digital design",
+        "umbrella": "dsp.digital",
         "specific": "VR/AR design · architectural renderings · 3D CAD renderings · generative design · paramentric modeling · game design · animation design · motion graphics"
     },
     {
-        "link": "brand",
-        "umbrella": "brand and experience design",
+        "link": "",
+        "umbrella": "dsp.brand",
         "specific": "signage and wayfinding · digital experience · event environments · pop-ups"
     },
     {
         "link": "service",
-        "umbrella": "service design",
-        "specific": "service blueprinting · journey mapping · system mapping · sustainability · business systems design"
+        "umbrella": "dsp.service",
+        "specific": "sustainability · system mapping · visioning · business systems design · ethnographic research · service design"
     },
     {
-        "link": "industrial",
-        "umbrella": "industrial design",
-        "specific": "automotive design · furniture design · mass market · consumer electronics · sustainability"
+        "link": "",
+        "umbrella": "dsp.industrial",
+        "specific": "industrial design · furniture design · mass market · consumer electronics · sustainability"
     }
 ]

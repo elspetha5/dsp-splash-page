@@ -1,34 +1,22 @@
 [
     {
+        "leftIdea": "UI/UX",
+        "rightVerbiage": "Our team of UI|UX web & app developers is poised to meet the challenge of all your web design needs. As an integral part of our service design platform, the careful crafting of your website and related apps will be essential for building and maintaining your brand both internally and externally."
+    },
+    {
         "leftIdea": "VR/AR design",
-        "rightVerbiage": ""
+        "rightVerbiage": "Virtual Reality and Augmented Reality are quickly becoming essential tools in the design decision-making process. Staying ahead of the technology curve necessarily means building AR and VR into our day-to-day methodology."
     },
     {
         "leftIdea": "architectural renderings",
-        "rightVerbiage": ""
+        "rightVerbiage": "As the saying goes, a picture is worth a thousand words. When it comes to our commitment to the outcome, we also believe a picture is a promise. Working with our team of modelers and rendering artists you will begin to see things you've never before considered."
     },
     {
-        "leftIdea": "3D CAD renderings",
-        "rightVerbiage": ""
+        "leftIdea": "graphic design",
+        "rightVerbiage": "Our team of highly creative graphic designers, UX designers, videographers and web developers can take conceptual ideas and deploy them across a wide range of visual media, from hand-held print and screen, to the digital billboard, and beyond."
     },
     {
         "leftIdea": "generative design",
-        "rightVerbiage": ""
-    },
-    {
-        "leftIdea": "paramentric modeling",
-        "rightVerbiage": ""
-    },
-    {
-        "leftIdea": "game design",
-        "rightVerbiage": ""
-    },
-    {
-        "leftIdea": "animation design",
-        "rightVerbiage": ""
-    },
-    {
-        "leftIdea": "motion graphics",
-        "rightVerbiage": ""
+        "rightVerbiage": "Multiple design parameters necessarily require an iterative process of optimization. By advancing the use of technology in the practice of space-making, our generative design team leverages the potential of the algorithm to evaluate various design solutions in rapid succession."
     }
 ]

@@ -13,6 +13,7 @@ import Who from "./pages/Approach/Who";
 import How from "./pages/Approach/How";
 
 // Projects
+import Projects from "./pages/Projects";
 import Commercial from "./pages/Projects/Commercial";
 import Residential from "./pages/Projects/Residential";
 import Hospitality from "./pages/Projects/Hospitality";
@@ -38,6 +39,7 @@ import Service from "./pages/DesignServices/ServiceDesign";
 import JoinUs from "./pages/JoinUs";
 import JobList from "./pages/JoinUs/JobList";
 import PartnerForm from "./pages/JoinUs/PartnerForm";
+import RemindForm from "./pages/JoinUs/RemindMeLater";
 // Recruit Forms
 import AdminForm from "./pages/JoinUs/RecruitForms/AdminForm";
 import ArchForm from "./pages/JoinUs/RecruitForms/ArchForm";
@@ -45,7 +47,6 @@ import BrandForm from "./pages/JoinUs/RecruitForms/BrandForm";
 import DigitalForm from "./pages/JoinUs/RecruitForms/DigitalForm";
 import GraphicsForm from "./pages/JoinUs/RecruitForms/GraphicsForm";
 import InteriorsForm from "./pages/JoinUs/RecruitForms/InteriorsForm";
-import LegalForm from "./pages/JoinUs/RecruitForms/LegalForm";
 import ManagementForm from "./pages/JoinUs/RecruitForms/ManagementForm";
 import MarketingForm from "./pages/JoinUs/RecruitForms/MarketingForm";
 import ServiceForm from "./pages/JoinUs/RecruitForms/ServiceForm";
@@ -82,6 +83,7 @@ class App extends Component {
               <Route exact path="/approach/how" component={How} />
 
               {/* Projects */}
+              <Route exact path="/projects" component={Projects} />
               <Route exact path="/projects/commercial-office" component={Commercial} />
               <Route exact path="/projects/residential" component={Residential} />
               <Route exact path="/projects/hospitality" component={Hospitality} />
@@ -104,6 +106,7 @@ class App extends Component {
               <Route exact path="/joinus" component={JoinUs} />
               <Route exact path="/joinus/joblist" component={JobList} />
               <Route exact path="/joinus/partner" component={PartnerForm} />
+              <Route exact path="/joinus/remind" component={RemindForm} />
               {/* Recruit Forms */}
               <Route exact path="/joinus/admin" component={AdminForm} />
               <Route exact path="/joinus/architecture" component={ArchForm} />
@@ -111,7 +114,6 @@ class App extends Component {
               <Route exact path="/joinus/digital" component={DigitalForm} />
               <Route exact path="/joinus/graphics" component={GraphicsForm} />
               <Route exact path="/joinus/interiors" component={InteriorsForm} />
-              <Route exact path="/joinus/legal" component={LegalForm} />
               <Route exact path="/joinus/management" component={ManagementForm} />
               <Route exact path="/joinus/marketing" component={MarketingForm} />
               <Route exact path="/joinus/service" component={ServiceForm} />

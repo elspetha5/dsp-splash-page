@@ -11,16 +11,20 @@ class Communication extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
-    render () {
+    render() {
         return (
             <div className="wrapper">
+                <div className="ideaBackground">
+                    <div className="leftIdea"><span id="designThesis">dsp.graphics</span></div>
+                </div>
+
                 {this.state.comms.map(comm => (
                     <div>
-                        <LeftIdea 
-                        idea={comm.leftIdea}
-                        verbiage={comm.rightVerbiage}
+                        <LeftIdea
+                            idea={comm.leftIdea}
+                            verbiage={comm.rightVerbiage}
                         />
                     </div>
                 ))}

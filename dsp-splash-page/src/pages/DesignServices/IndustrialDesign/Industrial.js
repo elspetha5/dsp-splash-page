@@ -11,16 +11,20 @@ class Industrial extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
-    render () {
+    render() {
         return (
             <div className="wrapper">
+                <div className="ideaBackground">
+                    <div className="leftIdea"><span id="designThesis">dsp.industrial</span></div>
+                </div>
+
                 {this.state.industs.map(indust => (
                     <div>
-                        <LeftIdea 
-                        idea={indust.leftIdea}
-                        verbiage={indust.rightVerbiage}
+                        <LeftIdea
+                            idea={indust.leftIdea}
+                            verbiage={indust.rightVerbiage}
                         />
                     </div>
                 ))}

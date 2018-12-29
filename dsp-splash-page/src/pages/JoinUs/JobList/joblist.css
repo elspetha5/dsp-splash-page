@@ -1,11 +1,3 @@
-#joblistPic {
-    background-image: url(./mountain-scape.jpg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .panel, 
 .panel-body, 
 .panel-heading,
@@ -18,16 +10,20 @@
     text-decoration: none;
 }
 
-.panel-title,
-.panel-title:active,
-.panel-title:visited,
-.panel-title:focus,
-.panel-title:hover {
+a,
+a:active,
+a:visited,
+a:focus,
+a:hover {
     text-decoration: none;
 }
 
 #oneLineTitle {
     font-size: 100%;
+}
+
+#oneLineTitle:hover {
+    color: #333132;
 }
 
 .jobButton {
