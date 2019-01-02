@@ -50,14 +50,14 @@
 }
 
 #navCopyright {
-    margin-left: -40px;
+    margin-left: -135px;
 }
 
-#emailIcon {
+#emailAddress {
     color: #a9a9af;
 }
 
-#emailIcon:hover {
+#emailAddress:hover {
     color: #757579;
 }
 
@@ -66,7 +66,7 @@
 }
 
 #constStamp {
-    width: 200px;
+    width: 160px;
     float: left;
     position: fixed;
     top: 0;
@@ -77,7 +77,7 @@
 
 @media (max-width: 1200px) { 
     #constStamp {
-        width: 180px;
+        width: 140px;
         right: 0;
     }
 
@@ -87,6 +87,14 @@
 
     #rights {
         display: block;
+    }
+    
+    #navFooter {
+        margin: 0 0 4vh -8vw;
+    }
+    
+    #navCopyright {
+        margin-left: -100px;
     }
     
 }
@@ -110,12 +118,12 @@
     }
 
     #constStamp {
-        width: 150px;
+        width: 130px;
         right: 10px;
     }
 
     #navFooter {
-        margin-left: -10vw;
+        margin: 0 0 4vh -10vw;
     }
 
     #rights {

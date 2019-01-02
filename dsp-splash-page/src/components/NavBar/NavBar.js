@@ -58,7 +58,7 @@ class NavBar extends Component {
 
                         <NavItem eventKey={"5"} href={"/joinus"}><Link to={"/joinus"} id="white" className="link question">JOIN US</Link></NavItem>
 
-                        <NavItem eventKey={"6"} href={"/login"}><Link to={"/login"} id="white" className="link question">LOG IN</Link></NavItem>
+                        {/* <NavItem eventKey={"6"} href={"/login"}><Link to={"/login"} id="white" className="link question">LOG IN</Link></NavItem> */}
 
 
                     </Nav>
@@ -66,7 +66,7 @@ class NavBar extends Component {
 
                 <div id="navFooter">
                     <div className="halfNavFooter">
-                        <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> <a className="link" id="emailIcon" href="mailto:hello@dsp.design">hello@dsp.design</a></span></div>
+                        <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> <a className="link" id="emailAddress" href="mailto:hello@dsp.design">hello@dsp.design</a></span></div>
                     </div>
 
                     <div className="halfNavFooter">
