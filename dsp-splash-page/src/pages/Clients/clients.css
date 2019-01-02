@@ -4,21 +4,21 @@
 }
 
 #largeCompany {
-    background-image: url(./your-staff-augmented-altered-orange.jpg);
+    background-image: url(./your-staff-augmented.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #design-buildCompany {
-    background-image: url(./your-project-crafted-altered-green.jpg);
+    background-image: url(./your-project-crafted.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #boutiqueCompany {
-    background-image: url(./your-brand-elevated.jpeg);
+    background-image: url(./your-brand-elevated.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
