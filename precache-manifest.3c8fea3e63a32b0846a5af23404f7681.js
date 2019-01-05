@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/city-rainbow.2db76421.jpg"
   },
   {
-    "revision": "090ba16de75680dcbd7f",
+    "revision": "a35a320f8b6aeeb6c4ee",
     "url": "/static/css/main.35a5af42.chunk.css"
   },
   {
-    "revision": "de1e78218e490e010ac737a85c15cd57",
-    "url": "/static/media/your-brand-connected.de1e7821.jpg"
+    "revision": "5403c705e6775bf2264b966594781675",
+    "url": "/static/media/your-career-amplified.5403c705.jpg"
   },
   {
     "revision": "ccd4ef22bc7ce5944bce",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/static/media/rural-barn.a5943455.jpg"
   },
   {
-    "revision": "090ba16de75680dcbd7f",
-    "url": "/static/js/main.090ba16d.chunk.js"
+    "revision": "a35a320f8b6aeeb6c4ee",
+    "url": "/static/js/main.a35a320f.chunk.js"
   },
   {
     "revision": "2abf6084b4e7f7d881fcdb484c0a3912",
@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/static/media/projects.737f51ac.jpeg"
   },
   {
-    "revision": "19b15f6c7ce29d934d7134fd89f5692a",
-    "url": "/static/media/your-brand-elevated.19b15f6c.jpg"
-  },
-  {
     "revision": "b90bb82c4ad55ab0f6c70bc0bc3967ce",
     "url": "/static/media/your-project-crafted.b90bb82c.jpg"
+  },
+  {
+    "revision": "19b15f6c7ce29d934d7134fd89f5692a",
+    "url": "/static/media/your-brand-elevated.19b15f6c.jpg"
   },
   {
     "revision": "174ccb7ea1bf0fbee4e337a7e5007819",
@@ -72,15 +72,15 @@ self.__precacheManifest = [
     "url": "/static/media/mountain-scape.b3769f51.jpg"
   },
   {
-    "revision": "5403c705e6775bf2264b966594781675",
-    "url": "/static/media/your-career-amplified.5403c705.jpg"
+    "revision": "de1e78218e490e010ac737a85c15cd57",
+    "url": "/static/media/your-brand-connected.de1e7821.jpg"
   },
   {
     "revision": "ccd4ef22bc7ce5944bce",
     "url": "/static/css/1.f8d8734c.chunk.css"
   },
   {
-    "revision": "f04a7c4291913aea4dd12b8aee137028",
+    "revision": "4a63706e7b398301bf469e42fdd8872d",
     "url": "/index.html"
   }
 ];
