@@ -17,7 +17,7 @@ class Brand extends Component {
         return (
             <div className="wrapper">
                 <div className="ideaBackground">
-                    <div className="leftIdea"><span id="designThesis">dsp.brand</span></div>
+                    <div className="leftIdea"><span className="designThesis">dsp.brand</span></div>
                 </div>
 
                 {this.state.brands.map(brand => (

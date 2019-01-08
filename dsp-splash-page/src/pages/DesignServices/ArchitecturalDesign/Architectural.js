@@ -17,7 +17,7 @@ class Architectural extends Component {
         return (
             <div className="wrapper">
                 <div className="ideaBackground">
-                    <div className="leftIdea"><span id="designThesis">dsp.architecture</span></div>
+                    <div className="leftIdea"><span id="archThesis" className="designThesis">dsp.architecture</span></div>
                 </div>
 
                 {this.state.archs.map(arch => (

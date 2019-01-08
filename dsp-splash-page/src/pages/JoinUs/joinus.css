@@ -1,3 +1,51 @@
+#joinUsTopPic {
+    background-color: #757579;
+    padding: 2% 15% 1%;
+}
+
+#joinUsTopPic {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#joinUsTitle {
+    color: #f4f7fc;
+    text-align: center;
+}
+
+.joinUsInfo {
+    font-size: 110%;
+    color: #f4f7fc;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    width: 20%;
+    float: left;
+    margin: 0 1%;
+}
+
+.entityTitle {
+    /* background-color: #f4f7fc;
+    color: #757579;
+    padding: 1px; */
+}
+
+.arrow {
+    float: left;
+    width: 3%;
+    padding-top: 2%;
+    font-size: 250%;
+    color: #f4f7fc;
+}
+
+.newLine {
+    display: block;
+}
+
+.yourWrapper {
+    clear: both;
+}
+
 .yourTwo {
     float: left;
     width: 50%;

@@ -17,7 +17,7 @@ class Interior extends Component {
         return (
             <div className="wrapper">
                 <div className="ideaBackground">
-                    <div className="leftIdea"><span id="designThesis">dsp.interiors</span></div>
+                    <div className="leftIdea"><span id="interiorThesis" className="designThesis">dsp.interiors</span></div>
                 </div>
 
                 {this.state.interiors.map(interior => (

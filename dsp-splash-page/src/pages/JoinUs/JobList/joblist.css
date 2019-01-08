@@ -1,3 +1,7 @@
+#jobListThesis {
+    background-color: #757579;
+}
+
 .panel, 
 .panel-body, 
 .panel-heading,
@@ -18,6 +22,14 @@ a:hover {
     text-decoration: none;
 }
 
+#listTitle {
+    color: #333132
+}
+
+#listTitle:hover {
+    color: #757579;
+}
+
 #oneLineTitle {
     font-size: 100%;
 }
@@ -34,11 +46,12 @@ a:hover {
     border-radius: 5px;
     font-size: 70%;
     margin: 25px 15px 0 0;
+    border: 1px solid #404051;
 }
 
 .jobButton:hover {
     text-decoration: none;
-    background-color: #f4d5bb;
+    background-color: #f4f7fc;
     color: #404051;
 }
 

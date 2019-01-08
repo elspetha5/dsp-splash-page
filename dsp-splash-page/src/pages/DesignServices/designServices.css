@@ -6,17 +6,23 @@
     background-size: cover;
 }
 
-.services:hover {
+.leftServices:hover {
     color: #757579;
 }
 
-#designThesis {
+.rightServices:hover {
+    color: #333132;
+}
+
+.designThesis {
     font-size: 125%;
-    background-color: #757579;
     color: #f4f7fc;
     font-weight: bold;
     padding: 4px;
-    border-radius: 5px;
+}
+
+#designThesis {
+    background-color: #757579;
 }
 
 @media (max-width: 1200px) { 

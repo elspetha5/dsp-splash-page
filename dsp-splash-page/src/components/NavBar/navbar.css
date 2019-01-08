@@ -75,6 +75,10 @@
     z-index: 2000;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: 1px solid transparent;
+}
+
 @media (max-width: 1200px) { 
     #constStamp {
         width: 140px;

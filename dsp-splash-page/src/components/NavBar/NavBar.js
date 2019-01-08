@@ -11,7 +11,7 @@ class NavBar extends Component {
         approach: ["what", "where", "why", "who", "how"],
         projects: ["residential", "commercial-office", "hospitality"],
         clients: ["Connect with us", "Log in"],
-        designServices: ["interior", "architectural", /* "communication", */ "digital", /* "brand", */ "service"/* , "industrial" */]
+        designServices: ["interiors", "architecture", /* "communication", */ "digital", /* "brand", */ "service"/* , "industrial" */]
     };
 
 
@@ -47,8 +47,9 @@ class NavBar extends Component {
 
                         {/* <NavItem eventKey={"4"} href={"/designservices"}><Link to={"/designservices"} id="white" className="link question">DESIGN SERVICES</Link></NavItem> */}
 
-                        <NavDropdown eventKey="4" title="DESIGN SERVICES" className="link question" noCaret id="dropdown-no-caret">
+                        <NavDropdown eventKey="4" title="SERVICES" className="link question" noCaret id="dropdown-no-caret">
                             <MenuItem eventKey={"4.8"} href={"/designservices"}><Link to={"/designservices"} id="white" className="question">all services</Link></MenuItem>
+                            
                             <MenuItem divider />
 
                             {this.state.designServices.map((service, i) => (
@@ -56,7 +57,15 @@ class NavBar extends Component {
                             ))}
                         </NavDropdown>
 
-                        <NavItem eventKey={"5"} href={"/joinus"}><Link to={"/joinus"} id="white" className="link question">JOIN US</Link></NavItem>
+                        {/* <NavItem eventKey={"5"} href={"/joinus"}><Link to={"/joinus"} id="white" className="link question">ECOSYSTEM</Link></NavItem> */}
+
+                        <NavDropdown eventKey="5" title="ECOSYSTEM" className="link question" noCaret id="dropdown-no-caret">
+                            <MenuItem eventKey={"5.1"} href={"/joinus"}><Link to={"/joinus"} id="white" className="question">your brand</Link></MenuItem>
+
+                            {/* <MenuItem divider /> */}
+
+                            <MenuItem eventKey={"5.2"} href={"/joinus"}><Link to={"/joinus"} id="white" className="question">your career</Link></MenuItem>
+                        </NavDropdown>
 
                         {/* <NavItem eventKey={"6"} href={"/login"}><Link to={"/login"} id="white" className="link question">LOG IN</Link></NavItem> */}
 

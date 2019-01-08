@@ -17,7 +17,7 @@ class Service extends Component {
         return (
             <div className="wrapper">
                 <div className="ideaBackground">
-                    <div className="leftIdea"><span id="designThesis">dsp.service</span></div>
+                    <div className="leftIdea"><span id="serviceThesis" className="designThesis">dsp.service</span></div>
                 </div>
 
                 {this.state.services.map(service => (

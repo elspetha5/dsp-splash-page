@@ -21,16 +21,16 @@ class JobList extends Component {
             <div>
                 <div className="wrapper">
                     <div className="ideaBackground">
-                        <div className="leftIdea"><span id="designThesis">dsp.careers</span></div>
+                        <div className="leftIdea"><span id="jobListThesis" className="designThesis">dsp.careers</span></div>
                     </div>
 
                     {this.state.jobs.map((job, i) => (
                         <div className="ideaBackground">
-                            <div id={i} className="leftIdea link listTitle">{job.title}</div>
+                            <Panel eventKey={i}>
 
-                            <div className="rightVerbiage">
+                                <Panel.Title id="listTitle" className="leftIdea link listTitle" toggle>{job.title}</Panel.Title>
 
-                                <Panel eventKey={i}>
+                                <div className="rightVerbiage">
                                     <Panel.Title id="oneLineTitle" className="link" toggle>{job.oneLine}</Panel.Title>
 
 
@@ -39,8 +39,9 @@ class JobList extends Component {
                                         <Link to={"/joinus/" + job.button} className="applyButton jobButton">see available {job.button} positions</Link >
                                         <Link to={"/joinus/remind"} className="applyButton jobButton">remind me to apply later</Link >
                                     </Panel.Body>
-                                </Panel>
-                            </div>
+
+                                </div>
+                            </Panel>
 
                         </div>
                     ))}

@@ -17,7 +17,7 @@ class Communication extends Component {
         return (
             <div className="wrapper">
                 <div className="ideaBackground">
-                    <div className="leftIdea"><span id="designThesis">dsp.graphics</span></div>
+                    <div className="leftIdea"><span className="designThesis">dsp.graphics</span></div>
                 </div>
 
                 {this.state.comms.map(comm => (

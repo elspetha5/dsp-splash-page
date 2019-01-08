@@ -94,12 +94,12 @@ class App extends Component {
 
               {/* Design Services */}
               <Route exact path="/designservices" component={DesignServices} />
-              <Route exact path="/designservices/architectural" component={Architectural} />
+              <Route exact path="/designservices/architecture" component={Architectural} />
               <Route exact path="/designservices/brand" component={Brand} />
               <Route exact path="/designservices/communication" component={Communication} />
               <Route exact path="/designservices/digital" component={DigitalDesign} />
               <Route exact path="/designservices/industrial" component={Industrial} />
-              <Route exact path="/designservices/interior" component={Interior} />
+              <Route exact path="/designservices/interiors" component={Interior} />
               <Route exact path="/designservices/service" component={Service} />
 
               {/* Join Us */}

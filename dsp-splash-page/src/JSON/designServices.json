@@ -1,11 +1,11 @@
 [
     {
-        "link": "interior",
+        "link": "interiors",
         "umbrella": "dsp.interiors",
         "specific": "space planning · tenant improvement · test fits · experiential design · design strategy · sustainable design · art curation · textile design"
     },
     {
-        "link": "architectural",
+        "link": "architecture",
         "umbrella": "dsp.architecture",
         "specific": "site design · buildings · campuses · master planning · sustainable design · landscape design"
     },
