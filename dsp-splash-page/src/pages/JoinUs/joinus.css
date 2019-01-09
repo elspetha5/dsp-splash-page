@@ -24,7 +24,7 @@
     margin: 0 1%;
 }
 
-.arrow {
+.rightArrow {
     float: left;
     width: 3%;
     padding-top: 2%;
@@ -68,9 +68,30 @@
 }
 
 @media (max-width: 768px) {
+    .joinUsInfo {
+        width: 100%;
+    }
+
+    #joinUsTitle {
+        padding: 5% 0;
+    }
+
+    .rightArrow {
+        transform: translateX(16px) rotate(90deg)
+    }
+
     .yourTwo {
         width: 100%;
     }
+
+    #oneEcosystem {
+        display: block;
+    }
+
+    #joinUsTopPic {
+        padding-bottom: 5%;
+    }
+
 }
 
 @media (max-width: 576px) { 

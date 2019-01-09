@@ -15,36 +15,34 @@ class JoinUs extends Component {
         return (
             <div>
                 <div id="joinUsTopPic">
-                    <div id="joinUsTitle" className="topQ">TWO ENTITIES... ONE ECOSYSTEM</div>
+                    <div id="joinUsTitle" className="topQ">TWO ENTITIES... <span id="oneEcosystem">ONE ECOSYSTEM</span></div>
 
                     <div id="joinUsThesisWrapper">
                         <div className="joinUsInfo">
                             <div className="bold entityTitle">objective</div>
                             <div className="newLine">enable a mode of design the elevates the best in all of us</div>
                         </div>
-                        
-                        <div className="arrow"><i class="fas fa-angle-right"></i></div>
+
+                        <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
 
                         <div className="joinUsInfo">
                             <div className="bold entityTitle">strategy</div>
                             <div className="newLine">a design ecosystem comprised of two distinct entities</div>
                         </div>
-                        
-                        <div className="arrow"><i class="fas fa-angle-right"></i></div>
+
+                        <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
 
                         <div className="joinUsInfo">
                             <div className="bold entityTitle">dsp.nucleus</div>
                             <div className="newLine">an all-virtual design pulse, beating from the inside</div>
                         </div>
-                        
-                        <div className="arrow"><i class="fas fa-angle-right"></i></div>
+
+                        <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
 
                         <div className="joinUsInfo">
                             <div className="bold entityTitle">dsp.network</div>
                             <div className="newLine">a design web, acting in harmony from the outside</div>
                         </div>
-                        
-                        <div className="arrow"></div>
                     </div>
                 </div>
 
