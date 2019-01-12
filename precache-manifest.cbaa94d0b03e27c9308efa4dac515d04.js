@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/city-rainbow.2db76421.jpg"
   },
   {
-    "revision": "e94d3cbecdd96cd2ae48",
+    "revision": "2df4441e774c24deb5c6",
     "url": "/static/css/main.d6731849.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/static/media/rural-barn.a5943455.jpg"
   },
   {
-    "revision": "e94d3cbecdd96cd2ae48",
-    "url": "/static/js/main.e94d3cbe.chunk.js"
+    "revision": "2df4441e774c24deb5c6",
+    "url": "/static/js/main.2df4441e.chunk.js"
   },
   {
     "revision": "2abf6084b4e7f7d881fcdb484c0a3912",
@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/static/media/projects.737f51ac.jpeg"
   },
   {
-    "revision": "b90bb82c4ad55ab0f6c70bc0bc3967ce",
-    "url": "/static/media/your-project-crafted.b90bb82c.jpg"
-  },
-  {
     "revision": "19b15f6c7ce29d934d7134fd89f5692a",
     "url": "/static/media/your-brand-elevated.19b15f6c.jpg"
+  },
+  {
+    "revision": "b90bb82c4ad55ab0f6c70bc0bc3967ce",
+    "url": "/static/media/your-project-crafted.b90bb82c.jpg"
   },
   {
     "revision": "174ccb7ea1bf0fbee4e337a7e5007819",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.f8d8734c.chunk.css"
   },
   {
-    "revision": "6cbf56269f08a8e3cebcda8476eb03ff",
+    "revision": "1e6e3b27ae860e79f264ed8ba0a69fea",
     "url": "/index.html"
   }
 ];
