@@ -2,8 +2,15 @@
     background-color: #faf7ee;
     width: 100%;
     border: none;
-    min-height: 140px;
+    min-height: 16vh;
     box-shadow: -2px -3px 5px #757579;
+}
+
+#logo {
+    width: 80px;
+    position: relative;
+    bottom: 2.75vh;
+    left: 15vw;
 }
 
 .link,
@@ -14,13 +21,20 @@
     text-decoration: none;
 }
 
-#logo {
-    width: 100px;
-    margin: -23px 0 0 140px;
+#white,
+#white.active,
+#white:visited,
+#white:focus {
+    background-color: transparent;
+    color: #757579;
+}
+
+#white:hover {
+    color: #333132;
 }
 
 #questions {
-    padding-top: 4.7%;
+    padding: 5.4vh 0 0 15vw;
 }
 
 .question,
@@ -28,7 +42,7 @@
 .question:visited,
 .question:focus {
     color: #757579;
-    margin: 0 10px;
+    margin: 0 10px -4px;
     text-decoration: none;
 }
 
@@ -38,9 +52,8 @@
 }
 
 #navFooter {
-    padding: 1% 8% 2% 24.5%;
+    padding: 0 0 0 21vw;
     font-size: 90%;
-    margin-bottom: 10px;
 }
 
 .halfNavFooter {
@@ -57,7 +70,8 @@
     color: #a9a9af;
 }
 
-#emailAddress:hover {
+#emailAddress:hover,
+#emailIcon:hover {
     color: #757579;
 }
 
@@ -86,58 +100,91 @@
     }
 
     #logo {
-        margin-left: 0;
+        left: 15vw;
     }
 
-    #rights {
-        display: block;
+    #questions {
+        padding-left: 13vw;
     }
     
     #navFooter {
-        margin: 0 0 4vh -8vw;
+        padding-left: 23vw;
     }
     
     #navCopyright {
-        margin-left: -100px;
+        margin-left: -8vw;
     }
     
 }
 
 @media (max-width: 992px) { 
     #questions {
-        padding: 7px 0 12px;
-        margin-left: 10%;
+        padding-left: 7vw;
+        margin-bottom: -1.5vh;
     }
 
     .question, #dropdownLink {
         margin: 0;
     }
  
-    .navbar {
-        justify-content: flex-start;
-    }
- 
     #logo {
-        margin-left: -25%;
-    }
-
-    #constStamp {
-        width: 130px;
-        right: 10px;
+        left: 5vw;
     }
 
     #navFooter {
-        margin: 0 0 4vh -10vw;
+        padding-left: 17vw;
+    }
+
+    #navCopyright {
+        margin-left: -2vw;
     }
 
     #rights {
         display: block;
     }
 
-    #navCopyright {
-        margin-left: 0px;
+    #constStamp {
+        width: 130px;
+        right: 10px;
     }
        
+}
+
+@media (max-width: 992px), (orientation: landscape) {
+    #navbar {
+        height: 7vh;
+    }
+
+    #logo {
+        width: 10vh;
+        bottom: 3.5vh;
+        left: 17vw;
+    }
+
+    #questions {
+        padding-top: 2vh;
+        padding-left: 17vw;
+        margin-bottom: -10vh;
+    }
+
+    .question {
+        font-size: 70%;
+    }
+
+    #navFooter {
+        font-size: 50%;
+        padding-left: 26vw;
+        margin-top: -1.5vh;
+    }
+
+    #navCopyright {
+        margin-left: -13vw;
+    }
+
+    #rights {
+        display: inline
+    }
+
 }
 
  @media (max-width: 768px) { 
@@ -149,7 +196,7 @@
 
     #white, #dropdown-no-caret {
         color: #757579;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: transparent;
     }
 
     #navbar {
@@ -163,8 +210,8 @@
     #logo {
         width: 80px;
         float: none;
-        position: inherit;
-        margin: -20px 0 0 0;
+        position: fixed;
+        bottom: 0;
     }
 
     #navbarQs {
@@ -177,16 +224,17 @@
     }
 
     #navFooter {
-        margin-left: 3px;
-        font-size: 70%;
+        margin-left: 10vw;
+        font-size: 60%;
     }
 
     #needContact {
-        margin-top: -65px;
+        margin-top: -8vh;
     }
 
     #navCopyright {
-        margin-top: -50px;
+        margin-top: -6vh;
+        margin-left: 0;
     }
 
     .halfNavFooter {
@@ -194,7 +242,7 @@
         margin-top: 15px;
     }
 
-    #emailIcon, #rights {
+    #emailIcon, #rights, #pllc {
         display: block;
     }
 

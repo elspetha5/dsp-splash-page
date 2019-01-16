@@ -20,6 +20,7 @@ a:visited,
 a:focus,
 a:hover {
     text-decoration: none;
+    background-color: transparent;
 }
 
 #listTitle {
