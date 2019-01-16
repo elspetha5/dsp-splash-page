@@ -52,7 +52,7 @@
 }
 
 #navFooter {
-    padding: 0 0 0 21vw;
+    padding: 0 0 0 22vw;
     font-size: 90%;
 }
 
@@ -62,17 +62,23 @@
     color: #a9a9af;
 }
 
-#navCopyright {
-    margin-left: -135px;
-}
-
-#emailAddress {
+#emailAddress,
+#footerJoin {
     color: #a9a9af;
 }
 
 #emailAddress:hover,
-#emailIcon:hover {
+#emailIcon:hover,
+#footerJoin:hover {
     color: #757579;
+}
+
+#footerHands {
+    margin-left: 20px;
+}
+
+#navCopyright {
+    margin-left: -11vw;
 }
 
 #hamburger {

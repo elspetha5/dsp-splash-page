@@ -21,7 +21,7 @@
     margin-bottom: 15px;
     width: 20%;
     float: left;
-    margin: 0 1%;
+    margin: 0 .5%;
 }
 
 .rightArrow {
@@ -30,6 +30,18 @@
     padding-top: 2%;
     font-size: 250%;
     color: #f4f7fc;
+}
+
+.colon {
+    float: left;
+    width: 3%;
+    padding-top: 1.5%;
+    font-size: 250%;
+    color: #f4f7fc;
+}
+
+#numOne {
+    margin-left: 20px;
 }
 
 .newLine {

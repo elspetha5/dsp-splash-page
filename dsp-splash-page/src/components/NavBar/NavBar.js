@@ -100,11 +100,19 @@ class NavBar extends Component {
 
                 <div id="navFooter">
                     <div className="halfNavFooter">
-                        <div id="needContact">Need to reach us? <span id="emailIcon"><i class="far fa-envelope"></i> <a className="link" id="emailAddress" href="mailto:hello@dsp.design">hello@dsp.design</a></span></div>
+                        <div id="needContact">
+                            <span id="emailIcon">
+                                <a className="link" id="emailAddress" href="mailto:hello@dsp.design"><i class="far fa-envelope"></i> hello@dsp.design </a>
+                            </span>
+
+                            <span id="footerHands">
+                                <a classname="link" id="footerJoin" href="/joinus"><i class="far fa-handshake"></i> Join us</a>
+                            </span>
+                        </div>
                     </div>
 
                     <div className="halfNavFooter">
-                        <div id="navCopyright"><i class="far fa-copyright"></i> Design Service Professionals,<span id="pllc">PLLC 2018 </span><span id="rights">All rights reserved</span></div>
+                        <div id="navCopyright"><i class="far fa-copyright"></i> 2018 <span id="pllc">Design Service Professionals, PLLC </span><span id="rights">All rights reserved</span></div>
                     </div>
                 </div>
 
