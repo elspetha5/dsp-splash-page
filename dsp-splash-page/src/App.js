@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 
 // Approach
+import Approach from "./pages/Approach";
 import What from "./pages/Approach/What";
 import Where from "./pages/Approach/Where";
 import Why from "./pages/Approach/Why";
@@ -76,6 +77,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
 
               {/* Approach */}
+              <Route exact path="/approach" component={Approach} />
               <Route exact path="/approach/what" component={What} />
               <Route exact path="/approach/where" component={Where} />
               <Route exact path="/approach/why" component={Why} />

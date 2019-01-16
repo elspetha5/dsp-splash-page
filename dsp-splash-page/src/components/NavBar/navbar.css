@@ -150,7 +150,7 @@
        
 }
 
-@media (max-width: 992px), (orientation: landscape) {
+@media (max-width: 992px) and (orientation: landscape) {
     #navbar {
         height: 7vh;
     }

@@ -31,6 +31,12 @@ class NavBar extends Component {
                 <Navbar.Collapse >
                     <Nav id="questions">
                         <NavDropdown eventKey="1" title="APPROACH" className="link question" noCaret id="dropdown-no-caret">
+                            <LinkContainer to="/approach">
+                                <MenuItem eventKey={"4.8"} id="white" className="question">approach</MenuItem>
+                            </LinkContainer>
+
+                            <MenuItem divider />
+
                             {this.state.approach.map((question, i) => (
                                 <LinkContainer to={"/approach/" + question}>
                                     <MenuItem eventKey={"1." + i} id="white" className="question">{question}</MenuItem>
