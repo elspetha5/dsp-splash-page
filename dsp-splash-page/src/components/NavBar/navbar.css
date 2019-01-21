@@ -4,6 +4,7 @@
     border: none;
     min-height: 16vh;
     box-shadow: -2px -3px 5px #757579;
+    padding-bottom: .5vh;
 }
 
 #logo {
@@ -52,7 +53,7 @@
 }
 
 #navFooter {
-    padding: 0 0 0 22vw;
+    padding: 0 0 5vh 22vw;
     font-size: 90%;
 }
 
@@ -73,8 +74,8 @@
     color: #757579;
 }
 
-#footerHands {
-    margin-left: 20px;
+#emailIcon {
+    margin-right: 20px;
 }
 
 #navCopyright {
@@ -106,7 +107,8 @@
     }
 
     #logo {
-        left: 15vw;
+        width: 70px;
+        left: 13vw;
     }
 
     #questions {
@@ -114,46 +116,13 @@
     }
     
     #navFooter {
-        padding-left: 23vw;
+        padding-left: 21.5vw;
     }
     
     #navCopyright {
-        margin-left: -8vw;
+        margin-left: -10vw;
     }
     
-}
-
-@media (max-width: 992px) { 
-    #questions {
-        padding-left: 7vw;
-        margin-bottom: -1.5vh;
-    }
-
-    .question, #dropdownLink {
-        margin: 0;
-    }
- 
-    #logo {
-        left: 5vw;
-    }
-
-    #navFooter {
-        padding-left: 17vw;
-    }
-
-    #navCopyright {
-        margin-left: -2vw;
-    }
-
-    #rights {
-        display: block;
-    }
-
-    #constStamp {
-        width: 130px;
-        right: 10px;
-    }
-       
 }
 
 @media (max-width: 992px) and (orientation: landscape) {
@@ -193,7 +162,41 @@
 
 }
 
- @media (max-width: 768px) { 
+@media (max-width: 992px) { 
+    #questions {
+        padding-left: 13vw;
+        margin-bottom: -1.5vh;
+    }
+
+    .question, #dropdownLink {
+        margin: 0;
+    }
+ 
+    #logo {
+        left: 14vw;
+        width: 60px;
+    }
+
+    #navFooter {
+        padding-left: 24vw;
+    }
+
+    #navCopyright {
+        margin-left: -12vw;
+    }
+
+    #constStamp {
+        width: 130px;
+        right: 10px;
+    }
+       
+}
+
+@media (max-width: 768px) { 
+    #navbar {
+        padding: 0;
+        min-height: 0;
+    }
 
     #questions {
         padding: 0;
@@ -204,20 +207,11 @@
         color: #757579;
         background-color: transparent;
     }
-
-    #navbar {
-        background-color: #faf7ee;
-        box-shadow: 2px 3px 5px #4e4e4e;
-        min-height: 120px;
-        color: #f4f7fc;
-        box-shadow: -2px -3px 5px #757579;
-    }
  
     #logo {
-        width: 80px;
         float: none;
         position: fixed;
-        bottom: 0;
+        bottom: 1vh;
     }
 
     #navbarQs {
@@ -226,7 +220,8 @@
     }
 
     #hamburger {
-        margin-top: 10%;
+        margin-top: 4vh;
+        margin-bottom: 0vh;
     }
 
     #navFooter {
@@ -235,11 +230,11 @@
     }
 
     #needContact {
-        margin-top: -8vh;
+        margin-top: -6vh;
     }
 
     #navCopyright {
-        margin-top: -6vh;
+        margin-top: -4vh;
         margin-left: 0;
     }
 
@@ -248,8 +243,12 @@
         margin-top: 15px;
     }
 
-    #emailIcon, #rights, #pllc {
+    #footerHands, #rights, #pllc {
         display: block;
+    }
+
+    #footerHands {
+        margin-top: .5vh;
     }
 
     #constStamp {
