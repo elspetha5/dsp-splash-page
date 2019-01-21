@@ -125,14 +125,50 @@
     
 }
 
-@media (max-width: 992px) and (orientation: landscape) {
+
+@media (max-width: 992px) { 
+    #questions {
+        padding-left: 13vw;
+        margin-bottom: -1.5vh;
+    }
+
+    .question, #dropdownLink {
+        margin: 0;
+    }
+    
+    #logo {
+        left: 14vw;
+        width: 60px;
+    }
+    
+    #navFooter {
+        padding-left: 24vw;
+    }
+    
+    #navCopyright {
+        margin-left: -3vw;
+    }
+    
+    #constStamp {
+        width: 130px;
+        right: 10px;
+    }
+
+    #rights {
+        display: block;
+    }
+    
+}
+
+/* @media (max-width: 815px) and (max-height: 400px) {
     #navbar {
         height: 7vh;
+        padding-bottom: 20vh;
     }
 
     #logo {
-        width: 10vh;
-        bottom: 3.5vh;
+        width: 50px;
+        bottom: 4.5vh;
         left: 17vw;
     }
 
@@ -148,7 +184,7 @@
 
     #navFooter {
         font-size: 50%;
-        padding-left: 26vw;
+        padding-left: 28vw;
         margin-top: -1.5vh;
     }
 
@@ -160,37 +196,7 @@
         display: inline
     }
 
-}
-
-@media (max-width: 992px) { 
-    #questions {
-        padding-left: 13vw;
-        margin-bottom: -1.5vh;
-    }
-
-    .question, #dropdownLink {
-        margin: 0;
-    }
- 
-    #logo {
-        left: 14vw;
-        width: 60px;
-    }
-
-    #navFooter {
-        padding-left: 24vw;
-    }
-
-    #navCopyright {
-        margin-left: -12vw;
-    }
-
-    #constStamp {
-        width: 130px;
-        right: 10px;
-    }
-       
-}
+} */
 
 @media (max-width: 768px) { 
     #navbar {
