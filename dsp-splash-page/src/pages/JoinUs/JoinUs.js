@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import YourThing from "../../components/YourThing";
+import Popup from "reactjs-popup";
 import "./joinus.css";
 
 class JoinUs extends Component {
@@ -14,39 +15,49 @@ class JoinUs extends Component {
     render() {
         return (
             <div>
-                <div id="joinUsTopPic">
-                    <div id="joinUsTitle" className="topQ">TWO ENTITIES... <span id="oneEcosystem">ONE ECOSYSTEM</span></div>
 
-                    <div id="joinUsThesisWrapper">
-                        <div className="joinUsInfo">
-                            <div className="bold entityTitle">objective</div>
-                            <div className="newLine">enable a mode of design that elevates the best in all of us</div>
-                        </div>
+                <Popup
+                    open={true}
+                    modal
+                    closeOnDocumentClick
+                >
+                    <div id="joinUsTopPic">
+                        <div id="joinUsTitle" className="topQ">TWO ENTITIES... <span id="oneEcosystem">ONE ECOSYSTEM</span></div>
 
-                        <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
+                        <div id="joinUsThesisWrapper">
+                            <div className="joinUsInfo">
+                                <div className="bold entityTitle">objective</div>
+                                <div className="newLine">enable a mode of design that elevates the best in all of us</div>
+                            </div>
 
-                        <div className="joinUsInfo">
-                            <div className="bold entityTitle">strategy</div>
-                            <div className="newLine">a design ecosystem comprised of two entities</div>
-                        </div>
+                            <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
 
-                        <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
+                            <div className="joinUsInfo">
+                                <div className="bold entityTitle">strategy</div>
+                                <div className="newLine">a design ecosystem comprised of two entities</div>
+                            </div>
 
-                        <div className="colon" id="numOne">1</div>
+                            <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
 
-                        <div className="joinUsInfo">
-                            <div className="bold entityTitle">dsp.nucleus</div>
-                            <div className="newLine">an all-virtual design pulse, beating from the inside</div>
-                        </div>
+                            <div className="colon" id="numOne">1</div>
 
-                        <div className="colon">2</div>
+                            <div className="joinUsInfo">
+                                <div className="bold entityTitle">dsp.nucleus</div>
+                                <div className="newLine">an all-virtual design pulse, beating from the inside</div>
+                            </div>
 
-                        <div className="joinUsInfo">
-                            <div className="bold entityTitle">dsp.network</div>
-                            <div className="newLine">a design web, acting in harmony from the outside</div>
+                            <div className="colon">2</div>
+
+                            <div className="joinUsInfo">
+                                <div className="bold entityTitle">dsp.network</div>
+                                <div className="newLine">a design web, acting in harmony from the outside</div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Popup>
+
+
+
 
                 <div className="yourWrapper">
                     <div id="brand" class="yourTwo">

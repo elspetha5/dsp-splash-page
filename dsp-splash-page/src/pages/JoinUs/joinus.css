@@ -1,6 +1,7 @@
 #joinUsTopPic {
-    background-color: #757579;
-    padding: 2% 15% 1%;
+    background-color: #e2e1e3e1;
+    border: none;
+    border-radius: 5px;
 }
 
 #joinUsTopPic {
@@ -10,13 +11,13 @@
 }
 
 #joinUsTitle {
-    color: #f4f7fc;
+    color: #1b2c3a;
     text-align: center;
 }
 
 .joinUsInfo {
     font-size: 110%;
-    color: #f4f7fc;
+    color: #1b2c3a;
     line-height: 1.25;
     margin-bottom: 15px;
     width: 20%;
@@ -29,7 +30,7 @@
     width: 3%;
     padding-top: 2%;
     font-size: 250%;
-    color: #f4f7fc;
+    color: #1b2c3a;
 }
 
 .colon {
@@ -37,7 +38,7 @@
     width: 3%;
     padding-top: 1.5%;
     font-size: 250%;
-    color: #f4f7fc;
+    color: #1b2c3a;
 }
 
 #numOne {
@@ -69,6 +70,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.popup-content {
+    border: none;
+    padding: none;
 }
 
 @media (max-width: 1200px) { 
