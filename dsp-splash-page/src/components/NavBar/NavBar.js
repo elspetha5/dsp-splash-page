@@ -112,7 +112,10 @@ class NavBar extends Component {
                     </div>
 
                     <div className="halfNavFooter">
-                        <div id="navCopyright"><i class="far fa-copyright"></i> 2018 <span id="pllc">Design Service Professionals, PLLC </span><span id="rights">All rights reserved</span></div>
+                        <div id="navCopyright">
+                            Design Service Professionals, PLLC
+                            <span id="copyRights"> <i class="far fa-copyright"></i> 2019 <span id="rights">All rights reserved</span></span>
+                        </div>
                     </div>
                 </div>
 

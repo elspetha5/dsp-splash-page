@@ -1,16 +1,15 @@
 #homepage {
     background-color: #f4f7fc;
-
-}
-
-#thumbprintIntersection {
-    width: 70vw;
-    margin-left: -20vw;
-    margin-top: -60vh;
+    background-image: url(./thumbprint-intersection.png);
+    background-repeat: no-repeat;
+    background-position-x: -20vw;
+    background-position-y: -60vh;
+    background-size: 70%;
+    height: 100vh;
 }
 
 .taglineBackground{
-    padding: 30vh 0 0 4vw;
+    padding: 30vh 0 0 50vw;
 }
 
 .taglineThesis {
@@ -20,18 +19,67 @@
     font-weight: bold;
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
+    #homepage {
+        background-position-x: -20vw;
+        background-position-y: -40vh;
+        background-size: 75%;
+    }
+
+    .taglineBackground{
+        padding-left: 55vw;
+    }
     
+    .taglineThesis {
+        font-size: 170%;
+    }
 }
 
-@media (max-width: 992px) { 
-       
+@media (max-width: 992px) {
+    #homepage {
+        background-position-x: -25vw;
+        background-position-y: -25vh;
+        background-size: 80%;
+    }
+
+    .taglineBackground{
+        padding-left: 50vw;
+    }
+
+    .taglineThesis {
+        font-size: 150%;
+    }
 }
 
 @media (max-width: 768px) {
-   
+    #homepage {
+        background-position-x: -10vw;
+        background-position-y: 20vh;
+        background-size: 120%;
+    }
+
+    .taglineBackground{
+        padding: 15vh 0 0 10vw;
+    }
+
+   .taglineThesis {
+       font-size: 150%;
+   }
 }
 
 @media (max-width: 576px) { 
+    #homepage {
+        background-position-x: -10vw;
+        background-position-y: 30vh;
+        background-size: 120%;
+    }
+
+    .taglineBackground{
+        padding-top: 20vh;
+    }
+
+   .taglineThesis {
+       font-size: 150%;
+   }
 
 }

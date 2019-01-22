@@ -138,11 +138,13 @@
     
     #logo {
         left: 14vw;
+        bottom: 1.5vh;
         width: 60px;
     }
     
     #navFooter {
         padding-left: 24vw;
+        margin-bottom: 1vh;
     }
     
     #navCopyright {
@@ -155,48 +157,33 @@
     }
 
     #rights {
-        display: block;
+        display: none;
     }
     
 }
 
-/* @media (max-width: 815px) and (max-height: 400px) {
+@media (max-width: 815px) and (max-height: 400px) {
     #navbar {
-        height: 7vh;
-        padding-bottom: 20vh;
+        height: 20vh;
     }
 
     #logo {
         width: 50px;
-        bottom: 4.5vh;
-        left: 17vw;
+        bottom: 5vh;
+        left: 10vw;
     }
 
     #questions {
-        padding-top: 2vh;
-        padding-left: 17vw;
-        margin-bottom: -10vh;
+        margin-top: -3vh;
+        margin-bottom: -3vh;
+        padding-left: 9vw;
     }
-
-    .question {
-        font-size: 70%;
-    }
-
+    
     #navFooter {
-        font-size: 50%;
-        padding-left: 28vw;
-        margin-top: -1.5vh;
+        padding-left: 18vw;
     }
 
-    #navCopyright {
-        margin-left: -13vw;
-    }
-
-    #rights {
-        display: inline
-    }
-
-} */
+}
 
 @media (max-width: 768px) { 
     #navbar {
@@ -215,7 +202,6 @@
     }
  
     #logo {
-        float: none;
         position: fixed;
         bottom: 1vh;
     }
@@ -233,14 +219,15 @@
     #navFooter {
         margin-left: 10vw;
         font-size: 60%;
+        margin-bottom: 1vh;
     }
 
     #needContact {
-        margin-top: -6vh;
+        margin-top: -8vh;
     }
 
     #navCopyright {
-        margin-top: -4vh;
+        margin-top: -6vh;
         margin-left: 0;
     }
 
@@ -249,8 +236,12 @@
         margin-top: 15px;
     }
 
-    #footerHands, #rights, #pllc {
+    #footerHands, #copyRights {
         display: block;
+    }
+
+    #rights {
+        display: initial;
     }
 
     #footerHands {
@@ -266,5 +257,11 @@
  }
 
  @media (max-width: 576px) { 
- 
+    #needContact {
+        margin-top: -5vh;
+    }
+
+    #navCopyright {
+        margin-top: -3vh;
+    }
  }
