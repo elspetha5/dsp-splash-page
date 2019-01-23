@@ -21,6 +21,7 @@ class JoinUs extends Component {
                     modal
                     closeOnDocumentClick
                     lockScroll={true}
+                    position='top center'
                     contentStyle={{
                         borderRadius: "5px",
                         border: "none",
@@ -35,55 +36,51 @@ class JoinUs extends Component {
 
                             <div id="joinUsTopPic">
                                 <div id="joinUsTitle" className="topQ">TWO ENTITIES...
-                                    <span id="oneEcosystem">ONE ECOSYSTEM</span>
+                                    <span id="oneEcosystem"> ONE ECOSYSTEM</span>
                                 </div>
 
                                 <div id="joinUsThesisWrapper">
-                                    <div id="joinUsInfoTop" className="joinUsInfoTwo">
-                                        <div className="joinUsInfo">
-                                            <div className="joinUsInfoWords">
-                                                <div className="bold entityTitle">objective</div>
-                                                <div>enable a mode of design that elevates the best in all of us</div>
-                                            </div>
-
-                                            <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
+                                    <div className="joinUsInfo">
+                                        <div className="joinUsInfoWords">
+                                            <div className="bold entityTitle">objective</div>
+                                            <div>enable a mode of design that elevates the best in all of us</div>
                                         </div>
 
-                                        <div className="joinUsInfo">
-                                            <div className="joinUsInfoWords">
-                                                <div className="bold entityTitle">strategy</div>
-                                                <div>a design ecosystem comprised of two entities</div>
-                                            </div>
+                                        <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
+                                    </div>
 
-                                            <div className="rightArrow"><i id="arrowHide" class="fas fa-angle-right"></i></div>
+                                    <div className="joinUsInfo">
+                                        <div className="joinUsInfoWords">
+                                            <div className="bold entityTitle">strategy</div>
+                                            <div>a design ecosystem comprised of two entities</div>
+                                        </div>
+
+                                        <div className="rightArrow"><i id="arrowHide" class="fas fa-angle-right"></i></div>
+                                    </div>
+
+                                    <div className="joinUsInfo">
+                                        <div className="colon" id="numOne">1</div>
+
+                                        <div className="joinUsInfoWords">
+                                            <div className="bold entityTitle">dsp.network</div>
+                                            <div>a design web, acting in harmony from the outside</div>
                                         </div>
                                     </div>
 
-                                    <div id="joinUsInfoBottom" className="joinUsInfoTwo">
-                                        <div className="joinUsInfo">
-                                            <div className="colon" id="numOne">1</div>
+                                    <div className="joinUsInfo">
+                                        <div className="colon">2</div>
 
-                                            <div className="joinUsInfoWords">
-                                                <div className="bold entityTitle">dsp.network</div>
-                                                <div>a design web, acting in harmony from the outside</div>
-                                            </div>
-                                        </div>
-
-                                        <div className="joinUsInfo">
-                                            <div className="colon">2</div>
-
-                                            <div className="joinUsInfoWords">
-                                                <div className="bold entityTitle">dsp.nucleus</div>
-                                                <div>an all-virtual design pulse, beating from <span className="newLine">the inside</span></div>
-                                            </div>
+                                        <div className="joinUsInfoWords">
+                                            <div className="bold entityTitle">dsp.nucleus</div>
+                                            <div>an all-virtual design pulse, beating from <span className="newLine">the inside</span></div>
                                         </div>
                                     </div>
 
+                                    <button id="closeModal" className="" onClick={() => { close() }}>enter ecosystem</button>
                                 </div>
 
                             </div>
 
-                            <button id="closeModal" className="" onClick={() => { close() }}>enter ecosystem</button>
 
                         </div>
                     )}

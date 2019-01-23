@@ -11,15 +11,14 @@
     font-size: 110%;
     color: #1b2c3a;
     line-height: 1.25;
-    margin-bottom: 15px;
     width: 24%;
-    float: left;
+    display: inline-block;
     margin: 0 .5%;
 }
 
 .joinUsInfoWords {
-    float: left;
     width: 80%;
+    float: left;
 }
 
 .rightArrow, .colon {
@@ -38,6 +37,7 @@
     border: 1px solid #404051;
     border-radius: 5px;
     float: right;
+    clear: both;
     padding: 5px 7px;
     margin-top: 20px;
     margin-right: 40px;
@@ -67,9 +67,14 @@
     background-size: cover;
 }
 
-@media (max-width: 1200px) {     
+@media (max-width: 1200px) {
+    #joinUsTitle {
+        font-size: 150%;
+    }   
+
     .joinUsInfo {
         width: 49%;
+        font-size: 100%;
         margin-bottom: 20px;
     }
 
@@ -83,9 +88,11 @@
 }
 
 @media (max-width: 992px) {
-       .joinUsInfo {
-           width: 45%;
-       }
+    .joinUsInfo {
+        font-size: 90%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -99,6 +106,10 @@
 
     .rightArrow {
         transform: translateX(16px) rotate(90deg);
+    }
+
+    #arrowHide {
+        display: initial;
     }
 
     .yourTwo {
@@ -116,5 +127,16 @@
 }
 
 @media (max-width: 576px) { 
+    #joinUsTitle {
+        font-size: 110%;
+    }
+
+    .joinUsInfo {
+        font-size: 80%;
+    }
+
+    #closeModal {
+        font-size: 90%;
+    }
 
 }
