@@ -32,7 +32,7 @@ class JoinUs extends Component {
                 >
                     {close => (
                         <div>
-                            <a className="close" onClick={close}>&times;</a>
+                            <div className="close" onClick={close}>&times;</div>
 
                             <div id="joinUsTopPic">
                                 <div id="joinUsTitle" className="topQ">TWO ENTITIES...
@@ -68,7 +68,7 @@ class JoinUs extends Component {
                                     </div>
 
                                     <div className="joinUsInfo">
-                                        <div className="colon">2</div>
+                                        <div className="colon" id="numTwo">2</div>
 
                                         <div className="joinUsInfoWords">
                                             <div className="bold entityTitle">dsp.nucleus</div>
