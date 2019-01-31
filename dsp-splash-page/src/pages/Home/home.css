@@ -17,6 +17,7 @@
     font-size: 200%;
     line-height: 1.5;
     font-weight: bold;
+    font-family: 'Codystar', cursive;
 }
 
 @media (max-width: 1200px) {
@@ -69,17 +70,18 @@
 
 @media (max-width: 576px) { 
     #homepage {
-        background-position-x: -10vw;
-        background-position-y: 30vh;
-        background-size: 120%;
+        background-position-x: -45vw;
+        background-position-y: 15vh;
+        background-size: 145%;
     }
 
     .taglineBackground{
-        padding-top: 20vh;
+        padding-top: 15vh;
+        padding-left: 15vw;
     }
 
    .taglineThesis {
-       font-size: 150%;
+       font-size: 130%;
    }
 
 }

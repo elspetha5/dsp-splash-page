@@ -30,7 +30,7 @@ class NavBar extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse >
                     <Nav id="questions">
-                        <NavDropdown eventKey="1" title="APPROACH" className="link question" noCaret id="dropdown-no-caret">
+                        <NavDropdown eventKey="1" title="APPROACH" className="link question mainNav" noCaret id="dropdown-no-caret">
                             <LinkContainer to="/approach">
                                 <MenuItem eventKey={"4.8"} id="white" className="question">approach</MenuItem>
                             </LinkContainer>
@@ -45,7 +45,7 @@ class NavBar extends Component {
                         </NavDropdown>
 
                         <LinkContainer to="/projects">
-                            <NavItem eventKey={"2"} id="white" className="link question">PROJECTS</NavItem>
+                            <NavItem eventKey={"2"} id="white" className="link question mainNav">PROJECTS</NavItem>
                         </LinkContainer>
 
                         {/* <NavDropdown eventKey="2" title="PROJECTS" className="link question" noCaret id="dropdown-no-caret">
@@ -57,10 +57,10 @@ class NavBar extends Component {
                         </NavDropdown> */}
 
                         <LinkContainer to="/clients">
-                            <NavItem eventKey={"3"} id="white" className="link question">CLIENTS</NavItem>
+                            <NavItem eventKey={"3"} id="white" className="link question mainNav">CLIENTS</NavItem>
                         </LinkContainer>
 
-                        <NavDropdown eventKey="4" title="SERVICES" className="link question" noCaret id="dropdown-no-caret">
+                        <NavDropdown eventKey="4" title="SERVICES" className="link question mainNav" noCaret id="dropdown-no-caret">
                             <LinkContainer to="/designservices">
                                 <MenuItem eventKey={"4.8"} id="white" className="question">all services</MenuItem>
                             </LinkContainer>
@@ -78,7 +78,7 @@ class NavBar extends Component {
                             <NavItem eventKey={"5"} id="white" className="link question">ECOSYSTEM</NavItem>
                         </LinkContainer */}
 
-                        <NavDropdown eventKey="5" title="ECOSYSTEM" className="link question" noCaret id="dropdown-no-caret">
+                        <NavDropdown eventKey="5" title="ECOSYSTEM" className="link question mainNav" noCaret id="dropdown-no-caret">
                             <LinkContainer to="/joinus">
                                 <MenuItem eventKey={"5.1"} id="white" className="question">your brand</MenuItem>
                             </LinkContainer>
@@ -106,7 +106,7 @@ class NavBar extends Component {
                             </span>
 
                             <span id="footerHands">
-                                <a classname="link" id="footerJoin" href="/joinus"><i class="far fa-handshake"></i> Join us</a>
+                                <Link classname="link" id="footerJoin" to="/joinus"><i class="far fa-handshake"></i> Join us</Link>
                             </span>
                         </div>
                     </div>

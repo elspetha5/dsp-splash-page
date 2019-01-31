@@ -2,7 +2,7 @@
     background-color: #e2e1e3;
     width: 100%;
     border: none;
-    min-height: 16vh;
+    min-height: 10vh;
     box-shadow: -2px -3px 5px #757579;
     padding-bottom: .5vh;
 }
@@ -10,7 +10,7 @@
 #logo {
     width: 80px;
     position: relative;
-    bottom: 2.75vh;
+    bottom: 2vh;
     left: 15vw;
 }
 
@@ -35,7 +35,7 @@
 }
 
 #questions {
-    padding: 5.4vh 0 0 15vw;
+    padding: 2vh 0 0 15vw;
 }
 
 .question,
@@ -45,6 +45,12 @@
     color: #757579;
     margin: 0 10px -4px;
     text-decoration: none;
+}
+
+.mainNav {
+    font-family: 'Codystar', cursive;
+    font-size: 95%;
+    font-weight: bold;
 }
 
 .question:hover {
@@ -203,7 +209,7 @@
  
     #logo {
         position: fixed;
-        bottom: 1vh;
+        bottom: -2vh;
     }
 
     #navbarQs {
@@ -212,7 +218,7 @@
     }
 
     #hamburger {
-        margin-top: 4vh;
+        margin-top: 1vh;
         margin-bottom: 0vh;
     }
 
@@ -257,11 +263,15 @@
  }
 
  @media (max-width: 576px) { 
+    .navbar-header {
+        margin-bottom: -5vh;
+    }
+
     #needContact {
-        margin-top: -5vh;
+        margin-top: -3vh;
     }
 
     #navCopyright {
-        margin-top: -3vh;
+        margin-top: -1vh;
     }
  }

@@ -4,11 +4,15 @@
 }
 
 .topQ {
-    font-size: 200%;
+    font-size: 280%;
     color: #333132;
     text-align: left;
     margin-bottom: 3%;
+    font-family: 'Codystar', cursive;
+    font-weight: 900;
 }
+
+
 
 @media (max-width: 1200px) { 
     

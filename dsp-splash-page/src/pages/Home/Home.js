@@ -18,9 +18,9 @@ class Home extends Component {
             <div id="homepage">
                 <div className="taglineBackground">
                     <div className="taglineBox">
-                        <div className="taglineThesis">Design Service Professionals…</div>
+                        <div className="taglineThesis">Design Service Professionals . . .</div>
                         <div className="taglineThesis">emerging at the intersection</div>
-                        <div className="taglineThesis">of design & delivery</div>
+                        <div className="taglineThesis">of design + delivery</div>
                     </div>
                 </div>
 
