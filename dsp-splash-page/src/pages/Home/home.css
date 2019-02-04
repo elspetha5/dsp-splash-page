@@ -3,7 +3,7 @@
     background-image: url(./thumbprint-intersection.png);
     background-repeat: no-repeat;
     background-position-x: -20vw;
-    background-position-y: -60vh;
+    background-position-y: -55vh;
     background-size: 70%;
     height: 100vh;
 }
@@ -14,7 +14,7 @@
 
 .taglineThesis {
     color: #1b2c3a;
-    font-size: 200%;
+    font-size: 180%;
     line-height: 1.5;
     font-weight: bold;
     font-family: 'Codystar', cursive;
@@ -32,7 +32,7 @@
     }
     
     .taglineThesis {
-        font-size: 170%;
+        font-size: 145%;
     }
 }
 
@@ -48,19 +48,19 @@
     }
 
     .taglineThesis {
-        font-size: 150%;
+        font-size: 120%;
     }
 }
 
 @media (max-width: 768px) {
     #homepage {
-        background-position-x: -10vw;
-        background-position-y: 20vh;
-        background-size: 120%;
+        background-position-x: -50vw;
+        background-position-y: -5vh;
+        background-size: 140%;
     }
 
     .taglineBackground{
-        padding: 15vh 0 0 10vw;
+        padding: 13vh 0 0 10vw;
     }
 
    .taglineThesis {
@@ -70,18 +70,18 @@
 
 @media (max-width: 576px) { 
     #homepage {
-        background-position-x: -45vw;
+        background-position-x: -50vw;
         background-position-y: 15vh;
-        background-size: 145%;
+        background-size: 160%;
     }
 
     .taglineBackground{
         padding-top: 15vh;
-        padding-left: 15vw;
+        padding-left: 5vw;
     }
 
    .taglineThesis {
-       font-size: 130%;
+       font-size: 140%;
    }
 
 }

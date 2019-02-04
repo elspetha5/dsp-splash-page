@@ -32,14 +32,14 @@ class NavBar extends Component {
                     <Nav id="questions">
                         <NavDropdown eventKey="1" title="APPROACH" className="link question mainNav" noCaret id="dropdown-no-caret">
                             <LinkContainer to="/approach">
-                                <MenuItem eventKey={"4.8"} id="white" className="question">approach</MenuItem>
+                                <MenuItem eventKey={"4.8"} id="white" className="question dropNav">approach</MenuItem>
                             </LinkContainer>
 
                             <MenuItem divider />
 
                             {this.state.approach.map((question, i) => (
                                 <LinkContainer to={"/approach/" + question}>
-                                    <MenuItem eventKey={"1." + i} id="white" className="question">{question}</MenuItem>
+                                    <MenuItem eventKey={"1." + i} id="white" className="question dropNav">{question}</MenuItem>
                                 </LinkContainer>
                             ))}
                         </NavDropdown>
@@ -62,14 +62,14 @@ class NavBar extends Component {
 
                         <NavDropdown eventKey="4" title="SERVICES" className="link question mainNav" noCaret id="dropdown-no-caret">
                             <LinkContainer to="/designservices">
-                                <MenuItem eventKey={"4.8"} id="white" className="question">all services</MenuItem>
+                                <MenuItem eventKey={"4.8"} id="white" className="question dropNav">all services</MenuItem>
                             </LinkContainer>
 
                             <MenuItem divider />
 
                             {this.state.designServices.map((service, i) => (
                                 <LinkContainer to={"/designservices/" + service}>
-                                    <MenuItem eventKey={"4." + i} id="white" className="question">{service}</MenuItem>
+                                    <MenuItem eventKey={"4." + i} id="white" className="question dropNav">{service}</MenuItem>
                                 </LinkContainer>
                             ))}
                         </NavDropdown>
@@ -80,13 +80,13 @@ class NavBar extends Component {
 
                         <NavDropdown eventKey="5" title="ECOSYSTEM" className="link question mainNav" noCaret id="dropdown-no-caret">
                             <LinkContainer to="/joinus">
-                                <MenuItem eventKey={"5.1"} id="white" className="question">your brand</MenuItem>
+                                <MenuItem eventKey={"5.1"} id="white" className="question dropNav">your brand</MenuItem>
                             </LinkContainer>
 
                             {/* <MenuItem divider /> */}
 
                             <LinkContainer to="/joinus">
-                                <MenuItem eventKey={"5.2"} id="white" className="question">your career</MenuItem>
+                                <MenuItem eventKey={"5.2"} id="white" className="question dropNav">your career</MenuItem>
                             </LinkContainer>
                         </NavDropdown>
 
@@ -99,24 +99,18 @@ class NavBar extends Component {
                 </Navbar.Collapse>
 
                 <div id="navFooter">
-                    <div className="halfNavFooter">
-                        <div id="needContact">
-                            <span id="emailIcon">
-                                <a className="link" id="emailAddress" href="mailto:hello@dsp.design"><i class="far fa-envelope"></i> hello@dsp.design </a>
-                            </span>
+                    <span id="emailIcon" className="footerElement">
+                        <a className="link" id="emailAddress" href="mailto:hello@dsp.design"><i class="far fa-envelope"></i> hello@dsp.design </a>
+                    </span>
 
-                            <span id="footerHands">
-                                <Link classname="link" id="footerJoin" to="/joinus"><i class="far fa-handshake"></i> Join us</Link>
-                            </span>
-                        </div>
-                    </div>
+                    <span id="footerHands" className="footerElement">
+                        <Link classname="link" id="footerJoin" to="/joinus"><i class="far fa-handshake"></i> Join us</Link>
+                    </span>
 
-                    <div className="halfNavFooter">
-                        <div id="navCopyright">
-                            Design Service Professionals, PLLC
+                    <span id="navCopyright" className="footerElement">
+                        Design Service Professionals, PLLC
                             <span id="copyRights"> <i class="far fa-copyright"></i> 2019 <span id="rights">All rights reserved</span></span>
-                        </div>
-                    </div>
+                    </span>
                 </div>
 
                 <img id="constStamp" src={stamp} alt="underConst" />

@@ -2,15 +2,13 @@
     background-color: #e2e1e3;
     width: 100%;
     border: none;
-    min-height: 10vh;
     box-shadow: -2px -3px 5px #757579;
-    padding-bottom: .5vh;
 }
 
 #logo {
-    width: 80px;
+    width: 70px;
     position: relative;
-    bottom: 2vh;
+    bottom: 3vh;
     left: 15vw;
 }
 
@@ -35,7 +33,7 @@
 }
 
 #questions {
-    padding: 2vh 0 0 15vw;
+    padding: 0 0 0 15vw;
 }
 
 .question,
@@ -53,18 +51,20 @@
     font-weight: bold;
 }
 
+.dropNav {
+    font-family: 'Corbel', sans-serif;
+}
+
 .question:hover {
     color: #333132;
     text-decoration: none;
 }
 
 #navFooter {
-    padding: 0 0 5vh 22vw;
+    padding-left: 22vw;
     font-size: 90%;
-}
-
-.halfNavFooter {
-    width: 50%;
+    margin-top: -1vh;
+    margin-bottom: 2vh;
     float: left;
     color: #a9a9af;
 }
@@ -80,12 +80,8 @@
     color: #757579;
 }
 
-#emailIcon {
+.footerElement {
     margin-right: 20px;
-}
-
-#navCopyright {
-    margin-left: -11vw;
 }
 
 #hamburger {
@@ -122,20 +118,20 @@
     }
     
     #navFooter {
-        padding-left: 21.5vw;
-    }
-    
-    #navCopyright {
-        margin-left: -10vw;
+        padding-left: 23.25vw;
     }
     
 }
 
 
 @media (max-width: 992px) { 
+    .container {
+        width: 900px;
+    }
+
     #questions {
-        padding-left: 13vw;
-        margin-bottom: -1.5vh;
+        padding-left: 17vw;
+        font-size: 90%;
     }
 
     .question, #dropdownLink {
@@ -143,18 +139,12 @@
     }
     
     #logo {
-        left: 14vw;
-        bottom: 1.5vh;
+        left: 17vw;
         width: 60px;
     }
     
     #navFooter {
-        padding-left: 24vw;
-        margin-bottom: 1vh;
-    }
-    
-    #navCopyright {
-        margin-left: -3vw;
+        padding-left: 26vw;
     }
     
     #constStamp {
@@ -169,10 +159,6 @@
 }
 
 @media (max-width: 815px) and (max-height: 400px) {
-    #navbar {
-        height: 20vh;
-    }
-
     #logo {
         width: 50px;
         bottom: 5vh;
@@ -192,9 +178,8 @@
 }
 
 @media (max-width: 768px) { 
-    #navbar {
-        padding: 0;
-        min-height: 0;
+    .container {
+        width: initial;
     }
 
     #questions {
@@ -209,7 +194,8 @@
  
     #logo {
         position: fixed;
-        bottom: -2vh;
+        bottom: -.5vh;
+        left: 15vw;
     }
 
     #navbarQs {
@@ -218,28 +204,15 @@
     }
 
     #hamburger {
-        margin-top: 1vh;
-        margin-bottom: 0vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
     }
 
     #navFooter {
-        margin-left: 10vw;
-        font-size: 60%;
-        margin-bottom: 1vh;
-    }
-
-    #needContact {
-        margin-top: -8vh;
-    }
-
-    #navCopyright {
-        margin-top: -6vh;
         margin-left: 0;
-    }
-
-    .halfNavFooter {
-        width: 100%;
-        margin-top: 15px;
+        font-size: 70%;
+        margin-top: -7vh;
+        margin-bottom: 0vh;
     }
 
     #footerHands, #copyRights {
@@ -263,15 +236,11 @@
  }
 
  @media (max-width: 576px) { 
-    .navbar-header {
-        margin-bottom: -5vh;
+    #logo {
+        left: 9vw;
     }
 
-    #needContact {
-        margin-top: -3vh;
-    }
-
-    #navCopyright {
-        margin-top: -1vh;
+    #navFooter {
+        margin-left: -2vw;
     }
  }
