@@ -1,0 +1,54 @@
+#animThumb {
+    width: 40vw;
+    margin-left: -3vw;
+    margin-top: -5vh;
+    opacity: .25;
+}
+
+#leftLine, 
+#rightLine {
+    height: 2px;
+    opacity: 0;
+}
+
+#leftLine {
+    transform-origin: top left;
+    transform: translateY(17vh) rotate(30deg);
+    background-color: black;
+    animation: leftLine 2s linear .5s forwards;
+}
+
+#rightLine {
+    transform-origin: top left;
+    transform: translateX(37vw) rotate(120deg);
+    background-color: silver;
+    animation: rightLine 2s linear .5s forwards;
+}
+
+@keyframes leftLine {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    65% {
+        width: 28.25vw;
+    }
+    100% {
+        width: 70vw;
+        opacity: 1;
+    }
+}
+
+@keyframes rightLine {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    65% {
+        width: 25vw;
+    }
+    100% {
+        width: 70vw;
+        opacity: 1;
+    }
+}
