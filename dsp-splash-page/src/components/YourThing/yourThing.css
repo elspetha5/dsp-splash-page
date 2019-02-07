@@ -1,5 +1,5 @@
 .yourThingBackground {
-    padding: 100px 15% 0;
+    padding: 100px 0 0 15%;
     height: 90vh;
 }
 
@@ -9,7 +9,7 @@
 
 .yourThingWords {
     color: #f4f7fc;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: bold;
     font-family: 'Codystar', cursive;
 }

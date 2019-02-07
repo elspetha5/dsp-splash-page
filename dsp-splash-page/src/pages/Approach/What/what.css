@@ -1,5 +1,6 @@
 .wrapper {
     padding: 5% 0 4%;
+    margin-bottom: 10vh;
 }
 
 .wrapper::after {

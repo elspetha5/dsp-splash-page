@@ -3,10 +3,11 @@ body {
 }
 
 #background {
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
     width: 100%;
-    background-image: url(./greyzz.png);
-    background-color: rgb(236, 236, 236);    
+    /* background-image: url(./greyzz.png); */
+    background-color: #f4f7fc;
+    min-height: 90vh;    
 }
 
 #background::after {

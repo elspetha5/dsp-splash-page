@@ -1,8 +1,9 @@
 #animThumb {
-    width: 40vw;
-    margin-left: -3vw;
-    margin-top: -5vh;
-    opacity: .25;
+    width: 35vw;
+    margin-left: -2vw;
+    margin-top: 7vh;
+    opacity: 0;
+    animation: thumbprint 2s ease-in .5s forwards;
 }
 
 #leftLine, 
@@ -13,16 +14,26 @@
 
 #leftLine {
     transform-origin: top left;
-    transform: translateY(17vh) rotate(30deg);
+    transform: translateY(30vh) rotate(19deg);
     background-color: black;
-    animation: leftLine 2s linear .5s forwards;
+    animation: leftLine 2s linear 1s forwards;
 }
 
 #rightLine {
     transform-origin: top left;
-    transform: translateX(37vw) rotate(120deg);
+    transform: translateX(37vw) rotate(148deg);
     background-color: silver;
-    animation: rightLine 2s linear .5s forwards;
+    animation: rightLine 2s linear 1s forwards;
+}
+
+#sectDot {
+    width: 15px;
+    height: 15px;
+    background-color: #b2d08b;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(23.75vw) translateY(-68.75vh);
+    animation: greenDot 2s linear 1s forwards;
 }
 
 @keyframes leftLine {
@@ -49,6 +60,40 @@
     }
     100% {
         width: 70vw;
+        opacity: 1;
+    }
+}
+
+@keyframes thumbprint {
+    0% {
+        opacity: 0;
+        /* transform: scale(.5); */
+    }    
+    70% {
+        opacity: 0;
+        /* transform: scale(.5); */
+    }
+    100% {
+        opacity: .3;
+        /* transform: scale(1); */
+    }
+}
+
+@keyframes greenDot {
+    0% {
+        opacity: 0;
+    }
+    64% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(23.75vw) translateY(-68.75vh) scale(2);
+    }
+    100% {
+        transform: translateX(23.75vw) translateY(-68.75vh) scale(1);
         opacity: 1;
     }
 }

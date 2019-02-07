@@ -18,11 +18,13 @@
     font-size: 125%;
     color: #f4f7fc;
     font-weight: bold;
-    padding: 4px;
+    padding: 4px 10px 5px;
 }
 
 #designThesis {
-    background-color: #757579;
+    border: 2px dotted #757579;
+    color: #757579;
+    
 }
 
 @media (max-width: 1200px) { 
