@@ -10,6 +10,7 @@
     position: relative;
     bottom: 3vh;
     left: 15vw;
+    opacity: .35;
 }
 
 .link,
