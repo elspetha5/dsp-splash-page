@@ -1,3 +1,7 @@
+#peopleBackground {
+    padding-bottom: 15vh;
+}
+
 #peopleWrapper {
     padding: 3vh 15vw;
 }
@@ -14,4 +18,21 @@
 .peoplePic {
     width: 9vw;
     margin: 5px;
+}
+
+.peopleTitle {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.peopleCred {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+
+.peoplePicRound {
+    width: 9vw;
+    margin: 5px;
+    border-radius: 50%;
 }
