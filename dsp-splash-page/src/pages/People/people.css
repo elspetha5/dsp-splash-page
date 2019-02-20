@@ -1,0 +1,17 @@
+#peopleWrapper {
+    padding: 3vh 15vw;
+}
+
+#peopleTop {
+    padding: 5vh 15vw;
+    text-align: center;
+}
+
+#aboutUs {
+    font-size: 300%;
+}
+
+.peoplePic {
+    width: 9vw;
+    margin: 5px;
+}

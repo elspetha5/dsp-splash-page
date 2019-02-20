@@ -19,11 +19,12 @@ import Commercial from "./pages/Projects/Commercial";
 import Residential from "./pages/Projects/Residential";
 import Hospitality from "./pages/Projects/Hospitality";
 
+// People
+import People from "./pages/People";
 
 // Clients
 import Clients from "./pages/Clients";
 import LearnMore from "./pages/Clients/Contact";
-
 
 // Design Services
 import DesignServices from "./pages/DesignServices";
@@ -34,7 +35,6 @@ import DigitalDesign from "./pages/DesignServices/DigitalDesign";
 import Industrial from "./pages/DesignServices/IndustrialDesign";
 import Interior from "./pages/DesignServices/InteriorDesign";
 import Service from "./pages/DesignServices/ServiceDesign";
-
 
 // Join Us
 import JoinUs from "./pages/JoinUs";
@@ -51,8 +51,6 @@ import InteriorsForm from "./pages/JoinUs/RecruitForms/InteriorsForm";
 import ManagementForm from "./pages/JoinUs/RecruitForms/ManagementForm";
 import MarketingForm from "./pages/JoinUs/RecruitForms/MarketingForm";
 import ServiceForm from "./pages/JoinUs/RecruitForms/ServiceForm";
-
-
 
 // Log in
 import Login from "./pages/LogIn";
@@ -90,6 +88,9 @@ class App extends Component {
               <Route exact path="/projects/residential" component={Residential} />
               <Route exact path="/projects/hospitality" component={Hospitality} />
 
+              {/* People */}
+              <Route exact path="/people" component={People} />
+              
               {/* Clients */}
               <Route exact path="/clients" component={Clients} />
               <Route exact path="/clients/contact" component={LearnMore} />
