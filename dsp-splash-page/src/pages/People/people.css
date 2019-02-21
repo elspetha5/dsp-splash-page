@@ -31,8 +31,17 @@
 }
 
 
+.inline {
+    display: inline-block;
+}
+
 .peoplePicRound {
     width: 9vw;
     margin: 5px;
     border-radius: 50%;
+}
+
+.peopleExpand {
+    width: 9vw;
+    margin: 5px;
 }
