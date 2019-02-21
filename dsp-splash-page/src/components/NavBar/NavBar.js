@@ -10,7 +10,7 @@ import stamp from "./under-construction-circle.png";
 class NavBar extends Component {
     state = {
         approach: ["what", "where", "why", "who", "how"],
-        projects: ["residential", "commercial-office", "hospitality"],
+        about: ["people", "projects"],
         clients: ["Connect with us", "Log in"],
         designServices: ["interiors", "architecture", /* "communication", */ "digital", /* "brand", */ "service"/* , "industrial" */]
     };
@@ -44,17 +44,17 @@ class NavBar extends Component {
                             ))}
                         </NavDropdown>
 
-                        <LinkContainer to="/projects">
+                        {/* <LinkContainer to="/projects">
                             <NavItem eventKey={"2"} id="white" className="link question mainNav">PROJECTS</NavItem>
-                        </LinkContainer>
+                        </LinkContainer> */}
 
-                        {/* <NavDropdown eventKey="2" title="PROJECTS" className="link question" noCaret id="dropdown-no-caret">
-                            {this.state.projects.map((project, i) => (
-                                <LinkContainer to={"/projects/" + project}>
-                                    <MenuItem eventKey={"2." + i} id="white" className="question">{project}</MenuItem>
+                        <NavDropdown eventKey="2" title="ABOUT" className="link question mainNav" noCaret id="dropdown-no-caret">
+                            {this.state.about.map((one, i) => (
+                                <LinkContainer to={"/about/" + one}>
+                                    <MenuItem eventKey={"2." + i} id="white" className="question dropNav">{one}</MenuItem>
                                 </LinkContainer>
                             ))}
-                        </NavDropdown> */}
+                        </NavDropdown>
 
                         <LinkContainer to="/clients">
                             <NavItem eventKey={"3"} id="white" className="link question mainNav">CLIENTS</NavItem>
@@ -114,6 +114,8 @@ class NavBar extends Component {
                 </div>
 
                 <img id="constStamp" src={stamp} alt="underConst" />
+
+                {/* <div id="blogButton">Blog</div> */}
 
 
             </Navbar>

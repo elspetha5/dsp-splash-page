@@ -54,10 +54,10 @@ class People extends Component {
         return (
             <div id="peopleBackground">
                 <div id="peopleTop">
-                    <div id="aboutUs">About Us</div>
+                    <div id="aboutUs">we are . . . design service professionals</div>
                 </div>
 
-                <div id="peopleWrapper">
+                {/* <div id="peopleWrapper">
                     {this.state.people.map(person => (
                         <Popup
                             trigger={<img src={person.picture} alt="person" className="peoplePic" />}
@@ -179,7 +179,7 @@ class People extends Component {
                         idea={<img src={person.picture} alt="person" className="peopleLeft" />}
                         verbiage={person.about}
                     />
-                ))}
+                ))} */}
 
                 <div className="clusterThree" onClick={this.straighten}>
                     <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personOne} />

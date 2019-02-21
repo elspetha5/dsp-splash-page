@@ -103,6 +103,14 @@
     border: 1px solid transparent;
 }
 
+#blogButton {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: #f4f7fc;
+}
+
 @media (max-width: 1200px) { 
     #constStamp {
         width: 120px;

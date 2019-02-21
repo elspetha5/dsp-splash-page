@@ -7,12 +7,14 @@
 }
 
 #peopleTop {
-    padding: 5vh 15vw;
+    padding: 5vh 15vw 15vh;
     text-align: center;
 }
 
 #aboutUs {
-    font-size: 300%;
+    font-size: 175%;
+    font-family: 'Codystar', cursive;
+    font-weight: bold;
 }
 
 .peoplePic {
@@ -79,24 +81,12 @@
     transform: translate(120px, 17px) rotate(340deg);
 }
 
-.personOneStraight {
-    transform: none;
-}
-
 .personTwo {
     transform: translate(90px);
 }
 
-.personTwoStraight {
-    transform: none;
-}
-
 .personThree {
     transform: translate(65px, 17px) rotate(20deg);
-}
-
-.personThreeStraight {
-    transform: none;
 }
 
 .personFour {
@@ -104,14 +94,15 @@
 
 }
 
-.personFourStraight {
-    transform: none;
-}
-
 .personFive {
     transform: translate(-150px, 70px) rotate(340deg);
 }
 
+.personOneStraight
+.personTwoStraight
+.personThreeStraight
+.personFourStraight
 .personFiveStraight {
     transform: none;
+    display: block;
 }

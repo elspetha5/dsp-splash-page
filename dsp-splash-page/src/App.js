@@ -13,14 +13,9 @@ import Why from "./pages/Approach/Why";
 import Who from "./pages/Approach/Who";
 import How from "./pages/Approach/How";
 
-// Projects
-import Projects from "./pages/Projects";
-import Commercial from "./pages/Projects/Commercial";
-import Residential from "./pages/Projects/Residential";
-import Hospitality from "./pages/Projects/Hospitality";
-
-// People
+// About
 import People from "./pages/People";
+import Projects from "./pages/Projects";
 
 // Clients
 import Clients from "./pages/Clients";
@@ -82,14 +77,12 @@ class App extends Component {
               <Route exact path="/approach/who" component={Who} />
               <Route exact path="/approach/how" component={How} />
 
-              {/* Projects */}
-              <Route exact path="/projects" component={Projects} />
-              <Route exact path="/projects/commercial-office" component={Commercial} />
+              {/* About */}
+              <Route exact path="/about/people" component={People} />
+              <Route exact path="/about/projects" component={Projects} />
+              {/* <Route exact path="/projects/commercial-office" component={Commercial} />
               <Route exact path="/projects/residential" component={Residential} />
-              <Route exact path="/projects/hospitality" component={Hospitality} />
-
-              {/* People */}
-              <Route exact path="/people" component={People} />
+              <Route exact path="/projects/hospitality" component={Hospitality} /> */}
               
               {/* Clients */}
               <Route exact path="/clients" component={Clients} />
