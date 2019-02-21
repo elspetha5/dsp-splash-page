@@ -1,5 +1,5 @@
 #peopleBackground {
-    padding-bottom: 15vh;
+    padding-bottom: 50vh;
 }
 
 #peopleWrapper {
@@ -44,4 +44,74 @@
 .peopleExpand {
     width: 9vw;
     margin: 5px;
+}
+
+
+.nucleusTitle {
+    font-size: 150%;
+    margin-bottom: 5px;
+}
+
+.peopleLine {
+    width: 100%;
+    border-bottom: 1px solid #92d3c7;
+    margin-bottom: 10px;
+}
+
+
+.clusterThree {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+
+.peopleLeft {
+    width: 7vw;
+}
+
+.clusterPic {
+    width: 6vw;
+    border: 4px solid white;
+    box-shadow: 2px 3px 4px grey;
+}
+
+.personOne {
+    transform: translate(120px, 17px) rotate(340deg);
+}
+
+.personOneStraight {
+    transform: none;
+}
+
+.personTwo {
+    transform: translate(90px);
+}
+
+.personTwoStraight {
+    transform: none;
+}
+
+.personThree {
+    transform: translate(65px, 17px) rotate(20deg);
+}
+
+.personThreeStraight {
+    transform: none;
+}
+
+.personFour {
+    transform: translate(-130px, 70px) rotate(10deg);
+
+}
+
+.personFourStraight {
+    transform: none;
+}
+
+.personFive {
+    transform: translate(-150px, 70px) rotate(340deg);
+}
+
+.personFiveStraight {
+    transform: none;
 }
