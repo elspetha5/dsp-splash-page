@@ -61,9 +61,16 @@
 }
 
 
-.clusterThree {
+.clusterTwo {
     display: inline-block;
-    width: 33.33%;
+    width: 50%;
+    height: 20vh;
+    text-align: center;
+}
+
+.clusterOne {
+    display: inline-block;
+    width: 100%;
     text-align: center;
 }
 
@@ -77,32 +84,32 @@
     box-shadow: 2px 3px 4px grey;
 }
 
-.personOne {
+.cluster0 {
     transform: translate(120px, 17px) rotate(340deg);
 }
 
-.personTwo {
+.cluster1 {
     transform: translate(90px);
 }
 
-.personThree {
+.cluster2 {
     transform: translate(65px, 17px) rotate(20deg);
 }
 
-.personFour {
+.cluster3 {
     transform: translate(-130px, 70px) rotate(10deg);
 
 }
 
-.personFive {
+.cluster4 {
     transform: translate(-150px, 70px) rotate(340deg);
 }
 
-.personOneStraight
-.personTwoStraight
-.personThreeStraight
-.personFourStraight
-.personFiveStraight {
+.straight0
+.straight1
+.straight2
+.straight3
+.straight4 {
     transform: none;
     display: block;
 }

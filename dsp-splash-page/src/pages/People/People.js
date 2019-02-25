@@ -4,8 +4,7 @@ import Popup from "reactjs-popup";
 import LeftIdea from "../../components/LeftIdea";
 import "./people.css";
 
-import people from "../../JSON/people.json";
-
+import people from "../../JSON/People/people.json";
 import twoPeople from "../../JSON/People/twoPeople.json";
 import threePeople from "../../JSON/People/threePeople.json";
 import fivePeople from "../../JSON/People/fivePeople.json";
@@ -18,37 +17,51 @@ class People extends Component {
             twoPeople,
             threePeople,
             fivePeople,
-            personOne: "personOne",
-            personTwo: "personTwo",
-            personThree: "personThree",
-            personFour: "personFour",
-            personFive: "personFive"
+            department1: "cluster",
+            department2: "cluster",
+            department3: "cluster"
         };
-        this.straighten = this.straighten.bind(this);
+        this.straightenClusterOne = this.straightenClusterOne.bind(this);
+        this.straightenClusterTwo = this.straightenClusterTwo.bind(this);
+        this.straightenClusterThree = this.straightenClusterThree.bind(this);
     }
 
     componentDidMount() {
         window.scrollTo(0, 0)
     };
 
-    straighten() {
-        (this.state.personOne === "personOne") ?
+    straightenClusterOne = () => {
+        (this.state.department1 === "cluster") ?
             this.setState({
-                personOne: "personOneStraight",
-                personTwo: "personTwoStraight",
-                personThree: "personThreeStraight",
-                personFour: "personFourStraight",
-                personFive: "personFiveStraight"
+                department1: "straight"
             })
         :
             this.setState({
-                personOne: "personOne",
-                personTwo: "personTwo",
-                personThree: "personThree",
-                personFour: "personFour",
-                personFive: "personFive"
+                department1: "cluster"
             });
-    }
+    };
+
+    straightenClusterTwo = () => {
+        (this.state.department2 === "cluster") ?
+            this.setState({
+                department2: "straight"
+            })
+        :
+            this.setState({
+                department2: "cluster"
+            });
+    };
+
+    straightenClusterThree = () => {
+        (this.state.department3 === "cluster") ?
+            this.setState({
+                department3: "straight"
+            })
+        :
+            this.setState({
+                department3: "cluster"
+            });
+    };
 
     render() {
         return (
@@ -57,6 +70,24 @@ class People extends Component {
                     <div id="aboutUs">we are . . . design service professionals</div>
                 </div>
 
+                <div id="department1" className="clusterTwo" onClick={this.straightenClusterOne}>
+                    {this.state.fivePeople.map((person, i) => (
+                        <img src={person.picture} alt="person" className={"clusterPic " + this.state.department1 + i} />                        
+                    ))}
+                </div>
+
+                <div id="department2" className="clusterTwo" onClick={this.straightenClusterTwo}>
+                    {this.state.fivePeople.map((person, i) => (
+                        <img src={person.picture} alt="person" className={"clusterPic " + this.state.department2 + i} />                        
+                    ))}
+                </div>
+
+                <div id="department3" className="clusterOne" onClick={this.straightenClusterThree}>
+                    {this.state.fivePeople.map((person, i) => (
+                        <img src={person.picture} alt="person" className={"clusterPic " + this.state.department3 + i} />                        
+                    ))}
+                </div>
+                
                 {/* <div id="peopleWrapper">
                     {this.state.people.map(person => (
                         <Popup
@@ -181,29 +212,6 @@ class People extends Component {
                     />
                 ))} */}
 
-                <div className="clusterThree" onClick={this.straighten}>
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personOne} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personTwo} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personThree} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personFour} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personFive} />
-                </div>
-
-                <div className="clusterThree" onClick={this.straighten}>
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personOne} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personTwo} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personThree} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personFour} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personFive} />
-                </div>
-
-                <div className="clusterThree" onClick={this.straighten}>
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personOne} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personTwo} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personThree} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personFour} />
-                    <img src={this.state.people[0].picture} alt="person" className={"clusterPic " + this.state.personFive} />
-                </div>
 
             </div>
         )
