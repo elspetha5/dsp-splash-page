@@ -74,8 +74,11 @@
     text-align: center;
 }
 
-.peopleLeft {
-    width: 7vw;
+.depTitle {
+    font-size: 150%;
+    padding: 20px 0;
+    font-family: 'Codystar', cursive;
+    font-weight: bold;
 }
 
 .clusterPic {
@@ -84,32 +87,55 @@
     box-shadow: 2px 3px 4px grey;
 }
 
+#visible {
+    display: initial;
+}
+
+#invisible {
+    display: none;
+}
+
 .cluster0 {
+    position: relative;
     transform: translate(120px, 17px) rotate(340deg);
+    z-index: 500;
 }
 
 .cluster1 {
+    position: relative;
     transform: translate(90px);
+    z-index: 501;
 }
 
 .cluster2 {
+    position: relative;
     transform: translate(65px, 17px) rotate(20deg);
+    z-index: 502;
 }
 
 .cluster3 {
+    position: relative;
     transform: translate(-130px, 70px) rotate(10deg);
-
+    z-index: 503;
 }
 
 .cluster4 {
+    position: relative;
     transform: translate(-150px, 70px) rotate(340deg);
+    z-index: 504;
 }
 
-.straight0
-.straight1
-.straight2
-.straight3
-.straight4 {
+.hiddenPic {
+    position: relative;
+    transform: translate(-18vw, 5vh);
+    z-index: 100;
+}
+
+.open0
+.open1
+.open2
+.open3
+.open4 {
     transform: none;
     display: block;
 }
