@@ -64,7 +64,7 @@
 .clusterOne {
     position: fixed;
     left: 10%;
-    top: 25%;
+    top: 20%;
     height: 20vh;
     text-align: center;
 }
@@ -73,7 +73,7 @@
 .clusterTwo {
     position: fixed;
     left: 63%;
-    top: 25%;
+    top: 20%;
     height: 20vh;
     text-align: center;
 }
@@ -135,32 +135,32 @@
     z-index: 100;
 }
 
-#open {
-    animation: clusterCenter 3s forwards;
-}
-
 .invisible {
     display: none;
 }
 
+#open {
+    animation: clusterCenter 3s forwards;
+}
+
 .open0 {
-    animation: open0 5s;
+    animation: open0 5s forwards;
 }
 
 .open1 {
-    animation: open1 5s;
+    animation: open1 5s forwards;
 }
 
 .open2 {
-    animation: open2 5s;
+    animation: open2 5s forwards;
 }
 
 .open3 {
-    animation: open3 5s;
+    animation: open3 5s forwards;
 }
 
 .open4 {
-    animation: open4 5s;
+    animation: open4 5s forwards;
 }
 
 @keyframes clusterCenter {
