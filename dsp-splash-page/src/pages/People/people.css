@@ -1,6 +1,6 @@
-#peopleBackground {
+/* #peopleBackground {
     padding-bottom: 50vh;
-}
+} */
 
 #peopleWrapper {
     padding: 3vh 15vw;
@@ -61,16 +61,28 @@
 }
 
 
-.clusterTwo {
-    display: inline-block;
-    width: 50%;
+.clusterOne {
+    position: fixed;
+    left: 10%;
+    top: 25%;
     height: 20vh;
     text-align: center;
 }
 
-.clusterOne {
-    display: inline-block;
-    width: 100%;
+
+.clusterTwo {
+    position: fixed;
+    left: 63%;
+    top: 25%;
+    height: 20vh;
+    text-align: center;
+}
+
+.clusterThree {
+    position: fixed;
+    left: 35%;
+    top: 50%;
+    height: 20vh;
     text-align: center;
 }
 
@@ -85,14 +97,6 @@
     width: 6vw;
     border: 4px solid white;
     box-shadow: 2px 3px 4px grey;
-}
-
-#visible {
-    display: initial;
-}
-
-#invisible {
-    display: none;
 }
 
 .cluster0 {
@@ -126,16 +130,87 @@
 }
 
 .hiddenPic {
-    position: relative;
+    position: absolute;
     transform: translate(-18vw, 5vh);
     z-index: 100;
 }
 
-.open0
-.open1
-.open2
-.open3
+#open {
+    animation: clusterCenter 3s forwards;
+}
+
+.invisible {
+    display: none;
+}
+
+.open0 {
+    animation: open0 5s;
+}
+
+.open1 {
+    animation: open1 5s;
+}
+
+.open2 {
+    animation: open2 5s;
+}
+
+.open3 {
+    animation: open3 5s;
+}
+
 .open4 {
-    transform: none;
-    display: block;
+    animation: open4 5s;
+}
+
+@keyframes clusterCenter {
+    to {
+        left: 35%;
+        top: 30%;
+    }
+}
+
+@keyframes open0 {
+    from {
+        transform: translate(120px, 17px) rotate(340deg);
+    }
+    to {
+        transform: translate(120px, 17px) rotate(340deg);
+    }
+}
+
+@keyframes open1 {
+    from {
+        transform: translate(90px);
+    }
+    to {
+        transform: translate(90px);
+    }
+}
+
+@keyframes open2 {
+    from {
+        transform: translate(65px, 17px) rotate(20deg);
+    }
+    to {
+        transform: translate(65px, 17px) rotate(20deg);
+    }
+}
+
+@keyframes open3 {
+    from {
+        transform: translate(-130px, 70px) rotate(10deg);
+    }
+    to {
+        transform: translate(-130px, 70px) rotate(10deg);
+    }
+}
+
+@keyframes open4 {
+    from {
+        transform: translate(-150px, 70px) rotate(340deg);
+    }
+    to {
+        transform: translate(-150px, 70px) rotate(340deg);
+    }
 }
