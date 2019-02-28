@@ -1,11 +1,3 @@
-/* #peopleBackground {
-    padding-bottom: 50vh;
-} */
-
-#peopleWrapper {
-    padding: 3vh 15vw;
-}
-
 #peopleTop {
     padding: 5vh 15vw 15vh;
     text-align: center;
@@ -32,34 +24,12 @@
     margin-bottom: 10px;
 }
 
-
-.inline {
-    display: inline-block;
-}
-
-.peoplePicRound {
-    width: 9vw;
-    margin: 5px;
-    border-radius: 50%;
-}
-
-.peopleExpand {
-    width: 9vw;
-    margin: 5px;
-}
-
-
-.nucleusTitle {
+.depTitle {
     font-size: 150%;
-    margin-bottom: 5px;
+    padding: 20px 0;
+    font-family: 'Codystar', cursive;
+    font-weight: bold;
 }
-
-.peopleLine {
-    width: 100%;
-    border-bottom: 1px solid #92d3c7;
-    margin-bottom: 10px;
-}
-
 
 .clusterOne {
     position: fixed;
@@ -86,13 +56,6 @@
     text-align: center;
 }
 
-.depTitle {
-    font-size: 150%;
-    padding: 20px 0;
-    font-family: 'Codystar', cursive;
-    font-weight: bold;
-}
-
 .clusterPic {
     width: 6vw;
     border: 4px solid white;
@@ -101,31 +64,31 @@
 
 .cluster0 {
     position: relative;
-    transform: translate(120px, 17px) rotate(340deg);
+    transform: translate(7.5vw, 20%) rotate(-20deg);
     z-index: 500;
 }
 
 .cluster1 {
     position: relative;
-    transform: translate(90px);
+    transform: translate(5.5vw);
     z-index: 501;
 }
 
 .cluster2 {
     position: relative;
-    transform: translate(65px, 17px) rotate(20deg);
+    transform: translate(4.25vw, 20%) rotate(20deg);
     z-index: 502;
 }
 
 .cluster3 {
     position: relative;
-    transform: translate(-130px, 70px) rotate(10deg);
+    transform: translate(-8.5vw, 80%) rotate(10deg);
     z-index: 503;
 }
 
 .cluster4 {
     position: relative;
-    transform: translate(-150px, 70px) rotate(340deg);
+    transform: translate(-9.75vw, 80%) rotate(-20deg);
     z-index: 504;
 }
 
@@ -133,6 +96,7 @@
     position: absolute;
     transform: translate(-18vw, 5vh);
     z-index: 100;
+    visibility: hidden;
 }
 
 .invisible {
@@ -140,7 +104,7 @@
 }
 
 #open {
-    animation: clusterCenter 3s forwards;
+    animation: clusterCenter 2s forwards;
 }
 
 .open0 {
@@ -171,46 +135,61 @@
 }
 
 @keyframes open0 {
-    from {
-        transform: translate(120px, 17px) rotate(340deg);
+    0% {
+        transform: translate(7.5vw, 20%) rotate(-20deg);
     }
-    to {
-        transform: translate(120px, 17px) rotate(340deg);
+    40% {
+        transform: translate(7.5vw, 20%) rotate(-20deg);
+    }
+    100% {
+        transform: translate(-5vw, -45%) rotate(-10deg);
     }
 }
 
 @keyframes open1 {
-    from {
-        transform: translate(90px);
+    0% {
+        transform: translate(5.5vw);
     }
-    to {
-        transform: translate(90px);
+    40% {
+        transform: translate(5.5vw);
+    }
+    100% {
+        transform: translate(5.5vw, -80%);
     }
 }
 
 @keyframes open2 {
-    from {
-        transform: translate(65px, 17px) rotate(20deg);
+    0% {
+        transform: translate(4.25vw, 20%) rotate(20deg);
     }
-    to {
-        transform: translate(65px, 17px) rotate(20deg);
+    40% {
+        transform: translate(4.25vw, 20%) rotate(20deg);
+    }
+    100% {
+        transform: translate(16.75vw, -45%) rotate(10deg);
     }
 }
 
 @keyframes open3 {
-    from {
-        transform: translate(-130px, 70px) rotate(10deg);
+    0% {
+        transform: translate(-8.5vw, 80%) rotate(10deg);
     }
-    to {
-        transform: translate(-130px, 70px) rotate(10deg);
+    40% {
+        transform: translate(-8.5vw, 80%) rotate(10deg);
+    }
+    100% {
+        transform: translate(-37vw, 60%) rotate(-20deg);
     }
 }
 
 @keyframes open4 {
-    from {
-        transform: translate(-150px, 70px) rotate(340deg);
+    0% {
+        transform: translate(-9.75vw, 80%) rotate(-20deg);
     }
-    to {
-        transform: translate(-150px, 70px) rotate(340deg);
+    40% {
+        transform: translate(-9.75vw, 80%) rotate(-20deg);
+    }
+    100% {
+        transform: translate(19vw, 60%) rotate(20deg);
     }
 }

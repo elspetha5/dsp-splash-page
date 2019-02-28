@@ -5,24 +5,21 @@ import LeftIdea from "../../components/LeftIdea";
 import "./people.css";
 
 import people from "../../JSON/People/people.json";
-import twoPeople from "../../JSON/People/twoPeople.json";
-import threePeople from "../../JSON/People/threePeople.json";
-import fivePeople from "../../JSON/People/fivePeople.json";
 
 class People extends Component {
     constructor(props) {
         super(props);
         this.state = {
             people,
-            twoPeople,
-            threePeople,
-            fivePeople,
+
             department1: "cluster",
             department2: "cluster",
             department3: "cluster",
+
             visibility1: "visible",
             visibility2: "visible",
             visibility3: "visible",
+
             depVisibility: "visible"
         };
         this.straightenClusterOne = this.straightenClusterOne.bind(this);
@@ -106,32 +103,37 @@ class People extends Component {
 
                 <div id={this.state.department1} className={`clusterOne ${this.state.visibility1}`} onClick={this.straightenClusterOne}>
                     <div className={`depTitle ${this.state.depVisibility}`}>Department 1</div>
-                    {this.state.fivePeople.map((person, i) => (
-                        <img src={person.picture} alt="person" className={`clusterPic ${this.state.department1 + i}`} />
-                    ))}
-                    {this.state.people.map(person => (
-                        <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                    {this.state.people.map((person, i) => (
+                        (i < 5)
+                            ?
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.department1 + i}`} />
+                            :
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
                     ))}
 
                 </div>
+
 
                 <div id={this.state.department2} className={`clusterTwo ${this.state.visibility2}`} onClick={this.straightenClusterTwo}>
                     <div className={`depTitle ${this.state.depVisibility}`}>Department 2</div>
-                    {this.state.fivePeople.map((person, i) => (
-                        <img src={person.picture} alt="person" className={`clusterPic ${this.state.department2 + i}`} />
-                    ))}
-                    {this.state.people.map(person => (
-                        <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                    {this.state.people.map((person, i) => (
+                        (i < 5)
+                            ?
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.department2 + i}`} />
+                            :
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
                     ))}
                 </div>
 
+
                 <div id={this.state.department3} className={`clusterThree ${this.state.visibility3}`} onClick={this.straightenClusterThree}>
                     <div className={`depTitle ${this.state.depVisibility}`}>Department 3</div>
-                    {this.state.fivePeople.map((person, i) => (
-                        <img src={person.picture} alt="person" className={`clusterPic ${this.state.department3 + i}`} />
-                    ))}
-                    {this.state.people.map(person => (
-                        <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                    {this.state.people.map((person, i) => (
+                        (i < 5)
+                            ?
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.department3 + i}`} />
+                            :
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
                     ))}
                 </div>
 
