@@ -1,3 +1,7 @@
+#peopleBackground {
+    padding-bottom: 20vh;
+}
+
 #peopleTop {
     padding: 5vh 15vw 15vh;
     text-align: center;
@@ -32,27 +36,30 @@
 }
 
 .clusterOne {
-    position: fixed;
-    left: 10%;
+    position: relative;
+    display: inline-block;
     top: 20%;
     height: 20vh;
+    width: 50%;
     text-align: center;
 }
 
 
 .clusterTwo {
-    position: fixed;
-    left: 63%;
+    position: relative;
+    display: inline-block;
     top: 20%;
     height: 20vh;
+    width: 50%;
     text-align: center;
 }
 
 .clusterThree {
-    position: fixed;
-    left: 35%;
+    position: relative;
+    display: inline-block;
     top: 50%;
     height: 20vh;
+    width: 100%;
     text-align: center;
 }
 
@@ -99,11 +106,17 @@
     visibility: hidden;
 }
 
+.lineUpPic {
+    animation: lineUpPic 5s forwards;
+}
+
 .invisible {
-    display: none;
+    visibility: hidden;
 }
 
 #open {
+    position: relative;
+    width: 100%;
     animation: clusterCenter 2s forwards;
 }
 
@@ -191,5 +204,20 @@
     }
     100% {
         transform: translate(19vw, 60%) rotate(20deg);
+    }
+}
+
+@keyframes lineUpPic {
+    0% {
+        transform: translate(-18vw, 5vh);
+        z-index: 100;
+        visibility: hidden;
+    }
+    40% {
+        transform: translate(-18vw, 5vh);
+        visibility: hidden;
+    }
+    100% {
+        transform: translate(0, 300%)
     }
 }
