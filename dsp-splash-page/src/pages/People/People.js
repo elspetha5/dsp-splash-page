@@ -20,9 +20,7 @@ class People extends Component {
             visibility2: "visible",
             visibility3: "visible",
 
-            depVisibility: "visible",
-
-            hiddenPic: "hiddenPic"
+            depVisibility: "visible"
         };
         this.straightenClusterOne = this.straightenClusterOne.bind(this);
         this.straightenClusterTwo = this.straightenClusterTwo.bind(this);
@@ -43,16 +41,14 @@ class People extends Component {
                 visibility3: "invisible",
                 department2: "cluster",
                 department3: "cluster",
-                depVisibility: "invisible",
-                hiddenPic: "lineUpPic"
+                depVisibility: "invisible"
             })
             :
             this.setState({
                 department1: "cluster",
                 visibility2: "visible",
                 visibility3: "visible",
-                depVisibility: "visible",
-                hiddenPic: "hiddenPic"
+                depVisibility: "visible"
             });
     };
 
@@ -66,16 +62,14 @@ class People extends Component {
                 visibility3: "invisible",
                 department1: "cluster",
                 department3: "cluster",
-                depVisibility: "invisible",
-                hiddenPic: "lineUpPic"
+                depVisibility: "invisible"
             })
             :
             this.setState({
                 department2: "cluster",
                 visibility1: "visible",
                 visibility3: "visible",
-                depVisibility: "visible",
-                hiddenPic: "hiddenPic"
+                depVisibility: "visible"
             });
     };
 
@@ -89,16 +83,14 @@ class People extends Component {
                 visibility3: "visible",
                 department1: "cluster",
                 department2: "cluster",
-                depVisibility: "invisible",
-                hiddenPic: "lineUpPic"
+                depVisibility: "invisible"
             })
             :
             this.setState({
                 department3: "cluster",
                 visibility1: "visible",
                 visibility2: "visible",
-                depVisibility: "visible",
-                hiddenPic: "hiddenPic"
+                depVisibility: "visible"
             });
     };
 
@@ -116,7 +108,7 @@ class People extends Component {
                             ?
                                 <img src={person.picture} alt="person" className={`clusterPic ${this.state.department1 + i}`} />
                             :
-                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.hiddenPic}`} />
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
                     ))}
 
                 </div>
@@ -129,7 +121,7 @@ class People extends Component {
                             ?
                                 <img src={person.picture} alt="person" className={`clusterPic ${this.state.department2 + i}`} />
                             :
-                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.hiddenPic}`} />
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
                     ))}
                 </div>
 
@@ -141,7 +133,7 @@ class People extends Component {
                             ?
                                 <img src={person.picture} alt="person" className={`clusterPic ${this.state.department3 + i}`} />
                             :
-                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.hiddenPic}`} />
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
                     ))}
                 </div>
 

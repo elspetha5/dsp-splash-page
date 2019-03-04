@@ -2,6 +2,10 @@ body {
     font-family: 'Corbel', sans-serif;
 }
 
+html {
+    background-color: #f4f7fc;
+}
+
 #background {
     /* padding-bottom: 10vh; */
     width: 100%;

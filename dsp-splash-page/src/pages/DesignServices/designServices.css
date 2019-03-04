@@ -44,3 +44,66 @@
 @media (max-width: 576px) { 
 
 }
+
+
+.slantBackground {
+    padding-bottom: 30vh;
+}
+
+.slantTop {
+    height: 30vh;
+    padding-top: 10vh;
+    padding-right: 60vw;
+    text-align: right;
+    background-color: #1b2c3a;
+}
+
+.whiteSlantTitle {
+    font-size: 250%;
+    color: #f4f7fc;
+}
+
+.slantDown {
+    height: 15vh;
+    transform: translateY(-7.5vh) skewY(4deg);
+    background-color: #1b2c3a;
+    margin-bottom: 3vh;
+}
+
+.darkSlantTitle {
+    height: 10vh;
+    padding-right: 60vw;
+    text-align: right;
+    font-size: 175%;
+    color: #333132;    
+}
+
+.slantInfoWrapper {
+    padding: 0 15vw 0 30vw;
+}
+
+.slantInfoTrigger {
+    display: inline-block;
+    font-size: 150%;
+    margin: 1.5vh 2vw;
+    color: #757579;
+}
+
+.slantInfoTrigger:hover {
+    color: #333132;
+}
+
+.whitePopupWords {
+    color: #f4f7fc;
+}
+
+.slantUp {
+    height: 50vh;
+    transform: translateY(7.5vh) skewY(-4deg);
+    margin-top: 5vh;
+    background-color: #d37c7c;
+}
+
+.unSkew {
+    transform: skewY(3deg);
+}
