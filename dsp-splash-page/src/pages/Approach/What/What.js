@@ -22,8 +22,6 @@ class What extends Component {
                         topQ="out-of-office… "
                         thesis="what's that?"
                     />
-
-
                 </div>
 
                 <div className="topIdea wrapper wordsBox">

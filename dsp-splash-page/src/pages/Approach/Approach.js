@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Popup from "reactjs-popup";
 import "./approach.css";
 
 // Components
@@ -7,22 +8,134 @@ import LeftIdea from "../../components/LeftIdea";
 
 // Files
 import ideas from "../../JSON/home.json";
+import where from "../../JSON/where.json";
 
 class Approach extends Component {
     state = {
-        ideas
+        ideas,
+        where
     };
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      };
+    };
 
     render() {
         return (
-            <div>
+            <div className="slantBackground">
+
+                <div className="slantTop">
+                    <div className="topSlantTitle">
+                        design service professionals, pllc
+                    </div>
+                </div>
+                <div id="darkBlue"></div>
+
+                <div>
+                    <div className="slantInfoWrapper">
+                        {this.state.ideas.map(idea => (
+                            <div className="slantInfoColumn">
+                                <Popup
+                                    trigger={<div className="darkSlantInfoTrigger centeredPopup">{idea.idea}</div>}
+                                    position="right center"
+                                    closeOnDocumentClick
+                                    contentStyle={{
+                                        "border": "none",
+                                        "border-radius": "2%",
+                                        "background-color": "#f4f7fc",
+                                        "padding": "20px"
+                                    }}
+                                >
+                                    <div className="popupWords">{idea.verbiage}</div>
+                                </Popup>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div id="pink" className="slantUp">
+                    <div className="unSkew">
+                        <div className="whiteSlantTitle slantTitle">what</div>
+                        <div className="slantInfoWrapper">
+                            <div>We're <span className="bold">building an ecosystem</span> of design professionals that kicks butt for our clients</div>
+                            <div>We're <span className="bold">creating a platform</span> for design services that will lead the industry within 3 years</div>
+                            <div>We're <span className="bold">disrupting the status quo</span> for design & delivery</div>
+                            <div>We're <span className="bold">offering a better value</span> for a superior design process</div>
+                            <div>We're <span className="bold">providing a work-life opportunity</span> that can't be found anywhere else</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div className="darkSlantTitle slantTitle">where</div>
+                    <div className="slantInfoWrapper">
+                        {this.state.where.map(where => (
+                            <div className="slantInfoColumn">
+                                <Popup
+                                    trigger={<div className="darkSlantInfoTrigger centeredPopup">{where.idea}</div>}
+                                    position="right center"
+                                    closeOnDocumentClick
+                                    contentStyle={{
+                                        "border": "none",
+                                        "border-radius": "2%",
+                                        "background-color": "#f4f7fc",
+                                        "padding": "20px"
+                                    }}
+                                >
+                                    <div className="popupWords">{where.verbiage}</div>
+                                </Popup>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div id="green" className="slantDown">
+                    <div className="unSkewDown">
+                        <div className="whiteSlantTitle slantTitle">why</div>
+                        <div className="slantInfoWrapper">
+                            <div>Because <span className="bold">we FINALLY can</span></div>
+                            <div>Because we've got the <span className="bold">right tech</span>, the <span className="bold">best talent</span>, and a <span className="bold">game changing</span> approach to design & delivery</div>
+                            <div>Because there's all kinds of <span className="bold">amazing talent outside</span> the typical design office</div>
+                            <div>Because design services for AEC partners means <span className="bold">we all thrive</span></div>
+                            <div>Because we can be <span className="bold">even better 'out of office'</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div className="darkSlantTitle slantTitle">who</div>
+                    <div className="slantInfoWrapper">
+                        <div>We're connectors, navigators, artists and <span className="bold">design thinkers</span></div>
+                        <div>We're <span className="bold">process scientists</span>… constantly pursuing and adapting to the most effective way forward</div>
+                        <div>We're integrators, collaborators and <span className="bold">visionaries</span></div>
+                        <div>We're <span className="bold">entrepreneurs</span>… developing design solutions to our most pressing problems</div>
+                        <div>We're <span className="bold">digital experts</span>… leading the industry in digital process integration</div>
+                        <div>We're design service professionals that <span className="bold">recognize what 'service' means</span>… and it's not about us</div>
+                        <div>We're makers… textile artisans, wood workers, metalsmiths… <span className="bold">lovers of the craft</span></div>
+                        <div>We're high achievers… <span className="bold">independently motivated</span> and deeply rooted in the process of design</div>
+                        <div>We're the <span className="bold">next generation</span> of design service professionals</div>
+                    </div>
+                </div>
+
+                <div id="pink" className="slantUp">
+                    <div className="unSkew">
+                        <div className="whiteSlantTitle slantTitle">how</div>
+                        <div className="slantInfoWrapper">
+                            <div>By <span className="bold">leveraging technology</span> to connect, collaborate and create in the cloud</div>
+                            <div>By assembling <span className="bold">the right teams</span> with the right skills <span className="bold">at the right time</span></div>
+                            <div>By delivering <span className="bold">high quality</span> design services from <span className="bold">start to finish</span></div>
+                            <div>By <span className="bold">understanding who we're serving</span> and what they care about most</div>
+                            <div>By placing our <span className="bold">people at the heart</span> of everything that matters</div>
+                            <div>By augmenting the best in our partners to <span className="bold">achieve more together</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
                 
 
-                <div id="homePic">
+
+                {/* <div id="homePic">
                     <div className="topPic">
                         <div id="homeTitle" className="topQ">DESIGN SERVICE PROFESSIONALS, PLLC</div>
 
@@ -47,7 +160,7 @@ class Approach extends Component {
                             />
                         </div>
                     ))}
-                </div>
+                </div> */}
 
             </div>
         )

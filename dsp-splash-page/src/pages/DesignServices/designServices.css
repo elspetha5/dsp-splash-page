@@ -53,8 +53,7 @@
 .slantTop {
     height: 30vh;
     padding-top: 10vh;
-    padding-right: 60vw;
-    text-align: right;
+    padding-left: 30vw;
     background-color: #1b2c3a;
     font-size: 250%;
     color: #f4f7fc;
@@ -67,30 +66,36 @@
     transform: translateY(-6vh) skewY(3deg);
 }
 
-.darkSlantTitle {
+.slantTitle {
     height: 10vh;
-    padding-right: 60vw;
-    text-align: right;
+    padding-left: 30vw;
     font-size: 175%;
+}
+
+.darkSlantTitle {
     color: #333132;    
 }
 
 .whiteSlantTitle {
-    height: 10vh;
-    padding-right: 60vw;
-    text-align: right;
-    font-size: 175%;
     color: #f4f7fc; 
 }
 
 .slantInfoWrapper {
-    padding: 0 15vw 0 30vw;
+    padding: 0 15vw 0 33vw;
+}
+
+.slantInfoColumn {
+    display: inline-block;
+    width: 33%;
+    font-size: 150%;
+    margin: 1.5vh 0;
+}
+
+.centeredPopup {
+    display: inline-block;
 }
 
 .darkSlantInfoTrigger {
-    display: inline-block;
-    font-size: 150%;
-    margin: 1.5vh 2vw;
     color: #757579;
 }
 
@@ -99,18 +104,11 @@
 }
 
 .darkSlantInfo {
-    display: inline-block;
-    font-size: 150%;
-    margin: 1.5vh 2vw;
     color: #757579;
 }
 
 .whiteSlantInfoTrigger {
-    display: inline-block;
-    font-size: 150%;
-    margin: 1.5vh 2vw;
     color: #faf7ee;
-    text-align: right;
 }
 
 .whiteSlantInfoTrigger:hover{
@@ -118,6 +116,8 @@
 }
 
 .popupWords {
+    font-size: 60%;
+    line-height: 1.5;
     color: #1b2c3a;
 }
 
