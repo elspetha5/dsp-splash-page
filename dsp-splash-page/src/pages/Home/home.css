@@ -1,14 +1,51 @@
 #homepage {
     background-color: #f4f7fc;
-    background-image: url(./thumbprint-intersection.png);
+    /* background-image: url(./thumbprint-intersection.png);
     background-repeat: no-repeat;
     background-position-x: -20vw;
     background-position-y: -55vh;
-    background-size: 70%;
-    height: 90vh;
+    background-size: 70%; */
 }
 
-.taglineBackground{
+.homeHalf {
+    float: left;
+    height: 95vh;
+}
+
+#homeLogo {
+    background-color: #1b2c3a;
+    padding: 23vh 0 0 14vw;
+    width: 44%;
+}
+
+#homeLogoIcon {
+    width: 20vw;
+}
+
+#homeSlant {
+    position: absolute;
+    top: 0;
+    left: 35vw;
+    background-color: #1b2c3a;
+    width: 16vw;
+    height: 95vh;
+    transform: skewX(-20deg);
+}
+
+#homeWords {
+    width: 56%;
+    padding: 34vh 0 0 15vw;
+}
+
+.homeTagline {
+    color: #1b2c3a;
+    font-size: 180%;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Codystar', cursive;
+}
+
+/* .taglineBackground{
     padding: 30vh 0 0 50vw;
 }
 
@@ -18,10 +55,10 @@
     line-height: 1.5;
     font-weight: bold;
     font-family: 'Codystar', cursive;
-}
+} */
 
 @media (max-width: 1200px) {
-    #homepage {
+    /* #homepage {
         background-position-x: -20vw;
         background-position-y: -40vh;
         background-size: 75%;
@@ -33,11 +70,11 @@
     
     .taglineThesis {
         font-size: 145%;
-    }
+    } */
 }
 
 @media (max-width: 992px) {
-    #homepage {
+    /* #homepage {
         background-position-x: -25vw;
         background-position-y: -25vh;
         background-size: 80%;
@@ -49,11 +86,11 @@
 
     .taglineThesis {
         font-size: 120%;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
-    #homepage {
+    /* #homepage {
         background-position-x: -50vw;
         background-position-y: -5vh;
         background-size: 140%;
@@ -65,11 +102,11 @@
 
    .taglineThesis {
        font-size: 150%;
-   }
+   } */
 }
 
 @media (max-width: 576px) { 
-    #homepage {
+    /* #homepage {
         background-position-x: -50vw;
         background-position-y: 15vh;
         background-size: 160%;
@@ -82,6 +119,6 @@
 
    .taglineThesis {
        font-size: 140%;
-   }
+   } */
 
 }

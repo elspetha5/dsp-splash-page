@@ -6,11 +6,10 @@
 }
 
 #logo {
-    width: 70px;
+    width: 60px;
     position: relative;
-    bottom: 3vh;
-    left: 15vw;
-    opacity: .35;
+    bottom: 1vh;
+    left: 16.5vw;
 }
 
 .link,
@@ -34,7 +33,7 @@
 }
 
 #questions {
-    padding: 0 0 0 15vw;
+    padding: 0 0 0 16.25vw;
 }
 
 .question,
@@ -118,7 +117,7 @@
     }
 
     #logo {
-        width: 70px;
+        width: 60px;
         left: 13vw;
     }
 
@@ -203,7 +202,6 @@
  
     #logo {
         position: fixed;
-        bottom: -.5vh;
         left: 15vw;
     }
 

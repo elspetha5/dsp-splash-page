@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import "./navbar.css";
 
-import logo from "./Thumbprint-Logo-Left.png";
+import logo from "./dspLogo.png";
 import stamp from "./under-construction-circle.png";
 
 class NavBar extends Component {
