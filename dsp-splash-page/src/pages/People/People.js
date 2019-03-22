@@ -12,6 +12,12 @@ class People extends Component {
         this.state = {
             people,
 
+            backButton: "backNoDisplay",
+
+            peopleThree1: "peopleAsThree",
+            peopleThree2: "peopleAsThree",
+            peopleThree3: "peopleAsThree",
+
             department1: "cluster",
             department2: "cluster",
             department3: "cluster",
@@ -25,11 +31,21 @@ class People extends Component {
         this.straightenClusterOne = this.straightenClusterOne.bind(this);
         this.straightenClusterTwo = this.straightenClusterTwo.bind(this);
         this.straightenClusterThree = this.straightenClusterThree.bind(this);
+        this.back = this.back.bind(this);
     }
 
     componentDidMount() {
         window.scrollTo(0, 0)
     };
+
+    back = () => {
+        this.setState({
+            peopleThree1: "peopleAsThree",
+            peopleThree2: "peopleAsThree",
+            peopleThree3: "peopleAsThree",
+            backButton: "backNoDisplay"
+        })
+    }
 
     straightenClusterOne = () => {
         (this.state.department1 === "cluster")
@@ -99,9 +115,50 @@ class People extends Component {
             <div id="peopleBackground">
                 <div id="peopleTop">
                     <div id="aboutUs">we are . . . design service professionals</div>
+                    <div id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</div>
                 </div>
 
-                <div id={this.state.department1} className={`clusterOne ${this.state.visibility1}`} onClick={this.straightenClusterOne}>
+                <div className={`peopleThree ${this.state.peopleThree1}`} id="peopleThree1">
+                    <div id={this.state.department1} className={`${this.state.visibility1}`} onClick={this.straightenClusterOne}>
+                        <div className={`depTitle ${this.state.depVisibility}`}>Department 1</div>
+                        {this.state.people.map((person, i) => (
+                            (i < 5)
+                                ?
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.department1 + i}`} />
+                                :
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                        ))}
+
+                    </div>
+                </div>
+
+                <div className={`peopleThree ${this.state.peopleThree2}`} id="peopleThree2">
+                    <div id={this.state.department2} className={`${this.state.visibility2}`} onClick={this.straightenClusterTwo}>
+                        <div className={`depTitle ${this.state.depVisibility}`}>Department 2</div>
+                        {this.state.people.map((person, i) => (
+                            (i < 5)
+                                ?
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.department2 + i}`} />
+                                :
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                        ))}
+                    </div>
+                </div>
+
+                <div className={`peopleThree ${this.state.peopleThree3}`} id="peopleThree3">
+                    <div id={this.state.department3} className={`${this.state.visibility3}`} onClick={this.straightenClusterThree}>
+                        <div className={`depTitle ${this.state.depVisibility}`}>Department 3</div>
+                        {this.state.people.map((person, i) => (
+                            (i < 5)
+                                ?
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.department3 + i}`} />
+                                :
+                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                        ))}
+                    </div>
+                </div>
+
+                {/* <div id={this.state.department1} className={`clusterOne ${this.state.visibility1}`} onClick={this.straightenClusterOne}>
                     <div className={`depTitle ${this.state.depVisibility}`}>Department 1</div>
                     {this.state.people.map((person, i) => (
                         (i < 5)
@@ -135,7 +192,7 @@ class People extends Component {
                             :
                                 <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
                     ))}
-                </div>
+                </div> */}
 
                 {/* <div id="peopleWrapper">
                     {this.state.people.map(person => (

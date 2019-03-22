@@ -63,7 +63,14 @@
     background-color: #1b2c3a;
     margin-bottom: 3vh;
     height: 12vh;
-    transform: translateY(-6vh) skewY(3deg);
+    transform: translateY(-6vh);
+    animation: slantDarkBlue 2s ease-out .5s forwards;
+}
+
+@keyframes slantDarkBlue {
+    to {
+        transform: translateY(-6vh) skewY(3deg);
+    }
 }
 
 .slantTitle {
@@ -124,13 +131,45 @@
 .slantUp {
     margin: 15vh 0;
     padding: 10vh 0;
-    transform: skewY(-3deg);
+    animation: slantUp 2s ease-out .5s forwards;
+}
+
+@keyframes slantUp {
+    to {
+        transform: skewY(-3deg);
+    }
+}
+
+.unSkew {
+    animation: unSkewUp 2s ease-out .5s forwards;
+}
+
+@keyframes unSkewUp {
+    to {
+        transform: skewY(3deg);
+    }
 }
 
 .slantDown {
     margin: 15vh 0;
     padding: 10vh 0;
-    transform: skewY(3deg);
+    animation: slantDown 2s ease-out .5s forwards;
+}
+
+@keyframes slantDown {
+    to {
+        transform: skewY(3deg);
+    }
+}
+
+.unSkewDown {
+    animation: unSkewDown 2s ease-out .5s forwards;
+}
+
+@keyframes unSkewDown {
+    to {
+        transform: skewY(-3deg);
+    }
 }
 
 #pink {
@@ -139,12 +178,4 @@
 
 #green {
     background-color: #1b2c3a;
-}
-
-.unSkew {
-    transform: skewY(3deg);
-}
-
-.unSkewDown {
-    transform: skewY(-3deg);
 }

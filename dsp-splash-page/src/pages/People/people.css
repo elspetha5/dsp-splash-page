@@ -1,5 +1,9 @@
 #peopleTop {
-    padding: 5vh 15vw 15vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5vh 0;
     text-align: center;
 }
 
@@ -7,6 +11,77 @@
     font-size: 175%;
     font-family: 'Codystar', cursive;
     font-weight: bold;
+    color: #1b2c3a;
+    margin-bottom: 4vh;
+}
+
+.backToPeople {
+    padding: 5px 10px;
+    word-spacing: 7px;
+    display: inline-block;
+    color: #1b2c3a;
+    background-color: #f4f7fc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #1b2c3a;
+}
+
+#backNoDisplay {
+    display: none;
+}
+
+#backDisplay {
+    display: initial;
+}
+
+.peopleAsThree {
+    width: 33.33%;
+}
+
+.peopleAsOne {
+    animation: expand 4s forwards;
+}
+
+@keyframes expand {
+    from {
+        width: 33.33%
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.peopleAsNone {
+    animation: shrink 4s forwards;
+}
+
+@keyframes shrink {
+    from {
+        width: 33.33%;
+    }
+    to {
+        width: 0%;
+        display: none;
+    }
+}
+
+.peopleThree {
+    padding-top: 18vh;
+    float: left;
+    text-align: center;
+    height: 95vh;
+}
+
+#peopleThree1 {
+    background-color: aqua;
+}
+
+#peopleThree2 {
+    background-color: coral;
+    padding-top: 42vh;
+}
+
+#peopleThree3 {
+    background-color: deeppink;
 }
 
 .peoplePic {
@@ -107,31 +182,15 @@
     animation: clusterCenter 2s forwards;
 }
 
-.open0 {
-    animation: open0 5s forwards;
-}
-
-.open1 {
-    animation: open1 5s forwards;
-}
-
-.open2 {
-    animation: open2 5s forwards;
-}
-
-.open3 {
-    animation: open3 5s forwards;
-}
-
-.open4 {
-    animation: open4 5s forwards;
-}
-
 @keyframes clusterCenter {
     to {
         left: 35%;
         top: 30%;
     }
+}
+
+.open0 {
+    animation: open0 5s forwards;
 }
 
 @keyframes open0 {
@@ -146,6 +205,10 @@
     }
 }
 
+.open1 {
+    animation: open1 5s forwards;
+}
+
 @keyframes open1 {
     0% {
         transform: translate(5.5vw);
@@ -156,6 +219,10 @@
     100% {
         transform: translate(5.5vw, -80%);
     }
+}
+
+.open2 {
+    animation: open2 5s forwards;
 }
 
 @keyframes open2 {
@@ -170,6 +237,10 @@
     }
 }
 
+.open3 {
+    animation: open3 5s forwards;
+}
+
 @keyframes open3 {
     0% {
         transform: translate(-8.5vw, 80%) rotate(10deg);
@@ -180,6 +251,10 @@
     100% {
         transform: translate(-37vw, 60%) rotate(-20deg);
     }
+}
+
+.open4 {
+    animation: open4 5s forwards;
 }
 
 @keyframes open4 {
