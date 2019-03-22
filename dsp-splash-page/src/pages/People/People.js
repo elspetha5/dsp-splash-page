@@ -26,7 +26,8 @@ class People extends Component {
             visibility2: "visible",
             visibility3: "visible",
 
-            depVisibility: "visible"
+            depVisibility: "visible",
+            hiddenPic: "hiddenPic"
         };
         this.straightenClusterOne = this.straightenClusterOne.bind(this);
         this.straightenClusterTwo = this.straightenClusterTwo.bind(this);
@@ -40,74 +41,98 @@ class People extends Component {
 
     back = () => {
         this.setState({
+            backButton: "backNoDisplay",
+
             peopleThree1: "peopleAsThree",
             peopleThree2: "peopleAsThree",
             peopleThree3: "peopleAsThree",
-            backButton: "backNoDisplay"
-        })
-    }
+
+            department1: "cluster",
+            department2: "cluster",
+            department3: "cluster",
+
+            visibility1: "visible",
+            visibility2: "visible",
+            visibility3: "visible",
+
+            depVisibility: "visible",
+            hiddenPic: "hiddenPic"
+        });
+    };
 
     straightenClusterOne = () => {
-        (this.state.department1 === "cluster")
-            ?
+        if (this.state.department1 === "cluster") {
             this.setState({
                 department1: "open",
+
+                peopleThree1: "peopleAsOne",
+                peopleThree2: "peopleAsNone",
+                peopleThree3: "peopleAsNone",
+
                 visibility1: "visible",
                 visibility2: "invisible",
                 visibility3: "invisible",
+
                 department2: "cluster",
                 department3: "cluster",
-                depVisibility: "invisible"
-            })
-            :
-            this.setState({
-                department1: "cluster",
-                visibility2: "visible",
-                visibility3: "visible",
-                depVisibility: "visible"
+
+                depVisibility: "invisible",
+                backButton: "backDisplay",
+                hiddenPic: "openHiddenPic"
             });
+        };
+
+        return;
     };
 
     straightenClusterTwo = () => {
-        (this.state.department2 === "cluster")
-            ?
+        if (this.state.department2 === "cluster") {
             this.setState({
                 department2: "open",
+
+                peopleThree1: "peopleAsNone",
+                peopleThree2: "peopleAsOne",
+                peopleThree3: "peopleAsNone",
+
                 visibility1: "invisible",
                 visibility2: "visible",
                 visibility3: "invisible",
+
                 department1: "cluster",
                 department3: "cluster",
-                depVisibility: "invisible"
-            })
-            :
-            this.setState({
-                department2: "cluster",
-                visibility1: "visible",
-                visibility3: "visible",
-                depVisibility: "visible"
+
+                depVisibility: "invisible",
+                backButton: "backDisplay",
+                hiddenPic: "openHiddenPic"
             });
+        };
+
+        return;
     };
 
     straightenClusterThree = () => {
-        (this.state.department3 === "cluster")
-            ?
+        if (this.state.department3 === "cluster") {
             this.setState({
                 department3: "open",
+
+                peopleThree1: "peopleAsNone",
+                peopleThree2: "peopleAsNone",
+                peopleThree3: "peopleAsOne",
+
                 visibility1: "invisible",
                 visibility2: "invisible",
                 visibility3: "visible",
+
                 department1: "cluster",
                 department2: "cluster",
-                depVisibility: "invisible"
-            })
-            :
-            this.setState({
-                department3: "cluster",
-                visibility1: "visible",
-                visibility2: "visible",
-                depVisibility: "visible"
+
+                depVisibility: "invisible",
+                backButton: "backDisplay",
+                hiddenPic: "openHiddenPic"
             });
+        };
+
+        return;
     };
 
     render() {
@@ -119,41 +144,41 @@ class People extends Component {
                 </div>
 
                 <div className={`peopleThree ${this.state.peopleThree1}`} id="peopleThree1">
-                    <div id={this.state.department1} className={`${this.state.visibility1}`} onClick={this.straightenClusterOne}>
+                    <div id={this.state.department1} className={`peopleFadeIn ${this.state.visibility1}`} onClick={this.straightenClusterOne}>
                         <div className={`depTitle ${this.state.depVisibility}`}>Department 1</div>
                         {this.state.people.map((person, i) => (
                             (i < 5)
                                 ?
                                 <img src={person.picture} alt="person" className={`clusterPic ${this.state.department1 + i}`} />
                                 :
-                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.hiddenPic}`} />
                         ))}
 
                     </div>
                 </div>
 
                 <div className={`peopleThree ${this.state.peopleThree2}`} id="peopleThree2">
-                    <div id={this.state.department2} className={`${this.state.visibility2}`} onClick={this.straightenClusterTwo}>
+                    <div id={this.state.department2} className={`peopleFadeIn ${this.state.visibility2}`} onClick={this.straightenClusterTwo}>
                         <div className={`depTitle ${this.state.depVisibility}`}>Department 2</div>
                         {this.state.people.map((person, i) => (
                             (i < 5)
                                 ?
                                 <img src={person.picture} alt="person" className={`clusterPic ${this.state.department2 + i}`} />
                                 :
-                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.hiddenPic}`} />
                         ))}
                     </div>
                 </div>
 
                 <div className={`peopleThree ${this.state.peopleThree3}`} id="peopleThree3">
-                    <div id={this.state.department3} className={`${this.state.visibility3}`} onClick={this.straightenClusterThree}>
+                    <div id={this.state.department3} className={`peopleFadeIn ${this.state.visibility3}`} onClick={this.straightenClusterThree}>
                         <div className={`depTitle ${this.state.depVisibility}`}>Department 3</div>
                         {this.state.people.map((person, i) => (
                             (i < 5)
                                 ?
                                 <img src={person.picture} alt="person" className={`clusterPic ${this.state.department3 + i}`} />
                                 :
-                                <img src={person.picture} alt="person" className={`clusterPic hiddenPic`} />
+                                <img src={person.picture} alt="person" className={`clusterPic ${this.state.hiddenPic}`} />
                         ))}
                     </div>
                 </div>

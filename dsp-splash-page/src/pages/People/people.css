@@ -23,6 +23,7 @@
     background-color: #f4f7fc;
     border-radius: 5px;
     box-shadow: 2px 2px 1px #1b2c3a;
+    opacity: 0;
 }
 
 #backNoDisplay {
@@ -30,7 +31,14 @@
 }
 
 #backDisplay {
-    display: initial;
+    animation: backDisplay 4s forwards;
+}
+
+@keyframes backDisplay {
+    to {
+        display: initial;
+        opacity: 1;
+    }
 }
 
 .peopleAsThree {
@@ -47,6 +55,7 @@
     }
     to {
         width: 100%;
+        padding: 35vh 20% 0;
     }
 }
 
@@ -71,17 +80,32 @@
     height: 95vh;
 }
 
+.peopleFadeIn {
+    animation: peopleFadeIn 3s forwards;
+}
+
+@keyframes peopleFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 #peopleThree1 {
-    background-color: aqua;
+    background-color: #92d3c7;
 }
 
 #peopleThree2 {
-    background-color: coral;
+    background-color: #d37c7c;
     padding-top: 42vh;
 }
 
 #peopleThree3 {
-    background-color: deeppink;
+    background-color: #b2d08b;
 }
 
 .peoplePic {
@@ -89,7 +113,7 @@
     margin: 5px;
 }
 
-.peopleTitle {
+/* .peopleTitle {
     font-weight: bold;
     margin-bottom: 3px;
 }
@@ -97,7 +121,7 @@
 .peopleCred {
     font-style: italic;
     margin-bottom: 10px;
-}
+} */
 
 .depTitle {
     font-size: 150%;
@@ -106,7 +130,7 @@
     font-weight: bold;
 }
 
-.clusterOne {
+/* .clusterOne {
     position: fixed;
     left: 10%;
     top: 20%;
@@ -129,7 +153,7 @@
     top: 50%;
     height: 20vh;
     text-align: center;
-}
+} */
 
 .clusterPic {
     width: 6vw;
@@ -178,7 +202,29 @@
     display: none;
 }
 
-#open {
+.openHiddenPic {
+    animation: openHiddenPic 7s forwards;
+}
+
+@keyframes openHiddenPic {
+    0% {
+        position: absolute;
+        transform: translate(-18vw, 5vh);
+        z-index: 100;
+        display: none;
+    }
+    40% {
+        position: absolute;
+        transform: translate(-18vw, 5vh);
+        z-index: 100;
+        display: none;
+    }
+    100% {
+        display: initial;
+    }
+}
+
+/* #open {
     animation: clusterCenter 2s forwards;
 }
 
@@ -187,84 +233,104 @@
         left: 35%;
         top: 30%;
     }
-}
+} */
 
 .open0 {
-    animation: open0 5s forwards;
+    animation: open0 7s forwards;
 }
 
 @keyframes open0 {
     0% {
         transform: translate(7.5vw, 20%) rotate(-20deg);
     }
+    /* 20% {
+        position: absolute;
+        transform: translate(-18vw, 5vh);
+    } */
     40% {
         transform: translate(7.5vw, 20%) rotate(-20deg);
     }
     100% {
-        transform: translate(-5vw, -45%) rotate(-10deg);
+        display: inline-block;
     }
 }
 
 .open1 {
-    animation: open1 5s forwards;
+    animation: open1 7s forwards;
 }
 
 @keyframes open1 {
     0% {
         transform: translate(5.5vw);
     }
+    /* 20% {
+        position: absolute;
+        transform: translate(-18vw, 5vh);
+    } */
     40% {
         transform: translate(5.5vw);
     }
     100% {
-        transform: translate(5.5vw, -80%);
+        display: inline-block;
     }
 }
 
 .open2 {
-    animation: open2 5s forwards;
+    animation: open2 7s forwards;
 }
 
 @keyframes open2 {
     0% {
         transform: translate(4.25vw, 20%) rotate(20deg);
     }
+    /* 20% {
+        position: absolute;
+        transform: translate(-18vw, 5vh);
+    } */
     40% {
         transform: translate(4.25vw, 20%) rotate(20deg);
     }
     100% {
-        transform: translate(16.75vw, -45%) rotate(10deg);
+        display: inline-block;
     }
 }
 
 .open3 {
-    animation: open3 5s forwards;
+    animation: open3 7s forwards;
 }
 
 @keyframes open3 {
     0% {
         transform: translate(-8.5vw, 80%) rotate(10deg);
     }
+    /* 20% {
+        position: absolute;
+        transform: translate(-18vw, 5vh);
+    } */
     40% {
         transform: translate(-8.5vw, 80%) rotate(10deg);
     }
     100% {
-        transform: translate(-37vw, 60%) rotate(-20deg);
+        display: inline-block;
     }
 }
 
 .open4 {
-    animation: open4 5s forwards;
+    animation: open4 7s forwards;
 }
 
 @keyframes open4 {
     0% {
         transform: translate(-9.75vw, 80%) rotate(-20deg);
     }
+    /* 20% {
+        position: absolute;
+        transform: translate(-18vw, 5vh);
+    } */
     40% {
         transform: translate(-9.75vw, 80%) rotate(-20deg);
     }
     100% {
-        transform: translate(19vw, 60%) rotate(20deg);
+        display: inline-block;
     }
 }
