@@ -20,6 +20,22 @@
 
 #homeLogoIcon {
     width: 20vw;
+    opacity: 0;
+    animation: rotateLogo 4s ease-out .5s forwards;
+}
+
+@keyframes rotateLogo {
+    0% {
+        opacity: 0;
+        transform: scale(.25) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
 }
 
 #homeSlant {
@@ -27,14 +43,33 @@
     top: 0;
     left: 35vw;
     background-color: #1b2c3a;
-    width: 16vw;
+    width: 16.5vw;
     height: 95vh;
-    transform: skewX(-20deg);
+    animation: slanty 4s ease-out .5s forwards;
+}
+
+@keyframes slanty {
+    100% {
+        transform: skewX(-20deg);
+    }
 }
 
 #homeWords {
     width: 56%;
     padding: 34vh 0 0 15vw;
+    opacity: 0;
+    animation: wordAppear 4s .5s forwards;
+}
+
+@keyframes wordAppear {
+    from {
+        opacity: 0;
+        transform: translateX(-20vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0vw);
+    }
 }
 
 .homeTagline {
@@ -90,6 +125,10 @@
 }
 
 @media (max-width: 768px) {
+    .homeTagline {
+        font-size: 70%;
+    }
+    
     /* #homepage {
         background-position-x: -50vw;
         background-position-y: -5vh;
