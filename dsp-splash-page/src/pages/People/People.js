@@ -140,7 +140,7 @@ class People extends Component {
             <div id="peopleBackground">
                 <div id="peopleTop">
                     <div id="aboutUs">we are . . . design service professionals</div>
-                    <div id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</div>
+                    <a href="#" id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</a>
                 </div>
 
                 <div className={`peopleThree ${this.state.peopleThree1}`} id="peopleThree1">
