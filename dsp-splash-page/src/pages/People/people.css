@@ -46,6 +46,13 @@
     }
 }
 
+.peopleThree {
+    padding-top: 23vh;
+    float: left;
+    text-align: center;
+    height: 95vh;
+}
+
 .peopleAsThree {
     width: 33.33%;
 }
@@ -76,13 +83,6 @@
         width: 0%;
         display: none;
     }
-}
-
-.peopleThree {
-    padding-top: 23vh;
-    float: left;
-    text-align: center;
-    height: 95vh;
 }
 
 .peopleFadeIn {
@@ -392,3 +392,197 @@
         top: 30%;
     }
 } */
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    #peopleTop {
+        padding: 5vh 4vh 3vh;
+        background-color: #f4f7fc;
+    }
+
+    #aboutUs {
+        font-size: 100%;
+        margin-bottom: 3vh;
+        text-align: left;
+    }
+
+    #aboutUsBreak {
+        display: block;
+    }
+
+    .backToPeople {
+        font-size: 80%;
+    }
+
+    .depTitle {
+        font-size: 110%;
+    }
+
+    .peopleThree {
+        height: 0vh;
+    }
+
+    #peopleThree1 {
+        padding-top: 17vh;
+        height: 40vh;
+    }
+
+    #peopleThree2 {
+        padding-top: 3vh;
+        height: 26vh;
+    }
+
+    #peopleThree3 {
+        padding-top: 3vh;
+        height: 26vh;
+    }
+
+    .peopleAsThree {
+        width: 100%;
+    }
+
+    .peopleAsOne {
+        animation: phoneExpand 3s forwards;
+    }
+
+    @keyframes phoneExpand {
+        from {
+            height: 26vh;
+            padding: 35vh 15% 0;
+        }
+        to {
+            height: 95vh;
+            padding: 35vh 8% 0;
+        }
+    }
+
+    .peopleAsNone {
+        animation: phoneShrink 3s forwards;
+    }
+
+    @keyframes phoneShrink {
+        from {
+            height: 26vh;
+        }
+        to {
+            height: 0vh;
+            display: none;
+        }        
+    }
+
+    .clusterPic {
+        width: 12vw;
+    }
+
+    .cluster0 {
+        transform: translate(16vw, 20%) rotate(-20deg);
+    }
+
+    .cluster1 {
+        transform: translate(12vw);
+    }
+
+    .cluster2 {
+        transform: translate(9.5vw, 20%) rotate(20deg);
+    }
+
+    .cluster3 {
+        transform: translate(-16vw, 83%) rotate(10deg);
+    }
+
+    .cluster4 {
+        transform: translate(-18.75vw, 83%) rotate(-20deg);
+    }
+
+    .open0 {
+        animation: phoneOpen0 3s forwards;
+    }
+
+    @keyframes phoneOpen0 {
+        from {
+            position: relative;
+            transform: translate(16vw, 20%) rotate(-20deg);
+            z-index: 500;
+        }
+        to {
+            margin: 0 8px 10px 0;
+            display: initial;        
+        }
+    }
+
+    .open1 {
+        animation: phoneOpen1 3s forwards;
+    }
+
+    @keyframes phoneOpen1 {
+        from {
+            position: relative;
+            transform: translate(12vw);
+            z-index: 501;        
+        }
+        to {
+            margin: 0 8px 10px 0;
+            display: initial;
+        }
+    }
+
+    .open2 {
+        animation: phoneOpen2 3s forwards;
+    }
+
+    @keyframes phoneOpen2 {
+        from {
+            position: relative;
+            transform: translate(9.5vw, 20%) rotate(20deg);
+            z-index: 502;
+        }
+        to {
+            margin: 0 8px 10px 0;
+            display: initial;
+        }
+    }
+
+    .open3 {
+        animation: phoneOpen3 3s forwards;
+    }
+    
+    @keyframes phoneOpen3 {
+        from {
+            position: relative;
+            transform: translate(-16vw, 83%) rotate(10deg);
+            z-index: 503;
+        }
+        to {
+            margin: 0 8px 10px 0;
+            display: initial;
+        }
+    }
+
+    .open4 {
+        animation: phoneOpen4 3s forwards;
+    }
+
+    @keyframes phoneOpen4 {
+        from {
+            position: relative;
+            transform: translate(-18.75vw, 83%) rotate(-20deg);
+            z-index: 504;
+        }
+        to {
+            margin: 0 8px 10px 0;
+            display: initial;
+        }
+    }
+
+}
+
+@media (max-width: 576px) { 
+    
+
+}

@@ -141,7 +141,7 @@ class People extends Component {
         return (
             <div id="peopleBackground">
                 <div id="peopleTop">
-                    <div id="aboutUs">we are . . . design service professionals</div>
+                    <div id="aboutUs">we are . . . <span id="aboutUsBreak">design service professionals</span></div>
                     <Link to="#" id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</Link>
                 </div>
 

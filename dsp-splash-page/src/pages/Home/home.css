@@ -45,10 +45,10 @@
     background-color: #1b2c3a;
     width: 16.5vw;
     height: 95vh;
-    animation: slanty 4s ease-out .5s forwards;
+    animation: slantyX 4s ease-out .5s forwards;
 }
 
-@keyframes slanty {
+@keyframes slantyX {
     100% {
         transform: skewX(-20deg);
     }
@@ -126,19 +126,53 @@
 
 @media (max-width: 768px) {
     .homeHalf {
-        height: 50vh;
+        height: 35vh;
     }
 
     #homeLogo {
         width: 100%;
+        padding: 10vh 0 0 0;
+        text-align: center;
+    }
+
+    #homeLogoIcon {
+        width: 35vw;
+    }
+
+    #homeSlant {
+        width: 100%;
+        top: 28vh;
+        left: 0;
+        height: 14vh;
+        /* background-color: red; */
+        animation: slantyY 4s ease-out .5s forwards;
+    }
+    
+    @keyframes slantyY {
+        100% {
+            transform: skewY(15deg);
+        }
     }
 
     #homeWords {
         width: 100%;
+        padding: 22vh 0 0 10vw;
+        animation: wordAppearVert 4s .5s forwards;
+    }
+
+    @keyframes wordAppearVert {
+        from {
+            opacity: 0;
+            transform: translateY(-20vh);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0vh);
+        }
     }
     
     .homeTagline {
-        font-size: 70%;
+        font-size: 100%;
     }
     
     /* #homepage {

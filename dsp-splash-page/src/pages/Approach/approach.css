@@ -1,4 +1,4 @@
-#homePic {
+/* #homePic {
     background-image: url(./approach.png);
     height: 100%;
     background-position: center;
@@ -32,7 +32,7 @@
 .thesisColor:hover {
     text-decoration: none;
     color: #757579;
-}
+} */
 
 /* #collaborative {
     position: absolute;
@@ -64,20 +64,35 @@
     top: 1550px;
 } */
 
+.infoWords {
+    font-size: 120%;
+    line-height: 1.5;
+}
+
+.whiteInfoWords {
+    color: #f4f7fc;
+}
+
 @media (max-width: 1200px) { 
     
 }
 
 @media (max-width: 992px) { 
-       
+    
 }
 
 @media (max-width: 768px) {
-    #homeTitle {
+    .infoWords {
+        font-size: 100%;
+        line-height: 1.2;
+        margin-bottom: 3vh;
+    }
+
+    /* #homeTitle {
         margin-bottom: 20px;
         font-size: 140%;
     }
-
+    
     #homeThesisWrapper {
         margin-bottom: 80%;
     }
@@ -103,7 +118,7 @@
     #highQuality {
         color: #f0e4da;
 
-    }
+    } */
 
     /* #collaborative {
         position: absolute;
@@ -138,13 +153,4 @@
 
 @media (max-width: 576px) { 
 
-}
-
-.infoWords {
-    font-size: 120%;
-    line-height: 1.5;
-}
-
-.whiteInfoWords {
-    color: #f4f7fc;
 }

@@ -1,4 +1,4 @@
-#servicesPic {
+/* #servicesPic {
     background-image: url(./mountain-scape.jpg);
     height: 100%;
     background-position: center;
@@ -25,25 +25,7 @@
     border: 2px dotted #757579;
     color: #757579;
     
-}
-
-@media (max-width: 1200px) { 
-    
-}
-
-@media (max-width: 992px) { 
-       
-}
-
-@media (max-width: 768px) { 
-    #designThesis {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 576px) { 
-
-}
+} */
 
 
 .slantBackground {
@@ -178,4 +160,98 @@
 
 #green {
     background-color: #1b2c3a;
+}
+
+@media (max-width: 1200px) { 
+    
+}
+
+@media (max-width: 992px) { 
+       
+}
+
+@media (max-width: 768px) { 
+    /* #designThesis {
+        margin-left: 0;
+    } */
+
+    .slantTop {
+        padding-top: 7vh;
+        padding-left: 20vw;
+        height: 20vh;
+        font-size: 180%
+    }
+
+    #darkBlue {
+        height: 8vh;
+        transform: translateY(-4vh);
+        animation: phoneSlantDarkBlue 2s ease-out .5s forwards;
+    }
+
+    @keyframes phoneSlantDarkBlue {
+        to {
+            transform: translateY(-4vh) skewY(9deg);
+        }
+    }
+
+    .slantTitle {
+        height: 5vh;
+        padding-left: 20vw;
+        font-size: 140%;
+    }
+
+    .slantInfoWrapper {
+        padding: 0 10vw 0 25vw;
+    }
+
+    .slantInfoColumn {
+        width: 100%;
+        font-size: 110%;
+    }
+
+    .slantUp {
+        margin: 10vh 0;
+        animation: phoneSlantUp 2s ease-out .5s forwards;
+    }
+
+    @keyframes phoneSlantUp {
+        to {
+            transform: skewY(-9deg);
+        }
+    }
+
+    .unSkew {
+        animation: phoneUnSkewUp 2s ease-out .5s forwards;
+    }
+
+    @keyframes phoneUnSkewUp {
+        to {
+            transform: skewY(9deg);
+        }
+    }
+
+    .slantDown {
+        margin: 10vh 0;
+        animation: phoneSlantDown 2s ease-out .5s forwards;
+    }
+
+    @keyframes phoneSlantDown {
+        to {
+            transform: skewY(9deg);
+        }
+    }
+
+    .unSkewDown {
+        animation: phoneUnSkewDown 2s ease-out .5s forwards;
+    }
+
+    @keyframes phoneUnSkewDown {
+        to {
+            transform: skewY(-9deg);
+        }
+    }
+}
+
+@media (max-width: 576px) { 
+
 }
