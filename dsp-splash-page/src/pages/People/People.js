@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Panel } from "react-bootstrap";
 import Popup from "reactjs-popup";
 import LeftIdea from "../../components/LeftIdea";
+import { Link } from "react-router-dom";
+import Cluster from "./Cluster";
 import "./people.css";
 
 import people from "../../JSON/People/people.json";
@@ -29,9 +31,9 @@ class People extends Component {
             depVisibility: "visible",
             hiddenPic: "hiddenPic"
         };
-        this.straightenClusterOne = this.straightenClusterOne.bind(this);
-        this.straightenClusterTwo = this.straightenClusterTwo.bind(this);
-        this.straightenClusterThree = this.straightenClusterThree.bind(this);
+        this.straightenCluster1 = this.straightenCluster1.bind(this);
+        this.straightenCluster2 = this.straightenCluster2.bind(this);
+        this.straightenCluster3 = this.straightenCluster3.bind(this);
         this.back = this.back.bind(this);
     }
 
@@ -60,7 +62,7 @@ class People extends Component {
         });
     };
 
-    straightenClusterOne = () => {
+    straightenCluster1 = () => {
         if (this.state.department1 === "cluster") {
             this.setState({
                 department1: "open",
@@ -85,7 +87,7 @@ class People extends Component {
         return;
     };
 
-    straightenClusterTwo = () => {
+    straightenCluster2 = () => {
         if (this.state.department2 === "cluster") {
             this.setState({
                 department2: "open",
@@ -110,7 +112,7 @@ class People extends Component {
         return;
     };
 
-    straightenClusterThree = () => {
+    straightenCluster3 = () => {
         if (this.state.department3 === "cluster") {
             this.setState({
                 department3: "open",
@@ -140,11 +142,47 @@ class People extends Component {
             <div id="peopleBackground">
                 <div id="peopleTop">
                     <div id="aboutUs">we are . . . design service professionals</div>
-                    <a href="#" id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</a>
+                    <Link to="#" id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</Link>
                 </div>
 
-                <div className={`peopleThree ${this.state.peopleThree1}`} id="peopleThree1">
-                    <div id={this.state.department1} className={`peopleFadeIn ${this.state.visibility1}`} onClick={this.straightenClusterOne}>
+                <Cluster
+                    num={1}
+                    background={this.state.peopleThree1}
+                    department={this.state.department1}
+                    visibility={this.state.visibility1}
+                    func={this.straightenCluster1}
+                    depVisibility={this.state.depVisibility}
+                    array={this.state.people}
+                    clusterPic={this.state.department1}
+                    hiddenPic={this.state.hiddenPic}
+                />
+
+                <Cluster
+                    num={2}
+                    background={this.state.peopleThree2}
+                    department={this.state.department2}
+                    visibility={this.state.visibility2}
+                    func={this.straightenCluster2}
+                    depVisibility={this.state.depVisibility}
+                    array={this.state.people}
+                    clusterPic={this.state.department2}
+                    hiddenPic={this.state.hiddenPic}
+                />
+
+                <Cluster
+                    num={3}
+                    background={this.state.peopleThree3}
+                    department={this.state.department3}
+                    visibility={this.state.visibility3}
+                    func={this.straightenCluster3}
+                    depVisibility={this.state.depVisibility}
+                    array={this.state.people}
+                    clusterPic={this.state.department3}
+                    hiddenPic={this.state.hiddenPic}
+                />
+
+                {/* <div className={`peopleThree ${this.state.peopleThree1}`} id="peopleThree1">
+                    <div id={this.state.department1} className={`peopleFadeIn ${this.state.visibility1}`} onClick={this.straightenCluster1}>
                         <div className={`depTitle ${this.state.depVisibility}`}>Department 1</div>
                         {this.state.people.map((person, i) => (
                             (i < 5)
@@ -158,7 +196,7 @@ class People extends Component {
                 </div>
 
                 <div className={`peopleThree ${this.state.peopleThree2}`} id="peopleThree2">
-                    <div id={this.state.department2} className={`peopleFadeIn ${this.state.visibility2}`} onClick={this.straightenClusterTwo}>
+                    <div id={this.state.department2} className={`peopleFadeIn ${this.state.visibility2}`} onClick={this.straightenCluster2}>
                         <div className={`depTitle ${this.state.depVisibility}`}>Department 2</div>
                         {this.state.people.map((person, i) => (
                             (i < 5)
@@ -171,7 +209,7 @@ class People extends Component {
                 </div>
 
                 <div className={`peopleThree ${this.state.peopleThree3}`} id="peopleThree3">
-                    <div id={this.state.department3} className={`peopleFadeIn ${this.state.visibility3}`} onClick={this.straightenClusterThree}>
+                    <div id={this.state.department3} className={`peopleFadeIn ${this.state.visibility3}`} onClick={this.straightenCluster3}>
                         <div className={`depTitle ${this.state.depVisibility}`}>Department 3</div>
                         {this.state.people.map((person, i) => (
                             (i < 5)
@@ -181,7 +219,7 @@ class People extends Component {
                                 <img src={person.picture} alt="person" className={`clusterPic ${this.state.hiddenPic}`} />
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 {/* <div id={this.state.department1} className={`clusterOne ${this.state.visibility1}`} onClick={this.straightenClusterOne}>
                     <div className={`depTitle ${this.state.depVisibility}`}>Department 1</div>

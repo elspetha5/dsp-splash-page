@@ -125,6 +125,18 @@
 }
 
 @media (max-width: 768px) {
+    .homeHalf {
+        height: 50vh;
+    }
+
+    #homeLogo {
+        width: 100%;
+    }
+
+    #homeWords {
+        width: 100%;
+    }
+    
     .homeTagline {
         font-size: 70%;
     }

@@ -16,18 +16,6 @@ class Login extends Component {
         return (
             <div>
 
-                <div id="homeAnimation">
-
-                    <div id="animLines">
-                        <div id="leftLine"></div>
-                        <div id="rightLine"></div>
-                    </div>
-
-                    <img src={thumbprint} id="animThumb" alt="thumbprint"></img>
-
-                    <div id="sectDot"></div>
-                </div>
-
             </div>
         )
     };
