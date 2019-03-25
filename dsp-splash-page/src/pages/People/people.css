@@ -13,6 +13,9 @@
     font-weight: 900;
     color: #1b2c3a;
     margin-bottom: 4vh;
+    background-color: #f4f7fc;
+    display: inline-block;
+    padding: 5px 10px;
 }
 
 .backToPeople {

@@ -56,7 +56,7 @@
 
 #homeWords {
     width: 56%;
-    padding: 34vh 0 0 15vw;
+    padding: 37vh 0 0 15vw;
     opacity: 0;
     animation: wordAppear 4s .5s forwards;
 }

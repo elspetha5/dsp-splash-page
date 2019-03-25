@@ -4,7 +4,7 @@ const Cluster = props => {
     return (
         <div className={`peopleThree ${props.background}`} id={`peopleThree${props.num}`}>
             <div id={props.department} className={`peopleFadeIn ${props.visibility}`} onClick={props.func}>
-                <div className={`depTitle ${props.depVisibility}`}>Department {props.num}</div>
+                <div className={`depTitle ${props.depVisibility}`}>{props.dep}</div>
                 {props.array.map((person, i) => (
                     (i < 5)
                         ?

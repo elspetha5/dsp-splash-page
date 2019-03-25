@@ -36,13 +36,13 @@
     height: 30vh;
     padding-top: 10vh;
     padding-left: 30vw;
-    background-color: #1b2c3a;
+    background-color: #757579;
     font-size: 250%;
     color: #f4f7fc;
 }
 
 #darkBlue {
-    background-color: #1b2c3a;
+    background-color: #757579;
     margin-bottom: 3vh;
     height: 12vh;
     transform: translateY(-6vh);
@@ -155,7 +155,7 @@
 }
 
 #pink {
-    background-color: #d37c7c;
+    background-color: #b2d08d;
 }
 
 #green {

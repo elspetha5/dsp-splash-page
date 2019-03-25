@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./home.css";
 
-import logo from "../../components/NavBar/dspLogo.png";
+import logo from "./dspLogo-outline-lightBlue.png";
 
 // Files
 import ideas from "../../JSON/home.json";

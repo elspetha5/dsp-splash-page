@@ -78,7 +78,7 @@ class People extends Component {
                 department2: "cluster",
                 department3: "cluster",
 
-                depVisibility: "invisible",
+                // depVisibility: "invisible",
                 backButton: "backDisplay",
                 hiddenPic: "openHiddenPic"
             });
@@ -103,7 +103,7 @@ class People extends Component {
                 department1: "cluster",
                 department3: "cluster",
 
-                depVisibility: "invisible",
+                // depVisibility: "invisible",
                 backButton: "backDisplay",
                 hiddenPic: "openHiddenPic"
             });
@@ -128,7 +128,7 @@ class People extends Component {
                 department1: "cluster",
                 department2: "cluster",
 
-                depVisibility: "invisible",
+                // depVisibility: "invisible",
                 backButton: "backDisplay",
                 hiddenPic: "openHiddenPic"
             });
@@ -147,6 +147,7 @@ class People extends Component {
 
                 <Cluster
                     num={1}
+                    dep="admin"
                     background={this.state.peopleThree1}
                     department={this.state.department1}
                     visibility={this.state.visibility1}
@@ -159,6 +160,7 @@ class People extends Component {
 
                 <Cluster
                     num={2}
+                    dep="architecture | interiors"
                     background={this.state.peopleThree2}
                     department={this.state.department2}
                     visibility={this.state.visibility2}
@@ -171,6 +173,7 @@ class People extends Component {
 
                 <Cluster
                     num={3}
+                    dep="digital design"
                     background={this.state.peopleThree3}
                     department={this.state.department3}
                     visibility={this.state.visibility3}
