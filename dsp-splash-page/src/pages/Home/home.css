@@ -1,10 +1,5 @@
 #homepage {
     background-color: #f4f7fc;
-    /* background-image: url(./thumbprint-intersection.png);
-    background-repeat: no-repeat;
-    background-position-x: -20vw;
-    background-position-y: -55vh;
-    background-size: 70%; */
 }
 
 .homeHalf {
@@ -41,9 +36,9 @@
 #homeSlant {
     position: absolute;
     top: 0;
-    left: 35vw;
+    left: 32vw;
     background-color: #1b2c3a;
-    width: 16.5vw;
+    width: 23vw;
     height: 95vh;
     animation: slantyX 4s ease-out .5s forwards;
 }
@@ -74,92 +69,93 @@
 
 .homeTagline {
     color: #1b2c3a;
-    font-size: 180%;
+    font-size: 165%;
     line-height: 1.5;
     font-weight: bold;
     font-family: 'Codystar', cursive;
 }
-
-/* .taglineBackground{
-    padding: 30vh 0 0 50vw;
-}
-
-.taglineThesis {
-    color: #1b2c3a;
-    font-size: 180%;
-    line-height: 1.5;
-    font-weight: bold;
-    font-family: 'Codystar', cursive;
-} */
 
 @media (max-width: 1200px) {
-    /* #homepage {
-        background-position-x: -20vw;
-        background-position-y: -40vh;
-        background-size: 75%;
+    #homeLogo {
+        width: 42%;
+        padding: 34vh 0 0 15vw;
     }
 
-    .taglineBackground{
-        padding-left: 55vw;
+    #homeSlant {
+        left: 27vw;
+        width: 28vw;
     }
-    
-    .taglineThesis {
-        font-size: 145%;
-    } */
+
+    #homeWords {
+        width: 58%;
+        padding: 42vh 0 0 16vw;
+    }
+
+    .homeTagline {
+        font-size: 135%;
+    }
 }
 
 @media (max-width: 992px) {
-    /* #homepage {
-        background-position-x: -25vw;
-        background-position-y: -25vh;
-        background-size: 80%;
+    #homeLogo {
+        width: 40%;
+        padding: 30vh 0 0 13vw;
     }
 
-    .taglineBackground{
-        padding-left: 50vw;
+    #homeLogoIcon {
+        width: 24vw;
     }
 
-    .taglineThesis {
-        font-size: 120%;
-    } */
+    #homeSlant {
+        left: 25vw;
+        width: 28vw;
+    }
+
+    #homeWords {
+        width: 60%;
+        padding: 40vh 0 0 18vw;
+    }
+
+    .homeTagline {
+        font-size: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .homeHalf {
-        height: 35vh;
+        height: 38vh;
     }
-
+    
     #homeLogo {
         width: 100%;
         padding: 10vh 0 0 0;
         text-align: center;
     }
-
+    
     #homeLogoIcon {
-        width: 35vw;
+        width: 25vw;
     }
-
+    
     #homeSlant {
         width: 100%;
-        top: 28vh;
+        top: 27.5vh;
         left: 0;
-        height: 14vh;
-        /* background-color: red; */
+        height: 22vh;
         animation: slantyY 4s ease-out .5s forwards;
     }
     
     @keyframes slantyY {
         100% {
-            transform: skewY(15deg);
+            transform: skewY(10deg);
         }
     }
-
+    
     #homeWords {
         width: 100%;
-        padding: 22vh 0 0 10vw;
+        padding: 22vh 0 0 26vw;
         animation: wordAppearVert 4s .5s forwards;
     }
-
+    
     @keyframes wordAppearVert {
         from {
             opacity: 0;
@@ -172,38 +168,37 @@
     }
     
     .homeTagline {
-        font-size: 100%;
+        font-size: 110%;
     }
-    
-    /* #homepage {
-        background-position-x: -50vw;
-        background-position-y: -5vh;
-        background-size: 140%;
-    }
-
-    .taglineBackground{
-        padding: 13vh 0 0 10vw;
-    }
-
-   .taglineThesis {
-       font-size: 150%;
-   } */
 }
 
 @media (max-width: 576px) { 
-    /* #homepage {
-        background-position-x: -50vw;
-        background-position-y: 15vh;
-        background-size: 160%;
+    .homeHalf {
+        height: 35vh;
     }
-
-    .taglineBackground{
-        padding-top: 15vh;
-        padding-left: 5vw;
+    
+    #homeLogoIcon {
+        width: 35vw;
     }
-
-   .taglineThesis {
-       font-size: 140%;
-   } */
-
+    
+    #homeSlant {
+        top: 23vh;
+        height: 24vh;
+        animation: slantyY 4s ease-out .5s forwards;
+    }
+    
+    @keyframes slantyY {
+        100% {
+            transform: skewY(15deg);
+        }
+    }
+    
+    #homeWords {
+        padding: 24vh 0 0 12vw;
+    }
+    
+    .homeTagline {
+        font-size: 100%;
+    }
+    
 }
