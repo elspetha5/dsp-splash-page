@@ -98,7 +98,7 @@
 
 @media (max-width: 992px) {
     #homeLogo {
-        width: 40%;
+        width: 35%;
         padding: 30vh 0 0 13vw;
     }
 
@@ -107,13 +107,13 @@
     }
 
     #homeSlant {
-        left: 25vw;
-        width: 28vw;
+        left: 16vw;
+        width: 36vw;
     }
 
     #homeWords {
-        width: 60%;
-        padding: 40vh 0 0 18vw;
+        width: 65%;
+        padding: 40vh 0 0 22vw;
     }
 
     .homeTagline {
@@ -198,7 +198,7 @@
     }
     
     .homeTagline {
-        font-size: 100%;
+        font-size: 95%;
     }
     
 }

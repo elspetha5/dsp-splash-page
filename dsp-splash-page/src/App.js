@@ -7,11 +7,7 @@ import Home from "./pages/Home";
 
 // Approach
 import Approach from "./pages/Approach";
-import What from "./pages/Approach/What";
-import Where from "./pages/Approach/Where";
-import Why from "./pages/Approach/Why";
-import Who from "./pages/Approach/Who";
-import How from "./pages/Approach/How";
+
 
 // About
 import People from "./pages/People";
@@ -23,13 +19,7 @@ import LearnMore from "./pages/Clients/Contact";
 
 // Design Services
 import DesignServices from "./pages/DesignServices";
-import Architectural from "./pages/DesignServices/ArchitecturalDesign";
-import Brand from "./pages/DesignServices/BrandDesign";
-import Communication from "./pages/DesignServices/CommunicationDesign";
-import DigitalDesign from "./pages/DesignServices/DigitalDesign";
-import Industrial from "./pages/DesignServices/IndustrialDesign";
-import Interior from "./pages/DesignServices/InteriorDesign";
-import Service from "./pages/DesignServices/ServiceDesign";
+
 
 // Join Us
 import JoinUs from "./pages/JoinUs";
@@ -71,18 +61,12 @@ class App extends Component {
 
               {/* Approach */}
               <Route exact path="/approach" component={Approach} />
-              <Route exact path="/approach/what" component={What} />
-              <Route exact path="/approach/where" component={Where} />
-              <Route exact path="/approach/why" component={Why} />
-              <Route exact path="/approach/who" component={Who} />
-              <Route exact path="/approach/how" component={How} />
+              
 
               {/* About */}
               <Route exact path="/about/people" component={People} />
               <Route exact path="/about/projects" component={Projects} />
-              {/* <Route exact path="/projects/commercial-office" component={Commercial} />
-              <Route exact path="/projects/residential" component={Residential} />
-              <Route exact path="/projects/hospitality" component={Hospitality} /> */}
+              
               
               {/* Clients */}
               <Route exact path="/clients" component={Clients} />
@@ -90,13 +74,7 @@ class App extends Component {
 
               {/* Design Services */}
               <Route exact path="/designservices" component={DesignServices} />
-              <Route exact path="/designservices/architecture" component={Architectural} />
-              <Route exact path="/designservices/brand" component={Brand} />
-              <Route exact path="/designservices/communication" component={Communication} />
-              <Route exact path="/designservices/digital" component={DigitalDesign} />
-              <Route exact path="/designservices/industrial" component={Industrial} />
-              <Route exact path="/designservices/interiors" component={Interior} />
-              <Route exact path="/designservices/service" component={Service} />
+              
 
               {/* Join Us */}
               <Route exact path="/joinus" component={JoinUs} />
