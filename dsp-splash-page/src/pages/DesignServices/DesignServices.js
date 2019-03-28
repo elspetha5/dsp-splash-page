@@ -29,12 +29,12 @@ class DesignServices extends Component {
     render() {
         return (
             <div className="slantBackground">
-                <div className="slantTop">
+                <div className="slantTop charcoalish">
                     <div className="topSlantTitle">
                         dsp.design
                     </div>
                 </div>
-                <div id="darkBlue"></div>
+                <div id="topSlant" className="charcoalish"></div>
 
                 <div>
                     <div className="darkSlantTitle slantTitle">dsp.interiors</div>
@@ -42,14 +42,16 @@ class DesignServices extends Component {
                         {this.state.interiors.map(interior => (
                             <div className="slantInfoColumn">
                                 <Popup
-                                    trigger={<div className="darkSlantInfoTrigger centeredPopup">{interior.leftIdea}</div>}
-                                    position="right center"
+                                    trigger={<Link to="#" className="darkSlantInfoTrigger centeredPopup">{interior.leftIdea}</Link>}
+                                    position="top center"
                                     closeOnDocumentClick
                                     contentStyle={{
                                         "border": "none",
                                         "border-radius": "2%",
                                         "background-color": "#f4f7fc",
-                                        "padding": "20px"
+                                        "padding": "20px",
+                                        "font-size": "110%",
+                                        "color": "#757579"
                                     }}
                                 >
                                     <div className="popupWords">{interior.rightVerbiage}</div>
@@ -59,21 +61,23 @@ class DesignServices extends Component {
                     </div>
                 </div>
 
-                <div id="pink" className="slantUp">
+                <div className="slantUp green">
                     <div className="unSkew">
                         <div className="whiteSlantTitle slantTitle">dsp.architecture</div>
                         <div className="slantInfoWrapper">
                             {this.state.arch.map(arch => (
                                 <div className="slantInfoColumn">
                                     <Popup
-                                        trigger={<div className="whiteSlantInfoTrigger centeredPopup">{arch.leftIdea}</div>}
-                                        position="right center"
+                                        trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{arch.leftIdea}</Link>}
+                                        position="top center"
                                         closeOnDocumentClick
                                         contentStyle={{
                                             "border": "none",
                                             "border-radius": "2%",
                                             "background-color": "#f4f7fc",
-                                            "padding": "10px"
+                                            "padding": "10px",
+                                            "font-size": "110%",
+                                            "color": "#757579"
                                         }}
                                     >
                                         <div className="popupWords">{arch.rightVerbiage}</div>
@@ -96,21 +100,23 @@ class DesignServices extends Component {
                     </div>
                 </div>
 
-                <div id="green" className="slantDown">
+                <div className="slantDown darkBlue">
                     <div className="unSkewDown">
                         <div className="whiteSlantTitle slantTitle">dsp.digital</div>
                         <div className="slantInfoWrapper">
                             {this.state.digital.map(digit => (
                                 <div className="slantInfoColumn">
                                     <Popup
-                                        trigger={<div className="whiteSlantInfoTrigger centeredPopup">{digit.leftIdea}</div>}
-                                        position="right center"
+                                        trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{digit.leftIdea}</Link>}
+                                        position="top center"
                                         closeOnDocumentClick
                                         contentStyle={{
                                             "border": "none",
                                             "border-radius": "2%",
                                             "background-color": "#f4f7fc",
-                                            "padding": "10px"
+                                            "padding": "10px",
+                                            "font-size": "110%",
+                                            "color": "#757579"
                                         }}
                                     >
                                         <div className="popupWords">{digit.rightVerbiage}</div>
@@ -133,21 +139,23 @@ class DesignServices extends Component {
                     </div>
                 </div>
 
-                <div id="pink" className="slantUp">
+                <div className="slantUp green">
                     <div className="unSkew">
                         <div className="whiteSlantTitle slantTitle">dsp.service</div>
                         <div className="slantInfoWrapper">
                             {this.state.service.map(service => (
                                 <div className="slantInfoColumn">
                                     <Popup
-                                        trigger={<div className="whiteSlantInfoTrigger centeredPopup">{service.leftIdea}</div>}
-                                        position="right center"
+                                        trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{service.leftIdea}</Link>}
+                                        position="top center"
                                         closeOnDocumentClick
                                         contentStyle={{
                                             "border": "none",
                                             "border-radius": "2%",
                                             "background-color": "#f4f7fc",
-                                            "padding": "10px"
+                                            "padding": "10px",
+                                            "font-size": "110%",
+                                            "color": "#757579"
                                         }}
                                     >
                                         <div className="popupWords">{service.rightVerbiage}</div>

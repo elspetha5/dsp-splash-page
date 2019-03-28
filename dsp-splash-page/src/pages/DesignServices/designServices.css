@@ -1,32 +1,18 @@
-/* #servicesPic {
-    background-image: url(./mountain-scape.jpg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.charcoalish {
+    background-color: #757579;
 }
 
-.leftServices:hover {
-    color: #757579;
+.green {
+    background-color: #b2d08d;
 }
 
-.rightServices:hover {
-    color: #333132;
+.darkBlue {
+    background-color: #1b2c3a;
 }
 
-.designThesis {
-    font-size: 125%;
-    color: #f4f7fc;
-    font-weight: bold;
-    padding: 4px 10px 5px;
+.lightBlue {
+    background-color: #9bc8e8;
 }
-
-#designThesis {
-    border: 2px dotted #757579;
-    color: #757579;
-    
-} */
-
 
 .slantBackground {
     padding-bottom: 30vh;
@@ -36,13 +22,11 @@
     height: 30vh;
     padding-top: 10vh;
     padding-left: 30vw;
-    background-color: #757579;
     font-size: 250%;
     color: #f4f7fc;
 }
 
-#darkBlue {
-    background-color: #757579;
+#topSlant {
     margin-bottom: 3vh;
     height: 12vh;
     transform: translateY(-6vh);
@@ -88,7 +72,8 @@
     color: #757579;
 }
 
-.darkSlantInfoTrigger:hover {
+.darkSlantInfoTrigger:hover,
+.darkSlantInfoTrigger:focus {
     color: #333132;
 }
 
@@ -100,7 +85,8 @@
     color: #faf7ee;
 }
 
-.whiteSlantInfoTrigger:hover{
+.whiteSlantInfoTrigger:hover,
+.whiteSlantInfoTrigger:focus {
     color: #f4d5bb;
 }
 
@@ -154,14 +140,6 @@
     }
 }
 
-#pink {
-    background-color: #b2d08d;
-}
-
-#green {
-    background-color: #1b2c3a;
-}
-
 @media (max-width: 1200px) { 
     
 }
@@ -171,10 +149,6 @@
 }
 
 @media (max-width: 768px) { 
-    /* #designThesis {
-        margin-left: 0;
-    } */
-
     .slantTop {
         padding-top: 7vh;
         padding-left: 20vw;
