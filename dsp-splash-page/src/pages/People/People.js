@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Panel } from "react-bootstrap";
+import { Collapse } from 'react-bootstrap';
 import Popup from "reactjs-popup";
 import LeftIdea from "../../components/LeftIdea";
 import { Link } from "react-router-dom";
@@ -15,6 +15,17 @@ class People extends Component {
         this.state = {
             people,
             sixPeople,
+            pictures: [
+                "/peopleImages/amy-sketch.png",
+                "/peopleImages/deborah-sketch.png",
+                "/peopleImages/devan-sketch.png",
+                "/peopleImages/elspeth-sketch.png",
+                "/peopleImages/jennifer.png",
+                "/peopleImages/stacy-sketch.png",
+                "",
+                ""
+            ],
+
 
             // backButton: "backNoDisplay",
 
@@ -33,137 +44,157 @@ class People extends Component {
             // depVisibility: "visible",
             // hiddenPic: "hiddenPic"
         };
-        // this.straightenCluster1 = this.straightenCluster1.bind(this);
-        // this.straightenCluster2 = this.straightenCluster2.bind(this);
-        // this.straightenCluster3 = this.straightenCluster3.bind(this);
-        // this.back = this.back.bind(this);
-    }
+    // this.straightenCluster1 = this.straightenCluster1.bind(this);
+    // this.straightenCluster2 = this.straightenCluster2.bind(this);
+    // this.straightenCluster3 = this.straightenCluster3.bind(this);
+    // this.back = this.back.bind(this);
+}
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
-        this.shuffleArray(sixPeople);
+componentDidMount() {
+    window.scrollTo(0, 0);
+};
+
+shuffleArray = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     };
+};
 
-    shuffleArray = array => {
-        for (let i = array.length - 1; i > 0; i--) {
-            let j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        };
-    };
+/* back = () => {
+    this.setState({
+        backButton: "backNoDisplay",
 
-    /* back = () => {
+        peopleThree1: "peopleAsThree",
+        peopleThree2: "peopleAsThree",
+        peopleThree3: "peopleAsThree",
+
+        department1: "cluster",
+        department2: "cluster",
+        department3: "cluster",
+
+        visibility1: "visible",
+        visibility2: "visible",
+        visibility3: "visible",
+
+        depVisibility: "visible",
+        hiddenPic: "hiddenPic"
+    });
+};
+
+straightenCluster1 = () => {
+    if (this.state.department1 === "cluster") {
         this.setState({
-            backButton: "backNoDisplay",
+            department1: "open",
 
-            peopleThree1: "peopleAsThree",
-            peopleThree2: "peopleAsThree",
-            peopleThree3: "peopleAsThree",
+            peopleThree1: "peopleAsOne",
+            peopleThree2: "peopleAsNone",
+            peopleThree3: "peopleAsNone",
 
-            department1: "cluster",
+            visibility1: "visible",
+            visibility2: "invisible",
+            visibility3: "invisible",
+
             department2: "cluster",
             department3: "cluster",
 
-            visibility1: "visible",
-            visibility2: "visible",
-            visibility3: "visible",
-
-            depVisibility: "visible",
-            hiddenPic: "hiddenPic"
+            // depVisibility: "invisible",
+            backButton: "backDisplay",
+            hiddenPic: "openHiddenPic"
         });
     };
 
-    straightenCluster1 = () => {
-        if (this.state.department1 === "cluster") {
-            this.setState({
-                department1: "open",
+    return;
+};
 
-                peopleThree1: "peopleAsOne",
-                peopleThree2: "peopleAsNone",
-                peopleThree3: "peopleAsNone",
+straightenCluster2 = () => {
+    if (this.state.department2 === "cluster") {
+        this.setState({
+            department2: "open",
 
-                visibility1: "visible",
-                visibility2: "invisible",
-                visibility3: "invisible",
+            peopleThree1: "peopleAsNone",
+            peopleThree2: "peopleAsOne",
+            peopleThree3: "peopleAsNone",
 
-                department2: "cluster",
-                department3: "cluster",
+            visibility1: "invisible",
+            visibility2: "visible",
+            visibility3: "invisible",
 
-                // depVisibility: "invisible",
-                backButton: "backDisplay",
-                hiddenPic: "openHiddenPic"
-            });
-        };
+            department1: "cluster",
+            department3: "cluster",
 
-        return;
+            // depVisibility: "invisible",
+            backButton: "backDisplay",
+            hiddenPic: "openHiddenPic"
+        });
     };
 
-    straightenCluster2 = () => {
-        if (this.state.department2 === "cluster") {
-            this.setState({
-                department2: "open",
+    return;
+};
 
-                peopleThree1: "peopleAsNone",
-                peopleThree2: "peopleAsOne",
-                peopleThree3: "peopleAsNone",
+straightenCluster3 = () => {
+    if (this.state.department3 === "cluster") {
+        this.setState({
+            department3: "open",
 
-                visibility1: "invisible",
-                visibility2: "visible",
-                visibility3: "invisible",
+            peopleThree1: "peopleAsNone",
+            peopleThree2: "peopleAsNone",
+            peopleThree3: "peopleAsOne",
 
-                department1: "cluster",
-                department3: "cluster",
+            visibility1: "invisible",
+            visibility2: "invisible",
+            visibility3: "visible",
 
-                // depVisibility: "invisible",
-                backButton: "backDisplay",
-                hiddenPic: "openHiddenPic"
-            });
-        };
+            department1: "cluster",
+            department2: "cluster",
 
-        return;
+            // depVisibility: "invisible",
+            backButton: "backDisplay",
+            hiddenPic: "openHiddenPic"
+        });
     };
 
-    straightenCluster3 = () => {
-        if (this.state.department3 === "cluster") {
-            this.setState({
-                department3: "open",
+    return;
+}; */
 
-                peopleThree1: "peopleAsNone",
-                peopleThree2: "peopleAsNone",
-                peopleThree3: "peopleAsOne",
+handleMouseOver = (i, pic) => {
+    let arr = this.state.pictures.slice();
+    arr[i] = pic;
+    this.setState({
+        pictures: arr
+    })
+};
 
-                visibility1: "invisible",
-                visibility2: "invisible",
-                visibility3: "visible",
+handleMouseOut = (i, pic) => {
+    let arr = this.state.pictures.slice();
+    arr[i] = pic;
+    this.setState({
+        pictures: arr
+    })
+};
 
-                department1: "cluster",
-                department2: "cluster",
+render() {
+    return (
+        <div id="peopleBackground">
+            <div id="peopleTop">
+                <div id="aboutUs">we are . . . <span id="aboutUsBreak">design service professionals</span></div>
+                {/* <Link to="#" id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</Link> */}
+            </div>
 
-                // depVisibility: "invisible",
-                backButton: "backDisplay",
-                hiddenPic: "openHiddenPic"
-            });
-        };
+            <div id="peoplePicBox">
+                {this.state.sixPeople.map((person, i) => (
+                    <div className="picContainer" >
+                        <img src={process.env.PUBLIC_URL + this.state.pictures[i]} 
+                            onMouseOver={() => {this.handleMouseOver(i, person.picture)}}
+                            onMouseOut={() => { this.handleMouseOut(i, person.sketch) }}
+                            className="peoplePic person" />
+                        <div className="peopleName">{person.name}</div>
+                        <div className="peopleTagline">{`"${person.title}"`}</div>
+                    </div>
+                ))}
+            </div>
 
-        return;
-    }; */
-
-    render() {
-        return (
-            <div id="peopleBackground">
-                <div id="peopleTop">
-                    <div id="aboutUs">we are . . . <span id="aboutUsBreak">design service professionals</span></div>
-                    {/* <Link to="#" id={this.state.backButton} className="backToPeople" onClick={this.back}><i class="fas fa-chevron-left"></i> back</Link> */}
-                </div>
-
-                <div id="peoplePicBox">
-                    {this.state.sixPeople.map(person => (
-                        <div>
-                            <img src={person.picture} alt="person" className="peoplePic" />
-                        </div>
-                    ))}
-                </div>
-                
-                {/* <Cluster
+            {/* <Cluster
                     num={1}
                     dep="admin"
                     background={this.state.peopleThree1}
@@ -202,9 +233,9 @@ class People extends Component {
                     hiddenPic={this.state.hiddenPic}
                 /> */}
 
-            </div>
-        )
-    };
+        </div>
+    )
+};
 };
 
 export default People;

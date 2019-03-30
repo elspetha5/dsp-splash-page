@@ -1,38 +1,74 @@
 [
     {
-        "picture": "https://www.betwext.com/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png",
-        "title": "Title",
+        "id": 0,
+        "picture": "/peopleImages/amy.png",
+        "sketch": "/peopleImages/amy-sketch.png",
+        "name": "Amy John",
+        "title": "title",
         "credentials": "Credentials",
-        "about": "Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem sapiente labore architecto exercitationem optio quod dolor cupiditate"
+        "about": ""
     },
     {
-        "picture": "https://www.betwext.com/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png",
-        "title": "Title",
+        "id": 1,
+        "picture": "/peopleImages/deborah.png",
+        "sketch": "/peopleImages/deborah-sketch.png",
+        "name": "Deborah Killpack",
+        "title": "title",
         "credentials": "Credentials",
-        "about": "Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem sapiente labore architecto exercitationem optio quod dolor cupiditate"
+        "about": ""
     },
     {
-        "picture": "https://www.betwext.com/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png",
-        "title": "Title",
+        "id": 2,
+        "picture": "/peopleImages/devan.png",
+        "sketch": "/peopleImages/devan-sketch.png",
+        "name": "Devan Porter",
+        "title": "title",
         "credentials": "Credentials",
-        "about": "Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem sapiente labore architecto exercitationem optio quod dolor cupiditate"
+        "about": ""
     },
     {
-        "picture": "https://www.betwext.com/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png",
-        "title": "Title",
+        "id": 3,
+        "picture": "/peopleImages/elspeth.png",
+        "sketch": "/peopleImages/elspeth-sketch.png",
+        "name": "Elspeth Anderson",
+        "title": "Website Wrangler",
         "credentials": "Credentials",
-        "about": "Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem sapiente labore architecto exercitationem optio quod dolor cupiditate"
+        "about": ""
     },
     {
-        "picture": "https://www.betwext.com/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png",
-        "title": "Title",
+        "id": 4,
+        "picture": "/peopleImages/jennifer.png",
+        "sketch": "/peopleImages/jennifer.png",
+        "name": "Jennifer Schaefer",
+        "title": "title",
         "credentials": "Credentials",
-        "about": "Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem sapiente labore architecto exercitationem optio quod dolor cupiditate"
+        "about": ""
     },
     {
-        "picture": "https://www.betwext.com/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png",
-        "title": "Title",
+        "id": 5,
+        "picture": "/peopleImages/stacy.png",
+        "sketch": "/peopleImages/stacy-sketch.png",
+        "name": "Stacy Traeden",
+        "title": "title",
         "credentials": "Credentials",
-        "about": "Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem sapiente labore architecto exercitationem optio quod dolor cupiditate"
+        "about": ""
+    },
+    {
+        "id": 5,
+        "picture": "/peopleImages/stacy.png",
+        "sketch": "/peopleImages/stacy-sketch.png",
+        "name": "Stacy Traeden",
+        "title": "title",
+        "credentials": "Credentials",
+        "about": ""
+    },
+    {
+        "id": 5,
+        "picture": "/peopleImages/stacy.png",
+        "sketch": "/peopleImages/stacy-sketch.png",
+        "name": "Stacy Traeden",
+        "title": "title",
+        "credentials": "Credentials",
+        "about": ""
     }
 ]
