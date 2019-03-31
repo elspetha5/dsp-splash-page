@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import LeftIdea from "../../components/LeftIdea";
 import Popup from "reactjs-popup";
 import "./designServices.css";
 
@@ -29,6 +28,7 @@ class DesignServices extends Component {
     render() {
         return (
             <div className="slantBackground">
+            
                 <div className="slantTop charcoalish">
                     <div className="topSlantTitle">
                         dsp.design
@@ -177,20 +177,6 @@ class DesignServices extends Component {
                         ))}
                     </div>
                 </div>
-
-
-                {/* <div className="wrapper">
-                    <div className="ideaBackground">
-                        <div className="leftIdea"><span id="designThesis" className="designThesis">dsp.design</span></div>
-                    </div>
-    
-                    {this.state.services.map(service => (
-                        <div className="ideaBackground">
-                            <Link to={"/designservices/" + service.link} className="leftIdea link leftServices">{service.umbrella}</Link>
-                            <Link to={"/designservices/" + service.link} className="rightVerbiage rightServices">{service.specific}</Link>
-                        </div>
-                    ))}
-                </div> */}
             </div>
 
         )

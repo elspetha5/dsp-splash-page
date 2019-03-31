@@ -19,7 +19,7 @@
 }
 
 #peoplePicBox {
-    padding: 23vh 15vw 0;
+    padding: 23vh 15vw 18vh;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@
 
 @media (max-width: 1200px) {
     #peoplePicBox {
-        padding: 26vh 15vw 0;
+        padding: 26vh 15vw 18vh;
     }
 
     .peoplePic {

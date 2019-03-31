@@ -54,7 +54,7 @@
 }
 
 .slantInfoWrapper {
-    padding: 0 15vw 0 33vw;
+    padding: 0 15vw 0 35vw;
 }
 
 .slantInfoColumn {
@@ -141,19 +141,23 @@
 }
 
 @media (max-width: 1200px) { 
-    
+    .slantInfoColumn {
+        width: 50%;
+    }    
 }
 
 @media (max-width: 992px) { 
-       
+    .slantInfoColumn {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) { 
     .slantTop {
         padding-top: 7vh;
         padding-left: 20vw;
-        height: 20vh;
-        font-size: 180%
+        height: 23vh;
+        font-size: 170%
     }
 
     #darkBlue {
@@ -175,7 +179,7 @@
     }
 
     .slantInfoWrapper {
-        padding: 0 10vw 0 25vw;
+        padding: 0 10vw 0 26vw;
     }
 
     .slantInfoColumn {
