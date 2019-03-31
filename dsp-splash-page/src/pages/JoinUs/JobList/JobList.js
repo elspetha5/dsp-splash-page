@@ -19,10 +19,14 @@ class JobList extends Component {
 
         return (
             <div>
-                <div className="wrapper">
-                    <div className="ideaBackground">
-                        <div className="leftIdea"><span id="jobListThesis" className="designThesis">dsp.careers</span></div>
+                <div className="slantTop almostBlack">
+                    <div className="topSlantTitle">
+                        dsp.careers
                     </div>
+                </div>
+                <div id="topSlant" className="almostBlack"></div>
+
+                <div className="wrapper">
 
                     {this.state.jobs.map((job, i) => (
                         <div className="ideaBackground">
