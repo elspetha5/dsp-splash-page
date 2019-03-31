@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.bb4a9442.chunk.css",
-  "main.js": "/static/js/main.7ca13d29.chunk.js",
-  "main.js.map": "/static/js/main.7ca13d29.chunk.js.map",
+  "main.css": "/static/css/main.d1dc4859.chunk.css",
+  "main.js": "/static/js/main.2003a87d.chunk.js",
+  "main.js.map": "/static/js/main.2003a87d.chunk.js.map",
   "static/js/1.8dbb496c.chunk.js": "/static/js/1.8dbb496c.chunk.js",
   "static/js/1.8dbb496c.chunk.js.map": "/static/js/1.8dbb496c.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -10,10 +10,10 @@
   "static/media/under-construction-circle.png": "/static/media/under-construction-circle.fc450275.png",
   "static/media/projects.css": "/static/media/projects.737f51ac.jpeg",
   "static/media/clients.css": "/static/media/your-staff-augmented.174ccb7e.jpg",
-  "static/media/joinus.css": "/static/media/your-career-amplified.5403c705.jpg",
+  "static/media/joinus.css": "/static/media/your-brand-connected.de1e7821.jpg",
   "static/media/dspLogo.png": "/static/media/dspLogo.0ac7274f.png",
-  "static/css/main.bb4a9442.chunk.css.map": "/static/css/main.bb4a9442.chunk.css.map",
+  "static/css/main.d1dc4859.chunk.css.map": "/static/css/main.d1dc4859.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.7f6eb975a47c6d583fd8c1dcf610b278.js": "/precache-manifest.7f6eb975a47c6d583fd8c1dcf610b278.js",
+  "precache-manifest.8a104ec2f726571371879fdfed34dd3d.js": "/precache-manifest.8a104ec2f726571371879fdfed34dd3d.js",
   "service-worker.js": "/service-worker.js"
 }
