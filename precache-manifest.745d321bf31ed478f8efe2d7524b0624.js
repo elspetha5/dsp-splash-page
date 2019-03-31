@@ -44,15 +44,15 @@ self.__precacheManifest = [
     "url": "/static/media/your-staff-augmented.174ccb7e.jpg"
   },
   {
-    "revision": "5403c705e6775bf2264b966594781675",
-    "url": "/static/media/your-career-amplified.5403c705.jpg"
-  },
-  {
     "revision": "de1e78218e490e010ac737a85c15cd57",
     "url": "/static/media/your-brand-connected.de1e7821.jpg"
   },
   {
-    "revision": "3ccd5fac0d7c313b74adf93b740ed147",
+    "revision": "5403c705e6775bf2264b966594781675",
+    "url": "/static/media/your-career-amplified.5403c705.jpg"
+  },
+  {
+    "revision": "aaebe55653d4cc2d8110168cbbf7c722",
     "url": "/index.html"
   }
 ];
