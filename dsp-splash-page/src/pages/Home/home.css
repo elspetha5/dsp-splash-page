@@ -51,7 +51,7 @@
 
 #homeWords {
     width: 56%;
-    padding: 37vh 0 0 15vw;
+    padding: 41vh 0 0 15vw;
     opacity: 0;
     animation: wordAppear 4s .5s forwards;
 }
@@ -69,7 +69,7 @@
 
 .homeTagline {
     color: #1b2c3a;
-    font-size: 165%;
+    font-size: 150%;
     line-height: 1.5;
     font-weight: bold;
     font-family: 'Codystar', cursive;
@@ -82,8 +82,8 @@
     }
 
     #homeSlant {
-        left: 27vw;
-        width: 28vw;
+        left: 25vw;
+        width: 30vw;
     }
 
     #homeWords {

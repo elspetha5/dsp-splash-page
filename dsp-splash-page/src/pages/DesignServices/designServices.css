@@ -25,7 +25,7 @@
 .slantTop {
     height: 30vh;
     padding-top: 10vh;
-    padding-left: 30vw;
+    padding-left: 29.5vw;
     font-size: 250%;
     color: #f4f7fc;
 }
@@ -33,6 +33,7 @@
 #topSlant {
     margin-bottom: 3vh;
     height: 12vh;
+    width: 100%;
     transform: translateY(-6vh);
     animation: slantDarkBlue 2s ease-out .5s forwards;
 }
@@ -103,6 +104,7 @@
 .slantUp {
     margin: 15vh 0;
     padding: 10vh 0;
+    width: 100%;
     animation: slantUp 2s ease-out .5s forwards;
 }
 
@@ -125,6 +127,7 @@
 .slantDown {
     margin: 15vh 0;
     padding: 10vh 0;
+    width: 100%;
     animation: slantDown 2s ease-out .5s forwards;
 }
 
@@ -159,7 +162,7 @@
 @media (max-width: 768px) { 
     .slantTop {
         padding-top: 7vh;
-        padding-left: 20vw;
+        padding-left: 19.5vw;
         height: 23vh;
         font-size: 170%
     }

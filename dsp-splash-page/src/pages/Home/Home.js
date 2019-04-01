@@ -26,8 +26,8 @@ class Home extends Component {
 
                 <div id="homeWords" className="homeHalf">
                     <div className="homeTagline">Design Service Professionals . . .</div>
-                    <div className="homeTagline">emerging at the intersection</div>
-                    <div className="homeTagline">of design + delivery</div>
+                    <div className="homeTagline">Design Services for the Design Community</div>
+                    {/* <div className="homeTagline"> Design Community</div> */}
                 </div>
 
             </div>
