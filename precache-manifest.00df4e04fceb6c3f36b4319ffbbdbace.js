@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/projects.737f51ac.jpeg"
   },
   {
-    "revision": "83a9124103bce80d098d",
-    "url": "/static/css/main.1c8365bf.chunk.css"
+    "revision": "f05eba33bc7eeea20ced",
+    "url": "/static/css/main.48c2b71b.chunk.css"
   },
   {
     "revision": "8dbb496c5b8ef5a31d50",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/under-construction-circle.fc450275.png"
   },
   {
-    "revision": "83a9124103bce80d098d",
-    "url": "/static/js/main.83a91241.chunk.js"
+    "revision": "f05eba33bc7eeea20ced",
+    "url": "/static/js/main.f05eba33.chunk.js"
   },
   {
     "revision": "19b15f6c7ce29d934d7134fd89f5692a",
@@ -44,15 +44,15 @@ self.__precacheManifest = [
     "url": "/static/media/your-staff-augmented.174ccb7e.jpg"
   },
   {
-    "revision": "de1e78218e490e010ac737a85c15cd57",
-    "url": "/static/media/your-brand-connected.de1e7821.jpg"
-  },
-  {
     "revision": "5403c705e6775bf2264b966594781675",
     "url": "/static/media/your-career-amplified.5403c705.jpg"
   },
   {
-    "revision": "aaebe55653d4cc2d8110168cbbf7c722",
+    "revision": "de1e78218e490e010ac737a85c15cd57",
+    "url": "/static/media/your-brand-connected.de1e7821.jpg"
+  },
+  {
+    "revision": "dec159cb6114927d41a6ba325ed64c87",
     "url": "/index.html"
   }
 ];
