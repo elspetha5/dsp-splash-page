@@ -7,7 +7,6 @@
 .leftIdea {
     font-size: 150%;
     padding: 0% .3%;
-    color: #404051;
     text-align: right;
     width: 30%;
     margin-left: 7%;
@@ -25,7 +24,6 @@
 
 .rightVerbiage {
     font-size: 120%;
-    color: #757579;
     width: 40%;
     margin-left: 3%;
     float: left;

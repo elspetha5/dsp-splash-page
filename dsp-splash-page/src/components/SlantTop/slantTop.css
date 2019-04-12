@@ -1,0 +1,33 @@
+.slantBackground {
+    padding-bottom: 30vh;
+}
+
+.slantTop {
+    height: 30vh;
+    padding-top: 10vh;
+    padding-left: 29.5vw;
+    font-size: 250%;
+}
+
+#topSlant {
+    margin-bottom: 3vh;
+    height: 12vh;
+    width: 100%;
+    transform: translateY(-6vh);
+    animation: slantDarkBlue 2s ease-out .5s forwards;
+}
+
+@keyframes slantDarkBlue {
+    to {
+        transform: translateY(-6vh) skewY(3deg);
+    }
+}
+
+@media (max-width: 768px) { 
+    .slantTop {
+        padding-top: 7vh;
+        padding-left: 19.5vw;
+        height: 23vh;
+        font-size: 170%
+    }
+}

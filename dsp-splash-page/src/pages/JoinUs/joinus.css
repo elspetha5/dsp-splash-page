@@ -1,15 +1,9 @@
-/* #joinUsTopPic {
-    background-color: #f4f7fcde;
-} */
-
 #joinUsTitle {
-    color: #1b2c3a;
     text-align: center;
 }
 
 .joinUsInfo {
     font-size: 110%;
-    color: #1b2c3a;
     line-height: 1.25;
     width: 24%;
     display: inline-block;
@@ -23,7 +17,6 @@
 
 .topQ {
     font-size: 200%;
-    color: #333132;
     text-align: left;
     margin-bottom: 3%;
     font-family: 'Codystar', cursive;

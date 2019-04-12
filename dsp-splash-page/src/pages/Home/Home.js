@@ -18,16 +18,16 @@ class Home extends Component {
     render() {
         return (
             <div id="homepage">
-                <div id="homeSlant"></div>
+                <div id="homeSlant" className="nightBlue-background"></div>
 
-                <div id="homeLogo" className="homeHalf">
+                <div id="homeLogo" className="homeHalf nightBlue-background">
                     <img src={logo} alt="logo" id="homeLogoIcon" />
                 </div>
 
                 <div id="homeWords" className="homeHalf">
-                    <div className="homeTagline">Design Service Professionals . . .</div>
-                    <div className="homeTagline">Design Services for the Design Community</div>
-                    {/* <div className="homeTagline"> Design Community</div> */}
+                    <div className="homeTagline nightBlue-text">Design Service Professionals . . .</div>
+                    <div className="homeTagline nightBlue-text">Design Services for the Design Community</div>
+                    {/* <div className="homeTagline nightBlue-text"> Design Community</div> */}
                 </div>
 
             </div>

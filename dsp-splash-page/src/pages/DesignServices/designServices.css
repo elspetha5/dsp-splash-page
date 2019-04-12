@@ -1,61 +1,7 @@
-.almostBlack {
-    background-color: #333132;
-}
-
-.charcoalish {
-    background-color: #757579;
-}
-
-.green {
-    background-color: #b2d08d;
-}
-
-.darkBlue {
-    background-color: #1b2c3a;
-}
-
-.lightBlue {
-    background-color: #9bc8e8;
-}
-
-.slantBackground {
-    padding-bottom: 30vh;
-}
-
-.slantTop {
-    height: 30vh;
-    padding-top: 10vh;
-    padding-left: 29.5vw;
-    font-size: 250%;
-    color: #f4f7fc;
-}
-
-#topSlant {
-    margin-bottom: 3vh;
-    height: 12vh;
-    width: 100%;
-    transform: translateY(-6vh);
-    animation: slantDarkBlue 2s ease-out .5s forwards;
-}
-
-@keyframes slantDarkBlue {
-    to {
-        transform: translateY(-6vh) skewY(3deg);
-    }
-}
-
 .slantTitle {
     height: 10vh;
     padding-left: 30vw;
     font-size: 175%;
-}
-
-.darkSlantTitle {
-    color: #333132;    
-}
-
-.whiteSlantTitle {
-    color: #f4f7fc; 
 }
 
 .slantInfoWrapper {
@@ -82,10 +28,6 @@
     color: #333132;
 }
 
-.darkSlantInfo {
-    color: #757579;
-}
-
 .whiteSlantInfoTrigger {
     color: #faf7ee;
 }
@@ -98,7 +40,6 @@
 .popupWords {
     font-size: 60%;
     line-height: 1.5;
-    color: #1b2c3a;
 }
 
 .slantUp {
@@ -160,25 +101,6 @@
 }
 
 @media (max-width: 768px) { 
-    .slantTop {
-        padding-top: 7vh;
-        padding-left: 19.5vw;
-        height: 23vh;
-        font-size: 170%
-    }
-
-    #darkBlue {
-        height: 8vh;
-        transform: translateY(-4vh);
-        animation: phoneSlantDarkBlue 2s ease-out .5s forwards;
-    }
-
-    @keyframes phoneSlantDarkBlue {
-        to {
-            transform: translateY(-4vh) skewY(9deg);
-        }
-    }
-
     .slantTitle {
         height: 5vh;
         padding-left: 20vw;

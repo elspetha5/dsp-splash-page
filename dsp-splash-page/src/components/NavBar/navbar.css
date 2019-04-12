@@ -1,5 +1,4 @@
 #navbar {
-    background-color: #e2e1e3;
     width: 100%;
     border: none;
     box-shadow: -2px -3px 5px #757579;
@@ -40,9 +39,14 @@
 .question:active,
 .question:visited,
 .question:focus {
-    color: #757579;
     margin: 0 10px -4px;
     text-decoration: none;
+    color: #757579;
+}
+
+.question:hover {
+    text-decoration: none;
+    color: #333132;
 }
 
 .mainNav {
@@ -53,11 +57,6 @@
 
 .dropNav {
     font-family: 'Corbel', sans-serif;
-}
-
-.question:hover {
-    color: #333132;
-    text-decoration: none;
 }
 
 #navFooter {
@@ -84,10 +83,6 @@
     margin-right: 20px;
 }
 
-#hamburger {
-    background-color: #f4f7fc;
-}
-
 #constStamp {
     width: 140px;
     float: left;
@@ -107,7 +102,6 @@
     bottom: 5px;
     right: 5px;
     padding: 5px;
-    background-color: #f4f7fc;
 }
 
 @media (max-width: 1200px) { 

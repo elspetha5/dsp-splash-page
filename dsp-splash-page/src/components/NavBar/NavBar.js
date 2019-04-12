@@ -9,102 +9,41 @@ import stamp from "./under-construction-circle.png";
 
 class NavBar extends Component {
     state = {
-        approach: ["what", "where", "why", "who", "how"],
-        about: ["people", "projects"],
-        clients: ["Connect with us", "Log in"],
-        designServices: ["interiors", "architecture", /* "communication", */ "digital", /* "brand", */ "service"/* , "industrial" */]
+        buttons: [
+            { to: "/approach", text: "approach" },
+            { to: "/about/people", text: "about" },
+            { to: "/clients", text: "clients" },
+            { to: "/designservices", text: "services" },
+            { to: "/joinus", text: "ecosystem" }
+        ]
     };
 
 
 
     render() {
         return (
-            <Navbar id="navbar" fixedBottom collapseOnSelect>
+            <Navbar id="navbar" className="lightGrey-background" fixedBottom collapseOnSelect>
+
                 <Navbar.Header>
                     <Navbar.Brand>
                         <Link to="/" className="link">
                             <img src={logo} alt="logo" id="logo" />
                         </Link>
                     </Navbar.Brand>
-                    <Navbar.Toggle id="hamburger" />
+                    <Navbar.Toggle id="hamburger slateWhite-background" />
                 </Navbar.Header>
+
+
                 <Navbar.Collapse >
                     <Nav id="questions">
-                        <LinkContainer to="/approach">
-                            <NavItem eventKey={"1"} id="white" className="link question mainNav">approach</NavItem>
-                        </LinkContainer>
-
-                        {/* <NavDropdown eventKey="1" title="APPROACH" className="link question mainNav" noCaret id="dropdown-no-caret">
-                            <LinkContainer to="/approach">
-                                <MenuItem eventKey={"4.8"} id="white" className="question dropNav">approach</MenuItem>
+                        {this.state.buttons.map((button, i) => (
+                            <LinkContainer to={button.to}>
+                                <NavItem eventKey={`${i + 1}`} id="white" className="link question mainNav">{button.text}</NavItem>
                             </LinkContainer>
-
-                            <MenuItem divider />
-
-                            {this.state.approach.map((question, i) => (
-                                <LinkContainer to={"/approach/" + question}>
-                                    <MenuItem eventKey={"1." + i} id="white" className="question dropNav">{question}</MenuItem>
-                                </LinkContainer>
-                            ))}
-                        </NavDropdown> */}
-
-                        <LinkContainer to="/about/people">
-                            <NavItem eventKey={"2"} id="white" className="link question mainNav">about</NavItem>
-                        </LinkContainer>
-
-                        {/* <NavDropdown eventKey="2" title="ABOUT" className="link question mainNav" noCaret id="dropdown-no-caret">
-                            {this.state.about.map((one, i) => (
-                                <LinkContainer to={"/about/" + one}>
-                                    <MenuItem eventKey={"2." + i} id="white" className="question dropNav">{one}</MenuItem>
-                                </LinkContainer>
-                            ))}
-                        </NavDropdown> */}
-
-                        <LinkContainer to="/clients">
-                            <NavItem eventKey={"3"} id="white" className="link question mainNav">clients</NavItem>
-                        </LinkContainer>
-
-                        <LinkContainer to="/designservices">
-                            <NavItem eventKey={"4"} id="white" className="link question mainNav">services</NavItem>
-                        </LinkContainer>
-
-                        {/* <NavDropdown eventKey="4" title="SERVICES" className="link question mainNav" noCaret id="dropdown-no-caret">
-                            <LinkContainer to="/designservices">
-                                <MenuItem eventKey={"4.8"} id="white" className="question dropNav">all services</MenuItem>
-                            </LinkContainer>
-
-                            <MenuItem divider />
-
-                            {this.state.designServices.map((service, i) => (
-                                <LinkContainer to={"/designservices/" + service}>
-                                    <MenuItem eventKey={"4." + i} id="white" className="question dropNav">{service}</MenuItem>
-                                </LinkContainer>
-                            ))}
-                        </NavDropdown> */}
-
-                        <LinkContainer to="/joinus">
-                            <NavItem eventKey={"5"} id="white" className="link question mainNav">ecosystem</NavItem>
-                        </LinkContainer>
-
-                        {/* <NavDropdown eventKey="5" title="ECOSYSTEM" className="link question mainNav" noCaret id="dropdown-no-caret">
-                            <LinkContainer to="/joinus">
-                                <MenuItem eventKey={"5.1"} id="white" className="question dropNav">your brand</MenuItem>
-                            </LinkContainer>
-
-                            <MenuItem divider />
-
-                            <LinkContainer to="/joinus">
-                                <MenuItem eventKey={"5.2"} id="white" className="question dropNav">your career</MenuItem>
-                            </LinkContainer>
-                        </NavDropdown> */}
-
-                        {/* <LinkContainer to="/login">
-                            <NavItem eventKey={"6"} id="white" className="link question">LOG IN</NavItem>
-                        </LinkContainer */}
-
-
+                        ))}
                     </Nav>
                 </Navbar.Collapse>
+
 
                 <div id="navFooter">
                     <span id="emailIcon" className="footerElement">
@@ -123,7 +62,7 @@ class NavBar extends Component {
 
                 <img id="constStamp" src={stamp} alt="underConst" />
 
-                {/* <div id="blogButton">Blog</div> */}
+                {/* <div id="blogButton" className="slateWhite-background">Blog</div> */}
 
 
             </Navbar>

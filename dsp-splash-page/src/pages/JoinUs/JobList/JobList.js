@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Panel } from "react-bootstrap";
+import SlantTop from "../../../components/SlantTop";
 import "./joblist.css";
 
 import jobs from "../../../JSON/joblist.json";
@@ -19,12 +20,11 @@ class JobList extends Component {
 
         return (
             <div>
-                <div className="slantTop almostBlack">
-                    <div className="topSlantTitle">
-                        dsp.careers
-                    </div>
-                </div>
-                <div id="topSlant" className="almostBlack"></div>
+
+                <SlantTop 
+                    color="almostBlack-background"
+                    title="dsp.careers"
+                />
 
                 <div className="wrapper">
 

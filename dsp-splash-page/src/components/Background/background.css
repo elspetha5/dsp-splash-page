@@ -1,16 +1,5 @@
-body {
-    font-family: 'Corbel', sans-serif;
-}
-
-html {
-    background-color: #f4f7fc;
-}
-
 #background {
-    /* padding-bottom: 10vh; */
     width: 100%;
-    /* background-image: url(./greyzz.png); */
-    background-color: #f4f7fc;
     min-height: 90vh;    
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
+import SlantTop from "../../components/SlantTop";
 import "./designServices.css";
 
 import services from "../../JSON/designServices.json";
@@ -29,15 +30,13 @@ class DesignServices extends Component {
         return (
             <div className="slantBackground">
             
-                <div className="slantTop charcoalish">
-                    <div className="topSlantTitle">
-                        dsp.design
-                    </div>
-                </div>
-                <div id="topSlant" className="charcoalish"></div>
+                <SlantTop 
+                    color="charcoalish-background"
+                    title="dsp.design"
+                />
 
                 <div>
-                    <div className="darkSlantTitle slantTitle">dsp.interiors</div>
+                    <div className="almostBlack-text slantTitle">dsp.interiors</div>
                     <div className="slantInfoWrapper">
                         {this.state.interiors.map(interior => (
                             <div className="slantInfoColumn">
@@ -54,16 +53,16 @@ class DesignServices extends Component {
                                         "color": "#757579"
                                     }}
                                 >
-                                    <div className="popupWords">{interior.rightVerbiage}</div>
+                                    <div className="popupWords nightBlue-text">{interior.rightVerbiage}</div>
                                 </Popup>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div className="slantUp green">
+                <div className="slantUp green-background">
                     <div className="unSkew">
-                        <div className="whiteSlantTitle slantTitle">dsp.architecture</div>
+                        <div className="slateWhite-text slantTitle">dsp.architecture</div>
                         <div className="slantInfoWrapper">
                             {this.state.arch.map(arch => (
                                 <div className="slantInfoColumn">
@@ -80,7 +79,7 @@ class DesignServices extends Component {
                                             "color": "#757579"
                                         }}
                                     >
-                                        <div className="popupWords">{arch.rightVerbiage}</div>
+                                        <div className="popupWords nightBlue-text">{arch.rightVerbiage}</div>
                                     </Popup>
                                 </div>
                             ))}
@@ -90,19 +89,19 @@ class DesignServices extends Component {
                 </div>
 
                 <div>
-                    <div className="darkSlantTitle slantTitle">dsp.graphics</div>
+                    <div className="almostBlack-text slantTitle">dsp.graphics</div>
                     <div className="slantInfoWrapper">
                         {this.state.graphics.map(graphic => (
                             <div className="slantInfoColumn">
-                                <div className="darkSlantInfo">{graphic}</div>
+                                <div className="charcoalish-text">{graphic}</div>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div className="slantDown darkBlue">
+                <div className="slantDown nightBlue-background">
                     <div className="unSkewDown">
-                        <div className="whiteSlantTitle slantTitle">dsp.digital</div>
+                        <div className="slateWhite-text slantTitle">dsp.digital</div>
                         <div className="slantInfoWrapper">
                             {this.state.digital.map(digit => (
                                 <div className="slantInfoColumn">
@@ -119,7 +118,7 @@ class DesignServices extends Component {
                                             "color": "#757579"
                                         }}
                                     >
-                                        <div className="popupWords">{digit.rightVerbiage}</div>
+                                        <div className="popupWords nightBlue-text">{digit.rightVerbiage}</div>
                                     </Popup>
                                 </div>
                             ))}
@@ -129,19 +128,19 @@ class DesignServices extends Component {
                 </div>
 
                 <div>
-                    <div className="darkSlantTitle slantTitle">dsp.brand</div>
+                    <div className="almostBlack-text slantTitle">dsp.brand</div>
                     <div className="slantInfoWrapper">
                         {this.state.brand.map(brand => (
                             <div className="slantInfoColumn">
-                                <div className="darkSlantInfo">{brand}</div>
+                                <div className="charcoalish-text">{brand}</div>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div className="slantUp green">
+                <div className="slantUp green-background">
                     <div className="unSkew">
-                        <div className="whiteSlantTitle slantTitle">dsp.service</div>
+                        <div className="slateWhite-text slantTitle">dsp.service</div>
                         <div className="slantInfoWrapper">
                             {this.state.service.map(service => (
                                 <div className="slantInfoColumn">
@@ -158,7 +157,7 @@ class DesignServices extends Component {
                                             "color": "#757579"
                                         }}
                                     >
-                                        <div className="popupWords">{service.rightVerbiage}</div>
+                                        <div className="popupWords nightBlue-text">{service.rightVerbiage}</div>
                                     </Popup>
                                 </div>
                             ))}
@@ -168,11 +167,11 @@ class DesignServices extends Component {
                 </div>
 
                 <div>
-                    <div className="darkSlantTitle slantTitle">dsp.industrial</div>
+                    <div className="almostBlack-text slantTitle">dsp.industrial</div>
                     <div className="slantInfoWrapper">
                         {this.state.industrial.map(industrial => (
                             <div className="slantInfoColumn">
-                                <div className="darkSlantInfo">{industrial}</div>
+                                <div className="charcoalish-text">{industrial}</div>
                             </div>
                         ))}
                     </div>

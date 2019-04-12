@@ -15,8 +15,8 @@ class Projects extends Component {
             <div id="yourProjectsStory" class="yourOne">
                 <div class="yourThingBackground">
                     <div class="yourTitleWrapper">
-                        <div id="projectText" class="yourThingWords">Your story.</div>
-                        <div id="projectText" class="yourThingWords">coming soon...</div>
+                        <div class="yourThingWords charcoalish-text">Your story.</div>
+                        <div class="yourThingWords charcoalish-text">coming soon...</div>
                     </div>
 
                     {/* <div classname="yourDescriptionWrapper">

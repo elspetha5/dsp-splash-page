@@ -20,8 +20,8 @@ class Clients extends Component {
                     bottomWords="Augmented."
                     link="/clients/contact"
                     buttonWords="Learn more"
-                    topDescripton=""
-                    bottomDescription="Leverage our staff augmentation program"
+                    topDescription="Leverage our staff augmentation program"
+                    bottomDescription="suited for large teams and projects"
                     />
                 </div>
 
@@ -31,8 +31,8 @@ class Clients extends Component {
                     bottomWords="Elevated."
                     link="/clients/contact"
                     buttonWords="Learn more"
-                    topDescripton=""
-                    bottomDescription="Engage our ecosystem"
+                    topDescription="Engage our ecosystem of professionals"
+                    bottomDescription="assembled to support your boutique practice"
                     />
                 </div>
                 
@@ -42,8 +42,8 @@ class Clients extends Component {
                     bottomWords="Crafted."
                     link="/clients/contact"
                     buttonWords="Learn more"
-                    topDescripton=""
-                    bottomDescription="Discover our design process"
+                    topDescription="Discover our design process"
+                    bottomDescription="tailored for the design-builder"
                     />
                 </div>
 

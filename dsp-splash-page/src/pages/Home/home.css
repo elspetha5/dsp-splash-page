@@ -1,14 +1,9 @@
-#homepage {
-    background-color: #f4f7fc;
-}
-
 .homeHalf {
     float: left;
     height: 95vh;
 }
 
 #homeLogo {
-    background-color: #1b2c3a;
     padding: 23vh 0 0 14vw;
     width: 44%;
 }
@@ -37,7 +32,6 @@
     position: absolute;
     top: 0;
     left: 32vw;
-    background-color: #1b2c3a;
     width: 23vw;
     height: 95vh;
     animation: slantyX 4s ease-out .5s forwards;
@@ -68,7 +62,6 @@
 }
 
 .homeTagline {
-    color: #1b2c3a;
     font-size: 150%;
     line-height: 1.5;
     font-weight: bold;

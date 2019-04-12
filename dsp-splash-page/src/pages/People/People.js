@@ -46,8 +46,8 @@ handleMouseOver = (i, pic) => {
 render() {
     return (
         <div id="peopleBackground">
-            <div id="peopleTop">
-                <div id="aboutUs">we are . . . <span id="aboutUsBreak">design service professionals</span></div>
+            <div id="peopleTop" className="nightBlue-background">
+                <div id="aboutUs" className="slateWhite-text">we are . . . <span id="aboutUsBreak">design service professionals</span></div>
             </div>
 
             <div id="peoplePicBox">

@@ -35,12 +35,12 @@ class JoinUs extends Component {
                             <div className="close" onClick={close}>&times;</div>
 
                             <div id="joinUsTopPic">
-                                <div id="joinUsTitle" className="topQ">TWO ENTITIES...
+                                <div id="joinUsTitle" className="topQ nightBlue-text">TWO ENTITIES...
                                     <span id="oneEcosystem"> ONE ECOSYSTEM</span>
                                 </div>
 
                                 <div id="joinUsThesisWrapper">
-                                    <div className="joinUsInfo">
+                                    <div className="joinUsInfo nightBlue-text">
                                         <div className="joinUsInfoWords">
                                             <div className="bold entityTitle">objective</div>
                                             <div>enable a mode of design that elevates the best in all of us</div>
@@ -49,7 +49,7 @@ class JoinUs extends Component {
                                         <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
                                     </div>
 
-                                    <div className="joinUsInfo">
+                                    <div className="joinUsInfo nightBlue-text">
                                         <div className="joinUsInfoWords">
                                             <div className="bold entityTitle">strategy</div>
                                             <div>a design ecosystem comprised of two entities</div>
@@ -58,7 +58,7 @@ class JoinUs extends Component {
                                         <div className="rightArrow"><i id="arrowHide" class="fas fa-angle-right"></i></div>
                                     </div>
 
-                                    <div className="joinUsInfo">
+                                    <div className="joinUsInfo nightBlue-text">
                                         <div className="colon" id="numOne">1</div>
 
                                         <div className="joinUsInfoWords">
@@ -67,7 +67,7 @@ class JoinUs extends Component {
                                         </div>
                                     </div>
 
-                                    <div className="joinUsInfo">
+                                    <div className="joinUsInfo nightBlue-text">
                                         <div className="colon" id="numTwo">2</div>
 
                                         <div className="joinUsInfoWords">
