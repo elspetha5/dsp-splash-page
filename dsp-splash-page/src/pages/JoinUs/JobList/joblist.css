@@ -46,6 +46,10 @@
     padding: 4px 10px 5px;
 }
 
+.jobWrapper {
+    margin-bottom: 50px;
+}
+
 .panel, 
 .panel-body, 
 .panel-heading,
@@ -75,12 +79,24 @@ a:hover {
     color: #757579;
 }
 
-#oneLineTitle {
-    font-size: 100%;
+#listTitleWhite {
+    color: #f4f7fc;
+}
+
+#listTitleWhite:hover {
+    color: #f9f1ee;
 }
 
 #oneLineTitle:hover {
     color: #333132;
+}
+
+#oneLineTitleWhite {
+    color: #f4f7fc;
+}
+
+#oneLineTitleWhite:hover {
+    color: #f9f1ee;
 }
 
 .jobButton {
