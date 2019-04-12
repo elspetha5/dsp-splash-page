@@ -11,7 +11,10 @@ const YourThing = props => (
         <div className="button"><Link to={props.link} className="yourButton" >{props.buttonWords}</Link></div>
         <div classname="yourDescriptionWrapper">
             <div className="yourTopDescription yourDescription slateWhite-text">{props.topDescription}</div>
-            <div className="yourBottomDescription yourDescription slateWhite-text">{props.bottomDescription}</div>
+            <div className="yourBottomDescription yourDescription slateWhite-text">
+                {props.bottomDescription}
+                <span className={`highlighted ${props.highlightColor}`}>{props.highlighted}</span>
+            </div>
         </div>
     </div>
 );

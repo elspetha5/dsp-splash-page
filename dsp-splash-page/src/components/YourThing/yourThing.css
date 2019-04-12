@@ -34,4 +34,10 @@
 
 .yourDescription {
     font-size: 125%;
+    line-height: 1.5;
+}
+
+.highlighted {
+    position: relative;
+    padding: 0 3px;
 }

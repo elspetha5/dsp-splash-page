@@ -21,7 +21,9 @@ class Clients extends Component {
                     link="/clients/contact"
                     buttonWords="Learn more"
                     topDescription="Leverage our staff augmentation program"
-                    bottomDescription="suited for large teams and projects"
+                    bottomDescription="suited for "
+                    highlighted="large teams and projects"
+                    highlightColor="salmon"
                     />
                 </div>
 
@@ -32,7 +34,9 @@ class Clients extends Component {
                     link="/clients/contact"
                     buttonWords="Learn more"
                     topDescription="Engage our ecosystem of professionals"
-                    bottomDescription="assembled to support your boutique practice"
+                    bottomDescription="assembled to support your "
+                    highlighted="boutique practice"
+                    highlightColor="skyblue"
                     />
                 </div>
                 
@@ -43,7 +47,9 @@ class Clients extends Component {
                     link="/clients/contact"
                     buttonWords="Learn more"
                     topDescription="Discover our design process"
-                    bottomDescription="tailored for the design-builder"
+                    bottomDescription="tailored for the "
+                    highlighted="design-builder"
+                    highlightColor="greenyellow"
                     />
                 </div>
 

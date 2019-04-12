@@ -9,8 +9,13 @@
     line-height: 1.5;
 }
 
+.approachLeadingWord {
+    font-size: 115%;
+}
+
 .bold {
     font-weight: bold;
+    font-size: 103%;
 }
 
 .link {
@@ -43,6 +48,9 @@
         line-height: 1.2;
     }
 
+    .approachLeadingWord {
+        font-size: 115%;
+    }
     
 }
 

@@ -133,11 +133,11 @@ class Approach extends Component {
                     <div className="unSkew">
                         <div className="slateWhite-text slantTitle">we are...</div>
                         <div className="slantInfoWrapper">
-                            <div className="infoWords slateWhite-text"><span className="bold">building an ecosystem</span> of design professionals that kicks butt for our clients</div>
-                            <div className="infoWords slateWhite-text"><span className="bold">creating a platform</span> for design services that will lead the industry within 3 years</div>
-                            <div className="infoWords slateWhite-text"><span className="bold">disrupting the status quo</span> for design & delivery</div>
-                            <div className="infoWords slateWhite-text"><span className="bold">offering a better value</span> for a superior design process</div>
-                            <div className="infoWords slateWhite-text"><span className="bold">providing a work-life opportunity</span> that can't be found anywhere else</div>
+                            <div className="infoWords slateWhite-text">...<span className="bold">building an ecosystem</span> of design professionals that kicks butt for our clients</div>
+                            <div className="infoWords slateWhite-text">...<span className="bold">creating a platform</span> for design services that will lead the industry within 3 years</div>
+                            <div className="infoWords slateWhite-text">...<span className="bold">disrupting the status quo</span> for design & delivery</div>
+                            <div className="infoWords slateWhite-text">...<span className="bold">offering a better value</span> for a superior design process</div>
+                            <div className="infoWords slateWhite-text">...<span className="bold">providing a work-life opportunity</span> that can't be found anywhere else</div>
                         </div>
                     </div>
                 </div>
@@ -145,12 +145,12 @@ class Approach extends Component {
                 <div>
                     <div className="almostBlack-text slantTitle">where do we...</div>
                     <div className="slantInfoWrapper almostBlack-text">
-                        <div className="infoWords">...work? <span className="bold">Out of the office</span> for starters, because there are no tethers we don't choose for ourselves, except maybe to our laptops</div>
-                        <div className="infoWords">...create? Wherever we find the most <span className="bold">inspiration</span> and a decent wifi connection</div>
-                        <div className="infoWords">...collaborate? <span className="bold">In the cloud</span> just about every day but Sunday and in person as much as we need to</div>
-                        <div className="infoWords">...incubate? Our ideas percolate day and night and we have the tools to capture them <span className="bold">when and where</span> they bubble up</div>
-                        <div className="infoWords">...play? Exactly where we love to play most</div>
-                        <div className="infoWords">...live? In the places that matter most</div>
+                        <div className="infoWords">...<span className="approachLeadingWord">work?</span> <span className="bold">Out of the office</span> for starters, because there are no tethers we don't choose for ourselves, except maybe to our laptops</div>
+                        <div className="infoWords">...<span className="approachLeadingWord">create?</span> Wherever we find the most <span className="bold">inspiration</span> and a decent wifi connection</div>
+                        <div className="infoWords">...<span className="approachLeadingWord">collaborate?</span> <span className="bold">In the cloud</span> just about every day but Sunday and in person as much as we need to</div>
+                        <div className="infoWords">...<span className="approachLeadingWord">incubate?</span> Our ideas percolate day and night and we have the tools to capture them <span className="bold">when and where</span> they bubble up</div>
+                        <div className="infoWords">...<span className="approachLeadingWord">play?</span> Exactly where we love to play most</div>
+                        <div className="infoWords">...<span className="approachLeadingWord">live?</span> In the places that matter most</div>
                     </div>
                 </div>
 
@@ -158,7 +158,7 @@ class Approach extends Component {
                     <div className="unSkewDown">
                         <div className="slateWhite-text slantTitle">why? because...</div>
                         <div className="slantInfoWrapper">
-                            <div className="infoWords slateWhite-text">...<span className="bold">we FINALLY can</span></div>
+                            <div className="infoWords slateWhite-text">...we<span className="bold"> FINALLY </span>can</div>
                             <div className="infoWords slateWhite-text">...we've got the <span className="bold">right tech</span>, the <span className="bold">best talent</span>, and a <span className="bold">game changing</span> approach to design & delivery</div>
                             <div className="infoWords slateWhite-text">...there's all kinds of <span className="bold">amazing talent outside</span> the typical design office</div>
                             <div className="infoWords slateWhite-text">...design services for AEC partners means <span className="bold">we all thrive</span></div>
@@ -168,7 +168,7 @@ class Approach extends Component {
                 </div>
 
                 <div>
-                    <div className="almostBlack-text slantTitle">who? we are...</div>
+                    <div className="almostBlack-text slantTitle">who are we?</div>
                     <div className="slantInfoWrapper almostBlack-text">
                         <div className="infoWords">...connectors, navigators, artists and <span className="bold">design thinkers</span></div>
                         <div className="infoWords">...<span className="bold">process scientists</span>, constantly pursuing and adapting to the most effective way forward</div>

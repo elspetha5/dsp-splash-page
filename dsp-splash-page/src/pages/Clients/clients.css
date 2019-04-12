@@ -10,11 +10,8 @@
     background-size: cover;
 }
 
-#design-buildCompany {
-    background-image: url(./your-project-crafted.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.salmon {
+    background-color: #a35f5fcc;
 }
 
 #boutiqueCompany {
@@ -22,6 +19,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.skyblue {
+    background-color: #6a889ec5;
+}
+
+#design-buildCompany {
+    background-image: url(./your-project-crafted.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greenyellow {
+    background-color: #849b66ce;
 }
 
 @media (max-width: 1200px) { 
