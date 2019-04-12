@@ -82,7 +82,7 @@ class Approach extends Component {
 
                         <div id="approachParagraph">By tapping into the
                             <Popup
-                                trigger={<Link to="#" className="bold link"> dsp ecosystem </Link>}
+                                trigger={<Link to="#" className="bold link"> dsp ecosystem, </Link>}
                                 position="top center"
                                 closeOnDocumentClick
                                 contentStyle={{
@@ -95,7 +95,7 @@ class Approach extends Component {
                             >
                                 <div className="popupWords nightBlue-text">{ideas[3].verbiage}</div>
                             </Popup>
-                            , our clients, design-build partners, large project teams, and boutique firms alike will benefit from our
+                             our clients, design-build partners, large project teams, and boutique firms alike will benefit from our
                             <Popup
                                 trigger={<Link to="#" className="bold link"> unparalleled delivery </Link>}
                                 position="top center"

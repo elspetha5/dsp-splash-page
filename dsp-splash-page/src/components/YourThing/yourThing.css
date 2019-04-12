@@ -38,6 +38,11 @@
 }
 
 .highlighted {
-    position: relative;
     padding: 0 3px;
+}
+
+@media (max-width: 768px) {
+    .yourWordBreak {
+        display: block;
+    }
 }

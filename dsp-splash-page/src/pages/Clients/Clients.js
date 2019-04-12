@@ -13,14 +13,15 @@ class Clients extends Component {
 
     render() {
         return (
-            <div>
+            <div className="clientBackground">
                 <div id="largeCompany" class="yourThree">
                     <YourThing
                     topWords="Your staff."
                     bottomWords="Augmented."
                     link="/clients/contact"
                     buttonWords="Learn more"
-                    topDescription="Leverage our staff augmentation program"
+                    topDescription="Leverage our staff "
+                    topDescriptionBreak="augmentation program"
                     bottomDescription="suited for "
                     highlighted="large teams and projects"
                     highlightColor="salmon"
@@ -33,7 +34,8 @@ class Clients extends Component {
                     bottomWords="Elevated."
                     link="/clients/contact"
                     buttonWords="Learn more"
-                    topDescription="Engage our ecosystem of professionals"
+                    topDescription="Engage our ecosystem "
+                    topDescriptionBreak="of professionals"
                     bottomDescription="assembled to support your "
                     highlighted="boutique practice"
                     highlightColor="skyblue"
@@ -53,7 +55,7 @@ class Clients extends Component {
                     />
                 </div>
 
-                
+                                
             </div>
         )
     }

@@ -41,16 +41,35 @@
 }
 
 @media (max-width: 992px) { 
+    .clientBackground {
+        height: 100%;
+        background-color: #b0c46b;
+    }
+    
+    .clientBackground::after {    
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
     .yourThree {
         width: 100%;
+    }
+
+    #boutiqueCompany {
+        transform: translateY(-5vh);
+        clip-path: polygon(0 0, 100% 5vh, 100% 100%, 0 100%);
+    }
+
+    #design-buildCompany {
+        transform: translateY(-10vh);
+        clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
     }
        
 }
 
 @media (max-width: 768px) {
-    .yourThree {
-        width: 100%;
-    }
+    
 }
 
 @media (max-width: 576px) { 

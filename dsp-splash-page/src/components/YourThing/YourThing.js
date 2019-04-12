@@ -10,10 +10,15 @@ const YourThing = props => (
         </div>
         <div className="button"><Link to={props.link} className="yourButton" >{props.buttonWords}</Link></div>
         <div classname="yourDescriptionWrapper">
-            <div className="yourTopDescription yourDescription slateWhite-text">{props.topDescription}</div>
-            <div className="yourBottomDescription yourDescription slateWhite-text">
+            <div className="yourDescription slateWhite-text">
+                {props.topDescription}
+                <span className="yourWordBreak">{props.topDescriptionBreak}</span>
+            </div>
+            <div className="yourDescription slateWhite-text">
                 {props.bottomDescription}
-                <span className={`highlighted ${props.highlightColor}`}>{props.highlighted}</span>
+                <span className="yourWordBreak">
+                    <span className={`highlighted ${props.highlightColor}`}>{props.highlighted}</span>
+                </span>
             </div>
         </div>
     </div>
