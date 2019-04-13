@@ -79,6 +79,10 @@
     }
 }
 
+@media (max-width: 815px) and (max-height: 400px) {
+    
+}
+
 @media (max-width: 768px) {
     #peopleTop {
         padding: 5vh 4vh 3vh;
