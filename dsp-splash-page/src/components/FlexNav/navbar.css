@@ -1,0 +1,56 @@
+#flexNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 25vw;
+    box-shadow: -2px -3px 5px #757579;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+#flexImage {
+    flex: 1;
+    /* background-color: red; */
+    text-align: right;
+    padding-right: 1.5vw;
+}
+
+#flexWords {
+    /* background-color: blue; */
+    flex: 4;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+#flexQs {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Codystar', cursive;
+    font-size: 95%;
+    font-weight: bold;
+    color: #757579;
+}
+
+#flexFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+#flexLogo {
+    height: 8vh;
+}
+
+#constStamp {
+    width: 140px;
+    float: left;
+    position: fixed;
+    top: 0;
+    right: 30px;
+    transform: rotate(25deg);
+    z-index: 2000;
+}
