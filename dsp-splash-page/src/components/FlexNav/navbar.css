@@ -9,14 +9,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    justify-items: center;
+    flex-flow: row;
 }
 
 #flexImage {
     flex: 1;
     /* background-color: red; */
-    text-align: right;
-    padding-right: 1.5vw;
+    text-align: center;
 }
 
 #flexWords {
@@ -24,7 +23,6 @@
     flex: 4;
     display: flex;
     flex-flow: column;
-    text-align: center;
 }
 
 #flexQs {
@@ -34,6 +32,7 @@
     font-size: 95%;
     font-weight: bold;
     color: #757579;
+    margin-bottom: 1.25vh;
 }
 
 #flexFooter {
