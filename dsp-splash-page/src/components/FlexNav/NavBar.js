@@ -24,28 +24,42 @@ class NavBar extends Component {
     render() {
         return (
             <div>
-                <div id="flexNav" className="lightGrey-background">
-                    <div id="flexImage">
-                        <img src={logo} alt="logo" id="flexLogo" />
-                    </div>
-
-                    <div id="flexWords">
-                        <div id="flexQs">
-                            {this.state.buttons.map(button => (
-                                <Link to={button.to}>{button.text}</Link>
-                            ))}
+                <Navbar>
+                    <div id="flexNav" className="lightGrey-background">
+                        <div id="flexImage">
+                            <Link to="/"><img src={logo} alt="logo" id="flexLogo" /></Link>
                         </div>
 
-                        <div id="flexFooter">
-                            {this.state.footer.map(thing => (
-                                <div>{thing}</div>
-                            ))}
-                        </div>
-                    </div>
 
-                </div>
+                        <div id="flexWords">
+                            <Navbar.Collapse>
+                                <Nav>
+                                    <div id="flexQs">
+                                        {this.state.buttons.map((button, i) => (
+                                            <LinkContainer to={button.to}>
+                                                <NavItem eventKey={`${i + 1}`} >{button.text}</NavItem>
+                                            </LinkContainer>
+                                        ))}
+                                    </div>
+                                </Nav>
+                            </Navbar.Collapse>
+
+                            <div id="flexFooter">
+                                <a className="link" id="emailAddress" href="mailto:hello@dsp.design"><i class="far fa-envelope"></i> hello@dsp.design </a>
+                                <Link classname="link" id="footerJoin" to="/joinus"><i class="far fa-handshake"></i> Join us</Link>
+                                <div id="flexPLLC">Design Service Professionals, PLLC<span id="copyRights"> <i class="far fa-copyright"></i> 2019 <span id="rights">All rights reserved</span></span></div>
+                            </div>
+                        </div>
+
+                        <Navbar.Header>
+                            <Navbar.Toggle id="flexHamburger" />
+                        </Navbar.Header>
+                    </div>
+                </Navbar>
+
 
                 <img id="constStamp" src={stamp} alt="underConst" />
+
             </div>
         )
     };

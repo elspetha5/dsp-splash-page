@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./home.css";
+import "./flexHome.css";
 
 import logo from "./dspLogo-outline-lightBlue.png";
 
@@ -18,7 +18,7 @@ class Home extends Component {
     render() {
         return (
             <div id="homepage">
-                <div id="homeSlant" className="nightBlue-background"></div>
+                {/* <div id="homeSlant" className="nightBlue-background"></div> */}
 
                 <div id="homeLogo" className="homeHalf nightBlue-background">
                     <img src={logo} alt="logo" id="homeLogoIcon" />

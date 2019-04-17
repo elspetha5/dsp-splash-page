@@ -1,0 +1,39 @@
+#homepage {
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homeHalf {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+#homeLogo {
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    animation: homeClipPath 4s ease-out forwards;
+}
+
+@keyframes homeClipPath {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    }
+}
+
+#homeLogoIcon {
+    width: 40vw;
+}
+
+#homeWords {
+    height: 40%;
+    padding: 10vh 0 0 15vw;
+    justify-content: flex-start;
+}

@@ -2,9 +2,9 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 10vh;
+    /* height: 12vh; */
     width: 100vw;
-    padding: 0 25vw;
+    padding: 1vh 10vw;
     box-shadow: -2px -3px 5px #757579;
     display: flex;
     align-items: center;
@@ -13,9 +13,18 @@
 }
 
 #flexImage {
-    flex: 1;
     /* background-color: red; */
+    flex: 1;
     text-align: center;
+}
+
+#flexLogo {
+    height: 6vh;
+}
+
+#flexHamburger {
+    background-color: transparent;
+    border: none;
 }
 
 #flexWords {
@@ -27,21 +36,28 @@
 
 #flexQs {
     display: flex;
+    flex-flow: column;
     justify-content: space-between;
     font-family: 'Codystar', cursive;
+    height: 15vh;
     font-size: 95%;
     font-weight: bold;
     color: #757579;
-    margin-bottom: 1.25vh;
+    padding-left: 3vw;
+    margin-bottom: 3vh;
 }
 
 #flexFooter {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    font-size: 80%;
+    height: 4vh;
+    padding-left: 7vw;
 }
 
-#flexLogo {
-    height: 8vh;
+#flexPLLC {
+    display: none;
 }
 
 #constStamp {
