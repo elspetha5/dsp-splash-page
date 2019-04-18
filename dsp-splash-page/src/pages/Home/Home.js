@@ -25,9 +25,11 @@ class Home extends Component {
                 </div>
 
                 <div id="homeWords" className="homeHalf">
-                    <div className="homeTagline nightBlue-text">Design Service Professionals . . .</div>
-                    <div className="homeTagline nightBlue-text">Design Services for the Design Community</div>
-                    {/* <div className="homeTagline nightBlue-text"> Design Community</div> */}
+                    <div>
+                        <div className="homeTagline nightBlue-text">Design Service Professionals . . .</div>
+                        <div className="homeTagline nightBlue-text">Design Services for the Design Community</div>
+                        {/* <div className="homeTagline nightBlue-text"> Design Community</div> */}
+                    </div>
                 </div>
 
             </div>

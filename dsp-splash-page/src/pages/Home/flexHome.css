@@ -1,5 +1,5 @@
 #homepage {
-    height: 95vh;
+    height: 92vh;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -30,7 +30,7 @@
 }
 
 #homeLogoIcon {
-    width: 40vw;
+    width: 10em;
     opacity: 0;
     animation: rotateLogo 4s ease-out .5s forwards;
 }
@@ -51,8 +51,9 @@
 
 #homeWords {
     height: 40%;
-    padding: 10vh 10vw;
-    justify-content: flex-start;
+    padding: 0 10vw;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     animation: wordAppearVert 4s .5s forwards;
 }
@@ -75,44 +76,26 @@
     font-family: 'Codystar', cursive;
 }
 
-@media (min-width: 600px) {
-    #homeLogoIcon {
-        width: 35vw;
-    }
-
-    /* #homeWords {
-        padding: 10vh 15vw;        
-    } */
-
+@media (min-width: 37.5em) {
     .homeTagline {
         font-size: 115%;
     }
 }
 
-@media (min-width: 800px) {
-    #homeLogoIcon {
-        width: 30vw;
-    }
-
-    #homeWords {
-        padding: 10vh 25vw;        
-    }
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) and (max-height: 75em), (min-width: 34em) and (max-height: 28em) {
     #homepage {
         flex-flow: row;
     }
-
+    
     .homeHalf {
         height: 100%;
         width: 0;
     }
-
+    
     #homeLogoIcon {
-        width: 20vw;
+        width: 15em;
     }
-
+    
     #homeLogo {
         height: 100%;
         width: 55%;
@@ -132,10 +115,11 @@
     #homeWords {
         width: 40%;
         padding: 0;
+        align-items: flex-start;
         justify-content: center;
         animation: wordAppear 4s .5s forwards;
     }
-
+    
     @keyframes wordAppear {
         from {
             opacity: 0;
@@ -148,8 +132,23 @@
     }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 62.5em) and (min-height: 75em) {
     #homeLogoIcon {
-        width: 15vw;
+        width: 20em;
+    }
+    
+    .homeTagline {
+        font-size: 170%;
+    }
+}
+
+@media (min-width: 34em) and (max-height: 28em) {
+    #homeLogoIcon {
+        width: 8em;
+    }
+    
+    .homeTagline {
+        margin-left: -5vw;
+        font-size: 75%;
     }
 }
