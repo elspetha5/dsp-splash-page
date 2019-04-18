@@ -1,0 +1,13 @@
+#locations {
+    width: 50vw;
+}
+
+#mapDots {
+    position: fixed;
+    top: 17vh;
+    left: 2.25vw;
+}
+
+#outline {
+    width: 43vw;
+}

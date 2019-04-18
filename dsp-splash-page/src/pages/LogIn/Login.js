@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./login.css";
 
+import map from "./us-map-outline.png";
+import locations from "./dsp-location-map.png";
+
 class Login extends Component {
     state = {
 
@@ -13,7 +16,10 @@ class Login extends Component {
     render() {
         return (
             <div>
-
+                <img src={locations} id="locations" className="map" />
+                <div id="mapDots">
+                    <img src={map} id="outline" className="map" />
+                </div>
             </div>
         )
     };

@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-flow: row;
 }
 
 #flexImage {
@@ -22,42 +21,50 @@
     height: 6vh;
 }
 
-#flexHamburger {
-    background-color: transparent;
-    border: none;
+#flexFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    font-size: 60%;
+    /* background-color: blue; */
+}
+
+#flexFooterWords {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 3.5vh;
+}
+
+#flexPLLC {
+    display: none;
 }
 
 #flexWords {
     /* background-color: blue; */
-    flex: 4;
+    flex: 2;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
 
 #flexQs {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: space-around;
     font-family: 'Codystar', cursive;
     height: 15vh;
     font-size: 95%;
     font-weight: bold;
     color: #757579;
-    padding-left: 3vw;
-    margin-bottom: 3vh;
+    padding-left: 4vw;
 }
 
-#flexFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 80%;
-    height: 4vh;
-    padding-left: 7vw;
-}
-
-#flexPLLC {
-    display: none;
+#flexHamburger {
+    background-color: transparent;
+    border: none;
 }
 
 #constStamp {
