@@ -1,3 +1,7 @@
+#peopleBackground {
+    padding: 0 15vw;
+}
+
 #peopleTop {
     position: absolute;
     top: 0;
@@ -17,7 +21,7 @@
 }
 
 #peoplePicBox {
-    padding: 23vh 15vw 18vh;
+    padding: 23vh 0 10vh;
     text-align: center;
 }
 
@@ -55,6 +59,19 @@
 
 .person:hover {
     background-color: #b2d08b;
+}
+
+#loginBackground {
+    height: 200vh;
+}
+
+#locations {
+    width: 100vw;
+    display: none;
+}
+
+#virtualTagLing {
+    text-align: center;
 }
 
 @media (max-width: 1200px) {
