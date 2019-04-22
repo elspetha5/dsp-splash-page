@@ -7,51 +7,82 @@ class LocationMap extends Component {
     state = {
         locations: [
             {
-                tagName: "sanFran",
-                cityName: "san francisco, ca"
-            },
-            {
-                tagName: "sl",
-                cityName: "salt lake city, ut"
-            },
-            {
-                tagName: "phx",
-                cityName: "phoenix, az"
-            },
-            {
-                tagName: "minn",
-                cityName: "minneapolis, mn"
-            },
-            {
-                tagName: "austin",
-                cityName: "austin, tx"
-            },
-            {
-                tagName: "chi",
-                cityName: "chicago, il"
-            },
-            {
                 tagName: "atl",
-                cityName: "atlanta, ga"
+                cityName: "atlanta, ga",
+                visibility: "atlHidden"
             },
             {
                 tagName: "brooklyn",
-                cityName: "brooklyn, ny"
+                cityName: "brooklyn, ny",
+                visibility: "brooklynHidden"
+            },
+            {
+                tagName: "chi",
+                cityName: "chicago, il",
+                visibility: "chiHidden"
+            },
+            {
+                tagName: "austin",
+                cityName: "austin, tx",
+                visibility: "austinHidden"
+            },
+            {
+                tagName: "phx",
+                cityName: "phoenix, az",
+                visibility: "phxHidden"
+            },
+            {
+                tagName: "minn",
+                cityName: "minneapolis, mn",
+                visibility: "minnHidden"
+            },
+            {
+                tagName: "sl",
+                cityName: "salt lake city, ut",
+                visibility: "slHidden"
+            },
+            {
+                tagName: "sanFran",
+                cityName: "san francisco, ca",
+                visibility: "sanFranHidden"
             }
         ]
     }
 
+    handleMouseOver = (i, location) => {
+        let arr = this.state.locations.slice();
+        arr[i].visibility = location + "Show";
+        this.setState({
+            location: arr
+        })
+    };
+
+    handleMouseOut = (i, location) => {
+        let arr = this.state.locations.slice();
+        arr[i].visibility = location + "Hidden";
+        this.setState({
+            location: arr
+        })
+    }
+
     render() {
         return (
-            <div>
-                <div id="virtualTagLing">we are "virtually" everywhere</div>
+            <div id="locationBackground">
+                <div id="virtualTagLine" className="nightBlue-text">
+                    <i class="fas fa-angle-double-left"></i>
+                    <span id="everywhere" className="nightBlue-background slateWhite-text">we are "virtually" everywhere</span>
+                    <i class="fas fa-angle-double-right"></i>
+                </div>
 
                 <div id="mapDots">
                     <img src={map} alt="Locations Map" id="outline" className="map" />
-                    {this.state.locations.map(location => (
+                    {this.state.locations.map((location, i) => (
                         <div id={location.tagName} className="dots">
-                            <div className={`dot ${location.tagName}`}></div>
-                            <div id="locationWords">{location.cityName}</div>
+                            <div className={`dot salmon-background ${location.tagName}`}
+                                onMouseOver={() => { this.handleMouseOver(i, location.tagName) }}
+                                onMouseOut={() => { this.handleMouseOut(i, location.tagName) }}>
+                            </div>
+                            <div className={`locationNames lightPink-background charcoalish-text ${location.visibility}`}>{location.cityName}</div>
                         </div>
                     ))}
                 </div>

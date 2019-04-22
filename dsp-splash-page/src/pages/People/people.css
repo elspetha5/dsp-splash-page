@@ -1,7 +1,3 @@
-#peopleBackground {
-    padding: 0 15vw;
-}
-
 #peopleTop {
     position: absolute;
     top: 0;
@@ -21,7 +17,7 @@
 }
 
 #peoplePicBox {
-    padding: 23vh 0 10vh;
+    padding: 23vh 15vw 8vh;
     text-align: center;
 }
 
@@ -70,13 +66,9 @@
     display: none;
 }
 
-#virtualTagLing {
-    text-align: center;
-}
-
 @media (max-width: 1200px) {
     #peoplePicBox {
-        padding: 26vh 15vw 18vh;
+        padding-top: 26vh;
     }
 
     .peoplePic {
