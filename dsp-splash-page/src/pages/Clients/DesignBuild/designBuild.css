@@ -2,24 +2,72 @@
     text-align: center;
 }
 
+#dbBanner {
+    width: 85vw;
+}
+
 .dbTitle {
     font-size: 160%;
-    padding: 3vh 0;
+    padding: 5vh 0 10vh;
     margin-bottom: 3vh;
+    animation: dbTitle 2s ease-out .5s forwards;
+}
+
+@keyframes dbTitle {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 72.5%, 0 72.5%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 45%);
+    }
+}
+
+#dbProcessPic {
+    width: 95vw;
+    box-shadow: 0 0 10px #757579;
+    position: relative;
+    margin-top: -10vh;
+    margin-bottom: -13vh;
+    z-index: 500;
 }
 
 #dbProcessWordsWrapper {
-    padding: 0 7vw;
+    padding: 4vh 7vw 7vh;
     text-align: left;
-    font-size: 95%;
+    font-size: 150%;
     line-height: 1.5;
+    position: relative;
+    z-index: 450;
 }
 
 .dbProcessWords {
     margin-top: 3vh;
 }
 
-#dbProcess {
-    width: 95vw;
-    box-shadow: 0 0 10px #e2e1e3;
+@media (min-width: 40em) {
+    #dbProcessPic {
+        width: 85vw;
+    }
+
+    .dbTitle {
+        font-size: 250%;
+    }
+}
+
+@media (min-width: 65em) {
+    #dbProcessPic {
+        width: 75vw;
+        margin-top: -7vh;
+        margin-bottom: -16vh;
+    }
+    
+    #dbProcessWordsWrapper {
+        padding: 4vh 20vw 7vh;
+    }
+}
+
+@media (min-width: 75em) {
+    #dbProcessPic {
+        width: 70vw;
+    }
 }

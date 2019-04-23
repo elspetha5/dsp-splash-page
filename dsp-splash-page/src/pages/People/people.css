@@ -108,7 +108,7 @@
     }
     
     #peoplePicBox {
-        padding: 25vh 7vw 18vh;
+        padding: 25vh 7vw 8vh;
      }
 
     .picContainer {
@@ -124,7 +124,7 @@
 
 @media (max-width: 576px) { 
     #peoplePicBox {
-       padding: 25vh 5vw 18vh;
+       padding: 25vh 5vw 8vh;
     }
 
     .peoplePic {
