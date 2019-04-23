@@ -1,0 +1,25 @@
+#dbWrapper {
+    text-align: center;
+}
+
+.dbTitle {
+    font-size: 160%;
+    padding: 3vh 0;
+    margin-bottom: 3vh;
+}
+
+#dbProcessWordsWrapper {
+    padding: 0 7vw;
+    text-align: left;
+    font-size: 95%;
+    line-height: 1.5;
+}
+
+.dbProcessWords {
+    margin-top: 3vh;
+}
+
+#dbProcess {
+    width: 95vw;
+    box-shadow: 0 0 10px #e2e1e3;
+}

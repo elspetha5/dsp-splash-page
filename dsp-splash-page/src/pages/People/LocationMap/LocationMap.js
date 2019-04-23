@@ -69,9 +69,10 @@ class LocationMap extends Component {
         return (
             <div id="locationBackground">
                 <div id="virtualTagLine" className="nightBlue-text">
-                    <i class="fas fa-angle-double-left"></i>
-                    <span id="everywhere" className="nightBlue-background slateWhite-text">we are "virtually" everywhere</span>
-                    <i class="fas fa-angle-double-right"></i>
+                    {/* <i class="fas fa-angle-double-left"></i> */}
+                    <div id="everywhere" className="charcoalish-text">we are <span id="virtually">virtually</span> EVERYWHERE</div>
+                    <div id="everywhere" className="charcoalish-text"></div>
+                    {/* <i class="fas fa-angle-double-right"></i> */}
                 </div>
 
                 <div id="mapDots">
