@@ -72,6 +72,16 @@ html {
     background-color: #e2e1e3;
 }
 
+.yellow-background,
+#yellow-background {
+    background-color: #e5e094;
+}
+
+.orange-background,
+#orange-background {
+    background-color: #d89c86;
+}
+
 
 /* Text Colors */
 .charcoalish-text,
@@ -137,4 +147,14 @@ html {
 .lightGrey-text,
 #lightGrey-text {
     color: #e2e1e3;
+}
+
+.yellow-text,
+#yellow-text {
+    color: #e5e094;
+}
+
+.orange-text,
+#orange-text {
+    color: #d89c86;
 }

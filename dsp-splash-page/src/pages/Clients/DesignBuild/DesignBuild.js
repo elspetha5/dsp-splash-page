@@ -42,11 +42,11 @@ class DesignBuild extends Component {
                     )}
                 </Popup>
 
-                <div className="dbTitle nightBlue-background slateWhite-text">design build</div>
+                <div className="dbTitle charcoalish-background slateWhite-text">design build</div>
 
                 <img src={process} alt="dbProcess" id="dbProcessPic" />
 
-                <div id="dbProcessWordsWrapper" className="darkPink-background slateWhite-text slantUp">
+                <div id="dbProcessWordsWrapper" className="yellow-background charcoalish-text slantUp">
                     <div className="unSkew">
                         <div className="dbProcessWords">Design Service Professionals, PLLC (DSP Design) is an all-virtual design collaborative built on the premise that great design is only as good as its ability to be realized.</div>
                         <div className="dbProcessWords">We have no front door. Instead, we leverage co-working facilities to provide settings for individual work, small meetings and team conferences as needed. Keeping overhead costs low allows us to provide premium design services at a competitive rate.</div>
@@ -58,7 +58,7 @@ class DesignBuild extends Component {
 
                 <img src={process} alt="dbProcess" id="dbProcessPic" />
 
-                <div id="dbProcessWordsWrapper" className="green-background slateWhite-text slantDown">
+                <div id="dbProcessWordsWrapper" className="green-background charcoalish-text slantDown">
                     <div className="unSkewDown">
                         <div className="dbProcessWords">At DSP we are committed to Integrated Project Delivery. Our design staff are fully Revit trained and completely supported by Revit Certified Professionals and licensed architects. Our goal is to make each and every project a reality by proposing design solutions with constructible outcomes in mind</div>
                         <div className="dbProcessWords">To achieve these outcomes, we’ve augmented CSI’s four C’s of effective communication to include cost, collaboration, and coordination. These additional components are essential to our quality management program, saving time, cutting costs and elevating the craft of the process.</div>

@@ -64,6 +64,10 @@
     #dbProcessWordsWrapper {
         padding: 4vh 20vw 7vh;
     }
+
+    #dbBanner {
+        width: 70vw;
+    }
 }
 
 @media (min-width: 75em) {
