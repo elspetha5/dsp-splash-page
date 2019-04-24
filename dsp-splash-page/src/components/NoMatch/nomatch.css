@@ -1,0 +1,19 @@
+#noMatch {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+#takeMeHome {
+    margin-left: 1vw;
+    font-size: 75%;
+    padding: 1vh;
+    border: .05em solid #9bc8e8;
+    border-radius: 5px;
+}
+
+#takeMeHome:hover {
+    color: #9bc8e8
+}
