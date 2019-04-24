@@ -1,12 +1,19 @@
-.slantBackground {
-    padding-bottom: 30vh;
-}
-
 .slantTop {
     height: 30vh;
     padding-top: 10vh;
     padding-left: 29.5vw;
     font-size: 250%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+    animation: slantTitle 2s ease-out .5s forwards;
+}
+
+@keyframes slantTitle {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    }
 }
 
 #topSlant {

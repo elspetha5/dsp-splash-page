@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
+import SlantTop from "../../../components/SlantTop";
 
 import process from "./dbProcess.png";
 import banner from "./dbBanner.png";
@@ -42,9 +43,14 @@ class DesignBuild extends Component {
                     )}
                 </Popup>
 
-                <div className="dbTitle charcoalish-background slateWhite-text">design build</div>
+                <SlantTop
+                    color="charcoalish-background"
+                    title="design build"
+                />
 
-                <img src={process} alt="dbProcess" id="dbProcessPic" />
+                <div className="alignDBPic">
+                    <img src={process} alt="dbProcess" id="dbProcessPic" />
+                </div>
 
                 <div id="dbProcessWordsWrapper" className="yellow-background charcoalish-text slantUp">
                     <div className="unSkew">
@@ -56,7 +62,9 @@ class DesignBuild extends Component {
                     </div>
                 </div>
 
-                <img src={process} alt="dbProcess" id="dbProcessPic" />
+                <div className="alignDBPic">
+                    <img src={process} alt="dbProcess" id="dbProcessPic" />
+                </div>
 
                 <div id="dbProcessWordsWrapper" className="green-background charcoalish-text slantDown">
                     <div className="unSkewDown">

@@ -1,7 +1,3 @@
-#dbWrapper {
-    text-align: center;
-}
-
 #dbBanner {
     width: 85vw;
 }
@@ -22,12 +18,15 @@
     }
 }
 
+.alignDBPic {
+    text-align: center;
+}
+
 #dbProcessPic {
     width: 95vw;
     box-shadow: 0 0 10px #757579;
     position: relative;
-    margin-top: -10vh;
-    margin-bottom: -13vh;
+    margin: -10vh auto -13vh;
     z-index: 500;
 }
 

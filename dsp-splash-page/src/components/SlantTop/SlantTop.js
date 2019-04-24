@@ -7,7 +7,7 @@ const SlantTop = props => {
             <div className={`slantTop slateWhite-text ${props.color}`}>
                 <div className="topSlantTitle">{props.title}</div>
             </div>
-            <div id="topSlant" className={props.color}></div>
+            {/* <div id="topSlant" className={props.color}></div> */}
         </div>
     )
 };
