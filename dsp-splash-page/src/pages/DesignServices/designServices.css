@@ -1,11 +1,5 @@
-.slantTitle {
-    height: 6vh;
-    padding-left: 30vw;
-    font-size: 175%;
-}
-
-.slantInfoWrapper {
-    padding: 0 15vw 0 35vw;
+.dsBackground {
+    padding-bottom: 20vh;
 }
 
 .slantInfoColumn {
@@ -42,52 +36,6 @@
     line-height: 1.5;
 }
 
-.slantUp {
-    margin: 15vh 0;
-    padding: 10vh 0;
-    width: 100%;
-    animation: slantUp 2s ease-out .5s forwards;
-}
-
-@keyframes slantUp {
-    to {
-        transform: skewY(-3deg);
-    }
-}
-
-.unSkew {
-    animation: unSkewUp 2s ease-out .5s forwards;
-}
-
-@keyframes unSkewUp {
-    to {
-        transform: skewY(3deg);
-    }
-}
-
-.slantDown {
-    margin: 15vh 0;
-    padding: 10vh 0;
-    width: 100%;
-    animation: slantDown 2s ease-out .5s forwards;
-}
-
-@keyframes slantDown {
-    to {
-        transform: skewY(3deg);
-    }
-}
-
-.unSkewDown {
-    animation: unSkewDown 2s ease-out .5s forwards;
-}
-
-@keyframes unSkewDown {
-    to {
-        transform: skewY(-3deg);
-    }
-}
-
 @media (max-width: 1200px) { 
     .slantInfoColumn {
         width: 50%;
@@ -105,61 +53,9 @@
 }
 
 @media (max-width: 768px) { 
-    .slantTitle {
-        height: 5vh;
-        padding-left: 20vw;
-        font-size: 140%;
-    }
-
-    .slantInfoWrapper {
-        padding: 0 10vw 0 26vw;
-    }
-
     .slantInfoColumn {
         width: 100%;
         font-size: 110%;
-    }
-
-    .slantUp {
-        margin: 10vh 0;
-        animation: phoneSlantUp 2s ease-out .5s forwards;
-    }
-
-    @keyframes phoneSlantUp {
-        to {
-            transform: skewY(-9deg);
-        }
-    }
-
-    .unSkew {
-        animation: phoneUnSkewUp 2s ease-out .5s forwards;
-    }
-
-    @keyframes phoneUnSkewUp {
-        to {
-            transform: skewY(9deg);
-        }
-    }
-
-    .slantDown {
-        margin: 10vh 0;
-        animation: phoneSlantDown 2s ease-out .5s forwards;
-    }
-
-    @keyframes phoneSlantDown {
-        to {
-            transform: skewY(9deg);
-        }
-    }
-
-    .unSkewDown {
-        animation: phoneUnSkewDown 2s ease-out .5s forwards;
-    }
-
-    @keyframes phoneUnSkewDown {
-        to {
-            transform: skewY(-9deg);
-        }
     }
 }
 

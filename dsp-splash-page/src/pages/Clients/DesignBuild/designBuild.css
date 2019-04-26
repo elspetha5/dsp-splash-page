@@ -30,19 +30,6 @@
     z-index: 500;
 }
 
-#dbProcessWordsWrapper {
-    padding: 4vh 7vw 7vh;
-    text-align: left;
-    font-size: 150%;
-    line-height: 1.5;
-    position: relative;
-    z-index: 450;
-}
-
-.dbProcessWords {
-    margin-top: 3vh;
-}
-
 @media (min-width: 40em) {
     #dbProcessPic {
         width: 85vw;
@@ -58,10 +45,6 @@
         width: 75vw;
         margin-top: -7vh;
         margin-bottom: -16vh;
-    }
-    
-    #dbProcessWordsWrapper {
-        padding: 4vh 20vw 7vh;
     }
 
     #dbBanner {

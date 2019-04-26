@@ -1,9 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
-import SlantTop from "../../components/SlantTop";
 import "./designServices.css";
 
+// Components
+import SlantTop from "../../components/SlantTop";
+import SlantUp from "../../components/SlantInfo/SlantUp";
+import SlantDown from "../../components/SlantInfo/SlantDown";
+import NoSlant from "../../components/SlantInfo/NoSlant";
+
+//JSON
 import services from "../../JSON/designServices.json";
 import interiors from "../../JSON/DesignServices/interior.json";
 import arch from "../../JSON/DesignServices/arch.json";
@@ -28,155 +34,145 @@ class DesignServices extends Component {
 
     render() {
         return (
-            <div className="slantBackground">
-            
-                <SlantTop 
+            <div className="dsBackground">
+
+                <SlantTop
                     color="charcoalish-background"
                     title="dsp.design"
                 />
 
-                <div>
-                    <div className="almostBlack-text slantTitle">dsp.interiors</div>
-                    <div className="slantInfoWrapper">
-                        {this.state.interiors.map(interior => (
-                            <div className="slantInfoColumn">
-                                <Popup
-                                    trigger={<Link to="#" className="darkSlantInfoTrigger centeredPopup">{interior.leftIdea}</Link>}
-                                    position="top center"
-                                    closeOnDocumentClick
-                                    contentStyle={{
-                                        "border": "none",
-                                        "border-radius": "2%",
-                                        "background-color": "#f4f7fc",
-                                        "padding": "20px",
-                                        "font-size": "110%",
-                                        "color": "#757579"
-                                    }}
-                                >
-                                    <div className="popupWords nightBlue-text">{interior.rightVerbiage}</div>
-                                </Popup>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="slantUp green-background">
-                    <div className="unSkew">
-                        <div className="slateWhite-text slantTitle">dsp.architecture</div>
-                        <div className="slantInfoWrapper">
-                            {this.state.arch.map(arch => (
-                                <div className="slantInfoColumn">
-                                    <Popup
-                                        trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{arch.leftIdea}</Link>}
-                                        position="top center"
-                                        closeOnDocumentClick
-                                        contentStyle={{
-                                            "border": "none",
-                                            "border-radius": "2%",
-                                            "background-color": "#f4f7fc",
-                                            "padding": "10px",
-                                            "font-size": "110%",
-                                            "color": "#757579"
-                                        }}
-                                    >
-                                        <div className="popupWords nightBlue-text">{arch.rightVerbiage}</div>
-                                    </Popup>
-                                </div>
-                            ))}
+                <NoSlant
+                    title="dsp.interiors"
+                >
+                    {this.state.interiors.map(interior => (
+                        <div className="slantInfoColumn">
+                            <Popup
+                                trigger={<Link to="#" className="darkSlantInfoTrigger centeredPopup">{interior.leftIdea}</Link>}
+                                position="top center"
+                                closeOnDocumentClick
+                                contentStyle={{
+                                    "border": "none",
+                                    "border-radius": "2%",
+                                    "background-color": "#f4f7fc",
+                                    "padding": "20px",
+                                    "font-size": "110%",
+                                    "color": "#757579"
+                                }}
+                            >
+                                <div className="popupWords nightBlue-text">{interior.rightVerbiage}</div>
+                            </Popup>
                         </div>
+                    ))}
+                </NoSlant>
 
-                    </div>
-                </div>
-
-                <div>
-                    <div className="almostBlack-text slantTitle">dsp.graphics</div>
-                    <div className="slantInfoWrapper">
-                        {this.state.graphics.map(graphic => (
-                            <div className="slantInfoColumn">
-                                <div className="charcoalish-text">{graphic}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="slantDown nightBlue-background">
-                    <div className="unSkewDown">
-                        <div className="slateWhite-text slantTitle">dsp.digital</div>
-                        <div className="slantInfoWrapper">
-                            {this.state.digital.map(digit => (
-                                <div className="slantInfoColumn">
-                                    <Popup
-                                        trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{digit.leftIdea}</Link>}
-                                        position="top center"
-                                        closeOnDocumentClick
-                                        contentStyle={{
-                                            "border": "none",
-                                            "border-radius": "2%",
-                                            "background-color": "#f4f7fc",
-                                            "padding": "10px",
-                                            "font-size": "110%",
-                                            "color": "#757579"
-                                        }}
-                                    >
-                                        <div className="popupWords nightBlue-text">{digit.rightVerbiage}</div>
-                                    </Popup>
-                                </div>
-                            ))}
+                <SlantUp
+                    background="green-background"
+                    titleColor="slateWhite-text"
+                    title="dsp.architecture"
+                >
+                    {this.state.arch.map(arch => (
+                        <div className="slantInfoColumn">
+                            <Popup
+                                trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{arch.leftIdea}</Link>}
+                                position="top center"
+                                closeOnDocumentClick
+                                contentStyle={{
+                                    "border": "none",
+                                    "border-radius": "2%",
+                                    "background-color": "#f4f7fc",
+                                    "padding": "10px",
+                                    "font-size": "110%",
+                                    "color": "#757579"
+                                }}
+                            >
+                                <div className="popupWords nightBlue-text">{arch.rightVerbiage}</div>
+                            </Popup>
                         </div>
+                    ))}
+                </SlantUp>
 
-                    </div>
-                </div>
-
-                <div>
-                    <div className="almostBlack-text slantTitle">dsp.brand</div>
-                    <div className="slantInfoWrapper">
-                        {this.state.brand.map(brand => (
-                            <div className="slantInfoColumn">
-                                <div className="charcoalish-text">{brand}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="slantUp green-background">
-                    <div className="unSkew">
-                        <div className="slateWhite-text slantTitle">dsp.service</div>
-                        <div className="slantInfoWrapper">
-                            {this.state.service.map(service => (
-                                <div className="slantInfoColumn">
-                                    <Popup
-                                        trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{service.leftIdea}</Link>}
-                                        position="top center"
-                                        closeOnDocumentClick
-                                        contentStyle={{
-                                            "border": "none",
-                                            "border-radius": "2%",
-                                            "background-color": "#f4f7fc",
-                                            "padding": "10px",
-                                            "font-size": "110%",
-                                            "color": "#757579"
-                                        }}
-                                    >
-                                        <div className="popupWords nightBlue-text">{service.rightVerbiage}</div>
-                                    </Popup>
-                                </div>
-                            ))}
+                <NoSlant
+                    title="dsp.graphics"
+                >
+                    {this.state.graphics.map(graphic => (
+                        <div className="slantInfoColumn">
+                            <div className="charcoalish-text">{graphic}</div>
                         </div>
+                    ))}
+                </NoSlant>
 
-                    </div>
-                </div>
+                <SlantDown
+                    background="nightBlue-background"
+                    titleColor="slateWhite-text"
+                    title="dsp.digital"
+                >
+                    {this.state.digital.map(digit => (
+                        <div className="slantInfoColumn">
+                            <Popup
+                                trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{digit.leftIdea}</Link>}
+                                position="top center"
+                                closeOnDocumentClick
+                                contentStyle={{
+                                    "border": "none",
+                                    "border-radius": "2%",
+                                    "background-color": "#f4f7fc",
+                                    "padding": "10px",
+                                    "font-size": "110%",
+                                    "color": "#757579"
+                                }}
+                            >
+                                <div className="popupWords nightBlue-text">{digit.rightVerbiage}</div>
+                            </Popup>
+                        </div>
+                    ))}
+                </SlantDown>
 
-                <div>
-                    <div className="almostBlack-text slantTitle">dsp.industrial</div>
-                    <div className="slantInfoWrapper">
-                        {this.state.industrial.map(industrial => (
-                            <div className="slantInfoColumn">
-                                <div className="charcoalish-text">{industrial}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+                <NoSlant
+                    title="dsp.brand"
+                >
+                    {this.state.brand.map(brand => (
+                        <div className="slantInfoColumn">
+                            <div className="charcoalish-text">{brand}</div>
+                        </div>
+                    ))}
+                </NoSlant>
+
+                <SlantUp
+                    background="green-background"
+                    titleColor="slateWhite-text"
+                    title="dsp.service"
+                >
+                    {this.state.service.map(service => (
+                        <div className="slantInfoColumn">
+                            <Popup
+                                trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{service.leftIdea}</Link>}
+                                position="top center"
+                                closeOnDocumentClick
+                                contentStyle={{
+                                    "border": "none",
+                                    "border-radius": "2%",
+                                    "background-color": "#f4f7fc",
+                                    "padding": "10px",
+                                    "font-size": "110%",
+                                    "color": "#757579"
+                                }}
+                            >
+                                <div className="popupWords nightBlue-text">{service.rightVerbiage}</div>
+                            </Popup>
+                        </div>
+                    ))}
+                </SlantUp>
+
+                <NoSlant
+                    title="dsp.industrial"
+                >
+                    {this.state.industrial.map(industrial => (
+                        <div className="slantInfoColumn">
+                            <div className="charcoalish-text">{industrial}</div>
+                        </div>
+                    ))}
+                </NoSlant>
+            </div >
 
         )
     }
