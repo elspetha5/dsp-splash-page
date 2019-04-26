@@ -25,6 +25,10 @@
     position: absolute;
 }
 
+.dotWait {
+    display: none;
+}
+
 .dot {
     border-radius: 50%;
     height: 4vw;

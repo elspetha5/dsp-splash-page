@@ -45,9 +45,9 @@ class DesignServices extends Component {
                     title="dsp.interiors"
                 >
                     {this.state.interiors.map(interior => (
-                        <div className="slantInfoColumn">
+                        <div className="dsInfoColumn">
                             <Popup
-                                trigger={<Link to="#" className="darkSlantInfoTrigger centeredPopup">{interior.leftIdea}</Link>}
+                                trigger={<Link to="#" className="darkDSInfoTrigger centeredPopup">{interior.leftIdea}</Link>}
                                 position="top center"
                                 closeOnDocumentClick
                                 contentStyle={{
@@ -71,9 +71,9 @@ class DesignServices extends Component {
                     title="dsp.architecture"
                 >
                     {this.state.arch.map(arch => (
-                        <div className="slantInfoColumn">
+                        <div className="dsInfoColumn">
                             <Popup
-                                trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{arch.leftIdea}</Link>}
+                                trigger={<Link to="#" className="whiteDSInfoTrigger centeredPopup">{arch.leftIdea}</Link>}
                                 position="top center"
                                 closeOnDocumentClick
                                 contentStyle={{
@@ -95,7 +95,7 @@ class DesignServices extends Component {
                     title="dsp.graphics"
                 >
                     {this.state.graphics.map(graphic => (
-                        <div className="slantInfoColumn">
+                        <div className="dsInfoColumn">
                             <div className="charcoalish-text">{graphic}</div>
                         </div>
                     ))}
@@ -107,9 +107,9 @@ class DesignServices extends Component {
                     title="dsp.digital"
                 >
                     {this.state.digital.map(digit => (
-                        <div className="slantInfoColumn">
+                        <div className="dsInfoColumn">
                             <Popup
-                                trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{digit.leftIdea}</Link>}
+                                trigger={<Link to="#" className="whiteDSInfoTrigger centeredPopup">{digit.leftIdea}</Link>}
                                 position="top center"
                                 closeOnDocumentClick
                                 contentStyle={{
@@ -131,7 +131,7 @@ class DesignServices extends Component {
                     title="dsp.brand"
                 >
                     {this.state.brand.map(brand => (
-                        <div className="slantInfoColumn">
+                        <div className="dsInfoColumn">
                             <div className="charcoalish-text">{brand}</div>
                         </div>
                     ))}
@@ -143,9 +143,9 @@ class DesignServices extends Component {
                     title="dsp.service"
                 >
                     {this.state.service.map(service => (
-                        <div className="slantInfoColumn">
+                        <div className="dsInfoColumn">
                             <Popup
-                                trigger={<Link to="#" className="whiteSlantInfoTrigger centeredPopup">{service.leftIdea}</Link>}
+                                trigger={<Link to="#" className="whiteDSInfoTrigger centeredPopup">{service.leftIdea}</Link>}
                                 position="top center"
                                 closeOnDocumentClick
                                 contentStyle={{
@@ -167,7 +167,7 @@ class DesignServices extends Component {
                     title="dsp.industrial"
                 >
                     {this.state.industrial.map(industrial => (
-                        <div className="slantInfoColumn">
+                        <div className="dsInfoColumn">
                             <div className="charcoalish-text">{industrial}</div>
                         </div>
                     ))}

@@ -1,7 +1,14 @@
 .clientBackground {
     display: flex;
     flex-flow: row wrap;
+}
+
+.loadedImageBackground {
     background-color: #b0c46b;
+}
+
+#clientImgLoadCheck {
+    display: none;
 }
 
 #largeCompany {

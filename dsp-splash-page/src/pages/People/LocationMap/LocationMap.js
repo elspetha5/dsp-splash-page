@@ -46,7 +46,14 @@ class LocationMap extends Component {
                 cityName: "san francisco, ca",
                 visibility: "sanFranHidden"
             }
-        ]
+        ],
+        dot: "dotWait"
+    }
+
+    handleMapLoad = () => {
+        this.setState({
+            dot: "dot"
+        })
     }
 
     handleMouseOver = (i, location) => {
@@ -73,10 +80,10 @@ class LocationMap extends Component {
                 </div>
 
                 <div id="mapDots">
-                    <img src={map} alt="Locations Map" id="outline" className="map" />
+                    <img src={map} alt="Locations Map" id="outline" className="map" onLoad={() => {this.handleMapLoad()}} />
                     {this.state.locations.map((location, i) => (
                         <div id={location.tagName} className="dots">
-                            <div className={`dot salmon-background ${location.tagName}`}
+                            <div className={`${this.state.dot} salmon-background ${location.tagName}`}
                                 onMouseOver={() => { this.handleMouseOver(i, location.tagName) }}
                                 onMouseOut={() => { this.handleMouseOut(i, location.tagName) }}>
                             </div>

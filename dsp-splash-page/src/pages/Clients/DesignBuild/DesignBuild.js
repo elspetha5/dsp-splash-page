@@ -31,18 +31,16 @@ class DesignBuild extends Component {
                     contentStyle={{
                         borderRadius: "5px",
                         border: "none",
-                        padding: "1em",
-                        backgroundColor: "#e2e1e3a8",
-                        width: "90vw"
+                        padding: "1vw",
+                        backgroundColor: "#f4f7fcc4",
+                        width: "72vw"
                     }}
                 >
                     {close => (
                         <div>
-                            <div className="close slateWhite-text" onClick={close}>&times;</div>
-
+                            {/* <div className="close almostBlack-text" onClick={close}>&times;</div> */}
                             <img src={banner} alt="dbBanner" id="dbBanner" />
-
-                            {/* <button id="closeModal" className="" onClick={() => { close() }}>close</button> */}
+                            <button id="closeModal" className="" onClick={() => { close() }}>close</button>
                         </div>
                     )}
                 </Popup>

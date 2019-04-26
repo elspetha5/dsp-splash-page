@@ -1,5 +1,5 @@
 #dbBanner {
-    width: 85vw;
+    width: 70vw;
 }
 
 .alignDBPic {
@@ -26,14 +26,10 @@
         margin-top: -7vh;
         margin-bottom: -16vh;
     }
-
-    #dbBanner {
-        width: 70vw;
-    }
 }
 
 @media (min-width: 75em) {
     #dbProcessPic {
-        width: 70vw;
+        width: 60vw;
     }
 }
