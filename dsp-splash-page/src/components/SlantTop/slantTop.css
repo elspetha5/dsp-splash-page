@@ -1,8 +1,6 @@
 .slantTop {
-    height: 30vh;
-    padding-top: 10vh;
-    padding-left: 29.5vw;
-    font-size: 250%;
+    padding: 5vh 15vw 15vh 19.5vw;
+    font-size: 150%;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
     animation: slantTitle 2s ease-out .5s forwards;
 }
@@ -30,11 +28,15 @@
     }
 }
 
-@media (max-width: 768px) { 
+@media (min-width: 37.5em) { 
     .slantTop {
-        padding-top: 7vh;
-        padding-left: 19.5vw;
-        height: 23vh;
-        font-size: 170%
+        font-size: 180%
+    }
+}
+
+@media (min-width: 50em) {
+    .slantTop {
+        font-size: 220%;
+        padding: 5vh 15vw 15vh 25vw;
     }
 }

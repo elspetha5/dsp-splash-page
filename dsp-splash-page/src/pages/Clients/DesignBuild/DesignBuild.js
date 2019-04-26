@@ -59,7 +59,7 @@ class DesignBuild extends Component {
                 <SlantUp
                     background="yellow-background"
                     titleColor="charcoalish-text"
-                    title="process"
+                    title="design-build process"
                 >
                     <div className="infoWords charcoalish-text">Design Service Professionals, PLLC (DSP Design) is an all-virtual design collaborative built on the premise that great design is only as good as its ability to be realized.</div>
                     <div className="infoWords charcoalish-text">We have no front door. Instead, we leverage co-working facilities to provide settings for individual work, small meetings and team conferences as needed. Keeping overhead costs low allows us to provide premium design services at a competitive rate.</div>

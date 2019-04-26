@@ -2,22 +2,6 @@
     width: 85vw;
 }
 
-.dbTitle {
-    font-size: 160%;
-    padding: 5vh 0 10vh;
-    margin-bottom: 3vh;
-    animation: dbTitle 2s ease-out .5s forwards;
-}
-
-@keyframes dbTitle {
-    from {
-        clip-path: polygon(0 0, 100% 0, 100% 72.5%, 0 72.5%);
-    }
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 45%);
-    }
-}
-
 .alignDBPic {
     text-align: center;
 }
@@ -26,17 +10,13 @@
     width: 95vw;
     box-shadow: 0 0 10px #757579;
     position: relative;
-    margin: -10vh auto -13vh;
+    margin: -7vh auto -13vh;
     z-index: 500;
 }
 
 @media (min-width: 40em) {
     #dbProcessPic {
         width: 85vw;
-    }
-
-    .dbTitle {
-        font-size: 250%;
     }
 }
 

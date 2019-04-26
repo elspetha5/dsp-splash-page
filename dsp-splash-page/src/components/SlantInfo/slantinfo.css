@@ -1,11 +1,11 @@
 .slantTitle {
-    height: 6vh;
-    padding-left: 30vw;
-    font-size: 175%;
+    height: 5vh;
+    padding-left: 20vw;
+    font-size: 140%;
 }
 
 .slantInfoWrapper {
-    padding: 0 15vw 0 35vw;
+    padding: 0 10vw 0 26vw;
 }
 
 .slantUp {
@@ -17,7 +17,7 @@
 
 @keyframes slantUp {
     to {
-        transform: skewY(-3deg);
+        transform: skewY(-9deg);
     }
 }
 
@@ -27,7 +27,7 @@
 
 @keyframes unSkewUp {
     to {
-        transform: skewY(3deg);
+        transform: skewY(9deg);
     }
 }
 
@@ -40,7 +40,7 @@
 
 @keyframes slantDown {
     to {
-        transform: skewY(3deg);
+        transform: skewY(9deg);
     }
 }
 
@@ -50,61 +50,63 @@
 
 @keyframes unSkewDown {
     to {
-        transform: skewY(-3deg);
+        transform: skewY(-9deg);
     }
 }
 
-@media (max-width: 48em) { 
-    .slantTitle {
-        height: 5vh;
-        padding-left: 20vw;
-        font-size: 140%;
-    }
-    
-    .slantInfoWrapper {
-        padding: 0 10vw 0 26vw;
-    }
-
+@media (min-width: 43em) {
     .slantUp {
         margin: 10vh 0;
-        animation: phoneSlantUp 2s ease-out .5s forwards;
+        animation: largeSlantUp 2s ease-out .5s forwards;
     }
 
-    @keyframes phoneSlantUp {
+    @keyframes largeSlantUp {
         to {
-            transform: skewY(-9deg);
+            transform: skewY(-3deg);
         }
     }
 
     .unSkew {
-        animation: phoneUnSkewUp 2s ease-out .5s forwards;
+        animation: largeUnSkewUp 2s ease-out .5s forwards;
     }
 
-    @keyframes phoneUnSkewUp {
+    @keyframes largeUnSkewUp {
         to {
-            transform: skewY(9deg);
+            transform: skewY(3deg);
         }
     }
 
     .slantDown {
         margin: 10vh 0;
-        animation: phoneSlantDown 2s ease-out .5s forwards;
+        animation: largeSlantDown 2s ease-out .5s forwards;
     }
 
-    @keyframes phoneSlantDown {
+    @keyframes largeSlantDown {
         to {
-            transform: skewY(9deg);
+            transform: skewY(3deg);
         }
     }
 
     .unSkewDown {
-        animation: phoneUnSkewDown 2s ease-out .5s forwards;
+        animation: largeUnSkewDown 2s ease-out .5s forwards;
     }
 
-    @keyframes phoneUnSkewDown {
+    @keyframes largeUnSkewDown {
         to {
-            transform: skewY(-9deg);
+            transform: skewY(-3deg);
         }
+    }
+}
+
+@media (min-width: 50em) { 
+    .slantTitle {
+        height: 6vh;
+        padding-left: 25.5vw;
+        font-size: 160%;
+    }
+    
+    .slantInfoWrapper {
+        padding: 0 15vw 0 30vw;
     }
 
 }
