@@ -1,9 +1,11 @@
-.yourThree {
-    float: left;
-    width: 33.33%;
+.clientBackground {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #b0c46b;
 }
 
 #largeCompany {
+    flex: 100vw;
     background-image: url(./your-staff-augmented.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -15,10 +17,13 @@
 }
 
 #boutiqueCompany {
+    flex: 100vw;
     background-image: url(./your-brand-elevated.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transform: translateY(-5vh);
+    clip-path: polygon(0 0, 100% 5vh, 100% 100%, 0 100%);
 }
 
 .skyblue {
@@ -26,56 +31,37 @@
 }
 
 #design-buildCompany {
+    flex: 100vw;
     background-image: url(./your-project-crafted.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transform: translateY(-10vh);
+    clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
 }
 
 .greenyellow {
     background-color: #849b66ce;
 }
 
-@media (max-width: 1200px) { 
-    
-}
-
-@media (max-width: 992px) { 
+@media (min-width: 75em) {
     .clientBackground {
-        height: 100%;
-        background-color: #b0c46b;
+        background-color: transparent;
     }
-    
-    .clientBackground::after {    
-        content: "";
-        display: block;
-        clear: both;
-    }
-    
-    .yourThree {
-        width: 100%;
+
+    #largeCompany {
+        flex: 1;
     }
 
     #boutiqueCompany {
-        transform: translateY(-5vh);
-        clip-path: polygon(0 0, 100% 5vh, 100% 100%, 0 100%);
+        flex: 1;
+        transform: translateY(0);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
+    
     #design-buildCompany {
-        transform: translateY(-10vh);
-        clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
+        flex: 1;
+        transform: translateY(0);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-       
-}
-
-@media (max-width: 815px) and (max-height: 400px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 576px) { 
-
 }

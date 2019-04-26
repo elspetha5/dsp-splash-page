@@ -4,7 +4,7 @@ import "./clients.css";
 
 class Clients extends Component {
     state = {
-
+        imgStatus: "loading"
     };
 
     componentDidMount() {
