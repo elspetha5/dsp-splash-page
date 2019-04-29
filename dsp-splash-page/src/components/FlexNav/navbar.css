@@ -2,17 +2,15 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    min-height: 8vh;
     width: 100vw;
-    padding: 1vh 10vw;
-    box-shadow: -2px -3px 5px #757579;
+    padding: 1vh 7vw;
+    box-shadow: 0 -1px 5px #757579;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 #flexImage {
-    /* background-color: red; */
     flex: 1;
     text-align: center;
 }
@@ -27,7 +25,6 @@
     justify-content: center;
     flex: 2;
     font-size: 60%;
-    /* background-color: blue; */
 }
 
 #flexFooterWords {
@@ -42,29 +39,141 @@
 }
 
 #flexWords {
-    /* background-color: blue; */
     flex: 2;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
 }
 
-#flexQs {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-end;
-    justify-content: space-around;
+.navHidden {
+    visibility: hidden;    
+}
+
+.navShow {
+    visibility: visible;
+}
+
+#navSlantGrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 47vw;
+    clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
+    animation: navSlantGrow 1s forwards;
+}
+
+@keyframes navSlantGrow {
+    from {
+        height: 0;
+    }
+    to {
+        height: 8.75em;
+    }
+}
+
+#navSlantShrink {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 47vw;
+    clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
+    animation: navSlantShrink 1s forwards;
+}
+
+@keyframes navSlantShrink {
+    from {
+        height: 8.75em;
+    }
+    to {
+        height: 0;
+    }
+
+}
+
+.flexQs {
+    position: absolute;
     font-family: 'Codystar', cursive;
-    height: 15vh;
-    font-size: 95%;
+    font-size: 80%;
     font-weight: bold;
     color: #757579;
-    padding-left: 4vw;
+}
+
+.flexQs:hover {
+    color: #333132;
+}
+
+.flexQsShow {
+    opacity: 0;
+    animation: navShow 1s .5s forwards;
+}
+
+@keyframes navShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#approach {
+    bottom: 9em;
+    left: 76vw;
+}
+
+#clients {
+    bottom: 7em;
+    left: 72vw;
+}
+
+#services {
+    bottom: 5em;
+    left: 68vw;
+}
+
+#about {
+    bottom: 3em;
+    left: 64vw;
+}
+
+#ecosystem {
+    bottom: 1em;
+    left: 60vw;
 }
 
 #flexHamburger {
-    background-color: transparent;
-    border: none;
+    position: relative;
+    height: 1em;
+    width: 1.5em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.hamLine {
+    width: 100%;
+    height: 1.5px;
+}
+
+#hamX1 {
+    animation: hamX1 .5s forwards;
+}
+
+@keyframes hamX1 {
+    to {
+        transform: translateY(475%) rotate(45deg);
+    }
+}
+
+#hamLineInvisible {
+    display: none;
+}
+
+#hamX3 {
+    animation: hamX3 .5s forwards;
+}
+
+@keyframes hamX3 {
+    to {
+        transform: translateY(-475%) rotate(-45deg);
+    }
 }
 
 #constStamp {
