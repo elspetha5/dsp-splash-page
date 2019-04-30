@@ -6,17 +6,36 @@
     text-align: center;
 }
 
-#dbProcessPic {
-    width: 95vw;
+#dbProcessPic,
+#dbFourCs {
     box-shadow: 0 0 10px #757579;
     position: relative;
-    margin: -7vh auto -13vh;
     z-index: 500;
+}
+
+#dbProcessPic {
+    width: 95vw;
+    margin: -7vh auto -13vh;
+}
+
+#dbFourCs {
+    width: 90vw;
+    margin: -12vh auto -13vh;
 }
 
 @media (min-width: 40em) {
     #dbProcessPic {
         width: 85vw;
+    }
+
+    #dbFourCs {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 59em) {
+    #dbFourCs {
+        width: 70vw;
     }
 }
 
@@ -31,5 +50,9 @@
 @media (min-width: 75em) {
     #dbProcessPic {
         width: 60vw;
+    }
+
+    #dbFourCs {
+        width: 50vw;
     }
 }

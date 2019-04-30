@@ -8,6 +8,7 @@ import SlantDown from "../../../components/SlantInfo/SlantDown";
 
 import process from "./dbProcess.png";
 import banner from "./dbBanner.png";
+import fourCs from "./fourCs.png";
 import "./designBuild.css";
 
 class DesignBuild extends Component {
@@ -67,7 +68,7 @@ class DesignBuild extends Component {
                 </SlantUp>
 
                 <div className="alignDBPic">
-                    <img src={process} alt="dbProcess" id="dbProcessPic" />
+                    <img src={fourCs} alt="db 4 Cs" id="dbFourCs" />
                 </div>
 
                 <SlantDown

@@ -70,5 +70,14 @@
         "title": "Design Whisperer",
         "credentials": "Credentials",
         "about": ""
+    },
+    {
+        "id": 8,
+        "picture": "/peopleImages/adam.png",
+        "sketch": "/peopleImages/adam-sketch.png",
+        "name": "Adam Nicholes",
+        "title": "Bim Evangelist",
+        "credentials": "Credentials",
+        "about": ""
     }
 ]

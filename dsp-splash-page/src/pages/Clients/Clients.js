@@ -54,7 +54,7 @@ class Clients extends Component {
 
                 <div id="design-buildCompany" class="yourThree">
                     <YourThing
-                        topWords="Your project."
+                        topWords="Your process."
                         bottomWords="Crafted."
                         link="/clients/designbuild"
                         buttonWords="Learn more"
