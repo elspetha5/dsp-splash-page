@@ -5,46 +5,42 @@ import "./navbar.css";
 import logo from "./dspLogo.png";
 import stamp from "./under-construction-circle.png";
 
-const hamline = {
-    hamLine1: "hamLineStraight",
-    hamLine2: "hamLineStraight",
-    hamLine3: "hamLineStraight"
-};
-
 class NavBar extends Component {
 
     state = {
         buttons: [
             { to: "/approach", text: "approach" },
+            { to: "/about/people", text: "about" },
             { to: "/clients", text: "clients" },
             { to: "/designservices", text: "services" },
-            { to: "/about/people", text: "about" },
             { to: "/joinus", text: "ecosystem" }
         ],
         footer: ["hello@dsp.design", "Join us", "Design Service Professionals, PLLC 2019 All rights reserved"],
         navVisibility: "navHidden",
         flexQsShow: "",
-        hamline,
+        hamLine1: "",
+        hamLine2: "",
+        hamLine3: "",
         navSlant: ""
     };
 
     hamburger = () => {
-        (this.state.hamline.hamLine1 === "hamLineStraight") ?
+        (this.state.hamLine1 === "" || this.state.hamLine1 === "ham-1") ?
             this.setState({
                 navVisibility: "navShow",
                 flexQsShow: "flexQsShow",
-                hamline: {
                     hamLine1: "hamX1",
                     hamLine2: "hamLineInvisible",
-                    hamLine3: "hamX3"
-                },
+                    hamLine3: "hamX3",
                 navSlant: "navSlantGrow"
             })
             :
             this.setState({
-                navVisibility: "navHidden",
-                flexQsShow: "",
-                hamline: hamline,
+                navVisibility: "navHide",
+                flexQsShow: "flexQsHide",
+                hamLine1: "ham-1",
+                hamLine2: "ham-2",
+                hamLine3: "ham-3",
                 navSlant: "navSlantShrink"
             });
     };
@@ -76,9 +72,9 @@ class NavBar extends Component {
                     </div>
 
                     <div id="flexHamburger" onClick={() => { this.hamburger() }}>
-                        <div id={this.state.hamline.hamLine1} className="hamLine charcoalish-background"></div>
-                        <div id={this.state.hamline.hamLine2} className="hamLine charcoalish-background"></div>
-                        <div id={this.state.hamline.hamLine3} className="hamLine charcoalish-background"></div>
+                        <div id={this.state.hamLine1} className="hamLine charcoalish-background"></div>
+                        <div id={this.state.hamLine2} className="hamLine charcoalish-background"></div>
+                        <div id={this.state.hamLine3} className="hamLine charcoalish-background"></div>
                     </div>
 
                 </div>

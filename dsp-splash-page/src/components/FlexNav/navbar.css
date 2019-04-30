@@ -47,6 +47,16 @@
     visibility: hidden;    
 }
 
+.navHide {
+    animation: navHide 1s forwards;
+}
+
+@keyframes navHide {
+    to {
+        visibility: hidden;
+    }
+}
+
 .navShow {
     visibility: visible;
 }
@@ -102,10 +112,10 @@
 
 .flexQsShow {
     opacity: 0;
-    animation: navShow 1s .5s forwards;
+    animation: flexQsShow 1s .5s forwards;
 }
 
-@keyframes navShow {
+@keyframes flexQsShow {
     from {
         opacity: 0;
     }
@@ -114,22 +124,35 @@
     }
 }
 
+.flexQsHide {
+    animation: flexQsHide 0.2s forwards;
+}
+
+@keyframes flexQsHide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 #approach {
     bottom: 9em;
     left: 76vw;
 }
 
-#clients {
+#about {
     bottom: 7em;
     left: 72vw;
 }
 
-#services {
+#clients {
     bottom: 5em;
     left: 68vw;
 }
 
-#about {
+#services {
     bottom: 3em;
     left: 64vw;
 }
@@ -163,8 +186,25 @@
     }
 }
 
+#ham-1 {
+    animation: ham-1 .5s forwards;
+}
+
+@keyframes ham-1 {
+    from {
+        transform: translateY(475%) rotate(45deg);
+    }
+    to {
+        transform: none;
+    }
+}
+
 #hamLineInvisible {
     display: none;
+}
+
+#ham-2 {
+    animation: flexQsShow .5s forwards;
 }
 
 #hamX3 {
@@ -174,6 +214,19 @@
 @keyframes hamX3 {
     to {
         transform: translateY(-475%) rotate(-45deg);
+    }
+}
+
+#ham-3 {
+    animation: ham-3 .5s forwards;
+}
+
+@keyframes ham-3 {
+    from {
+        transform: translateY(-475%) rotate(-45deg);
+    }
+    to {
+        transform: none;
     }
 }
 
