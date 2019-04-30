@@ -3,16 +3,15 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    padding: 1vh 7vw;
+    padding: 1vh 8vw;
     box-shadow: 0 -1px 5px #757579;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 999;
 }
 
 #flexImage {
-    flex: 1;
     text-align: center;
 }
 
@@ -20,29 +19,8 @@
     height: 6vh;
 }
 
-#flexFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 3;
-    font-size: 70%;
-}
-
-#flexFooterWords {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: flex-end;
-    justify-content: center;
-    height: 5vh;
-    width: 100%;
-}
-
-#flexFooterWords a {
-    margin-right: 8vw;
-}
-
-#flexPLLC {
-    display: none;
+#flexNavCenter {
+    flex: 0;
 }
 
 #flexWords {
@@ -71,7 +49,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 47vw;
+    width: 55vw;
     clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
     animation: navSlantGrow 1s forwards;
 }
@@ -81,7 +59,7 @@
         height: 0;
     }
     to {
-        height: 8.75em;
+        height: 10em;
     }
 }
 
@@ -89,14 +67,14 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 47vw;
+    width: 55vw;
     clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
     animation: navSlantShrink 1s forwards;
 }
 
 @keyframes navSlantShrink {
     from {
-        height: 8.75em;
+        height: 10em;
     }
     to {
         height: 0;
@@ -116,7 +94,8 @@
     color: #333132;
 }
 
-.flexQsShow {
+.flexQsShow,
+#footerJoinShow {
     opacity: 0;
     animation: flexQsShow 1s .5s forwards;
 }
@@ -130,7 +109,8 @@
     }
 }
 
-.flexQsHide {
+.flexQsHide,
+#footerJoinHide {
     animation: flexQsHide 0.2s forwards;
 }
 
@@ -144,28 +124,56 @@
 }
 
 #approach {
-    bottom: 9em;
-    left: 76vw;
-}
-
-#about {
-    bottom: 7em;
+    bottom: 10.5em;
     left: 72vw;
 }
 
-#clients {
-    bottom: 5em;
+#about {
+    bottom: 8.5em;
     left: 68vw;
 }
 
-#services {
-    bottom: 3em;
+#clients {
+    bottom: 6.5em;
     left: 64vw;
 }
 
-#ecosystem {
-    bottom: 1em;
+#services {
+    bottom: 4.5em;
     left: 60vw;
+}
+
+#ecosystem {
+    bottom: 2.5em;
+    left: 56vw;
+}
+
+#flexFooter {
+    position: absolute;
+    bottom: .5em;
+    left: 52vw;
+    font-size: 70%;
+}
+
+#flexFooter a {
+    margin-right: 2vw;
+}
+
+#emailAddress,
+#footerJoinShow,
+#footerJoinHide {
+    color: #a9a9af;
+}
+
+#emailAddress:hover,
+#emailIcon:hover,
+#footerJoinShow:hover,
+#footerJoinHide:hover {
+    color: #757579;
+}
+
+#flexPLLC {
+    display: none;
 }
 
 #flexHamburger {
