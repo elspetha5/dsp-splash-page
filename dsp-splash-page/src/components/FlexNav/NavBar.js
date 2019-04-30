@@ -53,7 +53,7 @@ class NavBar extends Component {
                 <div id="flexNav" className="lightGrey-background">
 
                     <div id="flexImage">
-                        <Link to="/"><img src={logo} alt="logo" id="flexLogo" /></Link>
+                        <Link to="/" onClick={() => { this.hamburger() }}><img src={logo} alt="logo" id="flexLogo" /></Link>
                     </div>
 
                     <div id="flexFooter">

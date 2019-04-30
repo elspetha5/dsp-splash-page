@@ -24,15 +24,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 2;
-    font-size: 60%;
+    flex: 3;
+    font-size: 70%;
 }
 
 #flexFooterWords {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 3.5vh;
+    /* flex-direction: column; */
+    align-items: flex-end;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+}
+
+#flexFooterWords a {
+    margin-right: 8vw;
 }
 
 #flexPLLC {
@@ -40,7 +46,7 @@
 }
 
 #flexWords {
-    flex: 2;
+    flex: 0;
 }
 
 .navHidden {
@@ -231,11 +237,10 @@
 }
 
 #constStamp {
-    width: 140px;
-    float: left;
+    width: 70px;
     position: fixed;
-    top: 0;
-    right: 30px;
+    top: 1%;
+    right: 0px;
     transform: rotate(25deg);
     z-index: 2000;
 }
