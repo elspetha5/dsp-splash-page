@@ -30,7 +30,13 @@
     }
 }
 
-@media (min-width: 62.5em) {
+@media (min-width: 21em) and (max-height: 23em) {
+    #flexNav {
+        background-color: red;
+    }
+}
+
+@media (min-width: 63.25em) {
     .navHidden,
     .navHide,
     .navShow {
@@ -110,5 +116,15 @@
 @media (min-width: 96em) {
     #flexNav {
         padding: 1vh 27vw;
+    }
+}
+
+@media (min-width: 114em) {
+    #flexNav {
+        padding: 1vh 30vw;
+    }
+
+    #flexFooterWords {
+        font-size: 115%;
     }
 }

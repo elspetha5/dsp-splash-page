@@ -19,7 +19,7 @@ class NavBar extends Component {
         footer: ["hello@dsp.design", "Join us", "Design Service Professionals, PLLC 2019 All rights reserved"],
         navVisibility: "navHidden",
         flexQsShow: "",
-        footerJoin: "",
+        footerJoin: "footerJoin",
         hamLine1: "",
         hamLine2: "",
         hamLine3: "",
