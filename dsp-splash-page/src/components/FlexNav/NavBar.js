@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import "./mediaNavbar.css";
 
 import logo from "./dspLogo.png";
 import stamp from "./under-construction-circle.png";
@@ -22,7 +23,7 @@ class NavBar extends Component {
         hamLine1: "",
         hamLine2: "",
         hamLine3: "",
-        navSlant: ""
+        navSlant: "navSlant"
     };
 
     hamburger = () => {
@@ -65,6 +66,7 @@ class NavBar extends Component {
                     </div>
 
                     <div id="flexNavCenter">
+
                         <div id="flexWords" className={this.state.navVisibility}>
                             <div id={this.state.navSlant} className="yellow-background"></div>
                             {this.state.buttons.map(button => (
@@ -73,10 +75,13 @@ class NavBar extends Component {
                         </div>
 
                         <div id="flexFooter" className={this.state.navVisibility}>
-                            <a id="emailAddress" className={`link ${this.state.flexQsShow}`} href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i class="far fa-envelope"></i> hello@dsp.design </a>
-                            <Link to="/joinus" id={this.state.footerJoin} classname={`link ${this.state.flexQsShow}`} onClick={() => { this.hamburger() }}><i class="far fa-handshake"></i> Join us</Link>
-                            <div id="flexPLLC">Design Service Professionals, PLLC<span id="copyRights"> <i class="far fa-copyright"></i> 2019 <span id="rights">All rights reserved</span></span></div>
+                            <div id="flexFooterWords">
+                                <a id="emailAddress" className={`link ${this.state.flexQsShow}`} href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i class="far fa-envelope"></i> hello@dsp.design </a>
+                                <Link to="/joinus" id={this.state.footerJoin} classname={`link ${this.state.flexQsShow}`} onClick={() => { this.hamburger() }}><i class="far fa-handshake"></i> Join us</Link>
+                                <div id="flexPLLC">Design Service Professionals, PLLC<span id="copyRights"> <i class="far fa-copyright"></i> 2018-19 <span id="rights">All rights reserved</span></span></div>
+                            </div>
                         </div>
+
                     </div>
 
                     <div id="flexHamburger" onClick={() => { this.hamburger() }}>

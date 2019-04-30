@@ -1,0 +1,114 @@
+@media (min-width: 31em) {
+    #navSlantGrow,
+    #navSlantShrink {
+        width: 40vw;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    #approach {
+        left: 73vw;
+    }
+    
+    #about {
+        left: 71vw;
+    }
+    
+    #clients {
+        left: 69vw;
+    }
+    
+    #services {
+        left: 67vw;
+    }
+    
+    #ecosystem {
+        left: 65vw;
+    }
+
+    #flexFooter {
+        left: 63vw;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .navHidden,
+    .navHide,
+    .navShow {
+        visibility: visible;
+        animation: none;
+    }
+    
+    #navSlant,
+    #navSlantGrow,
+    #navSlantShrink,
+    #flexHamburger {
+        display: none;
+        animation: none;
+    }
+    
+    .flexQs,
+    #flexFooter {
+        position: initial;
+    }
+    
+    .flexQsShow,
+    #footerJoinShow,
+    .flexQsHide,
+    #footerJoinHide {
+        opacity: 1;
+        animation: none;
+    }
+
+    #flexPLLC {
+        display: initial;
+    }
+
+    #flexNav {
+        padding: 1vh 20vw;
+    }
+    
+    #flexImage {
+        flex: 1;
+    }
+    
+    #flexNavCenter {
+        flex: 4;
+        height: 5vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    
+    #flexWords {
+        display: flex;
+        justify-content: space-around;
+        font-size: 120%;
+    }
+
+    #flexFooterWords {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 75em) {
+    #flexLogo {
+        height: 7vh;
+    }
+
+    #flexFooterWords {
+        font-size: 110%;
+    }
+}
+
+@media (min-width: 81em) {
+    #flexNav {
+        padding: 1vh 24vw;
+    }
+}
+
+@media (min-width: 96em) {
+    #flexNav {
+        padding: 1vh 27vw;
+    }
+}

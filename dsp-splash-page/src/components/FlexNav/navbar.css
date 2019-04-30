@@ -23,10 +23,6 @@
     flex: 0;
 }
 
-#flexWords {
-    flex: 0;
-}
-
 .navHidden {
     visibility: hidden;    
 }
@@ -45,12 +41,16 @@
     visibility: visible;
 }
 
-#navSlantGrow {
+#navSlantGrow,
+#navSlantShrink {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 55vw;
     clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#navSlantGrow {
     animation: navSlantGrow 1s forwards;
 }
 
@@ -64,11 +64,6 @@
 }
 
 #navSlantShrink {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 55vw;
-    clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
     animation: navSlantShrink 1s forwards;
 }
 
@@ -161,7 +156,8 @@
 
 #emailAddress,
 #footerJoinShow,
-#footerJoinHide {
+#footerJoinHide,
+#flexPLLC {
     color: #a9a9af;
 }
 
@@ -252,3 +248,4 @@
     transform: rotate(25deg);
     z-index: 2000;
 }
+
