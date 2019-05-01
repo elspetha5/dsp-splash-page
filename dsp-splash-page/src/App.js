@@ -44,8 +44,7 @@ import Login from "./pages/LogIn";
 
 
 // Components
-// import NavBar from "./components/NavBar";
-import NavBar from "./components/FlexNav";
+import NavBar from "./components/Navbar";
 import NoMatch from "./components/NoMatch";
 import Background from "./components/Background";
 

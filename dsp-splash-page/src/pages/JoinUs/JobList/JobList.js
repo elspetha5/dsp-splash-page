@@ -45,7 +45,7 @@ class JobList extends Component {
                         : <div></div>
                 ))}
 
-                <div className="slantUp skyBlue-background">
+                <div className="slantUp green-background">
                     <div className="unSkew">
                         {this.state.jobs.map((job, i) => (
                             (i === 2 || i === 3)

@@ -25,16 +25,16 @@
         left: 65vw;
     }
 
-    #flexFooter {
+    #navFooter {
         left: 63vw;
     }
 }
 
-/* @media (min-width: 21em) and (max-height: 23em) {
-    #flexNav {
-        background-color: red;
+@media (min-width: 34em) and (max-height: 34em) {
+    #navLogo {
+        height: 9vh;
     }
-} */
+}
 
 @media (min-width: 63.25em) {
     .navHidden,
@@ -47,37 +47,37 @@
     #navSlant,
     #navSlantGrow,
     #navSlantShrink,
-    #flexHamburger {
+    #navHamburger {
         display: none;
         animation: none;
     }
     
-    .flexQs,
-    #flexFooter {
+    .navQs,
+    #navFooter {
         position: initial;
     }
     
-    .flexQsShow,
+    .navQsShow,
     #footerJoinShow,
-    .flexQsHide,
+    .navQsHide,
     #footerJoinHide {
         opacity: 1;
         animation: none;
     }
 
-    #flexPLLC {
+    #navPLLC {
         display: initial;
     }
 
-    #flexNav {
+    #nav {
         padding: 1vh 20vw;
     }
     
-    #flexImage {
+    #navImage {
         flex: 1;
     }
     
-    #flexNavCenter {
+    #navCenter {
         flex: 4;
         height: 5vh;
         display: flex;
@@ -85,13 +85,40 @@
         justify-content: space-between;
     }
     
-    #flexWords {
+    #navWords {
         display: flex;
         justify-content: space-around;
         font-size: 120%;
     }
 
-    #flexFooterWords {
+    .navQs,
+    .navQs:active,
+    .navQs:visited,
+    .navQs:focus {
+        color: #757579;
+    }
+
+    .navQs:hover {
+        color: #333132;
+    }
+
+    #emailAddress,
+    #footerJoin,
+    #footerJoinShow,
+    #footerJoinHide,
+    #navPLLC {
+        color: #a9a9af;
+    }
+
+    #emailAddress:hover,
+    #footerJoin:hover,
+    #emailIcon:hover,
+    #footerJoinShow:hover,
+    #footerJoinHide:hover {
+        color: #757579;
+    }
+
+    #navFooterWords {
         display: flex;
         justify-content: space-between;
     }
@@ -102,11 +129,11 @@
 }
 
 @media (min-width: 75em) {
-    #flexLogo {
+    #navLogo {
         height: 7vh;
     }
 
-    #flexFooterWords {
+    #navFooterWords {
         font-size: 110%;
     }
 
@@ -116,23 +143,23 @@
 }
 
 @media (min-width: 81em) {
-    #flexNav {
+    #nav {
         padding: 1vh 24vw;
     }
 }
 
 @media (min-width: 96em) {
-    #flexNav {
+    #nav {
         padding: 1vh 27vw;
     }
 }
 
 @media (min-width: 114em) {
-    #flexNav {
+    #nav {
         padding: 1vh 30vw;
     }
 
-    #flexFooterWords {
+    #navFooterWords {
         font-size: 115%;
     }
 }

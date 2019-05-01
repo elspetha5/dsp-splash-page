@@ -135,7 +135,7 @@ class Approach extends Component {
                 </NoSlant>
 
                 <SlantUp
-                    background="skyBlue-background"
+                    background="salmon-background"
                     titleColor="slateWhite-text"
                     title="we are..."
                 >
@@ -184,7 +184,7 @@ class Approach extends Component {
                 </NoSlant>
 
                 <SlantUp
-                    background="skyBlue-background"
+                    background="salmon-background"
                     titleColor="slateWhite-text"
                     title="how? by..."
                 >
