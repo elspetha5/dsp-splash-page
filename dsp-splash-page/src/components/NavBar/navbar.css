@@ -81,7 +81,7 @@
     position: absolute;
     font-family: 'Codystar', cursive;
     font-size: 80%;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .navQs,
@@ -161,7 +161,7 @@
 #footerJoinShow,
 #footerJoinHide,
 #navPLLC {
-    color: #faf7ee;
+    color: #f4f7fc;
 }
 
 #navPLLC {

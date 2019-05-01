@@ -51,9 +51,9 @@
 
 #homeWords {
     height: 40%;
-    padding: 0 10vw;
+    padding: 7vh 10vw 0;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     opacity: 0;
     animation: wordAppearVert 4s .5s forwards;
 }
