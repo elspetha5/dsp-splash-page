@@ -68,7 +68,7 @@ class NavBar extends Component {
                     <div id="flexNavCenter">
 
                         <div id="flexWords" className={this.state.navVisibility}>
-                            <div id={this.state.navSlant} className="yellow-background"></div>
+                            <div id={this.state.navSlant} className="skyBlue-background"></div>
                             {this.state.buttons.map(button => (
                                 <Link to={button.to} id={button.text} className={`flexQs ${this.state.flexQsShow}`} onClick={() => { this.hamburger() }}>{button.text}</Link>
                             ))}
@@ -85,9 +85,9 @@ class NavBar extends Component {
                     </div>
 
                     <div id="flexHamburger" onClick={() => { this.hamburger() }}>
-                        <div id={this.state.hamLine1} className="hamLine charcoalish-background"></div>
-                        <div id={this.state.hamLine2} className="hamLine charcoalish-background"></div>
-                        <div id={this.state.hamLine3} className="hamLine charcoalish-background"></div>
+                        <div id={this.state.hamLine1} className="hamLine ivory-background"></div>
+                        <div id={this.state.hamLine2} className="hamLine ivory-background"></div>
+                        <div id={this.state.hamLine3} className="hamLine ivory-background"></div>
                     </div>
 
                 </div>

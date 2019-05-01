@@ -30,11 +30,11 @@
     }
 }
 
-@media (min-width: 21em) and (max-height: 23em) {
+/* @media (min-width: 21em) and (max-height: 23em) {
     #flexNav {
         background-color: red;
     }
-}
+} */
 
 @media (min-width: 63.25em) {
     .navHidden,
@@ -95,6 +95,10 @@
         display: flex;
         justify-content: space-between;
     }
+
+    #constStamp {
+        width: 110px;
+    }
 }
 
 @media (min-width: 75em) {
@@ -104,6 +108,10 @@
 
     #flexFooterWords {
         font-size: 110%;
+    }
+
+    #constStamp {
+        width: 120px;
     }
 }
 

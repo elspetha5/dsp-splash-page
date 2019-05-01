@@ -21,7 +21,7 @@
 }
 
 #white,
-#white.active,
+#white:active,
 #white:visited,
 #white:focus {
     background-color: transparent;
