@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import YourThing from "../../components/YourThing";
 import Popup from "reactjs-popup";
-import "./joinus.css";
+import "./assets/css/joinus.css";
+import "./assets/css/mediaJoinus.css";
 
 class JoinUs extends Component {
     state = {

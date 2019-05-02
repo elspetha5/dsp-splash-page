@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
-import "./designServices.css";
+import "./css/designServices.css";
+import "./css/mediaDesignServices.css";
 
 // Components
 import SlantTop from "../../components/SlantTop";

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import "./home.css";
+import "./assets/css/home.css";
+import "./assets/css/mediaHome.css";
 
-import logo from "./dspLogo-outline-lightBlue.png";
+import logo from "./assets/images/dspLogo-outline-lightBlue.png";
 
 // Files
 import ideas from "../../JSON/home.json";

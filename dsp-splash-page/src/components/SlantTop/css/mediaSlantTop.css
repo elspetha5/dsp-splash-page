@@ -1,0 +1,12 @@
+@media (min-width: 37.5em) { 
+    .slantTop {
+        font-size: 180%
+    }
+}
+
+@media (min-width: 50em) {
+    .slantTop {
+        font-size: 220%;
+        padding: 5vh 15vw 15vh 25vw;
+    }
+}

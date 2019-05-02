@@ -13,7 +13,7 @@
 
 #largeCompany {
     flex: 100vw;
-    background-image: url(./your-staff-augmented.jpg);
+    background-image: url(../images/your-staff-augmented.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +25,7 @@
 
 #boutiqueCompany {
     flex: 100vw;
-    background-image: url(./your-brand-elevated.jpg);
+    background-image: url(../images/your-brand-elevated.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@
 
 #design-buildCompany {
     flex: 100vw;
-    background-image: url(./your-project-crafted.jpg);
+    background-image: url(../images/your-project-crafted.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,24 +51,3 @@
     background-color: #849b66ce;
 }
 
-@media (min-width: 75em) {
-    .clientBackground {
-        background-color: transparent;
-    }
-
-    #largeCompany {
-        flex: 1;
-    }
-
-    #boutiqueCompany {
-        flex: 1;
-        transform: translateY(0);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    
-    #design-buildCompany {
-        flex: 1;
-        transform: translateY(0);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import LocationMap from "./LocationMap";
-import "./people.css";
+import "./css/people.css";
+import "./css/mediaPeople.css";
 
 import people from "../../JSON/People/people.json";
 

@@ -1,0 +1,18 @@
+@media (min-width: 37.5em) {
+    .dsInfoColumn {
+        width: 50%;
+    } 
+}
+
+@media (min-width: 59em) {
+    .dsInfoColumn {
+        width: 33%;
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 81em) {
+    .dsInfoColumn {
+        font-size: 150%;
+    }
+}

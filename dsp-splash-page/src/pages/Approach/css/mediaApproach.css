@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    #approachParagraph {
+        font-size: 100%;
+    }
+
+    .infoWords {
+        font-size: 100%;
+        line-height: 1.2;
+    }
+
+    .approachLeadingWord {
+        font-size: 125%;
+    }
+    
+}

@@ -28,8 +28,8 @@ const DbBanner = () => {
 
                 <div id="ipd">
                     <div id="IPD" className="salmon-text">IPD</div>
-                    <div id="integ" className="yellow-text">INTEGRATED</div>
-                    <div id="projDel" className="yellow-text">PROJECT DELIVERY</div>
+                    <div id="integ" className="integProjDel yellow-text">INTEGRATED</div>
+                    <div id="projDel" className="integProjDel yellow-text">PROJECT DELIVERY</div>
                 </div>
 
             </div>

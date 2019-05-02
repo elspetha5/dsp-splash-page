@@ -1,0 +1,78 @@
+#homepage {
+    height: 92vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homeHalf {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+#homeLogo {
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 calc(100% - 5vh));
+    animation: homeClipPath 4s ease-out .5s forwards;
+}
+
+@keyframes homeClipPath {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 calc(100% - 5vh));
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vh));
+    }
+}
+
+#homeLogoIcon {
+    width: 10em;
+    opacity: 0;
+    animation: rotateLogo 4s ease-out .5s forwards;
+}
+
+@keyframes rotateLogo {
+    0% {
+        opacity: 0;
+        transform: scale(.25) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(180deg);
+    }
+}
+
+#homeWords {
+    height: 40%;
+    padding: 7vh 10vw 0;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0;
+    animation: wordAppearVert 4s .5s forwards;
+}
+
+@keyframes wordAppearVert {
+    from {
+        opacity: 0;
+        transform: translateY(-20vh);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+
+.homeTagline {
+    font-size: 100%;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Codystar', cursive;
+}
+

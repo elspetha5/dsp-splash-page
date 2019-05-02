@@ -1,0 +1,52 @@
+@media (min-width: 43em) {
+    #mapDots {
+        width: 80vw;
+    }
+
+    #outline {
+        width: 80vw;
+    }
+
+    .dot {
+        height: 3vw;
+        width: 3vw;
+    }
+}
+
+@media (min-width: 61em) {
+    #virtualTagLine {
+        font-size: 200%;
+    }
+
+    #mapDots {
+        width: 70vw;
+    }
+
+    #outline {
+        width: 70vw;
+    }
+
+    .dot {
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+@media (min-width: 93em) {
+    #virtualTagLine {
+        margin-top: 5vh;
+    }
+    
+    #mapDots {
+        width: 65vw;
+    }
+
+    #outline {
+        width: 65vw;
+    }
+
+    .dot {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+}

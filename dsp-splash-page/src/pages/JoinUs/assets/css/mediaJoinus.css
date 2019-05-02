@@ -1,0 +1,86 @@
+@media (max-width: 1200px) {
+    #joinUsTitle {
+        font-size: 150%;
+    }   
+
+    .joinUsInfo {
+        width: 49%;
+        font-size: 100%;
+        margin-bottom: 20px;
+    }
+
+    .newLine {
+        display: initial;
+    }
+
+    #arrowHide {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .joinUsInfo {
+        font-size: 90%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 815px) and (max-height: 400px) {
+    
+}
+
+@media (max-width: 768px) {    
+    .joinUsInfo {
+        width: 100%;
+    }
+
+    #joinUsTitle {
+        padding: 5% 0;
+    }
+
+    .topQ {
+        font-size: 170%;
+    }
+
+    .rightArrow {
+        transform: translateX(16px) rotate(90deg);
+    }
+
+    #arrowHide {
+        display: initial;
+    }
+
+    .yourTwo {
+        width: 100%;
+    }
+
+    #oneEcosystem {
+        display: block;
+    }
+
+    #joinUsTopPic {
+        padding-bottom: 5%;
+    }
+
+    #career {
+        transform: translateY(-5vh);
+        clip-path: polygon(0 0, 100% 5vh, 100% 100%, 0 100%);
+    }
+
+}
+
+@media (max-width: 576px) { 
+    #joinUsTitle {
+        font-size: 110%;
+    }
+
+    .joinUsInfo {
+        font-size: 80%;
+    }
+
+    #closeModal {
+        font-size: 90%;
+    }
+
+}

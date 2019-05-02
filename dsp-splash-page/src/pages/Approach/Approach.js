@@ -8,7 +8,8 @@ import SlantUp from "../../components/SlantInfo/SlantUp";
 import SlantDown from "../../components/SlantInfo/SlantDown";
 import NoSlant from "../../components/SlantInfo/NoSlant";
 
-import "./approach.css";
+import "./css/approach.css";
+import "./css/mediaApproach.css";
 
 // Files
 import ideas from "../../JSON/home.json";

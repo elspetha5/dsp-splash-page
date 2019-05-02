@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import "./locationMap.css";
+import "./assets/css/locationMap.css";
+import "./assets/css/mediaLocationMap.css";
 
-import map from "./us-map-outline.png";
+import map from "./assets/images/us-map-outline.png";
 
 class LocationMap extends Component {
     state = {

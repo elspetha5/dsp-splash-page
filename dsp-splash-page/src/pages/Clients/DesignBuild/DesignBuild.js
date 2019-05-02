@@ -6,10 +6,11 @@ import SlantTop from "../../../components/SlantTop";
 import SlantUp from "../../../components/SlantInfo/SlantUp";
 import SlantDown from "../../../components/SlantInfo/SlantDown";
 
-import process from "./dbProcess.png";
-import banner from "./dbBanner.png";
-import fourCs from "./fourCs.png";
-import "./designBuild.css";
+import process from "./assets/images/dbProcess.png";
+import banner from "./assets/images/dbBanner.png";
+import fourCs from "./assets/images/fourCs.png";
+import "./assets/css/designBuild.css";
+import "./assets/css/mediaDesignBuild.css";
 
 class DesignBuild extends Component {
     state = {

@@ -1,6 +1,7 @@
 import React from "react";
 
-import "./slantinfo.css";
+import "./css/slantinfo.css";
+import "./css/mediaSlantinfo.css";
 
 const SlantDown = props => {
     return (

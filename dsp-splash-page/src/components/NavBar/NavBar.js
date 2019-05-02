@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
-import "./mediaNavbar.css";
+import "./assets/css/navbar.css";
+import "./assets/css/mediaNavbar.css";
 
-import logo from "./dspLogo.png";
-import stamp from "./under-construction-circle.png";
+import logo from "./assets/images/dspLogo.png";
+import stamp from "./assets/images/under-construction-circle.png";
 
 class NavBar extends Component {
 

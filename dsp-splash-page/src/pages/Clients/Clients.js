@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import YourThing from "../../components/YourThing";
-import "./clients.css";
+import "./assets/css/clients.css";
+import "./assets/css/mediaClients.css";
 
-import image from "./your-staff-augmented.jpg";
+import image from "./assets/images/your-staff-augmented.jpg";
 
 class Clients extends Component {
     state = {

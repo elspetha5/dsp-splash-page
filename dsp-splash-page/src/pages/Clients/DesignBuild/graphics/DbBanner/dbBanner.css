@@ -1,6 +1,6 @@
 #dbBannerWrapper {
     padding: 2vh;
-    width: 50vw;
+    width: 100%;
     margin: auto;
     text-align: center;
     display: flex;
@@ -11,10 +11,12 @@
     position: relative;
     margin-bottom: -2vh;
     font-size: 200%;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 #dbBannerDB {
-    padding: 0 1em;
+    padding: 0 30px;
 }
 
 #dashedBorder {
@@ -32,16 +34,44 @@
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    height: 100%;
+    height: 90%;
 }
 
 #dbLogoWrapper,
 #dbBannerLogo {
-    height: 11vh;
+    height: 10vh;
     opacity: .8;
+    margin-bottom: 5px;
 }
 
 .ccText {
+    font-size: 70%;
+    letter-spacing: 2px;
+}
+
+#yourBuild {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 60%;
+    font-size: 140%;
+    opacity: .8;
+}
+
+#ipd {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 80%;
+}
+
+#IPD {
+    font-size: 220%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.integProjDel {
     font-size: 70%;
     letter-spacing: 2px;
 }

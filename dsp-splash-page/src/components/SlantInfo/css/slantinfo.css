@@ -1,0 +1,56 @@
+.slantTitle {
+    height: 5vh;
+    padding-left: 20vw;
+    font-size: 140%;
+}
+
+.slantInfoWrapper {
+    padding: 0 10vw 0 26vw;
+}
+
+.slantUp {
+    margin: 15vh 0;
+    padding: 10vh 0;
+    width: 100%;
+    animation: slantUp 2s ease-out .5s forwards;
+}
+
+@keyframes slantUp {
+    to {
+        transform: skewY(-9deg);
+    }
+}
+
+.unSkew {
+    animation: unSkewUp 2s ease-out .5s forwards;
+}
+
+@keyframes unSkewUp {
+    to {
+        transform: skewY(9deg);
+    }
+}
+
+.slantDown {
+    margin: 15vh 0;
+    padding: 10vh 0;
+    width: 100%;
+    animation: slantDown 2s ease-out .5s forwards;
+}
+
+@keyframes slantDown {
+    to {
+        transform: skewY(9deg);
+    }
+}
+
+.unSkewDown {
+    animation: unSkewDown 2s ease-out .5s forwards;
+}
+
+@keyframes unSkewDown {
+    to {
+        transform: skewY(-9deg);
+    }
+}
+

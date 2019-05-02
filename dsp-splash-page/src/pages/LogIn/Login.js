@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import "./login.css";
-
-import DbBanner from "../Clients/DesignBuild/DbBanner";
+import "./css/login.css";
+import "./css/mediaLogin.css";
 
 class Login extends Component {
     state = {
@@ -15,7 +14,7 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <DbBanner />
+
             </div>
         )
     };

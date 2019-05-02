@@ -1,5 +1,6 @@
 import React from "react";
-import "./slantTop.css";
+import "./css/slantTop.css";
+import "./css/mediaSlantTop.css";
 
 const SlantTop = props => {
     return (
