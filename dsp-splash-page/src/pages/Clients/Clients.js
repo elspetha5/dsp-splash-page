@@ -29,7 +29,7 @@ class Clients extends Component {
                     <YourThing
                         topWords="Your staff."
                         bottomWords="Augmented."
-                        link="/clients/contact"
+                        link="/clients/largecompany"
                         buttonWords="Learn more"
                         topDescription="Leverage our staff "
                         topDescriptionBreak="augmentation program"

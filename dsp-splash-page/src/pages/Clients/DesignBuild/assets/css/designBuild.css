@@ -8,6 +8,7 @@
 
 #dbProcessPic,
 #dbFourCs {
+    background-color: #f4f7fc;
     box-shadow: 0 0 10px #757579;
     position: relative;
     z-index: 500;

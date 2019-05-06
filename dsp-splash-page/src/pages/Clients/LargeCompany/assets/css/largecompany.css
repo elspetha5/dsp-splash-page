@@ -1,0 +1,119 @@
+#lcWrapper {
+    padding-bottom: 15vh;
+}
+
+.lcSteptitle {
+    padding: 5px 10px;
+}
+
+.lcSteptitle:hover {
+    color: #333132;
+}
+
+.step {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#lcStep0,
+#lcStepWords0 {
+    margin-left: 28vw;
+}
+
+#lcStep0 {
+    background-color: #9bc8e8;
+    color: #f4f7fc;
+}
+
+#lcStep1,
+#lcStepWords1 {
+    margin-left: 21vw;
+}
+
+#lcStep1 {
+    background-color: #86c0e9;
+    color: #f4f7fc;
+}
+
+#lcStep2,
+#lcStepWords2 {
+    margin-left: 14vw;
+}
+
+#lcStep2 {
+    background-color: #70b6e7;
+    color: #f4f7fc;
+}
+
+#lcStep3,
+#lcStepWords3 {
+    margin-left: 7vw;
+}
+
+#lcStep3 {
+    background-color: #5bace6;
+    color: #f4f7fc;
+}
+
+#lcStep4,
+#lcStepWords4 {
+    margin-left: 0vw;
+}
+
+#lcStep4 {
+    background-color: #47a4e7;
+    color: #f4f7fc;
+}
+
+.lcServiceWrapper {
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.lcService {
+    flex: 1;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    font-size: 120%;
+}
+
+.lcOfferedService {
+    flex: 3;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 7em;
+}
+
+.lcOfferedOne {
+    padding: 3px 5px;
+}
+
+.lcOfferedTrue {
+    padding: 3px 5px;
+    background-color: #1b2c3a;
+}
+
+.lcOfferedFalse {
+    padding: 3px 5px;
+    border: 1px solid #1b2c3a;
+}
+
+#lcCurrent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lcCurrentBox {
+    height: 1em;
+    width: 1em;
+    margin-right: .5em;
+    background-color: #1b2c3a;
+}

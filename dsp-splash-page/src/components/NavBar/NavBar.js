@@ -93,7 +93,7 @@ class NavBar extends Component {
                 </div>
 
 
-                <img id="constStamp" src={stamp} alt="underConst" />
+                {/* <img id="constStamp" src={stamp} alt="underConst" /> */}
 
             </div>
         )
