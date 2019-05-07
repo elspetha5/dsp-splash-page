@@ -2,12 +2,13 @@
     padding-bottom: 15vh;
 }
 
-.lcSteptitle {
-    padding: 5px 10px;
+.lcContentWrapper {
+    padding: 0 5vw;
 }
 
-.lcSteptitle:hover {
-    color: #333132;
+.lcSteptitle {
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .step {
@@ -15,62 +16,46 @@
     font-weight: bold;
 }
 
-#lcStep0,
-#lcStepWords0 {
-    margin-left: 28vw;
-}
-
 #lcStep0 {
-    background-color: #9bc8e8;
+    margin-top: 5vh;
+    background-color: #33313277;
     color: #f4f7fc;
-}
-
-#lcStep1,
-#lcStepWords1 {
-    margin-left: 21vw;
 }
 
 #lcStep1 {
-    background-color: #86c0e9;
+    background-color: #3331329a;
     color: #f4f7fc;
-}
-
-#lcStep2,
-#lcStepWords2 {
-    margin-left: 14vw;
 }
 
 #lcStep2 {
-    background-color: #70b6e7;
+    background-color: #333132b6;
     color: #f4f7fc;
-}
-
-#lcStep3,
-#lcStepWords3 {
-    margin-left: 7vw;
 }
 
 #lcStep3 {
-    background-color: #5bace6;
+    background-color: #333132d5;
     color: #f4f7fc;
-}
-
-#lcStep4,
-#lcStepWords4 {
-    margin-left: 0vw;
 }
 
 #lcStep4 {
-    background-color: #47a4e7;
+    background-color: #333132;
     color: #f4f7fc;
+    margin-bottom: -6vh;
+}
+
+.lcStepInfo {
+    margin-bottom: 3vh;
 }
 
 .lcServiceWrapper {
     margin-bottom: 3vh;
     display: flex;
+    flex-flow: column;
     align-items: stretch;
     justify-content: space-between;
-    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px black;
+    padding: 1vh;
 }
 
 .lcService {
@@ -81,6 +66,7 @@
     justify-content: flex-start;
     padding-left: 1vw;
     font-size: 120%;
+    margin-bottom: 1vh;
 }
 
 .lcOfferedService {
@@ -89,21 +75,22 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
-    height: 7em;
 }
 
 .lcOfferedOne {
     padding: 3px 5px;
+    margin: .5em 0;
 }
 
 .lcOfferedTrue {
     padding: 3px 5px;
-    background-color: #1b2c3a;
+    background-color: #757579;
 }
 
 .lcOfferedFalse {
     padding: 3px 5px;
-    border: 1px solid #1b2c3a;
+    background-color: #d37c7c;
+    box-shadow: inset 2px 3px 5px black;
 }
 
 #lcCurrent {
@@ -115,5 +102,5 @@
     height: 1em;
     width: 1em;
     margin-right: .5em;
-    background-color: #1b2c3a;
+    background-color: #757579;
 }

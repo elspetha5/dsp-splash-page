@@ -1,0 +1,52 @@
+@media (min-width: 43em) {
+    .lcContentWrapper {
+        padding: 0 15vw;
+    }
+    
+    #lcStep0,
+    #lcStepWords0 {
+        margin-right: 28vw;
+    }
+
+    #lcStep1,
+    #lcStepWords1 {
+        margin-right: 21vw;
+        margin-left: 7vw;
+    }
+
+    #lcStep2,
+    #lcStepWords2 {
+        margin-right: 14vw;
+        margin-left: 14vw;
+    }
+
+    #lcStep3,
+    #lcStepWords3 {
+        margin-right: 7vw;
+        margin-left: 21vw;
+    }
+
+    #lcStep4,
+    #lcStepWords4 {
+        margin-left: 28vw;
+    }
+
+    #lcStep4 {
+        margin-bottom: 0;
+    }
+
+    .lcServiceWrapper {
+        flex-flow: row;
+    }
+
+    .lcService {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 68em) {
+    .lcContentWrapper {
+        padding: 0 20vw;
+    }
+}

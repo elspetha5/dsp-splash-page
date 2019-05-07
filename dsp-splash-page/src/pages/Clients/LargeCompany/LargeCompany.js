@@ -1,12 +1,10 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
 import { Panel } from "react-bootstrap";
 
 // Components
 import SlantTop from "../../../components/SlantTop";
-import NoSlant from "../../../components/SlantInfo/NoSlant";
-import SlantUp from "../../../components/SlantInfo/SlantUp";
-import SlantDown from "../../../components/SlantInfo/SlantDown";
 
 import process from "../../../JSON/LargeCompany/process.json";
 import services from "../../../JSON/LargeCompany/LCServices.json";
@@ -32,41 +30,48 @@ class LargeCompany extends Component {
                     title="process of engagement"
                 />
 
-                <NoSlant>
+                <div className="lcContentWrapper">
                     {this.state.process.map((step, i) => (
                         <Panel eventKey={i}>
                             <Panel.Title id={`lcStep${i}`} className="lcSteptitle infoWords link" toggle><span className="step">{`step ${step.num}.`}</span>{` ${step.step}`}</Panel.Title>
 
                             <Panel.Body collapsible>
-                                <div id={`lcStepWords${i}`}>{step.info}</div>
+                                <div id={`lcStepWords${i}`}>
+                                    {step.info.map(info => (
+                                        <div className="lcStepInfo">{info}</div>
+                                    ))}
+                                    {step.button
+                                        ? <Link to={step.button} className="applyButton jobButton">contact us</Link>
+                                        : <div></div>
+                                    }
+                                </div>
                             </Panel.Body>
                         </Panel>
                     ))}
-                </NoSlant>
+                </div>
 
-                <SlantUp
-                    background="salmon-background"
-                    titleColor="slateWhite-text"
-                    title="services"
-                >
-                    {this.state.services.map(service => (
-                        <div className="lcServiceWrapper slateWhite-text">
-                            <div className="lcService">{service.title}</div>
-                            <div className="lcOfferedService">
-                                {service.services.map(offered => (
-                                    (offered.offered === true)
-                                        ? <div className="lcOfferedOne"><span className="lcOfferedTrue">{offered.service}</span></div>
-                                        : <div className="lcOfferedOne"><span className="lcOfferedFalse">{offered.service}</span></div>
-                                ))}
+                <div className="slantUp salmon-background">
+                    <div className="unSkew">
+                        <div className="lcContentWrapper">
+                            {this.state.services.map(service => (
+                                <div className="lcServiceWrapper slateWhite-text almostBlack-background">
+                                    <div className="lcService">{service.title}</div>
+                                    <div className="lcOfferedService">
+                                        {service.services.map(offered => (
+                                            (offered.offered === true)
+                                                ? <div className="lcOfferedOne"><span className="lcOfferedTrue">{offered.service}</span></div>
+                                                : <div className="lcOfferedOne"><span className="lcOfferedFalse">{offered.service}</span></div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                            <div id="lcCurrent" className="slateWhite-text">
+                                <div id="lcCurrentBox"></div>indicates currently offered service
                             </div>
                         </div>
-                    ))}
-
-                    <div id="lcCurrent" className="slateWhite-text">
-                        <div id="lcCurrentBox"></div>indicates currently offered service
                     </div>
+                </div>
 
-                </SlantUp>
 
 
             </div>

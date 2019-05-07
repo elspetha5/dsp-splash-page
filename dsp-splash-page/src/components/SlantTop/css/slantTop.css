@@ -1,5 +1,5 @@
 .slantTop {
-    padding: 5vh 15vw 15vh 19.5vw;
+    padding: 5vh 15vw 10vh 19.5vw;
     font-size: 150%;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
     animation: slantTitle 2s ease-out .5s forwards;
