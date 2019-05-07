@@ -77,9 +77,9 @@ class LargeCompany extends Component {
                     ))}
                 </div>
 
-                <div className="alignLCPic">
+                {/* <div className="alignLCPic">
                     <img src={lcProcess} alt="lcProcess" id="lcProcessPic" />
-                </div>
+                </div> */}
 
                 <div className="slantUp salmon-background">
                     <div className="unSkew">
