@@ -35,6 +35,14 @@
         margin-bottom: 0;
     }
 
+    #lcProcessPic {
+        width: 85vw;
+    }
+
+    #lcFourCs {
+        width: 80vw;
+    }
+
     .lcServiceWrapper {
         flex-flow: row;
     }
@@ -45,8 +53,28 @@
 
 }
 
+@media (min-width: 59em) {
+    #lcFourCs {
+        width: 70vw;
+    }
+}
+
 @media (min-width: 68em) {
     .lcContentWrapper {
         padding: 0 20vw;
+    }
+
+    #lcProcessPic {
+        width: 75vw;
+    }
+}
+
+@media (min-width: 75em) {
+    #lcProcessPic {
+        width: 60vw;
+    }
+
+    #lcFourCs {
+        width: 50vw;
     }
 }

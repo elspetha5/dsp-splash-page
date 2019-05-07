@@ -49,7 +49,7 @@ class DesignBuild extends Component {
 
                 <SlantTop
                     color="charcoalish-background"
-                    title="design build"
+                    title="design-build"
                 />
 
                 <div className="alignDBPic">

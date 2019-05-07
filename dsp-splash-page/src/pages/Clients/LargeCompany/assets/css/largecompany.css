@@ -1,5 +1,5 @@
 #lcWrapper {
-    padding-bottom: 15vh;
+    padding-bottom: 20vh;
 }
 
 .lcContentWrapper {
@@ -45,6 +45,26 @@
 
 .lcStepInfo {
     margin-bottom: 3vh;
+}
+
+.alignLCPic {
+    text-align: center;
+    margin: 15vh auto 0;
+}
+
+#lcProcessPic,
+#lcFourCs {
+    background-color: #f4f7fc;
+    box-shadow: 0 0 10px #757579;
+}
+
+#lcProcessPic {
+    width: 95vw;
+    margin: auto;    
+}
+
+#lcFourCs {
+    width: 90vw;
 }
 
 .lcServiceWrapper {

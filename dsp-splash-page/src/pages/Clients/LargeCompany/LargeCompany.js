@@ -8,6 +8,11 @@ import SlantTop from "../../../components/SlantTop";
 
 import process from "../../../JSON/LargeCompany/process.json";
 import services from "../../../JSON/LargeCompany/LCServices.json";
+
+import lcProcess from "./assets/images/dbProcess.png";
+import banner from "./assets/images/lcBanner.png";
+import fourCs from "./assets/images/fourCs.png";
+
 import "./assets/css/largecompany.css";
 import "./assets/css/mediaLargecompany.css";
 
@@ -24,6 +29,28 @@ class LargeCompany extends Component {
     render() {
         return (
             <div id="lcWrapper">
+                <Popup
+                    open={true}
+                    modal
+                    closeOnDocumentClick
+                    lockScroll={true}
+                    position='top center'
+                    contentStyle={{
+                        borderRadius: "5px",
+                        border: "none",
+                        padding: "1vw",
+                        backgroundColor: "#f4f7fcc4",
+                        width: "72vw"
+                    }}
+                >
+                    {close => (
+                        <div>
+                            {/* <div className="close almostBlack-text" onClick={close}>&times;</div> */}
+                            <img src={banner} alt="dbBanner" id="dbBanner" />
+                            <button id="closeModal" className="" onClick={() => { close() }}>close</button>
+                        </div>
+                    )}
+                </Popup>
 
                 <SlantTop
                     color="charcoalish-background"
@@ -50,6 +77,10 @@ class LargeCompany extends Component {
                     ))}
                 </div>
 
+                <div className="alignLCPic">
+                    <img src={lcProcess} alt="lcProcess" id="lcProcessPic" />
+                </div>
+
                 <div className="slantUp salmon-background">
                     <div className="unSkew">
                         <div className="lcContentWrapper">
@@ -72,7 +103,9 @@ class LargeCompany extends Component {
                     </div>
                 </div>
 
-
+                <div className="alignLCPic">
+                    <img src={fourCs} alt="db 4 Cs" id="lcFourCs" />
+                </div>
 
             </div>
         )
