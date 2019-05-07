@@ -60,7 +60,8 @@
 
 #lcProcessPic {
     width: 95vw;
-    margin: auto;    
+    margin: auto;
+    padding: 4px;    
 }
 
 #lcFourCs {

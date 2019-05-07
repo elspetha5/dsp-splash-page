@@ -9,7 +9,7 @@ import SlantTop from "../../../components/SlantTop";
 import process from "../../../JSON/LargeCompany/process.json";
 import services from "../../../JSON/LargeCompany/LCServices.json";
 
-import lcProcess from "./assets/images/dbProcess.png";
+import lcProcess from "./assets/images/lcProcess.png";
 import banner from "./assets/images/lcBanner.png";
 import fourCs from "./assets/images/fourCs.png";
 
@@ -77,9 +77,9 @@ class LargeCompany extends Component {
                     ))}
                 </div>
 
-                {/* <div className="alignLCPic">
+                <div className="alignLCPic">
                     <img src={lcProcess} alt="lcProcess" id="lcProcessPic" />
-                </div> */}
+                </div>
 
                 <div className="slantUp salmon-background">
                     <div className="unSkew">
