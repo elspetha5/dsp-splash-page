@@ -12,12 +12,28 @@
     flex-flow: column;
 }
 
+#homeSlant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: #1b2c3a;
+    animation: homeSlant 4s ease-out .5s forwards;
+}
+
+@keyframes homeSlant {
+    to {
+        transform: skewY(9deg);
+    }
+}
+
 #homeLogo {
-    height: 60%;
+    height: 38%;
     align-items: center;
-    justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 calc(100% - 5vh));
-    animation: homeClipPath 4s ease-out .5s forwards;
+    justify-content: flex-end;
+    /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 calc(100% - 5vh)); */
+    /* animation: homeClipPath 4s ease-out .5s forwards; */
 }
 
 @keyframes homeClipPath {

@@ -81,11 +81,20 @@
         "about": ""
     },
     {
-        "id": 8,
+        "id": 9,
         "picture": "/peopleImages/dianne.png",
         "sketch": "/peopleImages/dianne-sketch.png",
         "name": "Dianne Becker",
         "title": "IT Aficionado",
+        "credentials": "Credentials",
+        "about": ""
+    },
+    {
+        "id": 10,
+        "picture": "/peopleImages/norma.png",
+        "sketch": "/peopleImages/norma-sketch.png",
+        "name": "Norma Roles",
+        "title": "Design Sage",
         "credentials": "Credentials",
         "about": ""
     }

@@ -7,19 +7,39 @@ html {
 }
 
 /* Background Colors */
+.almostBlack-background,
+#almostBlack-background {
+    background-color: #333132;
+}
+
 .charcoalish-background,
 #charcoalish-background {
     background-color: #757579;
 }
 
-.teal-background,
-#teal-background {
-    background-color: #92d3c7;
+.mediumGrey-background,
+#mediumGrey-background {
+    background-color: #bbbabc;
+}
+
+.lightGrey-background,
+#lightGrey-background {
+    background-color: #e2e1e3;
 }
 
 .slateWhite-background,
 #slateWhite-background {
     background-color: #f4f7fc;
+}
+
+.nightBlue-background,
+#nightBlue-background {
+    background-color: #1b2c3a;
+}
+
+.teal-background,
+#teal-background {
+    background-color: #92d3c7;
 }
 
 .ivory-background,
@@ -30,16 +50,6 @@ html {
 .lightPink-background,
 #lightPink-background {
     background-color: #f9f1ee;
-}
-
-.almostBlack-background,
-#almostBlack-background {
-    background-color: #333132;
-}
-
-.nightBlue-background,
-#nightBlue-background {
-    background-color: #1b2c3a;
 }
 
 .darkPink-background,
@@ -67,11 +77,6 @@ html {
     background-color: #d37c7c;
 }
 
-.lightGrey-background,
-#lightGrey-background {
-    background-color: #e2e1e3;
-}
-
 .yellow-background,
 #yellow-background {
     background-color: #e5e094;
@@ -84,19 +89,39 @@ html {
 
 
 /* Text Colors */
+.almostBlack-text,
+#almostBlack-text {
+    color: #333132;
+}
+
 .charcoalish-text,
 #charcoalish-text {
     color: #757579;
 }
 
-.teal-text,
-#teal-text {
-    color: #92d3c7;
+.mediumGrey-text,
+#mediumGrey-text {
+    color: #bbbabc;
+}
+
+.lightGrey-text,
+#lightGrey-text {
+    color: #e2e1e3;
 }
 
 .slateWhite-text,
 #slateWhite-text {
     color: #f4f7fc;
+}
+
+.nightBlue-text,
+#nightBlue-text {
+    color: #1b2c3a;
+}
+
+.teal-text,
+#teal-text {
+    color: #92d3c7;
 }
 
 .ivory-text,
@@ -107,16 +132,6 @@ html {
 .lightPink-text,
 #lightPink-text {
     color: #f9f1ee;
-}
-
-.almostBlack-text,
-#almostBlack-text {
-    color: #333132;
-}
-
-.nightBlue-text,
-#nightBlue-text {
-    color: #1b2c3a;
 }
 
 .darkPink-text,
@@ -142,11 +157,6 @@ html {
 .salmon-text,
 #salmon-text {
     color: #d37c7c;
-}
-
-.lightGrey-text,
-#lightGrey-text {
-    color: #e2e1e3;
 }
 
 .yellow-text,

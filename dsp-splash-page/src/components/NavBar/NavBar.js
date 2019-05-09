@@ -4,7 +4,6 @@ import "./assets/css/navbar.css";
 import "./assets/css/mediaNavbar.css";
 
 import logo from "./assets/images/dspLogo.png";
-import stamp from "./assets/images/under-construction-circle.png";
 
 class NavBar extends Component {
 
@@ -91,9 +90,6 @@ class NavBar extends Component {
                     </div>
 
                 </div>
-
-
-                {/* <img id="constStamp" src={stamp} alt="underConst" /> */}
 
             </div>
         )

@@ -238,15 +238,6 @@
     }
 }
 
-#constStamp {
-    width: 70px;
-    position: fixed;
-    top: 1%;
-    right: 0px;
-    transform: rotate(25deg);
-    z-index: 2000;
-}
-
 .link,
 .link:active,
 .link:visited,

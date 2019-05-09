@@ -20,6 +20,8 @@ class Home extends Component {
         return (
             <div id="homepage">
 
+                <div id="homeSlant"></div>
+
                 <div id="homeLogo" className="homeHalf nightBlue-background">
                     <img src={logo} alt="logo" id="homeLogoIcon" />
                 </div>
@@ -27,8 +29,8 @@ class Home extends Component {
                 <div id="homeWords" className="homeHalf">
                     <div>
                         <div className="homeTagline nightBlue-text">Design Service Professionals . . .</div>
-                        <div className="homeTagline nightBlue-text">Design Services for the Design Community</div>
-                        {/* <div className="homeTagline nightBlue-text"> Design Community</div> */}
+                        <div className="homeTagline nightBlue-text">Design Services for the Design and</div>
+                        <div className="homeTagline nightBlue-text"> Construction Community</div>
                     </div>
                 </div>
 
