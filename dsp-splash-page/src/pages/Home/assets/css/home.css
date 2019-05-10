@@ -32,17 +32,6 @@
     height: 38%;
     align-items: center;
     justify-content: flex-end;
-    /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 calc(100% - 5vh)); */
-    /* animation: homeClipPath 4s ease-out .5s forwards; */
-}
-
-@keyframes homeClipPath {
-    from {
-        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vh), 0 calc(100% - 5vh));
-    }
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vh));
-    }
 }
 
 #homeLogoIcon {
@@ -90,5 +79,10 @@
     line-height: 1.5;
     font-weight: bold;
     font-family: 'Codystar', cursive;
+}
+
+#dspTag {
+    /* margin-left: -1em; */
+    margin-bottom: .5em;
 }
 

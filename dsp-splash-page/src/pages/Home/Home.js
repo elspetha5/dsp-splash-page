@@ -28,9 +28,9 @@ class Home extends Component {
 
                 <div id="homeWords" className="homeHalf">
                     <div>
-                        <div className="homeTagline nightBlue-text">Design Service Professionals . . .</div>
-                        <div className="homeTagline nightBlue-text">Design Services for the Design and</div>
-                        <div className="homeTagline nightBlue-text"> Construction Community</div>
+                        <div id="dspTag" className="homeTagline nightBlue-text">Design Service Professionals . . .</div>
+                        <div className="homeTagline nightBlue-text">Design Services for the Design</div>
+                        <div className="homeTagline nightBlue-text"> & Builder Communities</div>
                     </div>
                 </div>
 

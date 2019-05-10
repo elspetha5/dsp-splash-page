@@ -35,17 +35,6 @@
         width: 32%;
         justify-content: center;
         align-items: flex-end;
-        /* clip-path: polygon(0 0, calc(100% - 5vw) 0, calc(100% - 5vw) 100%, 0 100%); */
-        /* animation: homeClipPathWide 4s ease-out .5s forwards; */
-    }
-    
-    @keyframes homeClipPathWide {
-        from {
-            clip-path: polygon(0 0, calc(100% - 5vw) 0, calc(100% - 5vw) 100%, 0 100%);
-        }
-        to {
-            clip-path: polygon(0 0, 100% 0, calc(100% - 10vw) 100%, 0 100%);
-        }
     }
     
     #homeWords {
