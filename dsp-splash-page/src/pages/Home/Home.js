@@ -30,7 +30,7 @@ class Home extends Component {
                     <div>
                         <div id="dspTag" className="homeTagline nightBlue-text">Design Service Professionals . . .</div>
                         <div className="homeTagline nightBlue-text">Design Services for the Design</div>
-                        <div className="homeTagline nightBlue-text"> & Builder Communities</div>
+                        <div className="homeTagline nightBlue-text"> & Build Communities</div>
                     </div>
                 </div>
 
