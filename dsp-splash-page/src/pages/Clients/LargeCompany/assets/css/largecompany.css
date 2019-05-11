@@ -40,7 +40,6 @@
 #lcStep4 {
     background-color: #333132;
     color: #f4f7fc;
-    margin-bottom: -6vh;
 }
 
 .lcStepInfo {
@@ -49,7 +48,7 @@
 
 .alignLCPic {
     text-align: center;
-    margin: 15vh auto 0;
+    margin: 10vh auto -5vh;
 }
 
 #lcProcessPic,

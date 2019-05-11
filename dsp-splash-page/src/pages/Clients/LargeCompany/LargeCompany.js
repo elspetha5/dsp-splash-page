@@ -60,7 +60,7 @@ class LargeCompany extends Component {
                 <div className="lcContentWrapper">
                     {this.state.process.map((step, i) => (
                         <Panel eventKey={i}>
-                            <Panel.Title id={`lcStep${i}`} className="lcSteptitle infoWords link" toggle><span className="step">{`step ${step.num}.`}</span>{` ${step.step}`}</Panel.Title>
+                            <Panel.Title id={`lcStep${i}`} className="lcSteptitle infoWords link" toggle><span className="step">{`step ${step.num}. `}</span>{step.step}</Panel.Title>
 
                             <Panel.Body collapsible>
                                 <div id={`lcStepWords${i}`}>

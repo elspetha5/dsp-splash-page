@@ -5,6 +5,7 @@ import Popup from "reactjs-popup";
 import SlantTop from "../../../components/SlantTop";
 import SlantUp from "../../../components/SlantInfo/SlantUp";
 import SlantDown from "../../../components/SlantInfo/SlantDown";
+import DbProcess from "./graphics/DbProcess";
 
 import process from "./assets/images/dbProcess.png";
 import banner from "./assets/images/dbBanner.png";
@@ -55,6 +56,8 @@ class DesignBuild extends Component {
                 <div className="alignDBPic">
                     <img src={process} alt="dbProcess" id="dbProcessPic" />
                 </div>
+
+                <DbProcess />
 
                 <SlantUp
                     background="yellow-background"
