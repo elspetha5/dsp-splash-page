@@ -1,0 +1,41 @@
+#dbProcess {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(9, 1fr);
+}
+
+#dbProcessPre {
+    grid-area: 1 / 1 / 2 / 4
+}
+
+#dbProcessDes {
+    grid-area: 1 / 4 / 2 / 6
+}
+
+#dbProcessConst {
+    grid-area: 1 / 6 / 2 / 9
+}
+
+#dbProcessMove {
+    grid-area: 1 / 9 / 2 / 10
+}
+
+#dbProcessSelection {
+    grid-area: 2 / 1 / 3 / 3
+}
+
+#dbProcessPrelim {
+    grid-area: 2 / 3 / 3 / 5
+}
+
+#dbProcessDraw {
+    grid-area: 2 / 5 / 3 / 7
+}
+
+#dbProcessConstruction {
+    grid-area: 2 / 6 / 3 / 9
+}
+
+.dbIcon {
+    height: 5vh;
+    grid-row: 4 / 5
+}

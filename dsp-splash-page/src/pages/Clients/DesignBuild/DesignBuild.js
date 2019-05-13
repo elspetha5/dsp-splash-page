@@ -25,7 +25,7 @@ class DesignBuild extends Component {
     render() {
         return (
             <div id="dbWrapper">
-                <Popup
+                {/* <Popup
                     open={true}
                     modal
                     closeOnDocumentClick
@@ -41,21 +41,20 @@ class DesignBuild extends Component {
                 >
                     {close => (
                         <div>
-                            {/* <div className="close almostBlack-text" onClick={close}>&times;</div> */}
                             <img src={banner} alt="dbBanner" id="dbBanner" />
                             <button id="closeModal" className="" onClick={() => { close() }}>close</button>
                         </div>
                     )}
-                </Popup>
+                </Popup> */}
 
                 <SlantTop
                     color="charcoalish-background"
                     title="design-build"
                 />
 
-                <div className="alignDBPic">
+                {/* <div className="alignDBPic">
                     <img src={process} alt="dbProcess" id="dbProcessPic" />
-                </div>
+                </div> */}
 
                 <DbProcess />
 
