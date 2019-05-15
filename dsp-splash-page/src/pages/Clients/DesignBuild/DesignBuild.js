@@ -56,7 +56,9 @@ class DesignBuild extends Component {
                     <img src={process} alt="dbProcess" id="dbProcessPic" />
                 </div> */}
 
-                <DbProcess />
+                <div className="processWrapper">
+                    <DbProcess />
+                </div>
 
                 <SlantUp
                     background="yellow-background"

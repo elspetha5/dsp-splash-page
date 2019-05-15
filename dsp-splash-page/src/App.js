@@ -13,6 +13,7 @@ import Approach from "./pages/Approach";
 // About
 import People from "./pages/People";
 import Projects from "./pages/Projects";
+import Blog from "./pages/Blog";
 
 // Clients
 import Clients from "./pages/Clients";
@@ -69,6 +70,7 @@ class App extends Component {
               {/* About */}
               <Route exact path="/about/people" component={People} />
               <Route exact path="/about/projects" component={Projects} />
+              <Route exact path="/about/blog" component={Blog} />
               
               
               {/* Clients */}

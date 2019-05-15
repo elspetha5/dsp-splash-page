@@ -1,3 +1,7 @@
+#peopleBackground {
+    margin-bottom: 18vh;
+}
+
 #peopleTop {
     position: absolute;
     top: 0;
@@ -66,3 +70,14 @@
     display: none;
 }
 
+#blogButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blogButtonWords {
+    padding: .5em;
+    background-color: #b2d08d;
+    border-radius: 5px;
+}

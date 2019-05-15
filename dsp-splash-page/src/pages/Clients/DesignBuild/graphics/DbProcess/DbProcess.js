@@ -76,16 +76,16 @@ const DbProcess = () => {
             <div id="dbProcessConst" className="dbLabel salmon-background">CONSTRUCTION</div>
             <div id="dbProcessMove" className="dbLabel lightGrey-background">MOVE IN</div>
 
-            <div id="dbProcessSelection" className="lightGrey-background">selection</div>
-            <div id="dbProcessPrelim" className="skyBlue-background">preliminary DESIGN</div>
-            <div id="dbProcessDraw" className="yellow-background">detail drawings</div>
-            <div id="dbProcessConstruction" className="salmon-background">construction</div>
-            <div className="lightGrey-background"></div>
+            <div id="dbProcessSelection" className="dbProcessTopSlant lightGrey-background"><span>selection</span></div>
+            <div id="dbProcessPrelim" className="dbProcessTopSlant skyBlue-background"><span>preliminary design</span></div>
+            <div id="dbProcessDraw" className="dbProcessTopSlant yellow-background"><span>detail drawings</span></div>
+            <div id="dbProcessConstruction" className="dbProcessTopSlant salmon-background"><span>construction</span></div>
+            <div className="dbProcessTopSlant lightGrey-background"></div>
 
             {icons.map(icon => (
                 <div className={`dbSection ${icon.background}`}>
-                    <img src={icon.img} alt={icon.id} id={`db${icon.id}`} className="dbIcon" />
-                    <div>{icon.title}</div>
+                    <img src={icon.img} alt={icon.id} id={`db${icon.id}`} className="dbIcon dbProcessunSkew" />
+                    <div className="dbProcessunSkew">{icon.title}</div>
                 </div>
             ))}
         </div>

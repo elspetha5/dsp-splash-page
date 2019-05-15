@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import LocationMap from "./LocationMap";
 import "./css/people.css";
 import "./css/mediaPeople.css";
@@ -66,6 +67,8 @@ class People extends Component {
                 </div>
                 
                 <LocationMap />
+
+                <Link to="/about/blog" id="blogButton"><span id="blogButtonWords" className="slateWhite-text">check out our blog</span></Link>
 
             </div>
         )

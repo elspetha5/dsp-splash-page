@@ -1,3 +1,7 @@
+.processWrapper {
+    padding: 5vh 15vw;
+}
+
 #dbBanner {
     width: 70vw;
 }
