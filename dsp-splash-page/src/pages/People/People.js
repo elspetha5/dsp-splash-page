@@ -68,7 +68,7 @@ class People extends Component {
                 
                 <LocationMap />
 
-                <Link to="/about/blog" id="blogButton"><span id="blogButtonWords" className="slateWhite-text">check out our blog</span></Link>
+                <div id="blogButton"><Link to="/about/blog" id="blogButtonWords">check out our blog</Link></div>
 
             </div>
         )

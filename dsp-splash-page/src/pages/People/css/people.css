@@ -85,5 +85,12 @@
 #blogButtonWords {
     padding: .5em;
     background-color: #b2d08d;
+    border: 2px solid #b2d08d;
+    color: #f4f7fc;
     border-radius: 5px;
+}
+
+#blogButtonWords:hover {
+    background-color: #f4f7fc;
+    color: #b2d08d;
 }
