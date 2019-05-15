@@ -1,5 +1,5 @@
 #peopleBackground {
-    margin-bottom: 18vh;
+    margin-bottom: 20vh;
 }
 
 #peopleTop {
@@ -7,21 +7,27 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 6vh 0 5vh;
+    padding: 5vh 4vh 3vh;
     text-align: center;
     box-shadow: 1px 2px 5px #757579;
 }
 
 #aboutUs {
-    font-size: 175%;
+    font-size: 100%;
+    margin-bottom: 3vh;
+    text-align: left;
     font-family: 'Codystar', cursive;
     font-weight: 900;
     display: inline-block;
     padding: 5px 10px;
 }
 
+#aboutUsBreak {
+    display: block;
+}
+
 #peoplePicBox {
-    padding: 23vh 15vw 8vh;
+    padding: 25vh 5vw 8vh;
     text-align: center;
 }
 
@@ -32,7 +38,7 @@
 }
 
 .picContainer {
-    width: 20%;
+    width: 45%;
     display: inline-block;
     margin-right: 1.6vw;
     margin-bottom: 5vh;
@@ -40,8 +46,8 @@
 }
 
 .peoplePic {
-    width: 10vw;
-    height: 10vw;
+    width: 27vw;
+    height: 27vw;
     margin-left: auto;
     margin-right: auto;
     border: 4px solid white;

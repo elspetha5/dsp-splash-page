@@ -1,66 +1,47 @@
-@media (max-width: 1200px) {
-    #peoplePicBox {
-        padding-top: 26vh;
-    }
-
-    .peoplePic {
-        width: 12vw;
-        height: 12vw;
-    }
-}
-
-@media (max-width: 992px) {
-    .picContainer {
-        width: 30%;
-    }
-
-    .peoplePic {
-        width: 15vw;
-        height: 15vw;
-    }
-}
-
-@media (max-width: 815px) and (max-height: 400px) {
-    
-}
-
-@media (max-width: 768px) {
-    #peopleTop {
-        padding: 5vh 4vh 3vh;
-    }
-
-    #aboutUs {
-        font-size: 100%;
-        margin-bottom: 3vh;
-        text-align: left;
-    }
-
-    #aboutUsBreak {
-        display: block;
-    }
-    
+@media (min-width: 36em) { 
     #peoplePicBox {
         padding: 25vh 7vw 8vh;
-     }
-
-    .picContainer {
-        width: 45%;
     }
 
     .peoplePic {
         width: 25vw;
         height: 25vw;
     }
-
 }
 
-@media (max-width: 576px) { 
+@media (min-width: 48em) {
+    .picContainer {
+        width: 30%;
+    }
+    
+    .peoplePic {
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+@media (min-width: 62em) {
     #peoplePicBox {
-       padding: 25vh 5vw 8vh;
+        padding-top: 26vh;
+    }
+    
+    .peoplePic {
+        width: 12vw;
+        height: 12vw;
+    }
+}
+
+@media (min-width: 75em) {
+    #peoplePicBox {
+        padding: 23vh 15vw 8vh;
     }
 
+    .picContainer {
+        width: 20%;
+    }
+    
     .peoplePic {
-        width: 27vw;
-        height: 27vw;
+        width: 10vw;
+        height: 10vw;
     }
 }
