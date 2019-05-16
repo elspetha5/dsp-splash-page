@@ -57,38 +57,42 @@ class NavBar extends Component {
 
     render() {
         return (
-            <div>
-                <div id="nav" className="lightGrey-background">
+            <div id="nav" className="lightGrey-background">
 
-                    <div id="navImage">
-                        <Link to="/" onClick={() => { this.logoClick() }}><img src={logo} alt="logo" id="navLogo" /></Link>
+                <div id="navImage">
+                    <Link to="/" onClick={() => { this.logoClick() }}><img src={logo} alt="logo" id="navLogo" /></Link>
+                </div>
+
+                <div id="navCenter">
+
+                    <div id="navWords" className={this.state.navVisibility}>
+                        <div id={this.state.navSlant} className="skyBlue-background"></div>
+                        {this.state.buttons.map(button => (
+                            <Link to={button.to} id={button.text} className={`navQs ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}>{button.text}</Link>
+                        ))}
                     </div>
 
-                    <div id="navCenter">
-
-                        <div id="navWords" className={this.state.navVisibility}>
-                            <div id={this.state.navSlant} className="skyBlue-background"></div>
-                            {this.state.buttons.map(button => (
-                                <Link to={button.to} id={button.text} className={`navQs ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}>{button.text}</Link>
-                            ))}
+                    <div id="navFooter" className={this.state.navVisibility}>
+                        <div id="navFooterWords">
+                            <a id="emailAddress" className={`link ${this.state.navQsShow}`} href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i className="far fa-envelope"></i> hello@dsp.design </a>
+                            <Link to="/joinus" id={this.state.footerJoin} className={`link ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}><i className="far fa-handshake"></i> Join us</Link>
+                            <div id="navPLLC">Design Service Professionals, PLLC<span id="copyRights"> <i className="far fa-copyright"></i> 2018-19 <span id="rights">All rights reserved</span></span></div>
                         </div>
-
-                        <div id="navFooter" className={this.state.navVisibility}>
-                            <div id="navFooterWords">
-                                <a id="emailAddress" className={`link ${this.state.navQsShow}`} href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i class="far fa-envelope"></i> hello@dsp.design </a>
-                                <Link to="/joinus" id={this.state.footerJoin} classname={`link ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}><i class="far fa-handshake"></i> Join us</Link>
-                                <div id="navPLLC">Design Service Professionals, PLLC<span id="copyRights"> <i class="far fa-copyright"></i> 2018-19 <span id="rights">All rights reserved</span></span></div>
-                            </div>
-                        </div>
-
                     </div>
 
-                    <div id="navHamburger" onClick={() => { this.hamburger() }}>
-                        <div id={this.state.hamLine1} className="hamLine charcoalish-background"></div>
-                        <div id={this.state.hamLine2} className="hamLine charcoalish-background"></div>
-                        <div id={this.state.hamLine3} className="hamLine charcoalish-background"></div>
-                    </div>
+                </div>
 
+                <div id="navHamburger" onClick={() => { this.hamburger() }}>
+                    <div id={this.state.hamLine1} className="hamLine charcoalish-background"></div>
+                    <div id={this.state.hamLine2} className="hamLine charcoalish-background"></div>
+                    <div id={this.state.hamLine3} className="hamLine charcoalish-background"></div>
+                </div>
+
+                <div id="navSocial" className="charcoalish-text">
+                    <div><i className="fab fa-instagram"></i></div>
+                    <div><i className="fab fa-facebook"></i></div>
+                    <div><i className="fab fa-linkedin-in"></i></div>
+                    <div><i className="fab fa-twitter"></i></div>
                 </div>
 
             </div>

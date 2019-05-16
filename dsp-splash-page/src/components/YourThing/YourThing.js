@@ -9,7 +9,7 @@ const YourThing = props => (
             <div className="yourThingWords slateWhite-text">{props.bottomWords}</div>
         </div>
         <div className="button"><Link to={props.link} className="yourButton" >{props.buttonWords}</Link></div>
-        <div classname="yourDescriptionWrapper">
+        <div className="yourDescriptionWrapper">
             <div className="yourDescription slateWhite-text">
                 {props.topDescription}
                 <span className="yourWordBreak">{props.topDescriptionBreak}</span>

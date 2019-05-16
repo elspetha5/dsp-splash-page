@@ -25,7 +25,7 @@ class Clients extends Component {
             <div className={`clientBackground ${this.state.imgStatus}`}>
                 <img src={image} alt="load" id="clientImgLoadCheck" onLoad={() => { this.handleImageLoaded() }} />
 
-                <div id="largeCompany" class="yourThree">
+                <div id="largeCompany" className="yourThree">
                     <YourThing
                         topWords="Your staff."
                         bottomWords="Augmented."
@@ -39,7 +39,7 @@ class Clients extends Component {
                     />
                 </div>
 
-                <div id="boutiqueCompany" class="yourThree">
+                <div id="boutiqueCompany" className="yourThree">
                     <YourThing
                         topWords="Your brand."
                         bottomWords="Elevated."
@@ -53,7 +53,7 @@ class Clients extends Component {
                     />
                 </div>
 
-                <div id="design-buildCompany" class="yourThree">
+                <div id="design-buildCompany" className="yourThree">
                     <YourThing
                         topWords="Your process."
                         bottomWords="Crafted."

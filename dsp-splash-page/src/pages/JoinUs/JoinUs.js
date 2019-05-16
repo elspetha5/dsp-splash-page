@@ -47,7 +47,7 @@ class JoinUs extends Component {
                                             <div>enable a mode of design that elevates the best in all of us</div>
                                         </div>
 
-                                        <div className="rightArrow"><i class="fas fa-angle-right"></i></div>
+                                        <div className="rightArrow"><i className="fas fa-angle-right"></i></div>
                                     </div>
 
                                     <div className="joinUsInfo nightBlue-text">
@@ -56,7 +56,7 @@ class JoinUs extends Component {
                                             <div>a design ecosystem comprised of two entities</div>
                                         </div>
 
-                                        <div className="rightArrow"><i id="arrowHide" class="fas fa-angle-right"></i></div>
+                                        <div className="rightArrow"><i id="arrowHide" className="fas fa-angle-right"></i></div>
                                     </div>
 
                                     <div className="joinUsInfo nightBlue-text">
@@ -91,7 +91,7 @@ class JoinUs extends Component {
 
 
                 <div className="yourWrapper">
-                    <div id="brand" class="yourTwo">
+                    <div id="brand" className="yourTwo">
                         <YourThing
                             topWords="Your brand."
                             bottomWords="Connected."
@@ -102,7 +102,7 @@ class JoinUs extends Component {
                         />
                     </div>
 
-                    <div id="career" class="yourTwo">
+                    <div id="career" className="yourTwo">
                         <YourThing
                             topWords="Your career."
                             bottomWords="Amplified."

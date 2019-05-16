@@ -245,3 +245,27 @@
 .link:hover {
     text-decoration: none;
 }
+
+#navSocial {
+    position: fixed;
+    bottom: -2em;
+    left: 35vw;
+    display: flex;
+    padding: .5em .25em;
+    border-top: 8px solid #9bc8e8;
+    border-radius: 5px;
+}
+
+#navSocial:hover {
+    animation: social .5s linear forwards;
+}
+
+@keyframes social {
+    to {
+        bottom: 0;
+    }
+}
+
+#navSocial div {
+    margin: 0 .5em;
+}

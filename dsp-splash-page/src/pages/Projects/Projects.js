@@ -12,16 +12,16 @@ class Projects extends Component {
 
     render() {
         return (
-            <div id="yourProjectsStory" class="yourOne">
-                <div class="yourThingBackground">
-                    <div class="yourTitleWrapper">
-                        <div class="yourThingWords charcoalish-text">Your story.</div>
-                        <div class="yourThingWords charcoalish-text">coming soon...</div>
+            <div id="yourProjectsStory" className="yourOne">
+                <div className="yourThingBackground">
+                    <div className="yourTitleWrapper">
+                        <div className="yourThingWords charcoalish-text">Your story.</div>
+                        <div className="yourThingWords charcoalish-text">coming soon...</div>
                     </div>
 
-                    {/* <div classname="yourDescriptionWrapper">
-                            <div class="yourTopDescription yourDescription">{props.topDescription}</div>
-                            <div class="yourBottomDescription yourDescription">{props.bottomDescription}</div>
+                    {/* <div className="yourDescriptionWrapper">
+                            <div className="yourTopDescription yourDescription">{props.topDescription}</div>
+                            <div className="yourBottomDescription yourDescription">{props.bottomDescription}</div>
                         </div> */}
 
                 </div>

@@ -8,11 +8,32 @@ import "./css/mediaBlog.css";
 
 class Blog extends Component {
     state = {
-        posts
+        posts,
+        expanded: ["", "", "", "", ""]
     }
 
     componentDidMount() {
         window.scrollTo(0, 0);
+    };
+
+    handleReadMore = (i) => {
+        let arr = ["", "", "", "", ""];
+
+        if (this.state.expanded[i] === `blogPostFull${i}`) {
+            arr[i] = "blogPostShrink";
+            
+            this.setState({
+                expanded: arr
+            })
+        }
+        else {
+            arr[i] = `blogPostFull${i}`;
+
+            this.setState({
+                expanded: arr
+            });
+        }
+
     };
 
     render() {
@@ -24,15 +45,22 @@ class Blog extends Component {
                 />
 
                 <div id="blogContainer">
-                    {this.state.posts.slice(0, 5).map(post => (
-                        <BlogPost
-                            pic={post.pic}
-                            title={post.title}
-                            name={post.name}
-                            date={post.date}
-                            post={post.post}
-                        />
-                    ))}
+                    <div id="blogPostContainer">
+                        {this.state.posts.slice(0, 5).map((post, i) => (
+                            <BlogPost
+                                id={post.id}
+                                pic={post.pic}
+                                title={post.title}
+                                name={post.name}
+                                date={post.date}
+                                post={post.post}
+                                full={this.state.expanded[i]}
+                                onClick={() => this.handleReadMore(i)}
+                            />
+                        ))}
+                    </div>
+
+                    <div id="blogSocialContainer"></div>
                 </div>
 
             </div>

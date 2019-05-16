@@ -17,14 +17,14 @@ const DbBanner = () => {
                     <div className="ccText yellow-text">CONCEPT</div>
                 </div>
 
-                <div id="dbPlus" className="yellow-text"><i class="fas fa-plus"></i></div>
+                <div id="dbPlus" className="yellow-text"><i className="fas fa-plus"></i></div>
 
                 <div id="yourBuild">
                     <div id="your">YOUR</div>
                     <div id="build">BUILD</div>
                 </div>
 
-                <div id="equals" className="yellow-text"><i class="fas fa-equals"></i></div>
+                <div id="equals" className="yellow-text"><i className="fas fa-equals"></i></div>
 
                 <div id="ipd">
                     <div id="IPD" className="salmon-text">IPD</div>
