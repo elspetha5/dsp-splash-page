@@ -91,25 +91,27 @@ class JoinUs extends Component {
 
 
                 <div className="yourWrapper">
-                    <div id="brand" className="yourTwo">
-                        <YourThing
-                            topWords="Your brand."
-                            bottomWords="Connected."
-                            link="/joinus/partner"
-                            buttonWords="Join our network"
-                            topDescription="Join our network of..."
-                            bottomDescription="independently recognized design professionals"
-                        />
-                    </div>
+                    
 
                     <div id="career" className="yourTwo">
                         <YourThing
                             topWords="Your career."
                             bottomWords="Amplified."
                             link="/joinus/joblist"
-                            buttonWords="Join our nucleus"
+                            buttonWords="dsp.careers"
                             topDescription="Join our nucleus of..."
-                            bottomDescription="integrated design professionals"
+                            bottomDescription="integrated core employees"
+                        />
+                    </div>
+
+                    <div id="brand" className="yourTwo">
+                        <YourThing
+                            topWords="Your brand."
+                            bottomWords="Connected."
+                            link="/joinus/partner"
+                            buttonWords="dsp.network"
+                            topDescription="Join our network of..."
+                            bottomDescription="independently contracted professionals"
                         />
                     </div>
                 </div>

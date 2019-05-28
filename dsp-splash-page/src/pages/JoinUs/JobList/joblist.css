@@ -24,19 +24,38 @@ a:hover {
 }
 
 #listTitle {
-    color: #333132
+    color: #333132;
+    font-size: 125%;
 }
 
 #listTitle:hover {
-    color: #757579;
+    color: #f9f1ee;
+}
+
+.listTitleBorder {
+    padding: .25em;
+    border: 1px solid #333132;
+    border-radius: 5px;
+}
+
+.listTitleBorder:hover,
+.listTitleWhiteBorder:hover {
+    background-color: #333132;
 }
 
 #listTitleWhite {
     color: #f4f7fc;
+    font-size: 125%;
 }
 
 #listTitleWhite:hover {
     color: #f9f1ee;
+}
+
+.listTitleWhiteBorder {
+    padding: .25em;
+    border: 1px solid #f9f1ee;
+    border-radius: 5px;
 }
 
 #oneLineTitle {

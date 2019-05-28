@@ -30,7 +30,7 @@ class JobList extends Component {
                     (i < 2)
                         ? <div className="jobWrapper">
                             <Panel eventKey={i}>
-                                <Panel.Title id="listTitle" className="almostBlack-text slantTitle link" toggle>{job.title}</Panel.Title>
+                                <Panel.Title id="listTitle" className="almostBlack-text slantTitle link" toggle><span className="listTitleBorder">{job.title}</span></Panel.Title>
                                 <div className="slantInfoWrapper almostBlack-text">
                                     <Panel.Title id="oneLineTitle" className="infoWords link" toggle>{job.oneLine}</Panel.Title>
 
@@ -51,7 +51,7 @@ class JobList extends Component {
                             (i === 2 || i === 3)
                                 ? <div className="jobWrapper">
                                     <Panel eventKey={i}>
-                                        <Panel.Title id="listTitleWhite" className="slateWhite-text slantTitle link" toggle>{job.title}</Panel.Title>
+                                        <Panel.Title id="listTitleWhite" className="slateWhite-text slantTitle link" toggle><span className="listTitleWhiteBorder">{job.title}</span></Panel.Title>
                                         <div className="slantInfoWrapper slateWhite-text">
                                             <Panel.Title id="oneLineTitleWhite" className="infoWords link" toggle>{job.oneLine}</Panel.Title>
 
@@ -72,7 +72,7 @@ class JobList extends Component {
                     (i === 4 || i === 5)
                         ? <div className="jobWrapper">
                             <Panel eventKey={i}>
-                                <Panel.Title id="listTitle" className="almostBlack-text slantTitle link" toggle>{job.title}</Panel.Title>
+                                <Panel.Title id="listTitle" className="almostBlack-text slantTitle link" toggle><span className="listTitleBorder">{job.title}</span></Panel.Title>
                                 <div className="slantInfoWrapper almostBlack-text">
                                     <Panel.Title id="oneLineTitle" className="infoWords link" toggle>{job.oneLine}</Panel.Title>
 
@@ -93,7 +93,7 @@ class JobList extends Component {
                             (i === 6 || i === 7 || i === 8)
                                 ? <div className="jobWrapper">
                                     <Panel eventKey={i}>
-                                        <Panel.Title id="listTitleWhite" className="slateWhite-text slantTitle link" toggle>{job.title}</Panel.Title>
+                                        <Panel.Title id="listTitleWhite" className="slateWhite-text slantTitle link" toggle><span className="listTitleWhiteBorder">{job.title}</span></Panel.Title>
                                         <div className="slantInfoWrapper slateWhite-text">
                                             <Panel.Title id="oneLineTitleWhite" className="infoWords link" toggle>{job.oneLine}</Panel.Title>
 

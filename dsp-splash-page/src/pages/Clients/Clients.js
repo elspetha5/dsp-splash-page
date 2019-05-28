@@ -25,6 +25,19 @@ class Clients extends Component {
             <div className={`clientBackground ${this.state.imgStatus}`}>
                 <img src={image} alt="load" id="clientImgLoadCheck" onLoad={() => { this.handleImageLoaded() }} />
 
+                <div id="design-buildCompany" className="yourThree">
+                    <YourThing
+                        topWords="Your process."
+                        bottomWords="Crafted."
+                        link="/clients/designbuild"
+                        buttonWords="Learn more"
+                        topDescription="Discover our design process"
+                        bottomDescription="tailored for the "
+                        highlighted="design-builder"
+                        highlightColor="greenyellow"
+                    />
+                </div>
+
                 <div id="largeCompany" className="yourThree">
                     <YourThing
                         topWords="Your staff."
@@ -52,20 +65,6 @@ class Clients extends Component {
                         highlightColor="skyblue"
                     />
                 </div>
-
-                <div id="design-buildCompany" className="yourThree">
-                    <YourThing
-                        topWords="Your process."
-                        bottomWords="Crafted."
-                        link="/clients/designbuild"
-                        buttonWords="Learn more"
-                        topDescription="Discover our design process"
-                        bottomDescription="tailored for the "
-                        highlighted="design-builder"
-                        highlightColor="greenyellow"
-                    />
-                </div>
-
 
             </div>
         )

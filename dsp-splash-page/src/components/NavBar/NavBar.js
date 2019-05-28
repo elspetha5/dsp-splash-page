@@ -13,7 +13,7 @@ class NavBar extends Component {
             { to: "/approach", text: "approach" },
             { to: "/clients", text: "clients" },
             { to: "/designservices", text: "services" },
-            { to: "/joinus", text: "ecosystem" }
+            { to: "/joinus", text: "join us" }
         ],
         footer: ["hello@dsp.design", "Join us", "Design Service Professionals, PLLC 2019 All rights reserved"],
         navVisibility: "navHidden",
@@ -22,7 +22,8 @@ class NavBar extends Component {
         hamLine1: "",
         hamLine2: "",
         hamLine3: "",
-        navSlant: "navSlant"
+        navSlant: "navSlant",
+        socialScroll: "socialCloseScroll"
     };
 
     hamburger = () => {
@@ -54,6 +55,16 @@ class NavBar extends Component {
         }
     }
 
+    socialScroll = () => {
+        (this.state.socialScroll === "socialCloseScroll")
+            ? this.setState({
+                socialScroll: "socialScroll"
+            })
+            : this.setState({
+                socialScroll: "socialCloseScroll"
+            })
+    }
+
 
     render() {
         return (
@@ -74,8 +85,11 @@ class NavBar extends Component {
 
                     <div id="navFooter" className={this.state.navVisibility}>
                         <div id="navFooterWords">
+                            <a href="https://www.instagram.com/__dspdesign/" target="blank"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/dspdesignprof" target="blank"><i className="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" target="blank"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/__dspdesign" target="blank"><i className="fab fa-twitter"></i></a>
                             <a id="emailAddress" className={`link ${this.state.navQsShow}`} href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i className="far fa-envelope"></i> hello@dsp.design </a>
-                            <Link to="/joinus" id={this.state.footerJoin} className={`link ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}><i className="far fa-handshake"></i> Join us</Link>
                             <div id="navPLLC">Design Service Professionals, PLLC<span id="copyRights"> <i className="far fa-copyright"></i> 2018-19 <span id="rights">All rights reserved</span></span></div>
                         </div>
                     </div>
@@ -88,11 +102,14 @@ class NavBar extends Component {
                     <div id={this.state.hamLine3} className="hamLine charcoalish-background"></div>
                 </div>
 
-                <div id="navSocial" className="charcoalish-text">
-                    <div><i className="fab fa-instagram"></i></div>
-                    <div><i className="fab fa-facebook"></i></div>
-                    <div><i className="fab fa-linkedin-in"></i></div>
-                    <div><i className="fab fa-twitter"></i></div>
+                <div id="navSocialWrapper">
+                    <div id="navSocial" className={`charcoalish-text ${this.state.socialScroll}`} onMouseOver={() => { this.socialScroll() }} onMouseOut={() => { this.socialScroll() }}>
+                        <a href="https://www.instagram.com/__dspdesign/" className="mobileSocialIcon" target="blank"><i className="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/dspdesignprof" className="mobileSocialIcon" target="blank"><i className="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" className="mobileSocialIcon" target="blank"><i className="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/__dspdesign" className="mobileSocialIcon" target="blank"><i className="fab fa-twitter"></i></a>
+                        <a href="mailto:hello@dsp.design" className="mobileSocialIcon"><i className="far fa-envelope"></i></a>
+                    </div>
                 </div>
 
             </div>

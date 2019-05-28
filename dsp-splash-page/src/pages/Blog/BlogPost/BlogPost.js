@@ -4,7 +4,9 @@ import "./blogPost.css";
 
 const BlogPost = props => {
     return (
-        <div className="blogPostContainer" key>
+        <div className="blogPostContainer">
+            <div id="blogPostTopic" onClick={props.onClick}>dsp on {props.topic}</div>
+
             <div className="blogPostHeader">
                 <img src={`${process.env.PUBLIC_URL}/peopleImages/${props.pic}.png`} alt={props.name} className="blogPostPic" />
                 <div className="blogPostTitleWrapper">
@@ -13,13 +15,13 @@ const BlogPost = props => {
                 </div>
             </div>
 
-            <div id={props.full} className="blogPostText charcoalish-text" onClick={() => props.onClick()}>
+            <div id={props.full} className="blogPostText charcoalish-text" onClick={() => props.onClickReadMore()}>
                 {props.post.map(paragraph => (
                     <div className="blogPostParagraph">{paragraph}</div>
                 ))}
             </div>
 
-            <div className="blogPostFade" onClick={() => props.onClick()}><span className="blogReadMore">read more</span></div>
+            <div className="blogPostFade" onClick={() => props.onClickReadMore()}><span className="blogReadMore">read more</span></div>
         </div>
     );
 };

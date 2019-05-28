@@ -46,16 +46,17 @@ class Blog extends Component {
 
                 <div id="blogContainer">
                     <div id="blogPostContainer">
-                        {this.state.posts.slice(0, 5).map((post, i) => (
+                        {this.state.posts.slice(0, 4).map((post, i) => (
                             <BlogPost
                                 id={post.id}
+                                topic={post.topic}
                                 pic={post.pic}
                                 title={post.title}
                                 name={post.name}
                                 date={post.date}
                                 post={post.post}
                                 full={this.state.expanded[i]}
-                                onClick={() => this.handleReadMore(i)}
+                                onClickReadMore={() => this.handleReadMore(i)}
                             />
                         ))}
                     </div>
