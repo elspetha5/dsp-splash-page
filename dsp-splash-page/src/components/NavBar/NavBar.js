@@ -9,8 +9,8 @@ class NavBar extends Component {
 
     state = {
         buttons: [
-            { to: "/approach", text: "approach" },
             { to: "/about/people", text: "about" },
+            { to: "/approach", text: "approach" },
             { to: "/clients", text: "clients" },
             { to: "/designservices", text: "services" },
             { to: "/joinus", text: "ecosystem" }
