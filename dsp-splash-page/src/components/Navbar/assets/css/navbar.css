@@ -140,31 +140,12 @@
     left: 60vw;
 }
 
-#ecosystem {
+#joinus {
     bottom: 2.5em;
     left: 56vw;
 }
 
 #navFooter {
-    position: absolute;
-    bottom: .5em;
-    left: 52vw;
-    font-size: 70%;
-}
-
-#navFooter a {
-    margin-right: 2vw;
-}
-
-#emailAddress,
-#footerJoin,
-#footerJoinShow,
-#footerJoinHide,
-#navPLLC {
-    color: #f4f7fc;
-}
-
-#navPLLC {
     display: none;
 }
 
@@ -290,8 +271,8 @@
 }
 
 #navSocial a {
-    margin: 0 .35em;
-    color: #333132;
+    margin: 0 .40em;
+    color: #a9a9af;
 }
 
 #navSocial a:hover {

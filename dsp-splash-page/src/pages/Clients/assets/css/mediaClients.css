@@ -3,17 +3,17 @@
         background-color: transparent;
     }
 
-    #largeCompany {
+    #design-buildCompany {
         flex: 1;
     }
 
-    #boutiqueCompany {
+    #largeCompany {
         flex: 1;
         transform: translateY(0);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     
-    #design-buildCompany {
+    #boutiqueCompany {
         flex: 1;
         transform: translateY(0);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

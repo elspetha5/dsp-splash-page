@@ -24,35 +24,31 @@ a:hover {
 }
 
 #listTitle {
-    color: #333132;
     font-size: 125%;
 }
 
-#listTitle:hover {
-    color: #f9f1ee;
-}
-
-.listTitleBorder {
+#listTitleBorder {
+    color: #333132;
     padding: .25em;
     border: 1px solid #333132;
     border-radius: 5px;
 }
 
-.listTitleBorder:hover,
-.listTitleWhiteBorder:hover {
+#listTitleBorder:hover {
+    color: #f9f1ee;
+}
+
+#listTitleBorder:hover,
+#listTitleWhiteBorder:hover {
     background-color: #333132;
 }
 
 #listTitleWhite {
-    color: #f4f7fc;
     font-size: 125%;
 }
 
-#listTitleWhite:hover {
-    color: #f9f1ee;
-}
-
-.listTitleWhiteBorder {
+#listTitleWhiteBorder {
+    color: #f4f7fc;
     padding: .25em;
     border: 1px solid #f9f1ee;
     border-radius: 5px;

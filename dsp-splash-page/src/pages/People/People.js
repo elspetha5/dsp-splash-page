@@ -68,7 +68,7 @@ class People extends Component {
                 
                 <LocationMap />
 
-                <div id="blogButton"><Link to="/about/blog" id="blogButtonWords">check out our blog</Link></div>
+                {/* <div id="blogButton"><Link to="/about/blog" id="blogButtonWords">check out our blog</Link></div> */}
 
             </div>
         )

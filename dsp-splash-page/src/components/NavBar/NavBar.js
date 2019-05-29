@@ -9,11 +9,11 @@ class NavBar extends Component {
 
     state = {
         buttons: [
-            { to: "/about/people", text: "about" },
-            { to: "/approach", text: "approach" },
-            { to: "/clients", text: "clients" },
-            { to: "/designservices", text: "services" },
-            { to: "/joinus", text: "join us" }
+            { to: "/about/people", text: "about", id: "about" },
+            { to: "/approach", text: "approach", id: "approach" },
+            { to: "/clients", text: "clients", id: "clients" },
+            { to: "/designservices", text: "services", id: "services" },
+            { to: "/joinus", text: "join us", id: "joinus" }
         ],
         footer: ["hello@dsp.design", "Join us", "Design Service Professionals, PLLC 2019 All rights reserved"],
         navVisibility: "navHidden",
@@ -79,19 +79,19 @@ class NavBar extends Component {
                     <div id="navWords" className={this.state.navVisibility}>
                         <div id={this.state.navSlant} className="skyBlue-background"></div>
                         {this.state.buttons.map(button => (
-                            <Link to={button.to} id={button.text} className={`navQs ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}>{button.text}</Link>
+                            <Link to={button.to} id={button.id} className={`navQs ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}>{button.text}</Link>
                         ))}
                     </div>
 
-                    <div id="navFooter" className={this.state.navVisibility}>
-                        <div id="navFooterWords">
-                            <a href="https://www.instagram.com/__dspdesign/" target="blank"><i className="fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/dspdesignprof" target="blank"><i className="fab fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" target="blank"><i className="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com/__dspdesign" target="blank"><i className="fab fa-twitter"></i></a>
-                            <a id="emailAddress" className={`link ${this.state.navQsShow}`} href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i className="far fa-envelope"></i> hello@dsp.design </a>
-                            <div id="navPLLC">Design Service Professionals, PLLC<span id="copyRights"> <i className="far fa-copyright"></i> 2018-19 <span id="rights">All rights reserved</span></span></div>
+                    <div id="navFooter" >
+                        <a id="emailAddress" className="link" href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i className="far fa-envelope"></i> hello@dsp.design </a>
+                        <div id="socialIconWrapper">
+                            <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" className="link socialIcon" target="blank"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/__dspdesign/" className="link socialIcon" target="blank"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/dspdesignprof" className="link socialIcon" target="blank"><i className="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/__dspdesign" className="link socialIcon" target="blank"><i className="fab fa-twitter"></i></a>
                         </div>
+                        <div id="navPLLC">Design Service Professionals, PLLC <i className="far fa-copyright"></i> 2018-19 All rights reserved</div>
                     </div>
 
                 </div>
@@ -104,11 +104,11 @@ class NavBar extends Component {
 
                 <div id="navSocialWrapper">
                     <div id="navSocial" className={`charcoalish-text ${this.state.socialScroll}`} onMouseOver={() => { this.socialScroll() }} onMouseOut={() => { this.socialScroll() }}>
-                        <a href="https://www.instagram.com/__dspdesign/" className="mobileSocialIcon" target="blank"><i className="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/dspdesignprof" className="mobileSocialIcon" target="blank"><i className="fab fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" className="mobileSocialIcon" target="blank"><i className="fab fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/__dspdesign" className="mobileSocialIcon" target="blank"><i className="fab fa-twitter"></i></a>
-                        <a href="mailto:hello@dsp.design" className="mobileSocialIcon"><i className="far fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" target="blank"><i className="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/__dspdesign/" target="blank"><i className="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/dspdesignprof" target="blank"><i className="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/__dspdesign" target="blank"><i className="fab fa-twitter"></i></a>
+                        <a href="mailto:hello@dsp.design"><i className="far fa-envelope"></i></a>
                     </div>
                 </div>
 

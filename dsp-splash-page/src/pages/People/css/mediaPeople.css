@@ -14,6 +14,14 @@
 }
 
 @media (min-width: 48em) {
+    #aboutUs {
+        font-size: 110%;
+    }
+
+    #aboutUsBreak {
+        display: inline;
+    }
+
     .picContainer {
         width: 30%;
     }
@@ -30,6 +38,10 @@
 }
 
 @media (min-width: 62em) {
+    #aboutUs {
+        font-size: 120%;
+    }
+
     #peoplePicBox {
         padding-top: 26vh;
     }
@@ -46,6 +58,10 @@
 }
 
 @media (min-width: 75em) {
+    #aboutUs {
+        font-size: 140%;
+    }
+
     #peoplePicBox {
         padding: 23vh 15vw 8vh;
     }

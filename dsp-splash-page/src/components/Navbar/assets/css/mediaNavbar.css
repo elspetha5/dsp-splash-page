@@ -5,11 +5,11 @@
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
     }
 
-    #approach {
+    #about {
         left: 73vw;
     }
     
-    #about {
+    #approach {
         left: 71vw;
     }
     
@@ -21,12 +21,8 @@
         left: 67vw;
     }
     
-    #ecosystem {
+    #joinus {
         left: 65vw;
-    }
-
-    #navFooter {
-        left: 63vw;
     }
 }
 
@@ -55,6 +51,7 @@
     .navQs,
     #navFooter {
         position: initial;
+        display: initial;
     }
     
     .navQsShow,
@@ -70,7 +67,7 @@
     }
 
     #nav {
-        padding: 1vh 20vw;
+        padding: 1vh 16vw;
     }
     
     #navImage {
@@ -102,11 +99,24 @@
         color: #333132;
     }
 
+    #navFooter {
+        display: flex;
+        justify-content: space-between;
+        font-size: 70%;
+    }
+
+    #socialIconWrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 8em;
+    }
+
     #emailAddress,
     #footerJoin,
     #footerJoinShow,
     #footerJoinHide,
-    #navPLLC {
+    #navPLLC,
+    .socialIcon {
         color: #a9a9af;
     }
 
@@ -114,13 +124,13 @@
     #footerJoin:hover,
     #emailIcon:hover,
     #footerJoinShow:hover,
-    #footerJoinHide:hover {
+    #footerJoinHide:hover,
+    .socialIcon:hover {
         color: #757579;
     }
 
-    #navFooterWords {
-        display: flex;
-        justify-content: space-between;
+    #navSocialWrapper {
+        display: none;
     }
 }
 
@@ -129,29 +139,25 @@
         height: 7vh;
     }
 
-    #navFooterWords {
-        font-size: 110%;
+    #navFooter {
+        font-size: 80%;
     }
 }
 
 @media (min-width: 81em) {
     #nav {
-        padding: 1vh 24vw;
+        padding: 1vh 20vw;
     }
 }
 
 @media (min-width: 96em) {
     #nav {
-        padding: 1vh 27vw;
+        padding: 1vh 24vw;
     }
 }
 
 @media (min-width: 114em) {
     #nav {
-        padding: 1vh 30vw;
-    }
-
-    #navFooterWords {
-        font-size: 115%;
+        padding: 1vh 26vw;
     }
 }

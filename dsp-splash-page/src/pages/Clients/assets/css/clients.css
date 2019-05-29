@@ -4,16 +4,16 @@
 }
 
 .loadedImageBackground {
-    background-color: #b0c46b;
+    background-color: #b4cbdb;
 }
 
 #clientImgLoadCheck {
     display: none;
 }
 
-#largeCompany {
+#design-buildCompany {
     flex: 100vw;
-    background-image: url(../images/your-staff-augmented.jpg);
+    background-image: url(../images/your-project-crafted.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,9 +23,9 @@
     background-color: #a35f5fcc;
 }
 
-#boutiqueCompany {
+#largeCompany {
     flex: 100vw;
-    background-image: url(../images/your-brand-elevated.png);
+    background-image: url(../images/your-staff-augmented.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,9 +37,9 @@
     background-color: #6a889ec5;
 }
 
-#design-buildCompany {
+#boutiqueCompany {
     flex: 100vw;
-    background-image: url(../images/your-project-crafted.jpg);
+    background-image: url(../images/your-brand-elevated.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
