@@ -1,4 +1,5 @@
 .slantTop {
+    margin-bottom: 7vh;
     padding: 5vh 15vw 10vh 19.5vw;
     font-size: 150%;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
