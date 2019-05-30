@@ -63,7 +63,7 @@
         padding-bottom: 5%;
     }
 
-    #career {
+    #brand {
         transform: translateY(-5vh);
         clip-path: polygon(0 0, 100% 5vh, 100% 100%, 0 100%);
     }

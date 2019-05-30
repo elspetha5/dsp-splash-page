@@ -63,15 +63,15 @@
     width: 50%;
 }
 
-#brand {
-    background-image: url(../images/your-brand-connected.jpg);
+#career {
+    background-image: url(../images/your-career-amplified.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#career {
-    background-image: url(../images/your-career-amplified.jpg);
+#brand {
+    background-image: url(../images/your-brand-connected.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
