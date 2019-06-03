@@ -13,19 +13,61 @@ import fourCs from "./assets/images/fourCs.png";
 import "./assets/css/designBuild.css";
 import "./assets/css/mediaDesignBuild.css";
 
+import trifold1 from "./assets/images/db-trifold1.png";
+import trifoldCenterPeek from "./assets/images/db-trifold-center-peek.png";
+import trifold2 from "./assets/images/db-trifold2.png";
+import trifold3 from "./assets/images/db-trifold3.png";
+import trifoldCenter from "./assets/images/db-trifold-center.png";
+
 class DesignBuild extends Component {
     state = {
-
+        trifold1Img: trifold1,
+        trifold1: "trifold1-straight",
+        trifold2: "triInvisible",
+        trifold3: "triInvisible",
+        trifoldCenter: "triInvisible"
     }
 
     componentDidMount() {
         window.scrollTo(0, 0)
     };
 
+    handleTrifold = () => {
+        if (this.state.trifold1 === "trifold1-straight") {
+            this.setState({
+                trifold1: "trifold1-open",
+                trifold2: "trifold2-straight"
+            })
+
+            setTimeout(() => {
+                this.setState({
+                    trifold1Img: trifoldCenterPeek
+                })
+            }, 1500)
+        } else {
+            this.setState({
+                trifold1Img: trifold1,
+                trifold1: "trifold1-straight",
+                trifold2: "triInvisible",
+                trifold3: "triInvisible",
+                trifoldCenter: "triInvisible"
+            })
+        }
+    }
+
     render() {
         return (
-            <div id="dbWrapper">
-                <Popup
+            <div id="dbWrapper" >
+                <div id="triWrapper" onClick={() => this.handleTrifold()}>
+                    <img src={this.state.trifold1Img} alt="dbTrifold" id={this.state.trifold1} className="trifoldImg trifoldThree" />
+                    <img src={trifold2} alt="dbTrifold" id={this.state.trifold2} className="trifoldImg trifoldThree" />
+                    <img src={trifold3} alt="dbTrifold" id={this.state.trifold3} className="trifoldImg trifoldThree" />
+                    <img src={trifoldCenter} alt="dbTrifold" id={this.state.trifoldCenter} className="trifoldImg" />
+                </div>
+
+
+
+                {/* <Popup
                     open={true}
                     modal
                     closeOnDocumentClick
@@ -56,10 +98,6 @@ class DesignBuild extends Component {
                     <img src={process} alt="dbProcess" id="dbProcessPic" />
                 </div>
 
-                {/* <div className="processWrapper">
-                    <DbProcess />
-                </div> */}
-
                 <SlantUp
                     background="yellow-background"
                     titleColor="charcoalish-text"
@@ -83,7 +121,7 @@ class DesignBuild extends Component {
                 >
                     <div className="infoWords charcoalish-text">At DSP we are committed to Integrated Project Delivery. Our design staff are fully Revit trained and completely supported by Revit Certified Professionals and licensed architects. Our goal is to make each and every project a reality by proposing design solutions with constructible outcomes in mind</div>
                     <div className="infoWords charcoalish-text">To achieve these outcomes, we’ve augmented CSI’s four C’s of effective communication to include cost, collaboration, and coordination. These additional components are essential to our quality management program, saving time, cutting costs and elevating the craft of the process.</div>
-                </SlantDown>
+                </SlantDown> */}
 
             </div>
         )

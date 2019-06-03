@@ -1,4 +1,34 @@
 @media (min-width: 40em) {
+    #triInvisible {
+        display: none;
+    }
+    
+    #triWrapper {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* perspective: 50em; */
+    }
+    
+    .trifoldImg {
+        height: 85vh;
+        box-shadow: 0 0 15px #bbbabc;
+    }
+
+    #trifold1-open {
+        transform-origin: left;
+        animation: trifold1 2s forwards;
+    }
+    
+    @keyframes trifold1 {
+        to {
+            transform: perspective(1000em) rotateY(-95deg);
+        }
+    }
+}
+
+/* @media (min-width: 40em) {
     #dbProcessPic {
         width: 85vw;
     }
@@ -30,4 +60,4 @@
     #dbFourCs {
         width: 50vw;
     }
-}
+} */
