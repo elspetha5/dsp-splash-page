@@ -5,7 +5,6 @@ import Popup from "reactjs-popup";
 import SlantTop from "../../../components/SlantTop";
 import SlantUp from "../../../components/SlantInfo/SlantUp";
 import SlantDown from "../../../components/SlantInfo/SlantDown";
-import DbProcess from "./graphics/DbProcess";
 
 import process from "./assets/images/dbProcess.png";
 import banner from "./assets/images/dbBanner.png";
@@ -13,19 +12,26 @@ import fourCs from "./assets/images/fourCs.png";
 import "./assets/css/designBuild.css";
 import "./assets/css/mediaDesignBuild.css";
 
-import trifold1 from "./assets/images/db-trifold1.png";
-import trifoldCenterPeek from "./assets/images/db-trifold-center-peek.png";
-import trifold2 from "./assets/images/db-trifold2.png";
-import trifold3 from "./assets/images/db-trifold3.png";
-import trifoldCenter from "./assets/images/db-trifold-center.png";
+import tri1 from "./assets/images/db-trifold1.png";
+import tri2 from "./assets/images/db-trifold2.png";
+import tri3 from "./assets/images/db-trifold3.png";
+import triCenter from "./assets/images/db-trifold-center.png";
+import triCenter1 from "./assets/images/db-trifold-center-peek1.png";
+import triCenter2 from "./assets/images/db-trifold-center-peek2.png";
+import triCenter3 from "./assets/images/db-trifold-center-peek3.png";
+
 
 class DesignBuild extends Component {
     state = {
-        trifold1Img: trifold1,
-        trifold1: "trifold1-straight",
-        trifold2: "triInvisible",
-        trifold3: "triInvisible",
-        trifoldCenter: "triInvisible"
+        tri1Img: tri1,
+        tri2Img: tri2,
+        tri1: "tri1-straight",
+        tri2: "triInvisible",
+        tri3: "triInvisible",
+        triCenter: "triInvisible",
+        triCenter1: "triInvisible",
+        triCenter2: "triInvisible",
+        triCenter3: "triInvisible"
     }
 
     componentDidMount() {
@@ -33,36 +39,77 @@ class DesignBuild extends Component {
     };
 
     handleTrifold = () => {
-        if (this.state.trifold1 === "trifold1-straight") {
+        if (this.state.tri1 === "tri1-straight") {
             this.setState({
-                trifold1: "trifold1-open",
-                trifold2: "trifold2-straight"
-            })
+                tri1: "tri1-open",
+                tri2: "tri2-straight"
+            });
 
             setTimeout(() => {
                 this.setState({
-                    trifold1Img: trifoldCenterPeek
+                    tri1Img: triCenter1
                 })
-            }, 1500)
-        } else {
-            this.setState({
-                trifold1Img: trifold1,
-                trifold1: "trifold1-straight",
-                trifold2: "triInvisible",
-                trifold3: "triInvisible",
-                trifoldCenter: "triInvisible"
-            })
+            }, 1500);
+
         }
+        
+        if (this.state.tri1 === "tri1-open") {
+            this.setState({
+                tri2 : "tri2-open",
+                triCenter2: "triCenter2-straight"
+            });
+
+            setTimeout(() => {
+                this.setState({
+                    tri2Img: triCenter1
+                })
+            }, 1500);
+
+            setTimeout(() => {
+                this.setState({
+                    tri1: "triInvisible",
+                    tri2: "triInvisible",
+                    triCenter: "triCenter-full",
+                    triCenter1: "triInvisible",
+                    triCenter2: "triInvisible",
+                    triCenter3: "triInvisible"
+                })
+            }, 2000)
+
+        } 
+
+        // if (this.state.triCenter === "triCenter-full") {
+        //     this.setState({
+
+        //     })
+        // }
+        
+        // if () {
+        //     this.setState({
+        //         tri1Img: tri1,
+        //         tri2Img: tri2,
+        //         tri1: "tri1-straight",
+        //         tri2: "triInvisible",
+        //         tri3: "triInvisible",
+        //         triCenter: "triInvisible",
+        //         triCenter1: "triInvisible",
+        //         triCenter2: "triInvisible",
+        //         triCenter3: "triInvisible"
+        //     })
+        // }
     }
 
     render() {
         return (
             <div id="dbWrapper" >
                 <div id="triWrapper" onClick={() => this.handleTrifold()}>
-                    <img src={this.state.trifold1Img} alt="dbTrifold" id={this.state.trifold1} className="trifoldImg trifoldThree" />
-                    <img src={trifold2} alt="dbTrifold" id={this.state.trifold2} className="trifoldImg trifoldThree" />
-                    <img src={trifold3} alt="dbTrifold" id={this.state.trifold3} className="trifoldImg trifoldThree" />
-                    <img src={trifoldCenter} alt="dbTrifold" id={this.state.trifoldCenter} className="trifoldImg" />
+                    <img src={tri3} alt="dbTri" id={this.state.tri3} className="triImg triThree" />
+                    <img src={triCenter} alt="dbTri" id={this.state.triCenter} className="triImg" />
+                    <img src={triCenter3} alt="dbTri" id={this.state.triCenter3} className="triImg" />
+                    <img src={triCenter2} alt="dbTri" id={this.state.triCenter2} className="triImg" />
+                    <img src={triCenter1} alt="dbTri" id={this.state.triCenter1} className="triImg" />
+                    <img src={this.state.tri2Img} alt="dbTri" id={this.state.tri2} className="triImg triThree" />
+                    <img src={this.state.tri1Img} alt="dbTri" id={this.state.tri1} className="triImg triThree" />
                 </div>
 
 

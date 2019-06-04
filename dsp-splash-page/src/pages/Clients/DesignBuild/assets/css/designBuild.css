@@ -1,3 +1,47 @@
+#triInvisible {
+    display: none;
+}
+
+#triWrapper {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triImg {
+    height: 85vh;
+    box-shadow: 0 0 15px #bbbabc;
+    position: absolute;
+}
+
+#tri1-open {
+    transform-origin: left;
+    animation: tri1 2s forwards;
+}
+
+@keyframes tri1 {
+    to {
+        transform: perspective(1000em) rotateY(-95deg);
+    }
+}
+
+#tri2-open {
+    transform-origin: right;
+    animation: tri2 2s forwards;
+}
+
+@keyframes tri2 {
+    to {
+        transform: perspective(1000em) rotateY(95deg);
+    }
+}
+
+#triCenter-full {
+    position: absolute;
+    left: 0;
+}
+
 
 
 /* .processWrapper {
