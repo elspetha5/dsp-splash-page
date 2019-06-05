@@ -91,7 +91,7 @@ class NavBar extends Component {
                             <a href="https://www.facebook.com/dspdesignprof" className="link socialIcon" target="blank"><i className="fab fa-facebook"></i></a>
                             <a href="https://twitter.com/__dspdesign" className="link socialIcon" target="blank"><i className="fab fa-twitter"></i></a>
                         </div>
-                        <div id="navPLLC">Design Service Professionals, PLLC <i className="far fa-copyright"></i> 2018-19 All rights reserved</div>
+                        <div id="navPLLC"><i className="far fa-copyright"></i> 2019 Design Service Professionals, PLLC All rights reserved</div>
                     </div>
 
                 </div>

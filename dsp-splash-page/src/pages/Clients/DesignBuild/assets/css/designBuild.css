@@ -1,50 +1,4 @@
-#triInvisible {
-    display: none;
-}
-
-#triWrapper {
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.triImg {
-    height: 85vh;
-    box-shadow: 0 0 15px #bbbabc;
-    position: absolute;
-}
-
-#tri1-open {
-    transform-origin: left;
-    animation: tri1 2s forwards;
-}
-
-@keyframes tri1 {
-    to {
-        transform: perspective(1000em) rotateY(-95deg);
-    }
-}
-
-#tri2-open {
-    transform-origin: right;
-    animation: tri2 2s forwards;
-}
-
-@keyframes tri2 {
-    to {
-        transform: perspective(1000em) rotateY(95deg);
-    }
-}
-
-#triCenter-full {
-    position: absolute;
-    left: 0;
-}
-
-
-
-/* .processWrapper {
+.processWrapper {
     padding: 5vh 15vw;
 }
 
@@ -73,4 +27,13 @@
     width: 90vw;
     margin: -12vh auto -13vh;
 }
- */
+
+.miniTrifold {
+    position: fixed;
+    top: 1.5em;
+    right: 2em;
+    height: 25vw;
+    box-shadow: 0 0 5px #333132;
+    transform: rotate(-10deg);
+    z-index: 998;
+}

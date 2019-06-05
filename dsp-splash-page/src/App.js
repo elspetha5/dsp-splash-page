@@ -20,6 +20,8 @@ import Clients from "./pages/Clients";
 import LearnMore from "./pages/Clients/Contact";
 import DesignBuild from "./pages/Clients/DesignBuild";
 import LargeCompany from "./pages/Clients/LargeCompany";
+// Trifolds
+import DBtrifold from "./pages/Clients/DesignBuild/DBtrifold";
 
 // Design Services
 import DesignServices from "./pages/DesignServices";
@@ -78,6 +80,8 @@ class App extends Component {
               <Route exact path="/clients/contact" component={LearnMore} />
               <Route exact path="/clients/designbuild" component={DesignBuild} />
               <Route exact path="/clients/largecompany" component={LargeCompany} />
+              {/* Trifolds */}
+              <Route exact path="/clients/designbuild/trifold" component={DBtrifold} />
 
               {/* Design Services */}
               <Route exact path="/designservices" component={DesignServices} />

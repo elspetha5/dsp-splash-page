@@ -1,0 +1,115 @@
+#triInvisible {
+    display: none;
+}
+
+#triWrapper {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triImg {
+    height: 85vh;
+    box-shadow: 0 0 15px #bbbabc;
+    position: absolute;
+}
+
+#tri1-open {
+    transform-origin: left;
+    animation: tri1 2s forwards;
+}
+
+@keyframes tri1 {
+    to {
+        transform: perspective(1000em) rotateY(-95deg);
+    }
+}
+
+#tri1-flatten {
+    transform-origin: left;
+    transform: perspective(1000em) rotateY(-95deg);
+    animation: tri1-flatten 1s 2s forwards;
+}
+
+@keyframes tri1-flatten {
+    from {
+        transform: perspective(1000em) rotateY(-95deg);
+    }
+    to {
+        transform: perspective(1000em) rotateY(-180deg);
+    }
+}
+
+#tri1-fold {
+    transform-origin: left;
+    transform: perspective(1000em) rotateY(-180deg);
+    animation: tri1-fold 2s 1s forwards;
+}
+
+@keyframes tri1-fold {
+    to {
+        transform: perspective(0) rotateY(0);
+    }
+}
+
+#tri1-flip {
+    animation: tri1-flip 2s linear forwards;
+}
+
+@keyframes tri1-flip {
+    to {
+        transform: perspective(1000em) rotateY(180deg);
+    }
+}
+
+#tri1-flipback {
+    transform: perspective(1000em) rotateY(180deg);
+    animation: tri1-flipback 2s linear forwards;
+}
+
+@keyframes tri1-flipback {
+    to {
+        transform: perspective(1000em) rotateY(0);
+    }
+}
+
+#tri2-open {
+    transform-origin: right;
+    animation: tri2 3s forwards;
+}
+
+@keyframes tri2 {
+    66.66% {
+        transform: perspective(1000em) rotateY(95deg);
+    }
+    100% {
+        transform: perspective(1000em) rotateY(180deg);
+    }
+}
+
+#tri2-fold {
+    transform-origin: right;
+    transform: perspective(1000em) rotateY(180deg);
+    animation: tri2-fold 2s .5s forwards;
+}
+
+@keyframes tri2-fold {
+    to {
+        transform: perspective(0) rotateY(0);
+    }
+}
+
+#triCenter-full {
+    animation: triCenter 2s forwards;
+}
+
+@keyframes triCenter {
+    from {
+        position: absolute;
+        left: -69%;        
+    }
+    to {
+        left: 0;
+    }
+}
