@@ -6,11 +6,19 @@
     #dbFourCs {
         width: 80vw;
     }
+
+    .miniTrifold {
+        height: 20vw;
+    }
 }
 
 @media (min-width: 59em) {
     #dbFourCs {
         width: 70vw;
+    }
+
+    .miniTrifold {
+        height: 15vw;
     }
 }
 
@@ -19,6 +27,10 @@
         width: 75vw;
         margin-top: -7vh;
         margin-bottom: -16vh;
+    }
+
+    .miniTrifold {
+        right: 3em;
     }
 }
 

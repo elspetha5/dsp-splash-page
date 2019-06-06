@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./app.css";
 
-// Pages
+// Pages:
 // Home
 import Home from "./pages/Home";
+
 
 // Approach
 import Approach from "./pages/Approach";
@@ -13,15 +14,24 @@ import Approach from "./pages/Approach";
 // About
 import People from "./pages/People";
 import Projects from "./pages/Projects";
+
+
+// Blog
 import Blog from "./pages/Blog";
+
 
 // Clients
 import Clients from "./pages/Clients";
-import LearnMore from "./pages/Clients/Contact";
 import DesignBuild from "./pages/Clients/DesignBuild";
 import LargeCompany from "./pages/Clients/LargeCompany";
+import BoutiquePractice from "./pages/Clients/BoutiquePractice";
 // Trifolds
+import BPtrifold from "./pages/Clients/BoutiquePractice/BPtrifold";
 import DBtrifold from "./pages/Clients/DesignBuild/DBtrifold";
+import LCtrifold from "./pages/Clients/LargeCompany/LCtrifold";
+// Client Form
+import LearnMore from "./pages/Clients/Contact";
+
 
 // Design Services
 import DesignServices from "./pages/DesignServices";
@@ -64,24 +74,33 @@ class App extends Component {
             <Switch>
               {/* Home */}
               <Route exact path="/" component={Home} />
-
-              {/* Approach */}
-              <Route exact path="/approach" component={Approach} />
               
 
               {/* About */}
               <Route exact path="/about/people" component={People} />
               <Route exact path="/about/projects" component={Projects} />
+              
+              
+              {/* Blog */}
               <Route exact path="/about/blog" component={Blog} />
+
+
+              {/* Approach */}
+              <Route exact path="/approach" component={Approach} />
               
               
               {/* Clients */}
               <Route exact path="/clients" component={Clients} />
-              <Route exact path="/clients/contact" component={LearnMore} />
+              <Route exact path="/clients/boutiquepractice" component={BoutiquePractice} />
               <Route exact path="/clients/designbuild" component={DesignBuild} />
               <Route exact path="/clients/largecompany" component={LargeCompany} />
               {/* Trifolds */}
+              <Route exact path="/clients/boutiquepractice/trifold" component={BPtrifold} />
               <Route exact path="/clients/designbuild/trifold" component={DBtrifold} />
+              <Route exact path="/clients/largecompany/trifold" component={LCtrifold} />
+              {/* Client Contact */}
+              <Route exact path="/clients/contact" component={LearnMore} />
+
 
               {/* Design Services */}
               <Route exact path="/designservices" component={DesignServices} />
@@ -102,6 +121,7 @@ class App extends Component {
               <Route exact path="/joinus/management" component={ManagementForm} />
               <Route exact path="/joinus/marketing" component={MarketingForm} />
               <Route exact path="/joinus/service" component={ServiceForm} />
+
 
               {/* Log In */}
               <Route exact path="/login" component={Login} />

@@ -56,7 +56,7 @@ class Clients extends Component {
                     <YourThing
                         topWords="Your brand."
                         bottomWords="Elevated."
-                        link="/clients/contact"
+                        link="/clients/boutiquepractice"
                         buttonWords="Learn more"
                         topDescription="Engage our ecosystem "
                         topDescriptionBreak="of professionals"

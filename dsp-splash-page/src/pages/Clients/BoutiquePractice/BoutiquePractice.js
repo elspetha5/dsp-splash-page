@@ -12,7 +12,7 @@ import services from "../../../JSON/LargeCompany/LCServices.json";
 import lcProcess from "./assets/images/lcProcess.png";
 import banner from "./assets/images/lcBanner.png";
 import fourCs from "./assets/images/fourCs.png";
-import trifold from "./LCtrifold/assets/images/lc-trifold1.png"
+import trifold from "./BPtrifold/assets/images/bp-trifold1.png"
 
 import "./assets/css/largecompany.css";
 import "./assets/css/mediaLargecompany.css";
@@ -108,7 +108,7 @@ class LargeCompany extends Component {
                     <img src={fourCs} alt="db 4 Cs" id="lcFourCs" />
                 </div>
 
-                <Link to="/clients/largecompany/trifold">
+                <Link to="/clients/boutiquepractice/trifold">
                     <img src={trifold} alt="trifold" className="miniTrifold" />
                 </Link>
 
