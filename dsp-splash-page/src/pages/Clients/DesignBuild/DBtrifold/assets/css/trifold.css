@@ -15,14 +15,31 @@
     position: absolute;
 }
 
-#tri1-open {
-    transform-origin: left;
-    animation: tri1 2s forwards;
+.tribackImg {
+    height: 85vh;
+    box-shadow: 0 0 15px #bbbabc;
 }
 
-@keyframes tri1 {
+#tri1-open {
+    transform-origin: left;
+    animation: tri1-open 2s forwards;
+}
+
+@keyframes tri1-open {
     to {
         transform: perspective(1000em) rotateY(-95deg);
+    }
+}
+
+#tri1-close {
+    transform-origin: left;
+    transform: perspective(1000em) rotateY(-95deg);
+    animation: tri1-close 2s forwards;
+}
+
+@keyframes tri1-close {
+    to {
+        transform: perspective(0) rotateY(0);
     }
 }
 
@@ -74,6 +91,12 @@
     }
 }
 
+#tri1-halfOpen {
+    transform-origin: left;
+    transform: perspective(1000em) rotateY(-180deg);
+    animation: tri1-open 2s .5s forwards;
+}
+
 #tri2-open {
     transform-origin: right;
     animation: tri2 3s forwards;
@@ -101,15 +124,80 @@
 }
 
 #triCenter-full {
+    position: absolute;
     animation: triCenter 2s forwards;
 }
 
 @keyframes triCenter {
     from {
-        position: absolute;
         left: -69%;        
     }
     to {
         left: 0;
     }
+}
+
+.triback {
+    position: relative;
+}
+
+#triButtonWrapper,
+#triSocialWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vh;
+    z-index: 997;
+}
+
+#triButtonWrapper {
+    padding: 169% 0 0 23.5%;
+}
+
+#triLink {
+    background-color: #1b2c3a;
+    color: #f4f7fc;
+    padding: .75vh;
+    border-radius: 5px;
+    border: 1px solid #1b2c3a;
+    margin-right: 2em;
+}
+
+#triLink:hover {
+    background-color: #f4f7fc00;
+    color: #1b2c3a;
+}
+
+#triSocialWrapper {
+    padding: 218% 0 0 37.25%;
+}
+
+#triSocial {
+    color: #1b2c3a;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+#triSocial:hover {
+    color: #757579;
+}
+
+.triArrow {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 10vw;
+}
+
+#triLeftArrow {
+    left: 0;
+}
+
+#triRightArrow {
+    right: 0;
 }

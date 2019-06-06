@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./assets/css/trifold.css";
 import "./assets/css/mediaTrifold.css";
 
@@ -6,9 +7,9 @@ import tri1 from "./assets/images/db-trifold1.png";
 import tri2 from "./assets/images/db-trifold2.png";
 import tri3 from "./assets/images/db-trifold3.png";
 import triCenter from "./assets/images/db-trifold-center.png";
-import triCenter1 from "./assets/images/db-trifold-center-peek1.png";
-import triCenter2 from "./assets/images/db-trifold-center-peek2.png";
-import triCenter3 from "./assets/images/db-trifold-center-peek3.png";
+import triCenter1 from "./assets/images/db-trifold-center1.png";
+import triCenter2 from "./assets/images/db-trifold-center2.png";
+import triCenter3 from "./assets/images/db-trifold-center3.png";
 
 
 class DesignBuild extends Component {
@@ -41,7 +42,7 @@ class DesignBuild extends Component {
 
         }
 
-        if (this.state.tri1 === "tri1-open") {
+        if (this.state.tri2 === "tri2-straight") {
             this.setState({
                 tri1: "tri1-flatten",
                 tri2: "tri2-open",
@@ -134,13 +135,118 @@ class DesignBuild extends Component {
         }
     }
 
+    handleTrifoldReverse = () => {
+        if (this.state.tri1 === "tri1-straight") {
+            this.setState({
+                tri1Img: tri1,
+                tri2Img: tri2,
+                tri1: "tri1-flip",
+                tri2: "triInvisible",
+                tri3: "triInvisible",
+                triCenter: "triInvisible",
+                triCenter1: "triInvisible",
+                triCenter2: "triInvisible",
+                triCenter3: "triInvisible"
+            });
+
+            setTimeout(() => {
+                this.setState({
+                    tri1Img: tri3
+                })
+            }, 1 * 1000);
+        }
+
+        if (this.state.tri2 === "tri2-straight") {
+            this.setState({
+                tri1Img: tri1,
+                tri1: "tri1-close"
+            });
+
+            setTimeout(() => {
+                this.setState({
+                    tri1: "tri1-straight",
+                    tri2: "triInvisible"
+                })
+            }, 2 * 1000);
+
+        }
+
+        if (this.state.tri1 === "triInvisible") {
+            this.setState({
+                tri1: "tri1-halfOpen",
+                tri2: "tri2-fold",
+                triCenter2: "triCenter2-straight",
+                triCenter: "triInvisible"
+            });
+
+            setTimeout(() => {
+                this.setState({
+                    tri2Img: tri2
+                })
+            }, 1 * 1000);
+
+            setTimeout(() => {
+                this.setState({
+                    tri2: "tri2-straight",
+                    triCenter2: "triInvisible"
+                })
+            }, 2.5 * 1000);
+        }
+
+        if (this.state.tri1 === "tri1-flip") {
+            this.setState({
+                tri1: "tri1-flipback"
+            });
+
+            setTimeout(() => {
+                this.setState({
+                    tri1Img: tri1
+                })
+            }, 1 * 1000);
+
+            setTimeout(() => {
+                this.setState({
+                    tri1Img: tri1,
+                    tri2Img: tri2,
+                    tri1: "tri1-straight",
+                    tri2: "triInvisible",
+                    tri3: "triInvisible",
+                    triCenter: "triInvisible",
+                    triCenter1: "triInvisible",
+                    triCenter2: "triInvisible",
+                    triCenter3: "triInvisible"
+                })
+            }, 2.5 * 1000);
+
+        }
+    }
+
     render() {
         return (
-            <div id="triWrapper" onClick={() => this.handleTrifold()}>
-                <img src={triCenter} alt="dbTri" id={this.state.triCenter} className="triImg" />
-                <img src={triCenter2} alt="dbTri" id={this.state.triCenter2} className="triImg" />
-                <img src={this.state.tri2Img} alt="dbTri" id={this.state.tri2} className="triImg triThree" />
-                <img src={this.state.tri1Img} alt="dbTri" id={this.state.tri1} className="triImg triThree" />
+            <div>
+                <div id="triWrapper" onClick={() => this.handleTrifold()}>
+                    <div id={this.state.tri3} className="triback">
+                        <img src={tri3} alt="dbTri" className="tribackImg" />
+                        <div id="triSocialWrapper">
+                            <a id="triSocial" className="link" href="https://www.linkedin.com/company/designserviceprofessionalspllc/" target="blank"><i className="fab fa-linkedin-in"></i></a>
+                            <a id="triSocial" className="link" href="https://www.instagram.com/__dspdesign/" target="blank"><i className="fab fa-instagram"></i></a>
+                            <a id="triSocial" className="link" href="https://www.facebook.com/dspdesignprof" target="blank"><i className="fab fa-facebook"></i></a>
+                            <a id="triSocial" className="link" href="https://twitter.com/__dspdesign" target="blank"><i className="fab fa-twitter"></i></a>
+                        </div>
+                        <div id="triButtonWrapper">
+                            <Link id="triLink" className="link" to="/clients/designbuild">learn more</Link>
+                            <Link id="triLink" className="link" to="/clients/contact">contact us</Link>
+                        </div>
+                    </div>
+                    <img src={triCenter} alt="dbTri" id={this.state.triCenter} className="triImg" />
+                    <img src={triCenter2} alt="dbTri" id={this.state.triCenter2} className="triImg" />
+                    <img src={this.state.tri2Img} alt="dbTri" id={this.state.tri2} className="triImg" />
+                    <img src={this.state.tri1Img} alt="dbTri" id={this.state.tri1} className="triImg" />
+
+                </div>
+
+                <div id="triLeftArrow" className="triArrow charcoalish-text" onClick={() => this.handleTrifoldReverse()}><i class="fas fa-chevron-left"></i></div>
+                <div id="triRightArrow" className="triArrow charcoalish-text" onClick={() => this.handleTrifold()}><i class="fas fa-chevron-right"></i></div>
             </div>
         )
     };
