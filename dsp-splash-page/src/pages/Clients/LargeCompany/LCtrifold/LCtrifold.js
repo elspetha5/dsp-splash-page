@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../../assets/css/trifoldCSS/trifold.css";
+import "../../assets/css/trifoldCSS/mediaTrifold.css";
 
-import tri1 from "./assets/images/lc-trifold1.png";
-import tri2 from "./assets/images/lc-trifold2.png";
-import tri3 from "./assets/images/lc-trifold3.png";
-import triCenter from "./assets/images/lc-trifold-center.png";
-import triCenter1 from "./assets/images/lc-trifold-center1.png";
-import triCenter2 from "./assets/images/lc-trifold-center2.png";
-import triCenter3 from "./assets/images/lc-trifold-center3.png";
+import tri1 from "./images/lc-trifold1.png";
+import tri2 from "./images/lc-trifold2.png";
+import tri3 from "./images/lc-trifold3.png";
+import triCenter from "./images/lc-trifold-center.png";
+import triCenter1 from "./images/lc-trifold-center1.png";
+import triCenter2 from "./images/lc-trifold-center2.png";
+import triCenter3 from "./images/lc-trifold-center3.png";
 
 
 class DesignBuild extends Component {

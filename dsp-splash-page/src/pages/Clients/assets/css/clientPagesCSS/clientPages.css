@@ -1,12 +1,16 @@
-#lcWrapper {
+#clientPageBanner {
+    width: 70vw;
+}
+
+#clientPageWrapper {
     padding-bottom: 20vh;
 }
 
-.lcContentWrapper {
+.clientPageContentWrapper {
     padding: 0 5vw;
 }
 
-.lcSteptitle {
+.clientPageSteptitle {
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -16,58 +20,58 @@
     font-weight: bold;
 }
 
-#lcStep0 {
+#clientPageStep0 {
     margin-top: 5vh;
     background-color: #33313277;
     color: #f4f7fc;
 }
 
-#lcStep1 {
+#clientPageStep1 {
     background-color: #3331329a;
     color: #f4f7fc;
 }
 
-#lcStep2 {
+#clientPageStep2 {
     background-color: #333132b6;
     color: #f4f7fc;
 }
 
-#lcStep3 {
+#clientPageStep3 {
     background-color: #333132d5;
     color: #f4f7fc;
 }
 
-#lcStep4 {
+#clientPageStep4 {
     background-color: #333132;
     color: #f4f7fc;
 }
 
-.lcStepInfo {
+.clientPageStepInfo {
     margin-bottom: 3vh;
 }
 
-.alignLCPic {
+.alignClientPagePic {
     text-align: center;
-    margin: 10vh auto -5vh;
+    margin: 10vh auto;
 }
 
-#lcProcessPic,
-#lcFourCs {
+#clientPageProcessPic,
+#clientPageFourCs {
     background-color: #f4f7fc;
     box-shadow: 0 0 10px #757579;
 }
 
-#lcProcessPic {
+#clientPageProcessPic {
     width: 95vw;
     margin: auto;
     padding: 4px;    
 }
 
-#lcFourCs {
+#clientPageFourCs {
     width: 90vw;
 }
 
-.lcServiceWrapper {
+.clientPageServiceWrapper {
     margin-bottom: 3vh;
     display: flex;
     flex-flow: column;
@@ -78,7 +82,7 @@
     padding: 1vh;
 }
 
-.lcService {
+.clientPageService {
     flex: 1;
     padding: 7px 0;
     display: flex;
@@ -89,7 +93,7 @@
     margin-bottom: 1vh;
 }
 
-.lcOfferedService {
+.clientPageOfferedService {
     flex: 3;
     display: flex;
     flex-flow: row wrap;
@@ -97,30 +101,39 @@
     justify-content: flex-start;
 }
 
-.lcOfferedOne {
+.clientPageOfferedOne {
     padding: 3px 5px;
     margin: .5em 0;
 }
 
-.lcOfferedTrue {
+.clientPageOfferedTrue {
     padding: 3px 5px;
     background-color: #757579;
 }
 
-.lcOfferedFalse {
+.clientPageOfferedFalse {
     padding: 3px 5px;
-    background-color: #d37c7c;
     box-shadow: inset 2px 3px 5px black;
 }
 
-#lcCurrent {
+#clientPageCurrent {
     display: flex;
     justify-content: flex-end;
 }
 
-#lcCurrentBox {
+#clientPageCurrentBox {
     height: 1em;
     width: 1em;
     margin-right: .5em;
     background-color: #757579;
+}
+
+.miniTrifold {
+    position: fixed;
+    top: 1.5em;
+    right: 2em;
+    height: 25vw;
+    box-shadow: 0 0 5px #333132;
+    transform: rotate(-10deg);
+    z-index: 998;
 }

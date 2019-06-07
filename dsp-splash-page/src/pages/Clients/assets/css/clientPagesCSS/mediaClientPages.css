@@ -1,80 +1,92 @@
 @media (min-width: 43em) {
-    .lcContentWrapper {
+    .clientPageContentWrapper {
         padding: 0 15vw;
     }
     
-    #lcStep0,
-    #lcStepWords0 {
+    #clientPageStep0,
+    #clientPageStepWords0 {
         margin-right: 28vw;
     }
 
-    #lcStep1,
-    #lcStepWords1 {
+    #clientPageStep1,
+    #clientPageStepWords1 {
         margin-right: 21vw;
         margin-left: 7vw;
     }
 
-    #lcStep2,
-    #lcStepWords2 {
+    #clientPageStep2,
+    #clientPageStepWords2 {
         margin-right: 14vw;
         margin-left: 14vw;
     }
 
-    #lcStep3,
-    #lcStepWords3 {
+    #clientPageStep3,
+    #clientPageStepWords3 {
         margin-right: 7vw;
         margin-left: 21vw;
     }
 
-    #lcStep4,
-    #lcStepWords4 {
+    #clientPageStep4,
+    #clientPageStepWords4 {
         margin-left: 28vw;
     }
 
-    #lcStep4 {
+    #clientPageStep4 {
         margin-bottom: 0;
     }
 
-    #lcProcessPic {
+    #clientPageProcessPic {
         width: 85vw;
     }
 
-    #lcFourCs {
+    #clientPageFourCs {
         width: 80vw;
     }
 
-    .lcServiceWrapper {
+    .clientPageServiceWrapper {
         flex-flow: row;
     }
 
-    .lcService {
+    .clientPageService {
         margin-bottom: 0;
+    }
+
+    .miniTrifold {
+        height: 20vw;
     }
 
 }
 
 @media (min-width: 59em) {
-    #lcFourCs {
+    #clientPageFourCs {
         width: 70vw;
+    }
+
+    .miniTrifold {
+        height: 15vw;
     }
 }
 
 @media (min-width: 68em) {
-    .lcContentWrapper {
+    .clientPageContentWrapper {
         padding: 0 20vw;
     }
 
-    #lcProcessPic {
+    #clientPageProcessPic {
         width: 75vw;
+    }
+
+    .miniTrifold {
+        right: 3em;
     }
 }
 
 @media (min-width: 75em) {
-    #lcProcessPic {
+    #clientPageProcessPic {
         width: 60vw;
     }
 
-    #lcFourCs {
+    #clientPageFourCs {
         width: 50vw;
     }
 }

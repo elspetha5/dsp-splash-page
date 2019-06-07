@@ -1,23 +1,26 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
+import { Panel } from "react-bootstrap";
 
 // Components
 import SlantTop from "../../../components/SlantTop";
-import SlantUp from "../../../components/SlantInfo/SlantUp";
-import SlantDown from "../../../components/SlantInfo/SlantDown";
 
-import process from "./assets/images/dbProcess.png";
-import banner from "./assets/images/dbBanner.png";
-import fourCs from "./assets/images/fourCs.png";
-import trifold from "./DBtrifold/assets/images/db-trifold1.png";
-import "./assets/css/designBuild.css";
-import "./assets/css/mediaDesignBuild.css";
+import process from "../../../JSON/DesignBuild/process.json";
+import services from "../../../JSON/DesignBuild/DBServices.json";
 
+import lcProcess from "./images/dbProcess.png";
+import banner from "./images/dbBanner.png";
+import fourCs from "./images/fourCs.png";
+import trifold from "./DBtrifold/images/db-trifold1.png";
+
+import "../assets/css/clientPagesCSS/clientPages.css";
+import "../assets/css/clientPagesCSS/mediaClientPages.css";
 
 class DesignBuild extends Component {
     state = {
-
+        process,
+        services
     }
 
     componentDidMount() {
@@ -26,7 +29,7 @@ class DesignBuild extends Component {
 
     render() {
         return (
-            <div id="dbWrapper" >
+            <div id="clientPageWrapper">
                 <Popup
                     open={true}
                     modal
@@ -43,7 +46,8 @@ class DesignBuild extends Component {
                 >
                     {close => (
                         <div>
-                            <img src={banner} alt="dbBanner" id="dbBanner" />
+                            {/* <div className="close almostBlack-text" onClick={close}>&times;</div> */}
+                            <img src={banner} alt="clientPageBanner" id="clientPageBanner" />
                             <button id="closeModal" className="" onClick={() => { close() }}>close</button>
                         </div>
                     )}
@@ -51,41 +55,68 @@ class DesignBuild extends Component {
 
                 <SlantTop
                     color="charcoalish-background"
-                    title="design-build"
+                    title="process of engagement"
                 />
 
-                <div className="alignDBPic">
-                    <img src={process} alt="dbProcess" id="dbProcessPic" />
+                <div className="clientPageContentWrapper">
+                    {this.state.process.map((step, i) => (
+                        <Panel eventKey={i}>
+                            <Panel.Title id={`clientPageStep${i}`} className="clientPageSteptitle infoWords link" toggle><span className="step">{`step ${step.num}. `}</span>{step.step}</Panel.Title>
+
+                            <Panel.Body collapsible>
+                                <div id={`clientPageStepWords${i}`}>
+                                    {step.info.map(info => (
+                                        <div className="clientPageStepInfo">{info}</div>
+                                    ))}
+                                    {step.button
+                                        ? <Link to={step.button} className="applyButton jobButton">contact us</Link>
+                                        : <div></div>
+                                    }
+                                </div>
+                            </Panel.Body>
+                        </Panel>
+                    ))}
                 </div>
 
-                <SlantUp
-                    background="yellow-background"
-                    titleColor="charcoalish-text"
-                    title="design-build process"
-                >
-                    <div className="infoWords charcoalish-text">Design Service Professionals, PLLC (DSP) is an all-virtual design collective built on the premise that effective collaboration knows no geographic boundaries and that a sound understanding of local codes is 100% essential. We are building an unprecedented virtual design practice that can be anywhere you need us to be.</div>
-                    <div className="infoWords charcoalish-text">We are committed to delivering premium design services. Our design team is supported by a deep bench of seasoned architects and technical design staff prepared to facilitate a thorough quality assurance program, tailored to each of your Design-Build projects.</div>
-                    <div className="infoWords charcoalish-text">At DSP we work hard to keep our fees competitive. We work from home offices, leveraging co-working facilities to provide settings for individual work, small meetings, and team conferences as needed. This keeps our overhead costs low, allowing us to provide premium design services at competitive rates.</div>
-                </SlantUp>
-
-                <div className="alignDBPic">
-                    <img src={fourCs} alt="db 4 Cs" id="dbFourCs" />
+                <div className="slantUp green-background">
+                    <div className="unSkew">
+                        <div className="clientPageContentWrapper">
+                            {this.state.services.map(service => (
+                                <div className="clientPageServiceWrapper slateWhite-text almostBlack-background">
+                                    <div className="clientPageService">{service.title}</div>
+                                    <div className="clientPageOfferedService">
+                                        {service.services.map(offered => (
+                                            (offered.offered === true)
+                                                ? <div className="clientPageOfferedOne"><span className="clientPageOfferedTrue">{offered.service}</span></div>
+                                                : <div className="clientPageOfferedOne"><span className="clientPageOfferedFalse green-background charcoalish-text">{offered.service}</span></div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                            <div id="clientPageCurrent" className="slateWhite-text">
+                                <div id="clientPageCurrentBox"></div>indicates currently offered service
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <SlantDown
-                    background="green-background"
-                    titleColor="charcoalish-text"
-                    title="constructability concept"
-                >
-                    <div className="infoWords charcoalish-text">Great design is only as good as its ability to be realized. In order to get the job done right, we are committed to Integrated Project Delivery. Our design staff is fully Revit trained and completely supported by Revit Certified Professionals and licensed architects. Our goal is to make each and every project a reality by proposing design solutions with constructible outcomes.</div>
-                    <div className="infoWords charcoalish-text">We've aumented CSI's 4 C's of effective communication to include cost, estimatation, collaboration, and coordination. These additional components are essential to our quality management program, saving time, cutting costs, and elevation the craft of design process to match the craft of your best trade partners.</div>
-                </SlantDown>
+                <div className="alignClientPagePic">
+                    <img src={fourCs} alt="db 4 Cs" id="clientPageFourCs" />
+                </div>
 
-                <Link to="/clients/designbuild/trifold">
+                <div className="slantDown lightGrey-background">
+                    <div className="unSkewDown">
+                        <div className="alignClientPagePic">
+                            <img src={lcProcess} alt="lcProcess" id="clientPageProcessPic" />
+                        </div>
+                    </div>
+                </div>
+
+                <Link to="/clients/largecompany/trifold">
                     <img src={trifold} alt="trifold" className="miniTrifold" />
                 </Link>
 
-            </div>
+            </div >
         )
     };
 };

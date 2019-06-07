@@ -6,18 +6,18 @@ import { Panel } from "react-bootstrap";
 // Components
 import SlantTop from "../../../components/SlantTop";
 
-import process from "../../../JSON/LargeCompany/process.json";
-import services from "../../../JSON/LargeCompany/LCServices.json";
+import process from "../../../JSON/BoutiquePractice/process.json";
+import services from "../../../JSON/BoutiquePractice/BPServices.json";
 
-import lcProcess from "./assets/images/lcProcess.png";
-import banner from "./assets/images/lcBanner.png";
-import fourCs from "./assets/images/fourCs.png";
-import trifold from "./BPtrifold/assets/images/bp-trifold1.png"
+import lcProcess from "./images/lcProcess.png";
+import banner from "./images/lcBanner.png";
+import fourCs from "./images/fourCs.png";
+import trifold from "./BPtrifold/images/bp-trifold1.png";
 
-import "./assets/css/largecompany.css";
-import "./assets/css/mediaLargecompany.css";
+import "../assets/css/clientPagesCSS/clientPages.css";
+import "../assets/css/clientPagesCSS/mediaClientPages.css";
 
-class LargeCompany extends Component {
+class BoutiquePractice extends Component {
     state = {
         process,
         services
@@ -29,7 +29,7 @@ class LargeCompany extends Component {
 
     render() {
         return (
-            <div id="lcWrapper">
+            <div id="clientPageWrapper">
                 <Popup
                     open={true}
                     modal
@@ -47,7 +47,7 @@ class LargeCompany extends Component {
                     {close => (
                         <div>
                             {/* <div className="close almostBlack-text" onClick={close}>&times;</div> */}
-                            <img src={banner} alt="dbBanner" id="dbBanner" />
+                            <img src={banner} alt="clientPageBanner" id="clientPageBanner" />
                             <button id="closeModal" className="" onClick={() => { close() }}>close</button>
                         </div>
                     )}
@@ -58,15 +58,15 @@ class LargeCompany extends Component {
                     title="process of engagement"
                 />
 
-                <div className="lcContentWrapper">
+                <div className="clientPageContentWrapper">
                     {this.state.process.map((step, i) => (
                         <Panel eventKey={i}>
-                            <Panel.Title id={`lcStep${i}`} className="lcSteptitle infoWords link" toggle><span className="step">{`step ${step.num}. `}</span>{step.step}</Panel.Title>
+                            <Panel.Title id={`clientPageStep${i}`} className="clientPageSteptitle infoWords link" toggle><span className="step">{`step ${step.num}. `}</span>{step.step}</Panel.Title>
 
                             <Panel.Body collapsible>
-                                <div id={`lcStepWords${i}`}>
+                                <div id={`clientPageStepWords${i}`}>
                                     {step.info.map(info => (
-                                        <div className="lcStepInfo">{info}</div>
+                                        <div className="clientPageStepInfo">{info}</div>
                                     ))}
                                     {step.button
                                         ? <Link to={step.button} className="applyButton jobButton">contact us</Link>
@@ -78,43 +78,47 @@ class LargeCompany extends Component {
                     ))}
                 </div>
 
-                <div className="alignLCPic">
-                    <img src={lcProcess} alt="lcProcess" id="lcProcessPic" />
-                </div>
-
-                <div className="slantUp salmon-background">
+                <div className="slantUp skyBlue-background">
                     <div className="unSkew">
-                        <div className="lcContentWrapper">
+                        <div className="clientPageContentWrapper">
                             {this.state.services.map(service => (
-                                <div className="lcServiceWrapper slateWhite-text almostBlack-background">
-                                    <div className="lcService">{service.title}</div>
-                                    <div className="lcOfferedService">
+                                <div className="clientPageServiceWrapper slateWhite-text almostBlack-background">
+                                    <div className="clientPageService">{service.title}</div>
+                                    <div className="clientPageOfferedService">
                                         {service.services.map(offered => (
                                             (offered.offered === true)
-                                                ? <div className="lcOfferedOne"><span className="lcOfferedTrue">{offered.service}</span></div>
-                                                : <div className="lcOfferedOne"><span className="lcOfferedFalse">{offered.service}</span></div>
+                                                ? <div className="clientPageOfferedOne"><span className="clientPageOfferedTrue">{offered.service}</span></div>
+                                                : <div className="clientPageOfferedOne"><span className="clientPageOfferedFalse skyBlue-background charcoalish-text">{offered.service}</span></div>
                                         ))}
                                     </div>
                                 </div>
                             ))}
-                            <div id="lcCurrent" className="slateWhite-text">
-                                <div id="lcCurrentBox"></div>indicates currently offered service
+                            <div id="clientPageCurrent" className="slateWhite-text">
+                                <div id="clientPageCurrentBox"></div>indicates currently offered service
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="alignLCPic">
-                    <img src={fourCs} alt="db 4 Cs" id="lcFourCs" />
+                <div className="alignClientPagePic">
+                    <img src={fourCs} alt="db 4 Cs" id="clientPageFourCs" />
                 </div>
 
-                <Link to="/clients/boutiquepractice/trifold">
+                <div className="slantDown lightGrey-background">
+                    <div className="unSkewDown">
+                        <div className="alignClientPagePic">
+                            <img src={lcProcess} alt="lcProcess" id="clientPageProcessPic" />
+                        </div>
+                    </div>
+                </div>
+
+                <Link to="/clients/largecompany/trifold">
                     <img src={trifold} alt="trifold" className="miniTrifold" />
                 </Link>
 
-            </div>
+            </div >
         )
     };
 };
 
-export default LargeCompany;
+export default BoutiquePractice;
