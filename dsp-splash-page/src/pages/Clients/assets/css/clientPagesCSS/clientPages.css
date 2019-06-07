@@ -1,5 +1,8 @@
 #clientPageBanner {
     width: 70vw;
+    background-color: #757579;
+    padding: .5em 1.5em 0;
+    border-radius: 5px;
 }
 
 #clientPageWrapper {
@@ -56,19 +59,13 @@
 }
 
 #clientPageProcessPic,
-#clientPageFourCs {
+#clientPageFourCs,
+.clientPageGraphic {
     background-color: #f4f7fc;
     box-shadow: 0 0 10px #757579;
-}
-
-#clientPageProcessPic {
     width: 95vw;
     margin: auto;
     padding: 4px;    
-}
-
-#clientPageFourCs {
-    width: 90vw;
 }
 
 .clientPageServiceWrapper {

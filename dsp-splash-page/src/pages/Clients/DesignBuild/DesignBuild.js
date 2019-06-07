@@ -9,9 +9,9 @@ import SlantTop from "../../../components/SlantTop";
 import process from "../../../JSON/DesignBuild/process.json";
 import services from "../../../JSON/DesignBuild/DBServices.json";
 
-import lcProcess from "./images/dbProcess.png";
-import banner from "./images/dbBanner.png";
-import fourCs from "./images/fourCs.png";
+import timeline from "./images/db-timeline.png";
+import formula from "./images/db-formula.png";
+import fourCs from "./images/db-fourCs.png";
 import trifold from "./DBtrifold/images/db-trifold1.png";
 
 import "../assets/css/clientPagesCSS/clientPages.css";
@@ -47,7 +47,7 @@ class DesignBuild extends Component {
                     {close => (
                         <div>
                             {/* <div className="close almostBlack-text" onClick={close}>&times;</div> */}
-                            <img src={banner} alt="clientPageBanner" id="clientPageBanner" />
+                            <img src={formula} alt="clientPageBanner" id="clientPageBanner" />
                             <button id="closeModal" className="" onClick={() => { close() }}>close</button>
                         </div>
                     )}
@@ -88,7 +88,7 @@ class DesignBuild extends Component {
                                         {service.services.map(offered => (
                                             (offered.offered === true)
                                                 ? <div className="clientPageOfferedOne"><span className="clientPageOfferedTrue">{offered.service}</span></div>
-                                                : <div className="clientPageOfferedOne"><span className="clientPageOfferedFalse green-background charcoalish-text">{offered.service}</span></div>
+                                                : <div className="clientPageOfferedOne"><span className="clientPageOfferedFalse green-background">{offered.service}</span></div>
                                         ))}
                                     </div>
                                 </div>
@@ -101,18 +101,18 @@ class DesignBuild extends Component {
                 </div>
 
                 <div className="alignClientPagePic">
-                    <img src={fourCs} alt="db 4 Cs" id="clientPageFourCs" />
+                    <img src={fourCs} alt="db 4 Cs" className="clientPageGraphic" />
                 </div>
 
                 <div className="slantDown lightGrey-background">
                     <div className="unSkewDown">
                         <div className="alignClientPagePic">
-                            <img src={lcProcess} alt="lcProcess" id="clientPageProcessPic" />
+                            <img src={timeline} alt="timeline" className="clientPageGraphic" />
                         </div>
                     </div>
                 </div>
 
-                <Link to="/clients/largecompany/trifold">
+                <Link to="/clients/designbuild/trifold">
                     <img src={trifold} alt="trifold" className="miniTrifold" />
                 </Link>
 
