@@ -1,19 +1,34 @@
 import React, { Component } from "react";
 import SlantTop from "../../components/SlantTop";
 import BlogPost from "./BlogPost";
+import axios from "axios";
 
-import posts from "../../JSON/blogPosts.json";
+// import posts from "../../JSON/blogPosts.json";
 import "./css/blog.css";
 import "./css/mediaBlog.css";
 
 class Blog extends Component {
     state = {
-        posts,
+        posts: [],
         expanded: ["", "", "", "", ""]
     }
 
     componentDidMount() {
         window.scrollTo(0, 0);
+
+        axios.get("https://api.dropinblog.com/v1/json/?b=D6MLNHIM4UXBD2BMPO9W")
+        .then(res => {
+            console.log(res);
+
+            this.setState({
+                posts: res.data.data.posts
+            })
+            
+            console.log("state posts: " + this.state.posts[0].summary)
+        })
+        .catch(err => {
+            console.log(err)
+        })
     };
 
     handleReadMore = (i) => {
@@ -21,7 +36,7 @@ class Blog extends Component {
 
         if (this.state.expanded[i] === `blogPostFull${i}`) {
             arr[i] = "blogPostShrink";
-            
+
             this.setState({
                 expanded: arr
             })
@@ -39,7 +54,10 @@ class Blog extends Component {
     render() {
         return (
             <div>
-                <SlantTop
+                {/* <div id="dib-categories"></div>
+                <div id="dib-recent-posts"></div> */}
+
+                {/* <SlantTop
                     color="orange-background"
                     title="dsp.blog"
                 />
@@ -62,7 +80,7 @@ class Blog extends Component {
                     </div>
 
                     <div id="blogSocialContainer"></div>
-                </div>
+                </div> */}
 
             </div>
         )
