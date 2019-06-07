@@ -54,9 +54,6 @@ class Blog extends Component {
     render() {
         return (
             <div>
-                {/* <div id="dib-categories"></div>
-                <div id="dib-recent-posts"></div> */}
-
                 {/* <SlantTop
                     color="orange-background"
                     title="dsp.blog"
