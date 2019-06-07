@@ -3,7 +3,7 @@ import YourThing from "../../components/YourThing";
 import "./assets/css/clients.css";
 import "./assets/css/mediaClients.css";
 
-import image from "./assets/images/your-staff-augmented.jpg";
+import image from "./assets/images/your-staff-augmented.png";
 
 class Clients extends Component {
     state = {

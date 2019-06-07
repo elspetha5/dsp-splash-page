@@ -1,0 +1,200 @@
+[
+    {
+        "title": "architectural design",
+        "services": [
+            {
+                "offered": true,
+                "service": "building design"
+            },
+            {
+                "offered": true,
+                "service": "site design"
+            },
+            {
+                "offered": true,
+                "service": "core & shell"
+            },
+            {
+                "offered": true,
+                "service": "campuses"
+            },
+            {
+                "offered": false,
+                "service": "urban design"
+            },
+            {
+                "offered": true,
+                "service": "master planning"
+            },
+            {
+                "offered": true,
+                "service": "project mgmt."
+            },
+            {
+                "offered": false,
+                "service": "landscape design"
+            }
+        ]
+    },
+    {
+        "title": "interior design",
+        "services": [
+            {
+                "offered": true,
+                "service": "test fits"
+            },
+            {
+                "offered": true,
+                "service": "space planning"
+            },
+            {
+                "offered": true,
+                "service": "design experience"
+            },
+            {
+                "offered": true,
+                "service": "sustainable design"
+            },
+            {
+                "offered": false,
+                "service": "textile design"
+            },
+            {
+                "offered": false,
+                "service": "art curation"
+            },
+            {
+                "offered": true,
+                "service": "programming"
+            },
+            {
+                "offered": true,
+                "service": "FF&E"
+            }
+        ] 
+    },
+    {
+        "title": "brand & environment",
+        "services": [
+            {
+                "offered": true,
+                "service": "brand design"
+            },
+            {
+                "offered": true,
+                "service": "experience design"
+            },
+            {
+                "offered": true,
+                "service": "event environments"
+            },
+            {
+                "offered": true,
+                "service": "signage & wayfinding"
+            },
+            {
+                "offered": true,
+                "service": "pop-up design"
+            }
+        ] 
+    },
+    {
+        "title": "digital design",
+        "services": [
+            {
+                "offered": true,
+                "service": "visualization"
+            },
+            {
+                "offered": true,
+                "service": "virtual reality"
+            },
+            {
+                "offered": false,
+                "service": "mixed reality"
+            },
+            {
+                "offered": true,
+                "service": "augmented reality"
+            },
+            {
+                "offered": true,
+                "service": "building information modeling"
+            },
+            {
+                "offered": true,
+                "service": "rendering"
+            },
+            {
+                "offered": false,
+                "service": "generative design"
+            },
+            {
+                "offered": true,
+                "service": "parametric modeling"
+            },
+            {
+                "offered": false,
+                "service": "motion graphics"
+            },
+            {
+                "offered": false,
+                "service": "animation"
+            }
+        ] 
+    },
+    {
+        "title": "communications design",
+        "services": [
+            {
+                "offered": true,
+                "service": "graphic design"
+            },
+            {
+                "offered": false,
+                "service": "UI | UX design"
+            },
+            {
+                "offered": true,
+                "service": "web design"
+            },
+            {
+                "offered": false,
+                "service": "product design"
+            },
+            {
+                "offered": false,
+                "service": "game design"
+            }
+        ] 
+    },
+    {
+        "title": "service design",
+        "services": [
+            {
+                "offered": true,
+                "service": "design strategy"
+            },
+            {
+                "offered": true,
+                "service": "service blueprinting"
+            },
+            {
+                "offered": true,
+                "service": "business systems design"
+            },
+            {
+                "offered": false,
+                "service": "sustainability"
+            },
+            {
+                "offered": true,
+                "service": "service mapping"
+            },
+            {
+                "offered": true,
+                "service": "journey mapping"
+            }
+        ] 
+    }
+]

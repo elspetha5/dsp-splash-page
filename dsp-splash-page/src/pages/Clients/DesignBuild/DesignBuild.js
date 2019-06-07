@@ -63,11 +63,9 @@ class DesignBuild extends Component {
                     titleColor="charcoalish-text"
                     title="design-build process"
                 >
-                    <div className="infoWords charcoalish-text">Design Service Professionals, PLLC (DSP Design) is an all-virtual design collaborative built on the premise that great design is only as good as its ability to be realized.</div>
-                    <div className="infoWords charcoalish-text">We have no front door. Instead, we leverage co-working facilities to provide settings for individual work, small meetings and team conferences as needed. Keeping overhead costs low allows us to provide premium design services at a competitive rate.</div>
-                    <div className="infoWords charcoalish-text">As design delivery methods evolve toward more efficient, fast-tracked processes, there is an increasing need for both designer and contractor to work on a united front. As such, DSP is committed to an integrated approach to project delivery, placing the contractor at the core of the design team from the very beginning.</div>
-                    <div className="infoWords charcoalish-text">At DSP we're committed to providing only the highest quality design and delivery services, including a deep bench of seasoned architects and technical staff prepared to facilitate a thorough quality assurance program.</div>
-                    <div className="infoWords charcoalish-text">We are building an unprecedented virtual design practice that can be anywhere you need us to be.</div>
+                    <div className="infoWords charcoalish-text">Design Service Professionals, PLLC (DSP) is an all-virtual design collective built on the premise that effective collaboration knows no geographic boundaries and that a sound understanding of local codes is 100% essential. We are building an unprecedented virtual design practice that can be anywhere you need us to be.</div>
+                    <div className="infoWords charcoalish-text">We are committed to delivering premium design services. Our design team is supported by a deep bench of seasoned architects and technical design staff prepared to facilitate a thorough quality assurance program, tailored to each of your Design-Build projects.</div>
+                    <div className="infoWords charcoalish-text">At DSP we work hard to keep our fees competitive. We work from home offices, leveraging co-working facilities to provide settings for individual work, small meetings, and team conferences as needed. This keeps our overhead costs low, allowing us to provide premium design services at competitive rates.</div>
                 </SlantUp>
 
                 <div className="alignDBPic">
@@ -79,8 +77,8 @@ class DesignBuild extends Component {
                     titleColor="charcoalish-text"
                     title="constructability concept"
                 >
-                    <div className="infoWords charcoalish-text">At DSP we are committed to Integrated Project Delivery. Our design staff are fully Revit trained and completely supported by Revit Certified Professionals and licensed architects. Our goal is to make each and every project a reality by proposing design solutions with constructible outcomes in mind</div>
-                    <div className="infoWords charcoalish-text">To achieve these outcomes, we’ve augmented CSI’s four C’s of effective communication to include cost, collaboration, and coordination. These additional components are essential to our quality management program, saving time, cutting costs and elevating the craft of the process.</div>
+                    <div className="infoWords charcoalish-text">Great design is only as good as its ability to be realized. In order to get the job done right, we are committed to Integrated Project Delivery. Our design staff is fully Revit trained and completely supported by Revit Certified Professionals and licensed architects. Our goal is to make each and every project a reality by proposing design solutions with constructible outcomes.</div>
+                    <div className="infoWords charcoalish-text">We've aumented CSI's 4 C's of effective communication to include cost, estimatation, collaboration, and coordination. These additional components are essential to our quality management program, saving time, cutting costs, and elevation the craft of design process to match the craft of your best trade partners.</div>
                 </SlantDown>
 
                 <Link to="/clients/designbuild/trifold">

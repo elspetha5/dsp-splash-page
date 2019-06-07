@@ -82,7 +82,11 @@ class App extends Component {
               
               
               {/* Blog */}
-              <Route exact path="/about/blog" component={Blog} />
+              <Route exact path="/blog" component={Blog} />
+
+
+              {/* Events */}
+              {/* <Route exact path="/events" component={Events} /> */}
 
 
               {/* Approach */}

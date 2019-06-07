@@ -132,6 +132,25 @@
     #navSocialWrapper {
         display: none;
     }
+
+    #navBlogButton,
+    #navBlogButton:active,
+    #navBlogButton:visited,
+    #navBlogButton:focus {
+        display: initial;
+        background-color: #b2d08d;
+        color: #f4f7fc;
+        margin-left: 3vw;
+        padding: .25em;
+        border-radius: 5px;
+        transform: rotate(-6deg);
+        box-shadow: 1px 2px 5px #757579;
+    }
+
+    #navBlogButton:hover {
+        background-color: #f4f7fc;
+        color: #b2d08d;
+    }
 }
 
 @media (min-width: 75em) {

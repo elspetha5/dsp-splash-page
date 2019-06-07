@@ -226,7 +226,7 @@ class DesignBuild extends Component {
             <div>
                 <div id="triWrapper" onClick={() => this.handleTrifold()}>
                     <div id={this.state.tri3} className="triback">
-                        <img src={tri3} alt="dbTri" className="tribackImg" />
+                        <img src={tri3} alt="dbTri" className="tribackImg slateWhite-background" />
                         <div id="triSocialWrapper">
                             <a id="triSocial" className="link" href="https://www.linkedin.com/company/designserviceprofessionalspllc/" target="blank"><i className="fab fa-linkedin-in"></i></a>
                             <a id="triSocial" className="link" href="https://www.instagram.com/__dspdesign/" target="blank"><i className="fab fa-instagram"></i></a>
@@ -238,10 +238,10 @@ class DesignBuild extends Component {
                             <Link id="triLink" className="link" to="/clients/contact">contact us</Link>
                         </div>
                     </div>
-                    <img src={triCenter} alt="dbTri" id={this.state.triCenter} className="triImg" />
-                    <img src={triCenter2} alt="dbTri" id={this.state.triCenter2} className="triImg" />
-                    <img src={this.state.tri2Img} alt="dbTri" id={this.state.tri2} className="triImg" />
-                    <img src={this.state.tri1Img} alt="dbTri" id={this.state.tri1} className="triImg" />
+                    <img src={triCenter} alt="dbTri" id={this.state.triCenter} className="triImg slateWhite-background" />
+                    <img src={triCenter2} alt="dbTri" id={this.state.triCenter2} className="triImg slateWhite-background" />
+                    <img src={this.state.tri2Img} alt="dbTri" id={this.state.tri2} className="triImg slateWhite-background" />
+                    <img src={this.state.tri1Img} alt="dbTri" id={this.state.tri1} className="triImg slateWhite-background" />
 
                 </div>
 

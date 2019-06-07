@@ -1,0 +1,28 @@
+[
+    {
+        "num": 1,
+        "step": "introduction & online contact",
+        "info": ["Design Service Professionals, PLLC (DSP) is an all-virtual design collective built on the premise that effective collaboration knows no geographic boundaries and that a sound understanding of local codes is 100% essential. We are building an unprecedented virtual design practice that can be anywhere you need us to be.", "We are committed to delivering premium design services. Our design team is supported by seasoned architects and a technical design staff prepared to facilitate a thorough quality assurance program, tailored to each of your Design-Build projects.", "At DSP we work hard to keep our fees competitive. We work from home offices, leveraging co-working facilities to provide settings for individual work, small meetings, and team conferences as needed. This keeps our overhead costs low, allowing us to provide premium design services at competitive rates."],
+        "button": "/clients/contact"
+    },
+    {
+        "num": 2,
+        "step": "contractual scope of work",
+        "info": ["We want to step in wherever you need us, especially if it means a full partnership. So, let's talk a little bit about the following:", "• project typology", "• design phases of work", "• design services", "• administrative services", "• proposal writing services", "• design deliverables", "• design timeframe"]
+    },
+    {
+        "num": 3,
+        "step": "retainer & set-up fees",
+        "info": ["We want you to know that we're in this together and we hope you feel the same way. So, let's talk about a few ways to get started:", "• single team-member with flexible scope", "• full-time team-member with fixed scope", "• part-time team-member with fixed scope", "• a multi-member team with fixed scope", "• a full-fledged partnership"]
+    },
+    {
+        "num": 4,
+        "step": "daily & weekly accountability",
+        "info": ["We have a plan to keep you in the loop and we're excited to share it. So, let's talk about what we're doing to help you feel comfortable with our team:", "• design team portal", "• active video communication", "• sample work product", "• on-site collaboration"]
+    },
+    {
+        "num": 5,
+        "step": "getting paid",
+        "info": ["Bi-weekly is the goal, but we know that's not always feasible. So, let's talk logistics."]
+    }   
+]

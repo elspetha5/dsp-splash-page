@@ -278,3 +278,7 @@
 #navSocial a:hover {
     color: #757579;
 }
+
+#navBlogButton {
+    display: none;
+}

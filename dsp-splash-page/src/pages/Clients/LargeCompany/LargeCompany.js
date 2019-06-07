@@ -78,10 +78,6 @@ class LargeCompany extends Component {
                     ))}
                 </div>
 
-                <div className="alignLCPic">
-                    <img src={lcProcess} alt="lcProcess" id="lcProcessPic" />
-                </div>
-
                 <div className="slantUp salmon-background">
                     <div className="unSkew">
                         <div className="lcContentWrapper">
@@ -106,6 +102,10 @@ class LargeCompany extends Component {
 
                 <div className="alignLCPic">
                     <img src={fourCs} alt="db 4 Cs" id="lcFourCs" />
+                </div>
+
+                <div className="alignLCPic">
+                    <img src={lcProcess} alt="lcProcess" id="lcProcessPic" />
                 </div>
 
                 <Link to="/clients/largecompany/trifold">
