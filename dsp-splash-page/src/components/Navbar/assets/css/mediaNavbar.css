@@ -67,7 +67,7 @@
     }
 
     #nav {
-        padding: 1vh 16vw;
+        padding: 1vh 13vw;
     }
     
     #navImage {
@@ -140,7 +140,7 @@
         display: initial;
         background-color: #b2d08d;
         color: #f4f7fc;
-        margin-left: 3vw;
+        margin-left: 2vw;
         padding: .25em;
         border-radius: 5px;
         transform: rotate(-6deg);
@@ -165,13 +165,13 @@
 
 @media (min-width: 81em) {
     #nav {
-        padding: 1vh 20vw;
+        padding: 1vh 17vw;
     }
 }
 
 @media (min-width: 96em) {
     #nav {
-        padding: 1vh 24vw;
+        padding: 1vh 22vw;
     }
 }
 

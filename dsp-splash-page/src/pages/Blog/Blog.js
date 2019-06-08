@@ -10,74 +10,86 @@ import "./css/mediaBlog.css";
 class Blog extends Component {
     state = {
         posts: [],
-        expanded: ["", "", "", "", ""]
+        // content: [],
+        contentVisibility: "hideContent",
+        readMore: ""
     }
 
     componentDidMount() {
         window.scrollTo(0, 0);
 
-        axios.get("https://api.dropinblog.com/v1/json/?b=D6MLNHIM4UXBD2BMPO9W")
-        .then(res => {
-            console.log(res);
-
-            this.setState({
-                posts: res.data.data.posts
-            })
-            
-            console.log("state posts: " + this.state.posts[0].summary)
-        })
-        .catch(err => {
-            console.log(err)
-        })
+        this.getRecentBlogPosts();
     };
 
-    handleReadMore = (i) => {
-        let arr = ["", "", "", "", ""];
+    getRecentBlogPosts = () => {
+        axios.get("https://api.dropinblog.com/v1/json/?b=D6MLNHIM4UXBD2BMPO9W")
+            .then(res => {
+                this.setState({
+                    posts: res.data.data.posts,
+                    readMore: ""
+                });
 
-        if (this.state.expanded[i] === `blogPostFull${i}`) {
-            arr[i] = "blogPostShrink";
-
-            this.setState({
-                expanded: arr
+                console.log(res);
             })
-        }
-        else {
-            arr[i] = `blogPostFull${i}`;
-
-            this.setState({
-                expanded: arr
+            .catch(err => {
+                console.log(err)
             });
-        }
+    }
 
+    handleReadMore = (slug) => {
+        axios.get(`https://api.dropinblog.com/v1/json/post/?b=D6MLNHIM4UXBD2BMPO9W&post=${slug}`)
+            .then(res => {
+                console.log(res);
+                let arr = [res.data.data.post];
+
+                let content = res.data.data.post.content.replace(/<p>&nbsp;<\/p><!-- Made with DropInBlog.com -->/g, "");
+                let contentArr = content.split("<p>&nbsp;</p>");
+                console.log("content array: " + contentArr);
+                
+                let cleanContent = contentArr.map(p => (
+                    p.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/&nbsp;/g, "")
+                ));
+                console.log("clean conten: " + cleanContent);
+
+                this.setState({
+                    posts: arr,
+                    contentVisibility: "showContent",
+                    readMore: "hideReadMore"
+                });
+            })
+            .catch(err => {
+                console.log(err)
+            });
     };
 
     render() {
         return (
-            <div>
-                {/* <SlantTop
+            <div id="blogPageWrapper">
+                {/* <div id="dib-posts"></div> */}
+
+                <SlantTop
                     color="orange-background"
                     title="dsp.blog"
                 />
 
                 <div id="blogContainer">
                     <div id="blogPostContainer">
-                        {this.state.posts.slice(0, 4).map((post, i) => (
+                        {this.state.posts.map(post => (
                             <BlogPost
-                                id={post.id}
-                                topic={post.topic}
-                                pic={post.pic}
+                                featuredImage={post.featuredImage}
                                 title={post.title}
-                                name={post.name}
-                                date={post.date}
-                                post={post.post}
-                                full={this.state.expanded[i]}
-                                onClickReadMore={() => this.handleReadMore(i)}
+                                publishedAt={post.publishedAt}
+                                summary={post.summary}
+                                contentVisibility={this.state.contentVisibility}
+                                content={post.content}
+                                readMore={this.state.readMore}
+                                onClickReadMore={() => this.handleReadMore(post.slug)}
                             />
                         ))}
                     </div>
 
                     <div id="blogSocialContainer"></div>
-                </div> */}
+                </div>
 
             </div>
         )

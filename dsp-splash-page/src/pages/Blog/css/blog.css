@@ -3,3 +3,15 @@
     margin-bottom: 18vh;
     padding: 0 7vw;
 }
+
+#hideContent {
+    display: none;
+}
+
+#showContent {
+    display: initial;
+}
+
+#hideReadMore {
+    display: none;
+} 
