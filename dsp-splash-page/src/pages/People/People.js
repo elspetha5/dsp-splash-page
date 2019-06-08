@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import LocationMap from "./LocationMap";
 import "./css/people.css";
 import "./css/mediaPeople.css";

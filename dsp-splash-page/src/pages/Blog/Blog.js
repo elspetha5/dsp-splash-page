@@ -10,8 +10,7 @@ import "./css/mediaBlog.css";
 class Blog extends Component {
     state = {
         posts: [],
-        // content: [],
-        contentVisibility: "hideContent",
+        content: [],
         readMore: ""
     }
 
@@ -40,19 +39,29 @@ class Blog extends Component {
         axios.get(`https://api.dropinblog.com/v1/json/post/?b=D6MLNHIM4UXBD2BMPO9W&post=${slug}`)
             .then(res => {
                 console.log(res);
-                let arr = [res.data.data.post];
+                const arr = [res.data.data.post];
 
-                let content = res.data.data.post.content.replace(/<p>&nbsp;<\/p><!-- Made with DropInBlog.com -->/g, "");
-                let contentArr = content.split("<p>&nbsp;</p>");
-                console.log("content array: " + contentArr);
-                
-                let cleanContent = contentArr.map(p => (
+                const content = res.data.data.post.content.replace(/<!-- Made with DropInBlog.com -->/g, "");
+                const contentArr = content.split("</p>").map(p => (
                     p.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/&nbsp;/g, "")
                 ));
-                console.log("clean conten: " + cleanContent);
+                
+                const contentClean = contentArr.map(p => {
+                    if (p.includes("img")) {
+                        const pLength = p.length;
+                        const endNum = pLength - 36;
+                        const source = p.substring(12, endNum);
+                        
+                        return source;
+                    }
+                    
+                    return p;
+                });
+                console.log(contentClean);
 
                 this.setState({
                     posts: arr,
+                    content: contentClean,
                     contentVisibility: "showContent",
                     readMore: "hideReadMore"
                 });
@@ -80,8 +89,7 @@ class Blog extends Component {
                                 title={post.title}
                                 publishedAt={post.publishedAt}
                                 summary={post.summary}
-                                contentVisibility={this.state.contentVisibility}
-                                content={post.content}
+                                content={this.state.content}
                                 readMore={this.state.readMore}
                                 onClickReadMore={() => this.handleReadMore(post.slug)}
                             />
