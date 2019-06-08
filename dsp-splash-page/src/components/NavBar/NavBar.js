@@ -79,7 +79,7 @@ class NavBar extends Component {
                     <div id="navWords" className={this.state.navVisibility}>
                         <div id={this.state.navSlant} className="skyBlue-background"></div>
                         {this.state.buttons.map(button => (
-                            <Link to={button.to} id={button.id} className={`navQs ${this.state.navQsShow}`} onClick={() => { this.hamburger() }}>{button.text}</Link>
+                            <Link to={button.to} id={button.id} className={`navQs ${this.state.navQsShow}`} onClick={() => { this.hamburger() }} >{button.text}</Link>
                         ))}
                     </div>
 

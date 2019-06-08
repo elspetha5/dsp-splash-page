@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./blogPost.css";
 
@@ -13,20 +14,18 @@ const BlogPost = props => {
                 </div>
             </div>
 
-            {props.content.map((p, i) => (
-                p.includes("http")
-                    ? <img src={p} alt="" className="blogPostParagraph" key={i} />
-                    : <div className="blogPostParagraph" key={i}>{p}</div>
-            ))}
-            <div className="blogPostText charcoalish-text" onClick={() => props.onClickReadMore()}>{props.summary}</div>
+            {props.summary
+                ? <Link to={`/blog/post/${props.slug}`} className="link charcoalish-text">{`${props.summary.replace(/<!-- Made with DropInBlog.com -->/g, "")}...`}</Link>
+                : props.content.map((p, i) => (
+                    p.includes("http")
+                        ? <img src={p} alt="" className="blogPostImage blogPostParagraph" key={i} />
+                        : <div className="blogPostParagraph" key={i}>{p}</div>
+                ))
+            }
 
-            <div id={props.readMore} className="blogPostFade" onClick={() => props.onClickReadMore()}>
-                <span className="blogReadMore">read more</span>
+            <div id={props.readMore} className="blogPostFade">
+                <Link to={`/blog/post/${props.slug}`} className="link blogReadMore">read more</Link>
             </div>
-
-            {/* {props.content.map(paragraph => (
-                    <div className="blogPostParagraph">{paragraph}</div>
-                ))} */}
         </div>
     );
 };
