@@ -9,17 +9,18 @@ import "./css/mediaBlog.css";
 
 class Blog extends Component {
     state = {
-        categories: [],
+        list: true,
+        categories: ["design", "service", "professionals", "virtual-office", "events"],
         posts: [],
         content: [],
-        backButton: "hideBack",
-        readMore: ""
+        readMore: "",
+        onePost: "onePostInvisible",
+        postList: "postListVisible"
     }
 
     componentDidMount() {
         window.scrollTo(0, 0);
 
-        this.getBlogCategories();
         this.blogDisplayCheck();
     };
 
@@ -27,101 +28,55 @@ class Blog extends Component {
         if (this.props.location.pathname !== prevProps.location.pathname) {
             window.scrollTo(0, 0);
             this.blogDisplayCheck();
+            this.postStatus();
         };
     };
 
     blogDisplayCheck = () => {
-        const { post, topic, author } = this.props.match.params;
+        const { topic, author } = this.props.match.params;
 
-        post ? this.getOneBlogPost(post)
-            : topic ? this.getBlogPosts("category", topic)
-                : author ? this.getBlogPosts("category", author)
-                    : this.getBlogPosts("limit", 5)
-    };
-
-    getBlogCategories = () => {
-        axios.get(`https://api.dropinblog.com/v1/json/categories/?b=D6MLNHIM4UXBD2BMPO9W`)
-            .then(res => {
-                const arr = res.data.data;
-                const slugArr = [];
-
-                arr.map(category => {
-                    const slug = category.slug
-
-                    if (slug === "design" || slug === "service" || slug === "professionals" || slug === "virtual-office" || slug === "events") {
-                        slugArr.push(slug);
-                    }
-                });
-
-                this.setState({
-                    categories: slugArr
-                });
-
-                console.log(this.state.categories)
-            })
-            .catch(err => {
-                console.log(err);
-            })
+        topic ? this.getBlogPosts("category", topic)
+            : author ? this.getBlogPosts("category", author)
+                : this.getBlogPosts("limit", 5)
     };
 
     getBlogPosts = (para, slug) => {
         axios.get(`https://api.dropinblog.com/v1/json/?b=D6MLNHIM4UXBD2BMPO9W&${para}=${slug}`)
             .then(res => {
-                console.log(res);
-
-                para === "category"
-                    ? this.setState({
-                        backButton: "showBack",
-                        posts: res.data.data.posts,
-                        content: [],
-                        readMore: ""
-                    })
-                    : this.setState({
-                        backButton: "hideBack",
-                        posts: res.data.data.posts,
-                        content: [],
-                        readMore: ""
-                    });
+                this.setState({
+                    posts: res.data.data.posts,
+                    content: [],
+                    readMore: "",
+                    list: true
+                });
             })
             .catch(err => {
                 console.log(err);
             });
     };
 
-    getOneBlogPost = (slug) => {
-        axios.get(`https://api.dropinblog.com/v1/json/post/?b=D6MLNHIM4UXBD2BMPO9W&post=${slug}`)
-            .then(res => {
-                console.log("getOneBlogPost: " + res)
+    trueList = () => {
+        this.setState({
+            list: true
+        });
+    };
 
-                const arr = [res.data.data.post];
+    falseList = () => {
+        this.setState({
+            list: false
+        });
+    };
 
-                const content = res.data.data.post.content.replace(/<!-- Made with DropInBlog.com -->/g, "");
-                const contentArr = content.split("</p>").map(p => (
-                    p.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/&nbsp;/g, "")
-                ));
-
-                const contentClean = contentArr.map(p => {
-                    if (p.includes("img")) {
-                        const pLength = p.length;
-                        const endNum = pLength - 36;
-                        const source = p.substring(12, endNum);
-
-                        return source;
-                    }
-
-                    return p;
-                });
-
-                this.setState({
-                    posts: arr,
-                    content: contentClean,
-                    backButton: "showBack",
-                    readMore: "hideReadMore"
-                });
+    postStatus = () => {
+        !this.state.list
+            ? this.setState({
+                onePost: "onePostVisible",
+                postList: "postListInvisible"
             })
-            .catch(err => {
-                console.log(err)
-            });
+            : this.setState({
+                onePost: "onePostInvisible",
+                postList: "postListVisible"
+            })
     };
 
     render() {
@@ -135,34 +90,38 @@ class Blog extends Component {
 
                 <div id="blogContainer">
                     <div id="blogCategoryWrapper" className="slateWhite-background">
-                        <div id="blogCategoryTitle">topics</div>
+                        <div id="blogCategoryTitle">
+                            <div>topics</div>
+                            <Link to="/blog" id="blogHomeButton" className="link" onClick={() => this.trueList()}>blog home</Link>
+                        </div>
                         <div id="topicsWrapper">
-                            <Link to="/blog/topic/design" className="link blogTopic">design</Link>
-                            <Link to="/blog/topic/service" className="link blogTopic">service</Link>
-                            <Link to="/blog/topic/professionals" className="link blogTopic">professionals</Link>
-                            <Link to="/blog/topic/virtual-office" className="link blogTopic">virtual office</Link>
-                            <Link to="/blog/topic/events" className="link blogTopic">events</Link>
+                            {this.state.categories.map(cat =>
+                                <Link to={`/blog/topic/${cat}`} className="link blogTopic" onClick={() => this.trueList()}>{cat}</Link>
+                            )}
                         </div>
                     </div>
 
-                    <Link to="/blog" id={this.state.backButton} className="backButton"><i className="fas fa-chevron-left"></i> back to blog</Link>
-
                     <div id="blogPostsWrapper">
-                        {this.state.posts
-                            ? this.state.posts.map((post, i) => (
-                                <BlogPost
-                                    key={i}
-                                    featuredImage={post.featuredImage}
-                                    title={post.title}
-                                    publishedAt={post.publishedAt}
-                                    summary={post.summary}
-                                    content={this.state.content}
-                                    readMore={this.state.readMore}
-                                    slug={post.slug}
-                                />
-                            ))
-                            : <div id="blogNoPost">Looks like there aren't any posts for this topic or author. Please use one of the button to go back and try again.</div>
-                        }
+                        <div id="dib-posts" className={this.state.onePost}></div>
+
+                        <div className={this.state.postList}>
+                            {this.state.posts
+                                ? this.state.posts.map((post, i) => (
+                                    <BlogPost
+                                        key={i}
+                                        featuredImage={post.featuredImage}
+                                        title={post.title}
+                                        publishedAt={post.publishedAt}
+                                        summary={post.summary}
+                                        content={this.state.content}
+                                        readMore={this.state.readMore}
+                                        slug={post.slug}
+                                        onClick={() => this.falseList()}
+                                    />
+                                ))
+                                : <div id="blogNoPost">Looks like there aren't any posts for this topic or author. Please use one of the button to go back and try again.</div>
+                            }
+                        </div>
                     </div>
 
 

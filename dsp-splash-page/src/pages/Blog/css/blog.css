@@ -1,3 +1,13 @@
+.onePostInvisible,
+.postListInvisible {
+    display: none;
+}
+
+.onePostVisible,
+.postListVisible {
+    display: initial;
+}
+
 #blogPageWrapper {
     margin-bottom: 20vh;
 }
@@ -23,6 +33,15 @@
     font-size: 110%;
     font-weight: bold;
     margin-bottom: .5em;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#blogHomeButton {
+    font-size: 70%;
+    border: .5px solid #757579;
+    padding: 5px;
 }
 
 #topicsWrapper {
@@ -33,34 +52,6 @@
 
 .blogTopic {
     font-size: 90%;
-}
-
-.backButton,
-.backButton:active,
-.backButton:focus,
-.backButton:visited {
-    color: #1b2c3a;
-    border: 1px solid #1b2c3a;
-    background-color: #f4f7fc;
-    padding: 5px;
-    border-radius: 5px;
-    float: right;
-    margin-bottom: 2em;
-    position: sticky;
-    top: 7vh;
-}
-
-.backButton:hover {
-    color: #f4f7fc;
-    background-color: #1b2c3a;
-}
-
-#hideBack {
-    display: none;
-}
-
-#showBack {
-    display: initial;
 }
 
 #blogPostsWrapper {

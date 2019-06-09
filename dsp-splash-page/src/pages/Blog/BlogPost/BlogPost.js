@@ -15,7 +15,7 @@ const BlogPost = props => {
             </div>
 
             {props.summary
-                ? <Link to={`/blog/?p=${props.slug}`} className="link blogPostParagraph charcoalish-text">{`${props.summary.replace(/<!-- Made with DropInBlog.com -->/g, "")}...`}</Link>
+                ? <Link to={`/blog/?p=${props.slug}`} className="link blogPostParagraph charcoalish-text" onClick={() => props.onClick()}>{`${props.summary.replace(/<!-- Made with DropInBlog.com -->/g, "")}...`}</Link>
                 : props.content.map((p, i) => (
                     p.includes("http")
                         ? <img src={p} alt="" className="blogPostImage blogPostParagraph" key={i} />
@@ -24,7 +24,7 @@ const BlogPost = props => {
             }
 
             <div id={props.readMore} className="blogPostFade">
-                <Link to={`/blog/?p=${props.slug}`} className="link blogReadMore">read more</Link>
+                <Link to={`/blog/?p=${props.slug}`} className="link blogReadMore" onClick={() => props.onClick()}>read more</Link>
             </div>
         </div>
     );
