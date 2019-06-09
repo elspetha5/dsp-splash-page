@@ -109,11 +109,11 @@ class NavBar extends Component {
                         <a href="https://www.facebook.com/dspdesignprof" target="blank"><i className="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/__dspdesign" target="blank"><i className="fab fa-twitter"></i></a>
                         <a href="mailto:hello@dsp.design"><i className="far fa-envelope"></i></a>
-                        {/* <Link to="/blog">blog</Link> */}
+                        <Link to="/blog">blog</Link>
                     </div>
                 </div>
 
-                {/* <Link to="/blog" id="navBlogButton">blog and news!</Link> */}
+                <Link to="/blog" id="navBlogButton">blog and news!</Link>
 
             </div>
         )

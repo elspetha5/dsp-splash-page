@@ -67,6 +67,8 @@ class Blog extends Component {
     getBlogPosts = (para, slug) => {
         axios.get(`https://api.dropinblog.com/v1/json/?b=D6MLNHIM4UXBD2BMPO9W&${para}=${slug}`)
             .then(res => {
+                console.log(res);
+
                 para === "category"
                     ? this.setState({
                         backButton: "showBack",
@@ -89,6 +91,8 @@ class Blog extends Component {
     getOneBlogPost = (slug) => {
         axios.get(`https://api.dropinblog.com/v1/json/post/?b=D6MLNHIM4UXBD2BMPO9W&post=${slug}`)
             .then(res => {
+                console.log("getOneBlogPost: " + res)
+
                 const arr = [res.data.data.post];
 
                 const content = res.data.data.post.content.replace(/<!-- Made with DropInBlog.com -->/g, "");
