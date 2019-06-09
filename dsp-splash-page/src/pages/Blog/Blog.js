@@ -123,7 +123,6 @@ class Blog extends Component {
     render() {
         return (
             <div id="blogPageWrapper">
-                {/* <div id="dib-posts"></div> */}
 
                 <SlantTop
                     color="orange-background"
