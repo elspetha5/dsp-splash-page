@@ -15,7 +15,7 @@ const BlogPost = props => {
             </div>
 
             {props.summary
-                ? <Link to={`/blog/post/${props.slug}`} className="link charcoalish-text">{`${props.summary.replace(/<!-- Made with DropInBlog.com -->/g, "")}...`}</Link>
+                ? <Link to={`/blog/post/${props.slug}`} className="link blogPostParagraph charcoalish-text">{`${props.summary.replace(/<!-- Made with DropInBlog.com -->/g, "")}...`}</Link>
                 : props.content.map((p, i) => (
                     p.includes("http")
                         ? <img src={p} alt="" className="blogPostImage blogPostParagraph" key={i} />

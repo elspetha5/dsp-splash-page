@@ -19,16 +19,35 @@
     z-index: 996;
 }
 
+#blogCategoryTitle {
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+#topicsWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.blogTopic {
+    font-size: 90%;
+}
+
 .backButton,
 .backButton:active,
 .backButton:focus,
 .backButton:visited {
     color: #1b2c3a;
     border: 1px solid #1b2c3a;
+    background-color: #f4f7fc;
     padding: 5px;
     border-radius: 5px;
     float: right;
     margin-bottom: 2em;
+    position: sticky;
+    top: 7vh;
 }
 
 .backButton:hover {
@@ -57,3 +76,9 @@
 #hideReadMore {
     display: none;
 } 
+
+#blogNoPost {
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+}
