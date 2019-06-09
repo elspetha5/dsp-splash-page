@@ -16,116 +16,116 @@ class Blog extends Component {
         readMore: ""
     }
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
+    // componentDidMount() {
+    //     window.scrollTo(0, 0);
 
-        this.getBlogCategories();
-        this.blogDisplayCheck();
-    };
+    //     this.getBlogCategories();
+    //     this.blogDisplayCheck();
+    // };
 
-    componentDidUpdate(prevProps) {
-        if (this.props.location.pathname !== prevProps.location.pathname) {
-            window.scrollTo(0, 0);
-            this.blogDisplayCheck();
-        };
-    };
+    // componentDidUpdate(prevProps) {
+    //     if (this.props.location.pathname !== prevProps.location.pathname) {
+    //         window.scrollTo(0, 0);
+    //         this.blogDisplayCheck();
+    //     };
+    // };
 
-    blogDisplayCheck = () => {
-        const { post, topic, author } = this.props.match.params;
+    // blogDisplayCheck = () => {
+    //     const { post, topic, author } = this.props.match.params;
 
-        post ? this.getOneBlogPost(post)
-            : topic ? this.getBlogPosts("category", topic)
-                : author ? this.getBlogPosts("category", author)
-                    : this.getBlogPosts("limit", 5)
-    };
+    //     post ? this.getOneBlogPost(post)
+    //         : topic ? this.getBlogPosts("category", topic)
+    //             : author ? this.getBlogPosts("category", author)
+    //                 : this.getBlogPosts("limit", 5)
+    // };
 
-    getBlogCategories = () => {
-        axios.get(`https://api.dropinblog.com/v1/json/categories/?b=D6MLNHIM4UXBD2BMPO9W`)
-            .then(res => {
-                const arr = res.data.data;
-                const slugArr = [];
+    // getBlogCategories = () => {
+    //     axios.get(`https://api.dropinblog.com/v1/json/categories/?b=D6MLNHIM4UXBD2BMPO9W`)
+    //         .then(res => {
+    //             const arr = res.data.data;
+    //             const slugArr = [];
 
-                arr.map(category => {
-                    const slug = category.slug
+    //             arr.map(category => {
+    //                 const slug = category.slug
 
-                    if (slug === "design" || slug === "service" || slug === "professionals" || slug === "virtual-office" || slug === "events") {
-                        slugArr.push(slug);
-                    }
-                });
+    //                 if (slug === "design" || slug === "service" || slug === "professionals" || slug === "virtual-office" || slug === "events") {
+    //                     slugArr.push(slug);
+    //                 }
+    //             });
 
-                this.setState({
-                    categories: slugArr
-                });
+    //             this.setState({
+    //                 categories: slugArr
+    //             });
 
-                console.log(this.state.categories)
-            })
-            .catch(err => {
-                console.log(err);
-            })
-    };
+    //             console.log(this.state.categories)
+    //         })
+    //         .catch(err => {
+    //             console.log(err);
+    //         })
+    // };
 
-    getBlogPosts = (para, slug) => {
-        axios.get(`https://api.dropinblog.com/v1/json/?b=D6MLNHIM4UXBD2BMPO9W&${para}=${slug}`)
-            .then(res => {
-                para === "category"
-                    ? this.setState({
-                        backButton: "showBack",
-                        posts: res.data.data.posts,
-                        content: [],
-                        readMore: ""
-                    })
-                    : this.setState({
-                        backButton: "hideBack",
-                        posts: res.data.data.posts,
-                        content: [],
-                        readMore: ""
-                    });
-            })
-            .catch(err => {
-                console.log(err);
-            });
-    };
+    // getBlogPosts = (para, slug) => {
+    //     axios.get(`https://api.dropinblog.com/v1/json/?b=D6MLNHIM4UXBD2BMPO9W&${para}=${slug}`)
+    //         .then(res => {
+    //             para === "category"
+    //                 ? this.setState({
+    //                     backButton: "showBack",
+    //                     posts: res.data.data.posts,
+    //                     content: [],
+    //                     readMore: ""
+    //                 })
+    //                 : this.setState({
+    //                     backButton: "hideBack",
+    //                     posts: res.data.data.posts,
+    //                     content: [],
+    //                     readMore: ""
+    //                 });
+    //         })
+    //         .catch(err => {
+    //             console.log(err);
+    //         });
+    // };
 
-    getOneBlogPost = (slug) => {
-        axios.get(`https://api.dropinblog.com/v1/json/post/?b=D6MLNHIM4UXBD2BMPO9W&post=${slug}`)
-            .then(res => {
-                const arr = [res.data.data.post];
+    // getOneBlogPost = (slug) => {
+    //     axios.get(`https://api.dropinblog.com/v1/json/post/?b=D6MLNHIM4UXBD2BMPO9W&post=${slug}`)
+    //         .then(res => {
+    //             const arr = [res.data.data.post];
 
-                const content = res.data.data.post.content.replace(/<!-- Made with DropInBlog.com -->/g, "");
-                const contentArr = content.split("</p>").map(p => (
-                    p.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/&nbsp;/g, "")
-                ));
+    //             const content = res.data.data.post.content.replace(/<!-- Made with DropInBlog.com -->/g, "");
+    //             const contentArr = content.split("</p>").map(p => (
+    //                 p.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/&nbsp;/g, "")
+    //             ));
 
-                const contentClean = contentArr.map(p => {
-                    if (p.includes("img")) {
-                        const pLength = p.length;
-                        const endNum = pLength - 36;
-                        const source = p.substring(12, endNum);
+    //             const contentClean = contentArr.map(p => {
+    //                 if (p.includes("img")) {
+    //                     const pLength = p.length;
+    //                     const endNum = pLength - 36;
+    //                     const source = p.substring(12, endNum);
 
-                        return source;
-                    }
+    //                     return source;
+    //                 }
 
-                    return p;
-                });
+    //                 return p;
+    //             });
 
-                this.setState({
-                    posts: arr,
-                    content: contentClean,
-                    backButton: "showBack",
-                    readMore: "hideReadMore"
-                });
-            })
-            .catch(err => {
-                console.log(err)
-            });
-    };
+    //             this.setState({
+    //                 posts: arr,
+    //                 content: contentClean,
+    //                 backButton: "showBack",
+    //                 readMore: "hideReadMore"
+    //             });
+    //         })
+    //         .catch(err => {
+    //             console.log(err)
+    //         });
+    // };
 
     render() {
         return (
             <div id="blogPageWrapper">
                 <div id="dib-posts"></div>
 
-                <SlantTop
+                {/* <SlantTop
                     color="orange-background"
                     title="dsp.blog"
                 />
@@ -164,7 +164,7 @@ class Blog extends Component {
 
 
                     <div id="blogSocialContainer"></div>
-                </div>
+                </div> */}
 
             </div>
         )
