@@ -61,7 +61,7 @@
 }
 
 .dib-post-title {
-    left: 4.5em;
+    left: 4em;
     margin-bottom: .5em;
 }
 
@@ -74,11 +74,12 @@
     padding: 0 2vw;
 }
 
-.dib-post-title,
+.dib h1,
 .dib-post-title-link,
 .dib-post-title-link:active,
 .dib-post-title-link:focus,
 .dib-post-title-link:visited {
+    display: initial;
     font-size: 115%;
     color: #333132;
     font-weight: bold;
@@ -95,7 +96,10 @@
     top: -2.25em;
 }
 
-.dib-post-back-link,
-.dib h1 {
+.dib-list {
+    margin-top: 2em;
+}
+
+.dib-post-back-link {
     display: none;
 }
