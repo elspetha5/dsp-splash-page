@@ -33,7 +33,7 @@ class Blog extends Component {
                     </div>
 
                     <div id="blogPostsWrapper">
-                        <div id="dib-recent-posts"></div>
+                        <div id="dib-posts"></div>
                     </div>
 
 
