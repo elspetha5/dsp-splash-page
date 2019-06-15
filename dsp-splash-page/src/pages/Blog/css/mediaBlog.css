@@ -1,0 +1,25 @@
+@media (min-width: 37.5em) {
+    #blogContainer {
+        padding: 0 15vw;
+    }
+}
+
+@media (min-width: 56em) {
+    #blogContainer {
+        padding: 0 20vw;
+    }
+
+    #blogCategoryTitle {
+        font-size: 120%;
+    }
+
+    .blogTopic {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 68em) {
+    #blogContainer {
+        padding: 0 24vw;
+    }
+}
