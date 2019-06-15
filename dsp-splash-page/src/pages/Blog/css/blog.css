@@ -74,6 +74,7 @@
     padding: 0 2vw;
 }
 
+.dib-post-title,
 .dib-post-title-link,
 .dib-post-title-link:active,
 .dib-post-title-link:focus,
@@ -94,6 +95,7 @@
     top: -2.25em;
 }
 
-.dib-post-back-link {
-    color: #757579
+.dib-post-back-link,
+.dib h1 {
+    display: none;
 }
