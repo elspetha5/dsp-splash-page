@@ -77,6 +77,10 @@
     font-size: 110%;
 }
 
+.dib-post-content p {
+    margin-bottom: 1em;
+}
+
 .dib h1,
 .dib-post-title-link,
 .dib-post-title-link:active,
