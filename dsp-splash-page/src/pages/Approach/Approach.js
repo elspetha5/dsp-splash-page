@@ -71,7 +71,7 @@ class Approach extends Component {
                         </Popup>
                         of design professionals, our staff augmentation program, coupled with an
                             <Popup
-                            trigger={<Link to="#" className="bold link"> eclectic mix of industry experts </Link>}
+                            trigger={<Link to="#" className="bold link"> eclectic mix of industry experts</Link>}
                             position="top center"
                             closeOnDocumentClick
                             contentStyle={{
@@ -119,7 +119,7 @@ class Approach extends Component {
                         </Popup>
                         of
                             <Popup
-                            trigger={<Link to="#" className="bold link"> high quality design </Link>}
+                            trigger={<Link to="#" className="bold link"> high quality design</Link>}
                             position="top center"
                             closeOnDocumentClick
                             contentStyle={{

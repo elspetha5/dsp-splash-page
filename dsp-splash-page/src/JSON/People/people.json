@@ -37,15 +37,6 @@
     },
     {
         "id": 4,
-        "picture": "/peopleImages/jennifer.png",
-        "sketch": "/peopleImages/jennifer-sketch.png",
-        "name": "Jennifer Schaefer",
-        "title": "Rain Maker",
-        "credentials": "Credentials",
-        "about": ""
-    },
-    {
-        "id": 5,
         "picture": "/peopleImages/stacy.png",
         "sketch": "/peopleImages/stacy-sketch.png",
         "name": "Stacy Traeden",
@@ -54,7 +45,7 @@
         "about": ""
     },
     {
-        "id": 6,
+        "id": 5,
         "picture": "/peopleImages/olivia.png",
         "sketch": "/peopleImages/olivia-sketch.png",
         "name": "Olivia Porter",
@@ -63,7 +54,7 @@
         "about": ""
     },
     {
-        "id": 7,
+        "id": 6,
         "picture": "/peopleImages/kara.png",
         "sketch": "/peopleImages/kara-sketch.png",
         "name": "Kara Hladky",
@@ -72,7 +63,7 @@
         "about": ""
     },
     {
-        "id": 8,
+        "id": 7,
         "picture": "/peopleImages/adam.png",
         "sketch": "/peopleImages/adam-sketch.png",
         "name": "Adam Nicholes",
@@ -81,7 +72,7 @@
         "about": ""
     },
     {
-        "id": 9,
+        "id": 8,
         "picture": "/peopleImages/dianne.png",
         "sketch": "/peopleImages/dianne-sketch.png",
         "name": "Dianne Becker",
@@ -90,11 +81,29 @@
         "about": ""
     },
     {
-        "id": 10,
+        "id": 9,
         "picture": "/peopleImages/norma.png",
         "sketch": "/peopleImages/norma-sketch.png",
         "name": "Norma Roles",
         "title": "Design Sage",
+        "credentials": "Credentials",
+        "about": ""
+    },
+    {
+        "id": 10,
+        "picture": "/peopleImages/ellis.png",
+        "sketch": "/peopleImages/ellis-sketch.png",
+        "name": "Ellis Dionisio",
+        "title": "Doc Guy",
+        "credentials": "Credentials",
+        "about": ""
+    },
+    {
+        "id": 11,
+        "picture": "/peopleImages/mark.png",
+        "sketch": "/peopleImages/mark-sketch.png",
+        "name": "Mark Peterson",
+        "title": "Revit Guru",
         "credentials": "Credentials",
         "about": ""
     }

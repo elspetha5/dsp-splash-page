@@ -231,9 +231,9 @@ class DesignBuild extends Component {
                         <img src={tri3} alt="dbTri" className="tribackImg slateWhite-background" />
                         <div id="triSocialWrapper">
                             <a id="triSocial" className="link" href="https://www.linkedin.com/company/designserviceprofessionalspllc/" target="blank"><i className="fab fa-linkedin-in"></i></a>
-                            <a id="triSocial" className="link" href="https://www.instagram.com/__dspdesign/" target="blank"><i className="fab fa-instagram"></i></a>
-                            <a id="triSocial" className="link" href="https://www.facebook.com/dspdesignprof" target="blank"><i className="fab fa-facebook"></i></a>
-                            <a id="triSocial" className="link" href="https://twitter.com/__dspdesign" target="blank"><i className="fab fa-twitter"></i></a>
+                            <a id="triSocial" className="link" href="https://www.instagram.com/dsp.design_virtual/" target="blank"><i className="fab fa-instagram"></i></a>
+                            <a id="triSocial" className="link" href="https://www.facebook.com/dspdesignvirtual/" target="blank"><i className="fab fa-facebook"></i></a>
+                            <a id="triSocial" className="link" href="https://twitter.com/dspdesignUSA" target="blank"><i className="fab fa-twitter"></i></a>
                         </div>
                         <div id="triButtonWrapper">
                             <Link id="triLink" className="link" to="/clients/designbuild">learn more</Link>

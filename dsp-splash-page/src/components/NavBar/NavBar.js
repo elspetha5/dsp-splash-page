@@ -87,9 +87,9 @@ class NavBar extends Component {
                         <a id="emailAddress" className="link" href="mailto:hello@dsp.design" onClick={() => { this.hamburger() }}><i className="far fa-envelope"></i> hello@dsp.design </a>
                         <div id="socialIconWrapper">
                             <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" className="link socialIcon" target="blank"><i className="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/__dspdesign/" className="link socialIcon" target="blank"><i className="fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/dspdesignprof" className="link socialIcon" target="blank"><i className="fab fa-facebook"></i></a>
-                            <a href="https://twitter.com/__dspdesign" className="link socialIcon" target="blank"><i className="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/dsp.design_virtual/" className="link socialIcon" target="blank"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/dspdesignvirtual/" className="link socialIcon" target="blank"><i className="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/dspdesignUSA" className="link socialIcon" target="blank"><i className="fab fa-twitter"></i></a>
                         </div>
                         <div id="navPLLC"><i className="far fa-copyright"></i> 2019 Design Service Professionals, PLLC All rights reserved</div>
                     </div>
@@ -105,15 +105,15 @@ class NavBar extends Component {
                 <div id="navSocialWrapper">
                     <div id="navSocial" className={`charcoalish-text ${this.state.socialScroll}`} onMouseOver={() => { this.socialScroll() }} onMouseOut={() => { this.socialScroll() }}>
                         <a href="https://www.linkedin.com/company/designserviceprofessionalspllc/" target="blank"><i className="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/__dspdesign/" target="blank"><i className="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/dspdesignprof" target="blank"><i className="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com/__dspdesign" target="blank"><i className="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/dsp.design_virtual/" target="blank"><i className="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/dspdesignvirtual/" target="blank"><i className="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/dspdesignUSA" target="blank"><i className="fab fa-twitter"></i></a>
                         <a href="mailto:hello@dsp.design"><i className="far fa-envelope"></i></a>
-                        {/* <Link to="/blog">blog</Link> */}
+                        <Link to="/blog">blog</Link>
                     </div>
                 </div>
 
-                {/* <Link to="/blog" id="navBlogButton">blog and news!</Link> */}
+                <Link to="/blog" id="navBlogButton">blog and news!</Link>
 
             </div>
         )
